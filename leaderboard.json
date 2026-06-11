@@ -1,0 +1,32 @@
+{
+  "lastUpdated": "2026-06-15T16:00:00+10:00",
+  "leaderboard": [
+    { "rank": 1,  "playerName": "Brian O'Connell",   "team1": "Brazil",      "team1Pts": 6, "team2": "Japan",        "team2Pts": 3, "team3": "Canada",       "team3Pts": 3, "totalPoints": 12, "pointsChange": 3 },
+    { "rank": 2,  "playerName": "Chantelle Salas",    "team1": "Argentina",   "team1Pts": 6, "team2": "Germany",      "team2Pts": 3, "team3": "Mexico",       "team3Pts": 1, "totalPoints": 10 },
+    { "rank": 3,  "playerName": "Priya Nair",         "team1": "France",      "team1Pts": 6, "team2": "Croatia",      "team2Pts": 1, "team3": "Morocco",      "team3Pts": 3, "totalPoints": 10, "pointsChange": 4 },
+    { "rank": 4,  "playerName": "Marcus Webb",        "team1": "Spain",       "team1Pts": 3, "team2": "Netherlands",  "team2Pts": 3, "team3": "Uruguay",      "team3Pts": 3, "totalPoints": 9 },
+    { "rank": 5,  "playerName": "Sofia Rossi",        "team1": "Portugal",    "team1Pts": 6, "team2": "Senegal",      "team2Pts": 1, "team3": "South Korea",  "team3Pts": 1, "totalPoints": 8 },
+    { "rank": 6,  "playerName": "Liam Chen",          "team1": "England",     "team1Pts": 3, "team2": "USA",          "team2Pts": 3, "team3": "Ghana",        "team3Pts": 1, "totalPoints": 7 },
+    { "rank": 7,  "playerName": "Aisha Bello",        "team1": "Belgium",     "team1Pts": 3, "team2": "Switzerland",  "team2Pts": 3, "team3": "Ecuador",      "team3Pts": 0, "totalPoints": 6, "pointsChange": 3 },
+    { "rank": 8,  "playerName": "Tom Hopwood",        "team1": "Italy",       "team1Pts": 1, "team2": "Colombia",     "team2Pts": 3, "team3": "Denmark",      "team3Pts": 1, "totalPoints": 5 },
+    { "rank": 9,  "playerName": "Greta Lindqvist",    "team1": "Sweden",      "team1Pts": 3, "team2": "Poland",       "team2Pts": 1, "team3": "Nigeria",      "team3Pts": 1, "totalPoints": 5 },
+    { "rank": 10, "playerName": "Diego Fernández",    "team1": "Mexico",      "team1Pts": 1, "team2": "Peru",         "team2Pts": 3, "team3": "Australia",    "team3Pts": 0, "totalPoints": 4 },
+    { "rank": 11, "playerName": "Hannah Müller",      "team1": "Germany",     "team1Pts": 3, "team2": "Austria",      "team2Pts": 0, "team3": "Serbia",       "team3Pts": 1, "totalPoints": 4 },
+    { "rank": 12, "playerName": "Raj Patel",          "team1": "Iran",        "team1Pts": 1, "team2": "Qatar",        "team2Pts": 1, "team3": "Tunisia",      "team3Pts": 1, "totalPoints": 3 },
+    { "rank": 13, "playerName": "Emily Carter",       "team1": "Wales",       "team1Pts": 1, "team2": "Cameroon",     "team2Pts": 1, "team3": "Costa Rica",   "team3Pts": 1, "totalPoints": 3 },
+    { "rank": 14, "playerName": "Yuki Tanaka",        "team1": "Japan",       "team1Pts": 1, "team2": "Saudi Arabia", "team2Pts": 1, "team3": "Algeria",      "team3Pts": 0, "totalPoints": 2 },
+    { "rank": 15, "playerName": "Oliver Smith",       "team1": "Scotland",    "team1Pts": 0, "team2": "Norway",       "team2Pts": 1, "team3": "Egypt",        "team3Pts": 0, "totalPoints": 1 },
+    { "rank": 16, "playerName": "Fatima Al-Sayed",    "team1": "Paraguay",    "team1Pts": 0, "team2": "Slovakia",     "team2Pts": 0, "team3": "Honduras",     "team3Pts": 0, "totalPoints": 0 }
+  ],
+  "recentResults": [
+    { "date": "2026-06-15", "group": "G", "homeTeam": "Belgium",   "awayTeam": "Egypt",      "homeScore": 2, "awayScore": 1 },
+    { "date": "2026-06-15", "group": "C", "homeTeam": "Argentina", "awayTeam": "Saudi Arabia","homeScore": 3, "awayScore": 0 },
+    { "date": "2026-06-15", "group": "A", "homeTeam": "Brazil",    "awayTeam": "Serbia",     "homeScore": 2, "awayScore": 0 },
+    { "date": "2026-06-15", "group": "D", "homeTeam": "France",    "awayTeam": "Denmark",    "homeScore": 1, "awayScore": 1 }
+  ],
+  "tournamentInfo": {
+    "totalMatchesPlayed": 12,
+    "totalMatchesRemaining": 92,
+    "currentPhase": "Group Stage - Matchday 1"
+  }
+}
