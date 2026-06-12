@@ -9,13 +9,9 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
 <style>
   :root {
-    --bg-top: #0b3d6b;
-    --bg-mid: #0e5a5a;
-    --bg-bottom: #1a8a6e;
-    --card-bg: rgba(12, 22, 45, 0.88);
-    --card-border: rgba(255,255,255,0.12);
-    --pitch-green: #2e7d32;
-    --pitch-light: #4caf50;
+    --navy-deep: #0b3d6b;
+    --navy: #0e5a5a;
+    --navy-light: #1a8a6e;
     --teal: #16697a;
     --teal-bright: #1f8fa6;
     --coral: #e63946;
@@ -23,12 +19,11 @@
     --gold-medal: #ffd700;
     --silver-medal: #c0c0c0;
     --bronze-medal: #cd7f32;
-    --text: #e8ecf1;
-    --text-light: #fff;
-    --text-dim: #8899aa;
+    --text: #f0f2f5;
+    --text-dim: #8ea0b8;
     --row-odd: rgba(255,255,255,0.06);
     --row-even: rgba(255,255,255,0.03);
-    --navy: #1a1a2e;
+    --card-bg: rgba(12, 22, 45, 0.88);
     --shadow: 0 18px 50px rgba(0,0,0,0.4);
     --tv-scale: 1;
   }
@@ -40,7 +35,7 @@
     font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     color: var(--text);
     background:
-      linear-gradient(165deg, var(--bg-top) 0%, var(--bg-mid) 40%, var(--bg-bottom) 100%);
+      linear-gradient(165deg, var(--navy-deep) 0%, var(--navy) 40%, var(--navy-light) 100%);
     background-attachment: fixed;
     min-height: 100vh;
     padding: clamp(16px, 3vw, 40px);
@@ -50,46 +45,40 @@
   }
 
   /* ============ FOOTBALL BACKGROUND DECORATIONS ============ */
-  body::before {
-    content: "";
+  body::after {
+    content: "\26BD   \26BD   \26BD   \26BD   \26BD   \26BD   \26BD   \26BD";
     position: fixed;
     inset: 0;
+    display: flex; flex-wrap: wrap; justify-content: space-around; align-content: space-around;
+    font-size: 3rem;
+    opacity: 0.06;
+    pointer-events: none;
+    z-index: 0;
+    animation: floatBalls 30s ease-in-out infinite;
+    word-spacing: 80px;
+    line-height: 4;
+    overflow: hidden;
+  }
+  @keyframes floatBalls {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    50% { transform: translateY(-15px) rotate(3deg); }
+  }
+
+  /* Radial glows */
+  body::before {
+    content: "";
+    position: fixed; inset: 0;
     background:
       radial-gradient(circle at 15% 20%, rgba(255,195,0,0.15) 0%, transparent 40%),
       radial-gradient(circle at 85% 80%, rgba(230,57,70,0.12) 0%, transparent 40%),
-      radial-gradient(circle at 50% 50%, rgba(255,255,255,0.04) 0%, transparent 60%);
+      radial-gradient(circle at 50% 50%, rgba(76,175,80,0.08) 0%, transparent 50%);
     pointer-events: none;
     z-index: 0;
   }
 
-  .football-bg {
-    position: fixed; inset: 0;
-    pointer-events: none; z-index: 0; overflow: hidden;
-  }
-  .football-bg .fb {
-    position: absolute; font-size: 2.5rem; opacity: 0.08;
-    animation: floatBall 25s infinite ease-in-out;
-  }
-  .football-bg .fb:nth-child(1) { top: 5%; left: 3%; animation-delay: 0s; font-size: 3rem; }
-  .football-bg .fb:nth-child(2) { top: 15%; right: 8%; animation-delay: -4s; font-size: 2rem; }
-  .football-bg .fb:nth-child(3) { top: 40%; left: 6%; animation-delay: -8s; font-size: 3.5rem; }
-  .football-bg .fb:nth-child(4) { top: 60%; right: 4%; animation-delay: -12s; font-size: 2.2rem; }
-  .football-bg .fb:nth-child(5) { top: 80%; left: 10%; animation-delay: -16s; font-size: 2.8rem; }
-  .football-bg .fb:nth-child(6) { top: 25%; left: 50%; animation-delay: -6s; font-size: 2rem; }
-  .football-bg .fb:nth-child(7) { top: 70%; right: 15%; animation-delay: -10s; font-size: 3.2rem; }
-  .football-bg .fb:nth-child(8) { top: 90%; left: 35%; animation-delay: -20s; font-size: 2.5rem; }
-  .football-bg .fb:nth-child(9) { top: 3%; right: 30%; animation-delay: -14s; font-size: 2rem; }
-  .football-bg .fb:nth-child(10) { top: 50%; left: 25%; animation-delay: -18s; font-size: 1.8rem; }
-
-  @keyframes floatBall {
-    0%, 100% { transform: translateY(0) rotate(0deg); }
-    25% { transform: translateY(-20px) rotate(90deg); }
-    50% { transform: translateY(10px) rotate(180deg); }
-    75% { transform: translateY(-15px) rotate(270deg); }
-  }
-
   .shell {
-    max-width: 1280px; margin: 0 auto;
+    max-width: 1280px;
+    margin: 0 auto;
     display: flex; flex-direction: column;
     gap: clamp(16px, 2.4vw, 28px);
     position: relative; z-index: 1;
@@ -103,7 +92,6 @@
     color: #ffd7da;
     padding: 10px 16px; border-radius: 12px;
     font-size: calc(0.85rem * var(--tv-scale)); font-weight: 500;
-    backdrop-filter: blur(12px);
   }
   .error-banner.show { display: flex; }
   .error-banner .dot {
@@ -114,23 +102,23 @@
   /* ============ HEADER ============ */
   .header {
     position: relative;
-    background: linear-gradient(135deg, rgba(11,61,107,0.95), rgba(14,90,90,0.9));
-    border: 1px solid rgba(255,255,255,0.2);
+    background: linear-gradient(135deg, rgba(11,61,107,0.9), rgba(14,90,90,0.85));
+    border: 1px solid rgba(255,255,255,0.15);
     border-radius: 22px;
     padding: clamp(20px, 3vw, 34px) clamp(22px, 3.5vw, 44px);
     box-shadow: var(--shadow); overflow: hidden;
-    color: var(--text-light);
+    backdrop-filter: blur(10px);
   }
   .header::before {
     content: ""; position: absolute; inset: 0;
-    background: linear-gradient(90deg, var(--gold), var(--teal-bright), var(--coral), var(--pitch-light));
+    background: linear-gradient(90deg, var(--gold), var(--teal-bright), var(--coral), #4caf50);
     height: 5px;
   }
   .header::after {
     content: ""; position: absolute;
     right: -40px; top: 50%; transform: translateY(-50%);
     width: 200px; height: 200px;
-    border: 3px solid rgba(255,255,255,0.08);
+    border: 3px solid rgba(255,255,255,0.06);
     border-radius: 50%; pointer-events: none;
   }
   .logo {
@@ -158,73 +146,84 @@
     font-family: 'Oswald', sans-serif; font-weight: 500;
     letter-spacing: 3px; text-transform: uppercase;
     color: var(--gold);
-    font-size: calc(clamp(0.85rem, 2vw, 1.1rem) * var(--tv-scale));
+    font-size: calc(0.95rem * var(--tv-scale));
+    margin-bottom: 16px;
+  }
+  .phase-row {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px;
     margin-bottom: 14px;
   }
-  .header .meta-row {
-    display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 12px;
-  }
   .phase-pill {
-    background: linear-gradient(135deg, var(--coral), #c92a36);
-    color: #fff; font-family: 'Oswald', sans-serif; font-weight: 600;
-    font-size: calc(0.82rem * var(--tv-scale)); letter-spacing: 1px;
-    text-transform: uppercase; padding: 5px 16px; border-radius: 20px; white-space: nowrap;
+    background: rgba(255,195,0,0.14);
+    border: 1px solid rgba(255,195,0,0.4);
+    color: var(--gold);
+    padding: 5px 14px; border-radius: 999px;
+    font-weight: 600; font-size: calc(0.85rem * var(--tv-scale));
   }
-  .progress-wrap { flex: 1 1 200px; display: flex; align-items: center; gap: 10px; min-width: 0; }
-  .progress-bar {
-    flex: 1; height: 12px; background: rgba(255,255,255,0.2);
-    border-radius: 6px; overflow: hidden; position: relative;
+  .matches-meta {
+    color: var(--text-dim);
+    font-size: calc(0.85rem * var(--tv-scale)); font-weight: 500;
+  }
+  .progress-wrap { margin-bottom: 6px; }
+  .progress-track {
+    height: 10px; border-radius: 5px;
+    background: rgba(255,255,255,0.12);
+    overflow: hidden; margin-bottom: 6px;
   }
   .progress-fill {
-    height: 100%; border-radius: 6px;
-    background: linear-gradient(90deg, var(--pitch-light), var(--gold));
+    width: 0%; height: 100%; border-radius: 5px;
+    background: linear-gradient(90deg, #4caf50, var(--gold));
     transition: width 1.2s cubic-bezier(.4,0,.2,1);
-    box-shadow: 0 0 12px rgba(255,195,0,0.4);
+    box-shadow: 0 0 10px rgba(255,195,0,0.3);
   }
   .progress-label {
-    font-size: calc(0.78rem * var(--tv-scale)); font-weight: 600;
-    white-space: nowrap; color: rgba(255,255,255,0.85);
+    display: flex; justify-content: space-between;
+    font-size: calc(0.75rem * var(--tv-scale));
+    color: var(--text-dim);
   }
-  .updated-stamp {
-    width: 100%; margin-top: 8px;
-    font-size: calc(0.72rem * var(--tv-scale)); color: rgba(255,255,255,0.55);
+  .updated {
+    display: flex; align-items: center; gap: 8px;
+    margin-top: 10px;
+    font-size: calc(0.75rem * var(--tv-scale));
+    color: var(--text-dim);
   }
+  .pulse {
+    width: 7px; height: 7px; border-radius: 50%;
+    background: #4caf50;
+    box-shadow: 0 0 6px #4caf50;
+    animation: pulse 2s infinite;
+  }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.3; } }
 
-  /* ============ PITCH-STYLE LEADERBOARD WRAPPER ============ */
-  .leaderboard-wrapper {
-    position: relative;
-    background: linear-gradient(180deg, rgba(46,125,50,0.12) 0%, rgba(46,125,50,0.05) 100%);
-    border: 2px solid rgba(46,125,50,0.3);
-    border-radius: 22px; padding: 4px; overflow: hidden;
-  }
-  .leaderboard-wrapper::before,
-  .leaderboard-wrapper::after {
-    content: "\1F6A9"; position: absolute; font-size: 1.2rem; opacity: 0.3; z-index: 2;
-  }
-  .leaderboard-wrapper::before { top: 8px; left: 12px; }
-  .leaderboard-wrapper::after { top: 8px; right: 12px; }
-
+  /* ============ CARD ============ */
   .card {
     background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 18px; box-shadow: var(--shadow);
-    overflow: hidden; backdrop-filter: blur(12px);
+    border: 1px solid rgba(255,255,255,0.1);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+    position: relative;
   }
-
-  /* ============ SECTION HEADINGS ============ */
-  .section-title {
-    font-family: 'Oswald', sans-serif; letter-spacing: 2px; text-transform: uppercase;
-    font-size: calc(1rem * var(--tv-scale)); color: var(--text);
-    padding: 16px clamp(18px, 3vw, 28px) 10px;
+  /* Pitch green accent border on leaderboard card */
+  #leaderboardSection > .card {
+    border: 2px solid rgba(46,125,50,0.3);
+  }
+  .card-head {
+    padding: 16px clamp(18px, 3vw, 28px) 12px;
+    font-family: 'Oswald', sans-serif; font-weight: 600;
+    letter-spacing: 2px; text-transform: uppercase;
+    font-size: calc(1rem * var(--tv-scale));
+    color: var(--text);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
     display: flex; align-items: center; gap: 10px;
-    border-bottom: 2px solid rgba(255,255,255,0.08);
   }
-  .section-title .icon { font-size: 1.3rem; }
+  .card-head .accent { font-size: 1.2rem; }
 
   /* ============ LEADERBOARD TABLE ============ */
   .lb-scroll { overflow-x: auto; }
   table.leaderboard {
-    width: 100%; border-collapse: collapse; min-width: 720px;
+    width: 100%; border-collapse: collapse; min-width: 700px;
     font-size: calc(0.95rem * var(--tv-scale));
   }
   table.leaderboard thead th {
@@ -232,61 +231,70 @@
     letter-spacing: 1px; text-transform: uppercase;
     font-size: calc(0.78rem * var(--tv-scale));
     color: #fff;
-    background: linear-gradient(135deg, var(--bg-top), var(--teal));
-    padding: 13px 14px; position: sticky; top: 0; z-index: 2;
+    background: linear-gradient(135deg, #0b3d6b, var(--teal));
+    padding: 13px 14px;
+    position: sticky; top: 0; z-index: 2;
     white-space: nowrap; text-align: left;
   }
-  table.leaderboard thead th:first-child { border-radius: 10px 0 0 0; }
-  table.leaderboard thead th:last-child { border-radius: 0 10px 0 0; text-align: right; }
+  table.leaderboard thead th:first-child { border-radius: 6px 0 0 0; }
+  table.leaderboard thead th:last-child { text-align: right; border-radius: 0 6px 0 0; }
   table.leaderboard tbody td {
     padding: 12px 14px; vertical-align: middle;
-    border-bottom: 1px solid rgba(255,255,255,0.07);
+    border-bottom: 1px solid rgba(255,255,255,0.06);
   }
-  .col-rank { width: 64px; text-align: center; }
-  .rank-num { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: calc(1.1rem * var(--tv-scale)); }
+
+  .col-rank { width: 60px; text-align: center; }
+  .rank-num {
+    font-family: 'Oswald', sans-serif; font-weight: 700;
+    font-size: calc(1.15rem * var(--tv-scale));
+  }
   .medal { margin-right: 3px; }
   .player-cell { display: flex; align-items: center; gap: 6px; }
   .player-name { font-weight: 700; }
   .fire { cursor: default; }
-  .team-info { display: flex; flex-direction: column; gap: 1px; line-height: 1.3; }
+  .team-cell { display: flex; flex-direction: column; gap: 1px; line-height: 1.3; }
   .team-name { font-size: calc(0.88rem * var(--tv-scale)); font-weight: 500; }
   .team-pts { font-size: calc(0.82rem * var(--tv-scale)); font-weight: 800; color: var(--teal-bright); }
   .col-total { text-align: right; padding-right: 20px !important; }
-  .total-val {
+  .total-num {
     font-family: 'Oswald', sans-serif; font-weight: 700;
-    font-size: calc(1.5rem * var(--tv-scale));
+    font-size: calc(1.55rem * var(--tv-scale));
     color: var(--gold); line-height: 1;
   }
-  .total-lbl {
-    display: block; font-size: calc(0.6rem * var(--tv-scale));
+  .total-label {
+    display: block;
+    font-size: calc(0.6rem * var(--tv-scale));
     letter-spacing: 1px; text-transform: uppercase;
     color: var(--text-dim); font-weight: 600;
   }
 
   /* Row styles */
-  .row { transition: background 0.3s, transform 0.3s; animation: fadeRow 0.5s both; }
-  .row:hover { transform: scale(1.005); }
-  @keyframes fadeRow { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .row {
+    transition: background 0.3s, box-shadow 0.3s;
+    animation: fadeRow 0.5s both;
+  }
+  @keyframes fadeRow { from { opacity: 0; transform: translateY(8px); } to { opacity: 1; transform: translateY(0); } }
   .r-odd { background: var(--row-odd); }
   .r-even { background: var(--row-even); }
 
   /* Medal rows */
   .rank-1 {
-    background: linear-gradient(135deg, rgba(255,215,0,0.25), rgba(255,215,0,0.08)) !important;
+    background: linear-gradient(135deg, rgba(255,215,0,0.22), rgba(255,215,0,0.06)) !important;
     border-left: 4px solid var(--gold-medal);
   }
   .rank-2 {
-    background: linear-gradient(135deg, rgba(192,192,192,0.2), rgba(192,192,192,0.06)) !important;
+    background: linear-gradient(135deg, rgba(192,192,192,0.18), rgba(192,192,192,0.05)) !important;
     border-left: 4px solid var(--silver-medal);
   }
   .rank-3 {
-    background: linear-gradient(135deg, rgba(205,127,50,0.25), rgba(205,127,50,0.08)) !important;
+    background: linear-gradient(135deg, rgba(205,127,50,0.22), rgba(205,127,50,0.06)) !important;
     border-left: 4px solid var(--bronze-medal);
   }
 
-  /* Hot / points change */
-  .hot { box-shadow: inset 0 0 0 1px rgba(70,209,127,0.5); background: linear-gradient(135deg, rgba(70,209,127,0.18), rgba(70,209,127,0.06)) !important; }
-
+  .hot {
+    box-shadow: inset 0 0 0 1px rgba(70,209,127,0.5);
+    background: linear-gradient(135deg, rgba(70,209,127,0.18), rgba(70,209,127,0.05)) !important;
+  }
   .empty-state { text-align: center; padding: 40px; color: var(--text-dim); font-size: calc(1rem * var(--tv-scale)); }
 
   /* ============ MOBILE CARDS ============ */
@@ -295,14 +303,14 @@
     padding: 12px clamp(12px, 2.5vw, 20px);
   }
   .p-card {
-    background: var(--card-bg); border: 1px solid var(--card-border);
+    background: var(--card-bg); border: 1px solid rgba(255,255,255,0.1);
     border-radius: 14px; padding: 14px;
     animation: fadeRow 0.5s both; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   }
-  .p-card.rank-1 { background: linear-gradient(135deg, rgba(255,215,0,0.25), rgba(255,215,0,0.08)); border-color: rgba(255,215,0,0.5); }
-  .p-card.rank-2 { background: linear-gradient(135deg, rgba(192,192,192,0.2), rgba(192,192,192,0.06)); border-color: rgba(192,192,192,0.4); }
-  .p-card.rank-3 { background: linear-gradient(135deg, rgba(205,127,50,0.25), rgba(205,127,50,0.08)); border-color: rgba(205,127,50,0.45); }
-  .p-card.hot { box-shadow: 0 0 0 1px rgba(70,209,127,0.55), 0 0 24px rgba(70,209,127,0.2); }
+  .p-card.rank-1 { background: linear-gradient(135deg, rgba(255,215,0,0.22), rgba(255,215,0,0.06)); border-color: rgba(255,215,0,0.4); }
+  .p-card.rank-2 { background: linear-gradient(135deg, rgba(192,192,192,0.18), rgba(192,192,192,0.05)); border-color: rgba(192,192,192,0.35); }
+  .p-card.rank-3 { background: linear-gradient(135deg, rgba(205,127,50,0.22), rgba(205,127,50,0.06)); border-color: rgba(205,127,50,0.4); }
+  .p-card.hot { box-shadow: 0 0 0 1px rgba(70,209,127,0.55), 0 0 24px rgba(70,209,127,0.15); }
   .p-card .pc-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
   .p-card .pc-left { display: flex; align-items: center; gap: 9px; }
   .p-card .pc-rank { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.2rem; }
@@ -310,7 +318,7 @@
   .p-card .pc-total { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.6rem; color: var(--gold); text-align: right; line-height: 1; }
   .p-card .pc-total small { display: block; font-size: 0.6rem; letter-spacing: 1px; text-transform: uppercase; color: var(--text-dim); font-family: 'Inter'; }
   .p-card .pc-teams { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-  .p-card .pc-team { background: rgba(255,255,255,0.08); border-radius: 10px; padding: 8px; text-align: center; }
+  .p-card .pc-team { background: rgba(255,255,255,0.07); border-radius: 10px; padding: 8px; text-align: center; }
   .p-card .pc-team .t-n { font-size: 0.82rem; font-weight: 500; }
   .p-card .pc-team .t-p { font-size: 0.78rem; font-weight: 700; color: var(--teal-bright); margin-top: 3px; }
 
@@ -328,15 +336,14 @@
     width: 8px; height: 8px; border-radius: 50%; background: var(--coral);
     box-shadow: 0 0 8px var(--coral); animation: pulse 1.6s infinite;
   }
-  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
   .ticker-viewport { overflow: hidden; white-space: nowrap; padding: 14px 0; }
   .ticker-track { display: inline-flex; gap: 14px; padding-inline: 18px; animation: scrollTicker 38s linear infinite; }
   .ticker-track:hover { animation-play-state: paused; }
   @keyframes scrollTicker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   .result-chip {
     display: inline-flex; align-items: center; gap: 10px;
-    background: rgba(255,255,255,0.08);
-    border: 1px solid rgba(255,255,255,0.12);
+    background: rgba(255,255,255,0.07);
+    border: 1px solid rgba(255,255,255,0.1);
     border-radius: 12px; padding: 9px 15px;
     font-size: calc(0.9rem * var(--tv-scale)); white-space: nowrap;
   }
@@ -349,7 +356,7 @@
   .ticker-empty { padding: 18px 24px; color: var(--text-dim); font-size: calc(0.9rem * var(--tv-scale)); text-align: center; }
 
   .footer-note {
-    text-align: center; color: rgba(255,255,255,0.6);
+    text-align: center; color: rgba(255,255,255,0.5);
     font-size: calc(0.72rem * var(--tv-scale)); padding: 4px 0 8px;
   }
 
@@ -358,11 +365,9 @@
     table.leaderboard, .lb-scroll { display: none; }
     .lb-cards { display: flex; }
     .header h1 { padding-right: 50px; }
-    .leaderboard-wrapper::before, .leaderboard-wrapper::after { display: none; }
   }
   @media (min-width: 769px) and (max-width: 1024px) {
     table.leaderboard { min-width: 640px; }
-    table.leaderboard tbody td { padding: 10px 10px; }
   }
 
   /* ============ TV / KIOSK MODE ============ */
@@ -376,72 +381,64 @@
 </style>
 </head>
 <body>
-  <!-- Floating football decorations -->
-  <div class="football-bg">
-    <span class="fb">⚽</span><span class="fb">⚽</span><span class="fb">⚽</span>
-    <span class="fb">⚽</span><span class="fb">⚽</span><span class="fb">⚽</span>
-    <span class="fb">⚽</span><span class="fb">⚽</span><span class="fb">⚽</span>
-    <span class="fb">⚽</span>
-  </div>
-
   <div class="shell">
 
     <div class="error-banner" id="errorBanner">
       <span class="dot"></span>
-      <span id="errorMsg">Unable to refresh data.</span>
+      <span id="errorText">Couldn't refresh live data — showing the last loaded standings.</span>
     </div>
 
     <!-- HEADER -->
-    <header class="header">
-      <div class="logo">P</div>
+    <header class="header view-section" id="headerSection">
+      <div class="logo" title="Protiviti">P</div>
       <h1>🏆 Protiviti World Cup 2026 Sweepstakes</h1>
-      <div class="subtitle">⚽ Office Leaderboard ⚽</div>
-      <div class="meta-row">
-        <span class="phase-pill" id="phasePill">Group Stage</span>
-        <div class="progress-wrap">
-          <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
-          <span class="progress-label" id="progressLabel">0 / 104</span>
+      <div class="subtitle">Office Leaderboard</div>
+
+      <div class="phase-row">
+        <span class="phase-pill" id="phasePill">Loading…</span>
+        <span class="matches-meta" id="matchesMeta"></span>
+      </div>
+
+      <div class="progress-wrap">
+        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+        <div class="progress-label">
+          <span id="progressText">0 of 104 matches played</span>
+          <span id="progressPct">0%</span>
         </div>
       </div>
-      <div class="updated-stamp" id="updatedStamp"></div>
+      <div class="updated"><span class="pulse"></span><span id="updatedText">Last updated: —</span></div>
     </header>
 
     <!-- LEADERBOARD -->
-    <div id="leaderboardSection" class="view-section">
-      <div class="leaderboard-wrapper">
-        <div class="card">
-          <div class="section-title"><span class="icon">⚽</span> Leaderboard <span class="icon">⚽</span></div>
-          <div class="lb-scroll">
-            <table class="leaderboard">
-              <thead>
-                <tr>
-                  <th class="col-rank">Rank</th>
-                  <th>Player</th>
-                  <th>Team 1</th>
-                  <th>Team 2</th>
-                  <th>Team 3</th>
-                  <th style="text-align:right">Total</th>
-                </tr>
-              </thead>
-              <tbody id="lbBody"></tbody>
-            </table>
-          </div>
-          <div class="lb-cards" id="lbCards"></div>
-        </div>
+    <section class="card view-section" id="leaderboardSection">
+      <div class="card-head"><span class="accent">📊</span> Standings</div>
+      <div class="lb-scroll">
+        <table class="leaderboard">
+          <thead>
+            <tr>
+              <th class="col-rank">Rank</th>
+              <th>Player</th>
+              <th>Team 1</th>
+              <th>Team 2</th>
+              <th>Team 3</th>
+              <th class="col-total">Total</th>
+            </tr>
+          </thead>
+          <tbody id="lbBody"></tbody>
+        </table>
       </div>
-    </div>
+      <div class="lb-cards" id="lbCards"></div>
+    </section>
 
-    <!-- RECENT RESULTS -->
-    <div id="resultsSection" class="view-section">
-      <div class="card ticker-card">
-        <div class="ticker-head"><span class="icon">🏟️</span> Recent Results <span class="live-dot"></span></div>
-        <div class="ticker-viewport" id="tickerViewport">
-          <div class="ticker-track" id="tickerTrack"></div>
-        </div>
+    <!-- RESULTS TICKER -->
+    <section class="card ticker-card view-section" id="resultsSection">
+      <div class="ticker-head"><span class="live-dot"></span> Recent Results</div>
+      <div class="ticker-viewport" id="tickerViewport">
+        <div class="ticker-track" id="tickerTrack"></div>
       </div>
-    </div>
+    </section>
 
-    <div class="footer-note">Data refreshes automatically · Protiviti Sydney · FIFA World Cup 2026™</div>
+    <div class="footer-note">Auto-refreshes every 60 seconds · Add <code>?mode=tv</code> to the URL for TV display mode</div>
   </div>
 
 <script>
