@@ -374,34 +374,32 @@
   .view-section { transition: opacity 0.6s ease; }
   .view-section.fade-out { opacity: 0; }
 
-  /* TOOLTIPS - SOLID OPAQUE */
   .team-cell-wrap{position:relative;cursor:pointer;}
-  div.team-tooltip{display:none !important;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9999;background:#0a1225 !important;background-color:#0a1225 !important;opacity:1 !important;border:2px solid #556688;border-radius:14px;padding:12px 14px;min-width:240px;max-width:320px;box-shadow:0 14px 44px rgba(0,0,0,0.9);pointer-events:none;}
-  .team-cell-wrap:hover>div.team-tooltip,.team-cell-wrap.tt-active>div.team-tooltip{display:block !important;}
-  div.team-tooltip::after{content:"";position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:7px solid transparent;border-bottom-color:#0a1225;}
-  .team-cell-wrap.tt-above>div.team-tooltip{top:auto;bottom:calc(100% + 8px);}
-  .team-cell-wrap.tt-above>div.team-tooltip::after{bottom:auto;top:100%;border-bottom-color:transparent;border-top-color:#0a1225;}
-  .team-cell-wrap.tt-right>div.team-tooltip{left:auto;right:0;transform:none;}
-  .team-cell-wrap.tt-right>div.team-tooltip::after{left:auto;right:20px;transform:none;}
-  .tt-header{font-family:'Oswald',sans-serif;font-weight:600;font-size:0.9rem;color:var(--gold);margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;gap:6px;}
+  .team-tooltip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9999;border-radius:14px;padding:12px 14px;min-width:240px;max-width:320px;box-shadow:0 14px 44px rgba(0,0,0,0.9);pointer-events:none;}
+  .team-cell-wrap:hover>.team-tooltip,.team-cell-wrap.tt-active>.team-tooltip{display:block;}
+  .team-tooltip::after{content:"";position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:7px solid transparent;border-bottom-color:#0a1225;}
+  .team-cell-wrap.tt-above>.team-tooltip{top:auto;bottom:calc(100% + 8px);}
+  .team-cell-wrap.tt-above>.team-tooltip::after{bottom:auto;top:100%;border-bottom-color:transparent;border-top-color:#0a1225;}
+  .team-cell-wrap.tt-right>.team-tooltip{left:auto;right:0;transform:none;}
+  .team-cell-wrap.tt-right>.team-tooltip::after{left:auto;right:20px;transform:none;}
+  .tt-header{font-family:'Oswald',sans-serif;font-weight:600;font-size:0.9rem;color:var(--gold);margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.15);}
   .tt-match{display:flex;align-items:center;gap:8px;padding:5px 0;font-size:0.82rem;color:#d0d6e0;border-bottom:1px solid rgba(255,255,255,0.06);}
   .tt-match:last-child{border-bottom:none;}
-  .tt-date{color:var(--text-dim);font-size:0.75rem;min-width:44px;}
-  .tt-vs{flex:1;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
+  .tt-date{color:#8ea0b8;font-size:0.75rem;min-width:44px;}
+  .tt-vs{flex:1;font-weight:500;}
   .tt-score{font-family:'Oswald',sans-serif;font-weight:700;font-size:0.88rem;min-width:38px;text-align:center;}
   .tt-badge{font-size:0.7rem;font-weight:700;padding:2px 7px;border-radius:6px;min-width:24px;text-align:center;}
   .tt-badge.win{background:rgba(76,175,80,0.3);color:#66bb6a;border:1px solid rgba(76,175,80,0.4);}
   .tt-badge.draw{background:rgba(255,195,0,0.25);color:#ffc300;border:1px solid rgba(255,195,0,0.4);}
   .tt-badge.loss{background:rgba(230,57,70,0.25);color:#ef5350;border:1px solid rgba(230,57,70,0.4);}
-  .tt-empty{color:var(--text-dim);font-size:0.8rem;font-style:italic;padding:4px 0;}
-  .tt-summary{margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.15);font-size:0.75rem;color:var(--text-dim);display:flex;justify-content:space-between;}
+  .tt-empty{color:#8ea0b8;font-size:0.8rem;font-style:italic;padding:4px 0;}
+  .tt-summary{margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.15);font-size:0.75rem;color:#8ea0b8;display:flex;justify-content:space-between;}
   .tt-summary .tt-total{color:var(--gold);font-weight:700;font-family:'Oswald',sans-serif;font-size:0.85rem;}
   #leaderboardSection.card{overflow:visible !important;}
   .lb-scroll{overflow:visible !important;}
   table.leaderboard{overflow:visible !important;}
-  table.leaderboard tbody{overflow:visible !important;}
   table.leaderboard tbody td{position:relative;}
-  @media(max-width:768px){.team-cell-wrap:hover>div.team-tooltip{display:none !important;}.team-cell-wrap.tt-active>div.team-tooltip{display:block !important;}.team-tooltip{min-width:200px;font-size:0.78rem;}}
+  @media(max-width:768px){.team-cell-wrap:hover>.team-tooltip{display:none;}.team-cell-wrap.tt-active>.team-tooltip{display:block;}.team-tooltip{min-width:200px;font-size:0.78rem;}}
 </style>
 </head>
 <body>
@@ -423,8 +421,8 @@
     <!-- HEADER -->
     <header class="header view-section" id="headerSection" style="padding:clamp(28px,4vw,44px) clamp(28px,4vw,50px);">
       <div class="logo" title="Protiviti">P</div>
-      <h1 style="margin-bottom:10px;">&#127942; Protiviti World Cup 2026 Sweepstakes</h1>
-      <div class="subtitle" style="margin-bottom:20px;">&#9917; Office Leaderboard &#9917;</div>
+      <h1 style="margin-bottom:12px;">&#127942; Protiviti World Cup 2026 Sweepstakes</h1>
+      <div class="subtitle" style="margin-bottom:22px;">&#9917; Office Leaderboard &#9917;</div>
       <div class="phase-row" style="margin-bottom:18px;">
         <span class="phase-pill" id="phasePill">Loading&hellip;</span>
         <span class="matches-meta" id="matchesMeta" style="font-size:0.95rem;"></span>
@@ -432,7 +430,7 @@
       <div class="progress-wrap" style="margin-bottom:14px;">
         <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
       </div>
-      <div class="progress-label" style="display:none;"><span id="progressText"></span><span id="progressPct"></span></div>
+      <div style="display:none;"><span id="progressText"></span><span id="progressPct"></span></div>
       <div class="updated" style="margin-top:14px;font-size:0.82rem;"><span class="pulse"></span><span id="updatedText">Last updated: &mdash;</span></div>
     </header>
 
@@ -523,7 +521,7 @@
 
   function teamCell(name, pts) {
     var m = (TR && name && TR[name]) ? TR[name] : [];
-    var t = '<div class="team-tooltip"><div class="tt-header">⚽ ' + esc(name || "—") + '</div>';
+    var t = '<div class="team-tooltip" style="background:#0a1225;border:2px solid #556688;color:#e8ecf1;"><div class="tt-header">' + esc(name || "—") + '</div>';
     if (!m.length) { t += '<div class="tt-empty">No matches played yet</div>'; }
     else {
       m.forEach(function(g) {
@@ -644,7 +642,7 @@
     }
 
     function chip(r) {
-      var sc = r.displayScore || ((r.homeScore != null ? r.homeScore : "?") + " - " + (r.awayScore != null ? r.awayScore : "?"));
+      var sc = r.displayScore || (String(r.homeScore != null ? r.homeScore : "?") + " - " + String(r.awayScore != null ? r.awayScore : "?"));
       return '<div class="result-chip">' +
                '<span class="grp">' + esc(r.group || "?") + '</span>' +
                '<span class="tm">' + esc(r.homeTeam) + '</span>' +
