@@ -1,32 +1,372 @@
 {
-  "lastUpdated": "2026-06-15T16:00:00+10:00",
+  "lastUpdated": "2026-06-12T11:09:00+10:00",
   "leaderboard": [
-    { "rank": 1,  "playerName": "Brian O'Connell",   "team1": "Brazil",      "team1Pts": 6, "team2": "Japan",        "team2Pts": 3, "team3": "Canada",       "team3Pts": 3, "totalPoints": 12, "pointsChange": 3 },
-    { "rank": 2,  "playerName": "Chantelle Salas",    "team1": "Argentina",   "team1Pts": 6, "team2": "Germany",      "team2Pts": 3, "team3": "Mexico",       "team3Pts": 1, "totalPoints": 10 },
-    { "rank": 3,  "playerName": "Priya Nair",         "team1": "France",      "team1Pts": 6, "team2": "Croatia",      "team2Pts": 1, "team3": "Morocco",      "team3Pts": 3, "totalPoints": 10, "pointsChange": 4 },
-    { "rank": 4,  "playerName": "Marcus Webb",        "team1": "Spain",       "team1Pts": 3, "team2": "Netherlands",  "team2Pts": 3, "team3": "Uruguay",      "team3Pts": 3, "totalPoints": 9 },
-    { "rank": 5,  "playerName": "Sofia Rossi",        "team1": "Portugal",    "team1Pts": 6, "team2": "Senegal",      "team2Pts": 1, "team3": "South Korea",  "team3Pts": 1, "totalPoints": 8 },
-    { "rank": 6,  "playerName": "Liam Chen",          "team1": "England",     "team1Pts": 3, "team2": "USA",          "team2Pts": 3, "team3": "Ghana",        "team3Pts": 1, "totalPoints": 7 },
-    { "rank": 7,  "playerName": "Aisha Bello",        "team1": "Belgium",     "team1Pts": 3, "team2": "Switzerland",  "team2Pts": 3, "team3": "Ecuador",      "team3Pts": 0, "totalPoints": 6, "pointsChange": 3 },
-    { "rank": 8,  "playerName": "Tom Hopwood",        "team1": "Italy",       "team1Pts": 1, "team2": "Colombia",     "team2Pts": 3, "team3": "Denmark",      "team3Pts": 1, "totalPoints": 5 },
-    { "rank": 9,  "playerName": "Greta Lindqvist",    "team1": "Sweden",      "team1Pts": 3, "team2": "Poland",       "team2Pts": 1, "team3": "Nigeria",      "team3Pts": 1, "totalPoints": 5 },
-    { "rank": 10, "playerName": "Diego Fernández",    "team1": "Mexico",      "team1Pts": 1, "team2": "Peru",         "team2Pts": 3, "team3": "Australia",    "team3Pts": 0, "totalPoints": 4 },
-    { "rank": 11, "playerName": "Hannah Müller",      "team1": "Germany",     "team1Pts": 3, "team2": "Austria",      "team2Pts": 0, "team3": "Serbia",       "team3Pts": 1, "totalPoints": 4 },
-    { "rank": 12, "playerName": "Raj Patel",          "team1": "Iran",        "team1Pts": 1, "team2": "Qatar",        "team2Pts": 1, "team3": "Tunisia",      "team3Pts": 1, "totalPoints": 3 },
-    { "rank": 13, "playerName": "Emily Carter",       "team1": "Wales",       "team1Pts": 1, "team2": "Cameroon",     "team2Pts": 1, "team3": "Costa Rica",   "team3Pts": 1, "totalPoints": 3 },
-    { "rank": 14, "playerName": "Yuki Tanaka",        "team1": "Japan",       "team1Pts": 1, "team2": "Saudi Arabia", "team2Pts": 1, "team3": "Algeria",      "team3Pts": 0, "totalPoints": 2 },
-    { "rank": 15, "playerName": "Oliver Smith",       "team1": "Scotland",    "team1Pts": 0, "team2": "Norway",       "team2Pts": 1, "team3": "Egypt",        "team3Pts": 0, "totalPoints": 1 },
-    { "rank": 16, "playerName": "Fatima Al-Sayed",    "team1": "Paraguay",    "team1Pts": 0, "team2": "Slovakia",     "team2Pts": 0, "team3": "Honduras",     "team3Pts": 0, "totalPoints": 0 }
+    {
+      "rank": 1,
+      "playerName": "Ben Kempton",
+      "team1": "Mexico",
+      "team1Pts": 3,
+      "team2": "Norway",
+      "team2Pts": 0,
+      "team3": "Bosnia and Herzegovina",
+      "team3Pts": 0,
+      "totalPoints": 3
+    },
+    {
+      "rank": 1,
+      "playerName": "Harini Elamurugan",
+      "team1": "Mexico",
+      "team1Pts": 3,
+      "team2": "Egypt",
+      "team2Pts": 0,
+      "team3": "Sweden",
+      "team3Pts": 0,
+      "totalPoints": 3
+    },
+    {
+      "rank": 3,
+      "playerName": "Aaron Kiss",
+      "team1": "Portugal",
+      "team1Pts": 0,
+      "team2": "Iran",
+      "team2Pts": 0,
+      "team3": "Iraq",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Aayushi Malhotra",
+      "team1": "Brazil",
+      "team1Pts": 0,
+      "team2": "South Korea",
+      "team2Pts": 0,
+      "team3": "Saudi Arabia",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Adithya Raj",
+      "team1": "Colombia",
+      "team1Pts": 0,
+      "team2": "Australia",
+      "team2Pts": 0,
+      "team3": "New Zealand",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Aimee Whoriskey",
+      "team1": "Argentina",
+      "team1Pts": 0,
+      "team2": "Panama",
+      "team2Pts": 0,
+      "team3": "Ghana",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Alejandro Pedroza",
+      "team1": "Belgium",
+      "team1Pts": 0,
+      "team2": "Türkiye",
+      "team2Pts": 0,
+      "team3": "Cabo Verde",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Annika Mountstephens",
+      "team1": "Portugal",
+      "team1Pts": 0,
+      "team2": "Ecuador",
+      "team2Pts": 0,
+      "team3": "Czechia",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Ashina Padayachy",
+      "team1": "Uruguay",
+      "team1Pts": 0,
+      "team2": "Canada",
+      "team2Pts": 0,
+      "team3": "DR Congo",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Bjorn Myers",
+      "team1": "Senegal",
+      "team1Pts": 0,
+      "team2": "Côte d'Ivoire",
+      "team2Pts": 0,
+      "team3": "Ghana",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Brian O'Connell",
+      "team1": "Netherlands",
+      "team1Pts": 0,
+      "team2": "Côte d'Ivoire",
+      "team2Pts": 0,
+      "team3": "Curaçao",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Carlos Fausto",
+      "team1": "Germany",
+      "team1Pts": 0,
+      "team2": "Japan",
+      "team2Pts": 0,
+      "team3": "DR Congo",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Chantelle Salas",
+      "team1": "Belgium",
+      "team1Pts": 0,
+      "team2": "Ecuador",
+      "team2Pts": 0,
+      "team3": "Qatar",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Cyrus Si Tu",
+      "team1": "Croatia",
+      "team1Pts": 0,
+      "team2": "Australia",
+      "team2Pts": 0,
+      "team3": "Sweden",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Dan Corrente",
+      "team1": "France",
+      "team1Pts": 0,
+      "team2": "Paraguay",
+      "team2Pts": 0,
+      "team3": "Haiti",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Darryl Gao",
+      "team1": "USA",
+      "team1Pts": 0,
+      "team2": "Iran",
+      "team2Pts": 0,
+      "team3": "New Zealand",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "David McIntosh",
+      "team1": "Spain",
+      "team1Pts": 0,
+      "team2": "Canada",
+      "team2Pts": 0,
+      "team3": "South Africa",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Emma Little",
+      "team1": "Colombia",
+      "team1Pts": 0,
+      "team2": "Türkiye",
+      "team2Pts": 0,
+      "team3": "Tunisia",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Hari Vaheesan",
+      "team1": "Germany",
+      "team1Pts": 0,
+      "team2": "Algeria",
+      "team2Pts": 0,
+      "team3": "Curaçao",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Jack Davis",
+      "team1": "Argentina",
+      "team1Pts": 0,
+      "team2": "Algeria",
+      "team2Pts": 0,
+      "team3": "Czechia",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Kumal Perea",
+      "team1": "England",
+      "team1Pts": 0,
+      "team2": "Panama",
+      "team2Pts": 0,
+      "team3": "Qatar",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Lucinda Uhd",
+      "team1": "England",
+      "team1Pts": 0,
+      "team2": "Austria",
+      "team2Pts": 0,
+      "team3": "Cabo Verde",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Mia Paredes",
+      "team1": "Spain",
+      "team1Pts": 0,
+      "team2": "Scotland",
+      "team2Pts": 0,
+      "team3": "Uzbekistan",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Miles Branagan",
+      "team1": "USA",
+      "team1Pts": 0,
+      "team2": "Norway",
+      "team2Pts": 0,
+      "team3": "South Africa",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Phil Tugnait",
+      "team1": "Morocco",
+      "team1Pts": 0,
+      "team2": "Switzerland",
+      "team2Pts": 0,
+      "team3": "Bosnia and Herzegovina",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Rich Turley",
+      "team1": "Uruguay",
+      "team1Pts": 0,
+      "team2": "Egypt",
+      "team2Pts": 0,
+      "team3": "Saudi Arabia",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Roshan Paheerathan",
+      "team1": "Netherlands",
+      "team1Pts": 0,
+      "team2": "Paraguay",
+      "team2Pts": 0,
+      "team3": "Jordan",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Ru Wellalage",
+      "team1": "Senegal",
+      "team1Pts": 0,
+      "team2": "Switzerland",
+      "team2Pts": 0,
+      "team3": "Jordan",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Steph McCourt",
+      "team1": "Morocco",
+      "team1Pts": 0,
+      "team2": "South Korea",
+      "team2Pts": 0,
+      "team3": "Uzbekistan",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Theo Vomvellis",
+      "team1": "Croatia",
+      "team1Pts": 0,
+      "team2": "Scotland",
+      "team2Pts": 0,
+      "team3": "Tunisia",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Tom Hopwood",
+      "team1": "France",
+      "team1Pts": 0,
+      "team2": "Japan",
+      "team2Pts": 0,
+      "team3": "Iraq",
+      "team3Pts": 0,
+      "totalPoints": 0
+    },
+    {
+      "rank": 3,
+      "playerName": "Zsofia Balogh",
+      "team1": "Brazil",
+      "team1Pts": 0,
+      "team2": "Austria",
+      "team2Pts": 0,
+      "team3": "Haiti",
+      "team3Pts": 0,
+      "totalPoints": 0
+    }
   ],
   "recentResults": [
-    { "date": "2026-06-15", "group": "G", "homeTeam": "Belgium",   "awayTeam": "Egypt",      "homeScore": 2, "awayScore": 1 },
-    { "date": "2026-06-15", "group": "C", "homeTeam": "Argentina", "awayTeam": "Saudi Arabia","homeScore": 3, "awayScore": 0 },
-    { "date": "2026-06-15", "group": "A", "homeTeam": "Brazil",    "awayTeam": "Serbia",     "homeScore": 2, "awayScore": 0 },
-    { "date": "2026-06-15", "group": "D", "homeTeam": "France",    "awayTeam": "Denmark",    "homeScore": 1, "awayScore": 1 }
+    {
+      "date": "2026-06-12",
+      "group": "A",
+      "homeTeam": "Mexico",
+      "awayTeam": "South Africa",
+      "homeScore": 2,
+      "awayScore": 0
+    }
   ],
   "tournamentInfo": {
-    "totalMatchesPlayed": 12,
-    "totalMatchesRemaining": 92,
-    "currentPhase": "Group Stage - Matchday 1"
+    "totalMatchesPlayed": 1,
+    "totalMatchesRemaining": 103,
+    "currentPhase": "Group Stage"
   }
 }
