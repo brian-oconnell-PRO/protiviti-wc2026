@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-12T17:00:00+10:00",
+  "lastUpdated": "2026-06-12T17:01:00+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -363,7 +363,7 @@
       "homeScore": 2,
       "awayScore": 0,
       "displayScore": "2 - 0",
-      "displayDate": "12/06"
+      "displayDate": "12/06/2026"
     },
     {
       "date": "2026-06-12",
@@ -373,7 +373,7 @@
       "homeScore": 2,
       "awayScore": 1,
       "displayScore": "2 - 1",
-      "displayDate": "12/06"
+      "displayDate": "12/06/2026"
     }
   ],
   "teamResults": {
@@ -397,7 +397,7 @@
         "score": "1-2",
         "result": "L",
         "pts": 0,
-        "displayDate": "12/06"
+        "displayDate": "12/06/2026"
       }
     ],
     "DR Congo": [],
@@ -418,7 +418,8 @@
         "vs": "South Africa",
         "score": "2-0",
         "result": "W",
-        "pts": 3
+        "pts": 3,
+        "displayDate": "12/06/2026"
       }
     ],
     "Morocco": [],
@@ -438,7 +439,8 @@
         "vs": "Mexico",
         "score": "0-2",
         "result": "L",
-        "pts": 0
+        "pts": 0,
+        "displayDate": "12/06/2026"
       }
     ],
     "South Korea": [
@@ -448,7 +450,7 @@
         "score": "2-1",
         "result": "W",
         "pts": 3,
-        "displayDate": "12/06"
+        "displayDate": "12/06/2026"
       }
     ],
     "Spain": [],

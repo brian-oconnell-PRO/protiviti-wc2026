@@ -375,17 +375,17 @@
   .view-section.fade-out { opacity: 0; }
 
   .team-cell-wrap{position:relative;cursor:pointer;}
-  .team-tooltip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9999;border-radius:14px;padding:12px 14px;min-width:240px;max-width:320px;box-shadow:0 14px 44px rgba(0,0,0,0.9);pointer-events:none;}
+  .team-tooltip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9999;background:#0a1225;background-color:#0a1225;border:2px solid #556688;border-radius:14px;padding:12px 14px;min-width:240px;max-width:320px;box-shadow:0 14px 44px rgba(0,0,0,0.9);pointer-events:none;}
   .team-cell-wrap:hover>.team-tooltip,.team-cell-wrap.tt-active>.team-tooltip{display:block;}
   .team-tooltip::after{content:"";position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:7px solid transparent;border-bottom-color:#0a1225;}
-  .team-cell-wrap.tt-above>.team-tooltip{top:auto;bottom:calc(100% + 8px);}
+  .team-cell-wrap.tt-above>.team-tooltip{top:auto;bottom:calc(100% + 8px);background:#0a1225;background-color:#0a1225;}
   .team-cell-wrap.tt-above>.team-tooltip::after{bottom:auto;top:100%;border-bottom-color:transparent;border-top-color:#0a1225;}
   .team-cell-wrap.tt-right>.team-tooltip{left:auto;right:0;transform:none;}
   .team-cell-wrap.tt-right>.team-tooltip::after{left:auto;right:20px;transform:none;}
   .tt-header{font-family:'Oswald',sans-serif;font-weight:600;font-size:0.9rem;color:var(--gold);margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.15);}
   .tt-match{display:flex;align-items:center;gap:8px;padding:5px 0;font-size:0.82rem;color:#d0d6e0;border-bottom:1px solid rgba(255,255,255,0.06);}
   .tt-match:last-child{border-bottom:none;}
-  .tt-date{color:#8ea0b8;font-size:0.75rem;min-width:44px;}
+  .tt-date{color:#8ea0b8;font-size:0.72rem;min-width:72px;}
   .tt-vs{flex:1;font-weight:500;}
   .tt-score{font-family:'Oswald',sans-serif;font-weight:700;font-size:0.88rem;min-width:38px;text-align:center;}
   .tt-badge{font-size:0.7rem;font-weight:700;padding:2px 7px;border-radius:6px;min-width:24px;text-align:center;}
@@ -423,13 +423,8 @@
       <div class="logo" title="Protiviti">P</div>
       <h1 style="margin-bottom:12px;">&#127942; Protiviti World Cup 2026 Sweepstakes</h1>
       <div class="subtitle" style="margin-bottom:22px;">&#9917; Office Leaderboard &#9917;</div>
-      <div class="phase-row" style="margin-bottom:18px;">
-        <span class="phase-pill" id="phasePill">Loading&hellip;</span>
-        <span class="matches-meta" id="matchesMeta" style="font-size:0.95rem;"></span>
-      </div>
-      <div class="progress-wrap" style="margin-bottom:14px;">
-        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
-      </div>
+      <div class="phase-row" style="margin-bottom:18px;"><span class="phase-pill" id="phasePill">Loading&hellip;</span><span class="matches-meta" id="matchesMeta" style="font-size:0.95rem;"></span></div>
+      <div class="progress-wrap" style="margin-bottom:14px;"><div class="progress-track"><div class="progress-fill" id="progressFill"></div></div></div>
       <div style="display:none;"><span id="progressText"></span><span id="progressPct"></span></div>
       <div class="updated" style="margin-top:14px;font-size:0.82rem;"><span class="pulse"></span><span id="updatedText">Last updated: &mdash;</span></div>
     </header>
@@ -521,7 +516,7 @@
 
   function teamCell(name, pts) {
     var m = (TR && name && TR[name]) ? TR[name] : [];
-    var t = '<div class="team-tooltip" style="background:#0a1225;border:2px solid #556688;color:#e8ecf1;"><div class="tt-header">' + esc(name || "—") + '</div>';
+    var t = '<div class="team-tooltip" style="background:#0a1225 !important;background-color:#0a1225 !important;border:2px solid #556688;color:#e8ecf1;"><div class="tt-header">' + esc(name || "\u2014") + '</div>';
     if (!m.length) { t += '<div class="tt-empty">No matches played yet</div>'; }
     else {
       m.forEach(function(g) {
@@ -532,7 +527,7 @@
       t += '<div class="tt-summary"><span>' + m.length + ' match' + (m.length !== 1 ? 'es' : '') + '</span><span class="tt-total">' + (pts == null ? 0 : esc(pts)) + ' pts</span></div>';
     }
     t += '</div>';
-    return '<div class="team-cell-wrap"><div class="team-cell"><div class="team-name">' + esc(name || "—") + '</div><div class="team-pts">' + (pts == null ? "0" : esc(pts)) + ' pts</div></div>' + t + '</div>';
+    return '<div class="team-cell-wrap"><div class="team-cell"><div class="team-name">' + esc(name || "\u2014") + '</div><div class="team-pts">' + (pts == null ? "0" : esc(pts)) + ' pts</div></div>' + t + '</div>';
   }
 
   // -------- error banner --------
@@ -652,9 +647,9 @@
     }
 
     var chips = results.map(chip).join("");
-    // duplicate the set so the marquee loops seamlessly
-    track.innerHTML = chips + chips;
-    track.style.animation = "scrollTicker 38s linear infinite";
+    // Only duplicate for seamless scroll if 3+ results
+    track.innerHTML = results.length >= 3 ? chips + chips : chips;
+    track.style.animation = results.length >= 3 ? "scrollTicker 38s linear infinite" : "none";
     void viewport.offsetWidth; // reflow
   }
 
