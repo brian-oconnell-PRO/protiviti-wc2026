@@ -103,7 +103,7 @@
     color: #ffd7da;
     padding: 10px 16px; border-radius: 12px;
     font-size: calc(0.85rem * var(--tv-scale)); font-weight: 500;
-    /* backdrop-filter removed for tooltip fix */
+    /* backdrop-filter removed */
   }
   .error-banner.show { display: flex; }
   .error-banner .dot {
@@ -208,7 +208,7 @@
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 18px; box-shadow: var(--shadow);
-    overflow: hidden; /* backdrop-filter removed for tooltip fix */
+    overflow: hidden; /* backdrop-filter removed */
   }
 
   /* ============ SECTION HEADINGS ============ */
@@ -732,7 +732,6 @@
   }
 
   
-  // -------- tooltip positioning --------
   document.addEventListener("mouseover", function(e) {
     var w = e.target.closest(".team-cell-wrap");
     if (!w) return;
