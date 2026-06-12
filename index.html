@@ -9,9 +9,15 @@
 <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet" />
 <style>
   :root {
-    --navy-deep: #0f0f1f;
-    --navy: #1a1a2e;
-    --navy-light: #25253f;
+    --bg-top: #0b3d6b;
+    --bg-mid: #0e5a5a;
+    --bg-bottom: #1a8a6e;
+    --card-bg: rgba(255,255,255,0.92);
+    --card-bg-alt: rgba(255,255,255,0.85);
+    --card-border: rgba(255,255,255,0.5);
+    --pitch-green: #2e7d32;
+    --pitch-light: #4caf50;
+    --pitch-line: rgba(255,255,255,0.25);
     --teal: #16697a;
     --teal-bright: #1f8fa6;
     --coral: #e63946;
@@ -19,30 +25,75 @@
     --gold-medal: #ffd700;
     --silver-medal: #c0c0c0;
     --bronze-medal: #cd7f32;
-    --text: #f5f6fa;
-    --text-dim: #aab0c0;
-    --row-odd: #20203a;
-    --row-even: #1b1b30;
-    --card-bg: #16162a;
-    --shadow: 0 18px 50px rgba(0,0,0,0.55);
+    --text: #1a1a2e;
+    --text-light: #fff;
+    --text-dim: #556677;
+    --row-odd: rgba(240,248,255,0.7);
+    --row-even: rgba(255,255,255,0.5);
+    --navy: #1a1a2e;
+    --shadow: 0 18px 50px rgba(0,0,0,0.25);
     --tv-scale: 1;
   }
 
   * { box-sizing: border-box; margin: 0; padding: 0; }
-
   html, body { height: 100%; }
 
   body {
     font-family: 'Inter', system-ui, -apple-system, Segoe UI, Roboto, sans-serif;
     color: var(--text);
     background:
-      radial-gradient(1200px 600px at 70% -10%, rgba(22,105,122,0.35), transparent 60%),
-      radial-gradient(900px 500px at 10% 110%, rgba(230,57,70,0.18), transparent 55%),
-      linear-gradient(160deg, var(--navy-deep) 0%, var(--navy) 55%, var(--navy-light) 100%);
+      linear-gradient(165deg, var(--bg-top) 0%, var(--bg-mid) 40%, var(--bg-bottom) 100%);
     background-attachment: fixed;
     min-height: 100vh;
     padding: clamp(16px, 3vw, 40px);
     -webkit-font-smoothing: antialiased;
+    position: relative;
+    overflow-x: hidden;
+  }
+
+  /* ============ FOOTBALL BACKGROUND DECORATIONS ============ */
+  body::before {
+    content: "";
+    position: fixed;
+    inset: 0;
+    background:
+      radial-gradient(circle at 15% 20%, rgba(255,195,0,0.15) 0%, transparent 40%),
+      radial-gradient(circle at 85% 80%, rgba(230,57,70,0.12) 0%, transparent 40%),
+      radial-gradient(circle at 50% 50%, rgba(255,255,255,0.04) 0%, transparent 60%);
+    pointer-events: none;
+    z-index: 0;
+  }
+
+  /* Floating football emojis */
+  .football-bg {
+    position: fixed;
+    inset: 0;
+    pointer-events: none;
+    z-index: 0;
+    overflow: hidden;
+  }
+  .football-bg .fb {
+    position: absolute;
+    font-size: 2.5rem;
+    opacity: 0.08;
+    animation: floatBall 25s infinite ease-in-out;
+  }
+  .football-bg .fb:nth-child(1) { top: 5%; left: 3%; animation-delay: 0s; font-size: 3rem; }
+  .football-bg .fb:nth-child(2) { top: 15%; right: 8%; animation-delay: -4s; font-size: 2rem; }
+  .football-bg .fb:nth-child(3) { top: 40%; left: 6%; animation-delay: -8s; font-size: 3.5rem; }
+  .football-bg .fb:nth-child(4) { top: 60%; right: 4%; animation-delay: -12s; font-size: 2.2rem; }
+  .football-bg .fb:nth-child(5) { top: 80%; left: 10%; animation-delay: -16s; font-size: 2.8rem; }
+  .football-bg .fb:nth-child(6) { top: 25%; left: 50%; animation-delay: -6s; font-size: 2rem; }
+  .football-bg .fb:nth-child(7) { top: 70%; right: 15%; animation-delay: -10s; font-size: 3.2rem; }
+  .football-bg .fb:nth-child(8) { top: 90%; left: 35%; animation-delay: -20s; font-size: 2.5rem; }
+  .football-bg .fb:nth-child(9) { top: 3%; right: 30%; animation-delay: -14s; font-size: 2rem; }
+  .football-bg .fb:nth-child(10) { top: 50%; left: 25%; animation-delay: -18s; font-size: 1.8rem; }
+
+  @keyframes floatBall {
+    0%, 100% { transform: translateY(0) rotate(0deg); }
+    25% { transform: translateY(-20px) rotate(90deg); }
+    50% { transform: translateY(10px) rotate(180deg); }
+    75% { transform: translateY(-15px) rotate(270deg); }
   }
 
   .shell {
@@ -51,6 +102,8 @@
     display: flex;
     flex-direction: column;
     gap: clamp(16px, 2.4vw, 28px);
+    position: relative;
+    z-index: 1;
   }
 
   /* ============ ERROR BANNER ============ */
@@ -58,13 +111,14 @@
     display: none;
     align-items: center;
     gap: 10px;
-    background: rgba(230,57,70,0.15);
+    background: rgba(230,57,70,0.12);
     border: 1px solid rgba(230,57,70,0.5);
-    color: #ffd7da;
+    color: #8b1a1a;
     padding: 10px 16px;
     border-radius: 12px;
     font-size: calc(0.85rem * var(--tv-scale));
     font-weight: 500;
+    backdrop-filter: blur(12px);
   }
   .error-banner.show { display: flex; }
   .error-banner .dot {
@@ -77,18 +131,30 @@
   /* ============ HEADER ============ */
   .header {
     position: relative;
-    background: linear-gradient(135deg, rgba(22,105,122,0.35), rgba(26,26,46,0.2));
-    border: 1px solid rgba(255,255,255,0.08);
+    background: linear-gradient(135deg, rgba(11,61,107,0.95), rgba(14,90,90,0.9));
+    border: 1px solid rgba(255,255,255,0.2);
     border-radius: 22px;
     padding: clamp(20px, 3vw, 34px) clamp(22px, 3.5vw, 44px);
     box-shadow: var(--shadow);
     overflow: hidden;
+    color: var(--text-light);
   }
   .header::before {
     content: "";
     position: absolute; inset: 0;
-    background: linear-gradient(90deg, var(--gold), var(--teal-bright), var(--coral));
+    background: linear-gradient(90deg, var(--gold), var(--teal-bright), var(--coral), var(--pitch-light));
     height: 5px;
+  }
+  /* Pitch lines decoration on header */
+  .header::after {
+    content: "";
+    position: absolute;
+    right: -40px; top: 50%;
+    transform: translateY(-50%);
+    width: 200px; height: 200px;
+    border: 3px solid rgba(255,255,255,0.08);
+    border-radius: 50%;
+    pointer-events: none;
   }
   .logo {
     position: absolute;
@@ -125,214 +191,211 @@
     letter-spacing: 3px;
     text-transform: uppercase;
     color: var(--gold);
-    font-size: calc(0.95rem * var(--tv-scale));
-    margin-bottom: 16px;
-  }
-  .phase-row {
-    display: flex; flex-wrap: wrap; align-items: center; gap: 10px 18px;
+    font-size: calc(clamp(0.85rem, 2vw, 1.1rem) * var(--tv-scale));
     margin-bottom: 14px;
   }
+  .header .meta-row {
+    display: flex; flex-wrap: wrap; align-items: center; gap: 14px;
+    margin-top: 12px;
+  }
   .phase-pill {
-    background: rgba(255,195,0,0.14);
-    border: 1px solid rgba(255,195,0,0.4);
-    color: var(--gold);
-    padding: 5px 14px;
-    border-radius: 999px;
+    background: linear-gradient(135deg, var(--coral), #c92a36);
+    color: #fff;
+    font-family: 'Oswald', sans-serif;
     font-weight: 600;
-    font-size: calc(0.85rem * var(--tv-scale));
+    font-size: calc(0.82rem * var(--tv-scale));
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 5px 16px;
+    border-radius: 20px;
+    white-space: nowrap;
   }
-  .matches-meta {
-    color: var(--text-dim);
-    font-size: calc(0.85rem * var(--tv-scale));
-    font-weight: 500;
+  .progress-wrap {
+    flex: 1 1 200px;
+    display: flex; align-items: center; gap: 10px;
+    min-width: 0;
   }
-  .matches-meta strong { color: var(--text); }
-
-  .progress-wrap { margin-top: 6px; }
-  .progress-track {
-    height: calc(14px * var(--tv-scale));
-    background: rgba(255,255,255,0.08);
-    border-radius: 999px;
+  .progress-bar {
+    flex: 1;
+    height: 12px;
+    background: rgba(255,255,255,0.2);
+    border-radius: 6px;
     overflow: hidden;
-    border: 1px solid rgba(255,255,255,0.06);
+    position: relative;
   }
   .progress-fill {
     height: 100%;
-    width: 0%;
-    border-radius: 999px;
-    background: linear-gradient(90deg, var(--teal-bright), var(--gold));
-    transition: width 1.1s cubic-bezier(.22,.61,.36,1);
+    border-radius: 6px;
+    background: linear-gradient(90deg, var(--pitch-light), var(--gold));
+    transition: width 1.2s cubic-bezier(.4,0,.2,1);
+    box-shadow: 0 0 12px rgba(255,195,0,0.4);
   }
   .progress-label {
-    margin-top: 7px;
     font-size: calc(0.78rem * var(--tv-scale));
-    color: var(--text-dim);
-    display: flex; justify-content: space-between;
+    font-weight: 600;
+    white-space: nowrap;
+    color: rgba(255,255,255,0.85);
   }
-  .updated {
-    margin-top: 4px;
-    font-size: calc(0.78rem * var(--tv-scale));
-    color: var(--text-dim);
+  .updated-stamp {
+    width: 100%;
+    margin-top: 8px;
+    font-size: calc(0.72rem * var(--tv-scale));
+    color: rgba(255,255,255,0.55);
   }
-  .updated .pulse {
-    display: inline-block; width: 7px; height: 7px; border-radius: 50%;
-    background: #46d17f; margin-right: 6px;
-    box-shadow: 0 0 8px #46d17f;
-    animation: pulse 2s infinite;
-  }
-  @keyframes pulse { 0%,100%{opacity:1;} 50%{opacity:0.35;} }
 
-  /* ============ LEADERBOARD CARD ============ */
-  .card {
-    background: var(--card-bg);
-    border: 1px solid rgba(255,255,255,0.07);
+  /* ============ PITCH-STYLE LEADERBOARD WRAPPER ============ */
+  .leaderboard-wrapper {
+    position: relative;
+    background:
+      linear-gradient(180deg, rgba(46,125,50,0.08) 0%, rgba(46,125,50,0.03) 100%);
+    border: 2px solid rgba(46,125,50,0.2);
     border-radius: 22px;
-    box-shadow: var(--shadow);
+    padding: 4px;
     overflow: hidden;
   }
-  .card-head {
-    padding: 16px clamp(18px, 3vw, 28px);
-    border-bottom: 1px solid rgba(255,255,255,0.07);
-    display: flex; align-items: center; gap: 10px;
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: calc(1.05rem * var(--tv-scale));
-    color: var(--text);
+  /* Corner flag decorations */
+  .leaderboard-wrapper::before,
+  .leaderboard-wrapper::after {
+    content: "🚩";
+    position: absolute;
+    font-size: 1.2rem;
+    opacity: 0.3;
+    z-index: 2;
   }
-  .card-head .accent { color: var(--gold); }
+  .leaderboard-wrapper::before { top: 8px; left: 12px; }
+  .leaderboard-wrapper::after { top: 8px; right: 12px; }
 
-  .lb-scroll { width: 100%; overflow-x: auto; }
+  .card {
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 18px;
+    box-shadow: var(--shadow);
+    overflow: hidden;
+    backdrop-filter: blur(12px);
+  }
 
+  /* ============ SECTION HEADINGS ============ */
+  .section-title {
+    font-family: 'Oswald', sans-serif;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    font-size: calc(1rem * var(--tv-scale));
+    color: var(--text);
+    padding: 16px clamp(18px, 3vw, 28px) 10px;
+    display: flex; align-items: center; gap: 10px;
+    border-bottom: 2px solid rgba(46,125,50,0.15);
+  }
+  .section-title .icon { font-size: 1.3rem; }
+
+  /* ============ LEADERBOARD TABLE ============ */
+  .lb-scroll { overflow-x: auto; }
   table.leaderboard {
     width: 100%;
     border-collapse: collapse;
     min-width: 720px;
+    font-size: calc(0.95rem * var(--tv-scale));
   }
   table.leaderboard thead th {
-    text-align: left;
-    padding: 14px clamp(10px, 1.6vw, 18px);
     font-family: 'Oswald', sans-serif;
     font-weight: 600;
     letter-spacing: 1px;
     text-transform: uppercase;
-    font-size: calc(0.8rem * var(--tv-scale));
-    color: var(--text-dim);
-    background: rgba(255,255,255,0.03);
-    border-bottom: 2px solid rgba(255,255,255,0.08);
+    font-size: calc(0.78rem * var(--tv-scale));
+    color: #fff;
+    background: linear-gradient(135deg, var(--bg-top), var(--teal));
+    padding: 13px 14px;
+    position: sticky; top: 0; z-index: 2;
     white-space: nowrap;
+    text-align: left;
   }
-  table.leaderboard thead th.col-total,
-  table.leaderboard tbody td.col-total { text-align: right; }
-  table.leaderboard thead th.col-rank,
-  table.leaderboard tbody td.col-rank { text-align: center; width: 78px; }
-
+  table.leaderboard thead th:first-child { border-radius: 10px 0 0 0; }
+  table.leaderboard thead th:last-child { border-radius: 0 10px 0 0; text-align: right; }
   table.leaderboard tbody td {
-    padding: 13px clamp(10px, 1.6vw, 18px);
-    border-bottom: 1px solid rgba(255,255,255,0.05);
-    font-size: calc(0.95rem * var(--tv-scale));
+    padding: 12px 14px;
     vertical-align: middle;
+    border-bottom: 1px solid rgba(0,0,0,0.06);
   }
-  tbody tr.row {
-    opacity: 0;
-    transform: translateY(10px);
-    animation: rowIn 0.45s ease forwards;
-    transition: background 0.3s ease;
-  }
-  @keyframes rowIn { to { opacity: 1; transform: translateY(0); } }
-
-  tbody tr.r-odd { background: var(--row-odd); }
-  tbody tr.r-even { background: var(--row-even); }
-  tbody tr.row:hover { background: rgba(22,105,122,0.22); }
-
-  .rank-num {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    font-size: calc(1.15rem * var(--tv-scale));
-  }
-  .medal { font-size: calc(1.25rem * var(--tv-scale)); }
-
-  tbody tr.rank-1 { background: linear-gradient(90deg, rgba(255,215,0,0.28), rgba(255,215,0,0.08)); }
-  tbody tr.rank-1 td { border-bottom-color: rgba(255,215,0,0.25); }
-  tbody tr.rank-1 .player-name,
-  tbody tr.rank-1 .rank-num { color: var(--gold-medal); }
-
-  tbody tr.rank-2 { background: linear-gradient(90deg, rgba(192,192,192,0.26), rgba(192,192,192,0.07)); }
-  tbody tr.rank-2 .player-name,
-  tbody tr.rank-2 .rank-num { color: #e8e8e8; }
-
-  tbody tr.rank-3 { background: linear-gradient(90deg, rgba(205,127,50,0.34), rgba(205,127,50,0.1)); }
-  tbody tr.rank-3 .player-name,
-  tbody tr.rank-3 .rank-num { color: #ffd9b3; }
-
-  .player-cell { display: flex; align-items: center; gap: 9px; }
-  .player-name {
-    font-weight: 700;
-    font-size: calc(1rem * var(--tv-scale));
-  }
-  .fire { font-size: calc(1.05rem * var(--tv-scale)); filter: drop-shadow(0 0 6px rgba(255,140,0,0.8)); }
-  tbody tr.hot {
-    box-shadow: inset 0 0 0 1px rgba(70,209,127,0.55), inset 0 0 24px rgba(70,209,127,0.18);
-  }
-
-  .team-cell .team-name {
-    font-weight: 500;
-    color: var(--text);
-    font-size: calc(0.92rem * var(--tv-scale));
-  }
-  .team-cell .team-pts {
-    font-weight: 700;
-    color: var(--teal-bright);
-    font-size: calc(0.82rem * var(--tv-scale));
-    margin-top: 2px;
-  }
-
-  td.col-total .total-val {
+  .col-rank { width: 64px; text-align: center; }
+  .rank-num { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: calc(1.1rem * var(--tv-scale)); }
+  .medal { margin-right: 3px; }
+  .player-cell { display: flex; align-items: center; gap: 6px; }
+  .player-name { font-weight: 700; }
+  .fire { cursor: default; }
+  .team-info { display: flex; flex-direction: column; gap: 1px; line-height: 1.3; }
+  .team-name { font-size: calc(0.88rem * var(--tv-scale)); font-weight: 500; }
+  .team-pts { font-size: calc(0.82rem * var(--tv-scale)); font-weight: 800; color: var(--teal); }
+  .col-total { text-align: right; padding-right: 20px !important; }
+  .total-val {
     font-family: 'Oswald', sans-serif;
     font-weight: 700;
     font-size: calc(1.5rem * var(--tv-scale));
-    color: var(--gold);
+    color: var(--bg-top);
+    line-height: 1;
   }
-  td.col-total .total-lbl {
+  .total-lbl {
     display: block;
-    font-size: calc(0.62rem * var(--tv-scale));
+    font-size: calc(0.6rem * var(--tv-scale));
     letter-spacing: 1px;
     text-transform: uppercase;
     color: var(--text-dim);
+    font-weight: 600;
   }
 
-  .empty-state {
-    padding: 50px 20px;
-    text-align: center;
-    color: var(--text-dim);
-    font-size: calc(1rem * var(--tv-scale));
+  /* Row styles */
+  .row { transition: background 0.3s, transform 0.3s; animation: fadeRow 0.5s both; }
+  .row:hover { transform: scale(1.005); }
+  @keyframes fadeRow { from { opacity: 0; transform: translateY(10px); } to { opacity: 1; transform: translateY(0); } }
+  .r-odd { background: var(--row-odd); }
+  .r-even { background: var(--row-even); }
+
+  /* Medal rows */
+  .rank-1 {
+    background: linear-gradient(135deg, rgba(255,215,0,0.35), rgba(255,215,0,0.12)) !important;
+    border-left: 4px solid var(--gold-medal);
+  }
+  .rank-2 {
+    background: linear-gradient(135deg, rgba(192,192,192,0.3), rgba(192,192,192,0.1)) !important;
+    border-left: 4px solid var(--silver-medal);
+  }
+  .rank-3 {
+    background: linear-gradient(135deg, rgba(205,127,50,0.3), rgba(205,127,50,0.1)) !important;
+    border-left: 4px solid var(--bronze-medal);
   }
 
-  /* ============ MOBILE CARD LIST (hidden on desktop) ============ */
-  .lb-cards { display: none; padding: 12px; gap: 12px; flex-direction: column; }
+  /* Hot / points change */
+  .hot { box-shadow: inset 0 0 0 1px rgba(70,209,127,0.5); background: linear-gradient(135deg, rgba(70,209,127,0.12), rgba(70,209,127,0.03)) !important; }
+
+  .empty-state { text-align: center; padding: 40px; color: var(--text-dim); font-size: calc(1rem * var(--tv-scale)); }
+
+  /* ============ MOBILE CARDS ============ */
+  .lb-cards {
+    display: none;
+    flex-direction: column;
+    gap: 10px;
+    padding: 12px clamp(12px, 2.5vw, 20px);
+  }
   .p-card {
-    background: var(--row-even);
-    border: 1px solid rgba(255,255,255,0.07);
-    border-radius: 16px;
-    padding: 14px 16px;
-    opacity: 0;
-    transform: translateY(10px);
-    animation: rowIn 0.45s ease forwards;
+    background: var(--card-bg);
+    border: 1px solid var(--card-border);
+    border-radius: 14px;
+    padding: 14px;
+    animation: fadeRow 0.5s both;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
   }
-  .p-card.rank-1 { background: linear-gradient(135deg, rgba(255,215,0,0.25), rgba(255,215,0,0.05)); border-color: rgba(255,215,0,0.4); }
-  .p-card.rank-2 { background: linear-gradient(135deg, rgba(192,192,192,0.22), rgba(192,192,192,0.05)); border-color: rgba(192,192,192,0.4); }
-  .p-card.rank-3 { background: linear-gradient(135deg, rgba(205,127,50,0.3), rgba(205,127,50,0.07)); border-color: rgba(205,127,50,0.45); }
-  .p-card.hot { box-shadow: 0 0 0 1px rgba(70,209,127,0.55), 0 0 24px rgba(70,209,127,0.2); }
+  .p-card.rank-1 { background: linear-gradient(135deg, rgba(255,215,0,0.3), rgba(255,215,0,0.08)); border-color: rgba(255,215,0,0.5); }
+  .p-card.rank-2 { background: linear-gradient(135deg, rgba(192,192,192,0.25), rgba(192,192,192,0.08)); border-color: rgba(192,192,192,0.4); }
+  .p-card.rank-3 { background: linear-gradient(135deg, rgba(205,127,50,0.3), rgba(205,127,50,0.1)); border-color: rgba(205,127,50,0.45); }
+  .p-card.hot { box-shadow: 0 0 0 1px rgba(70,209,127,0.55), 0 0 24px rgba(70,209,127,0.15); }
   .p-card .pc-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
   .p-card .pc-left { display: flex; align-items: center; gap: 9px; }
   .p-card .pc-rank { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.2rem; }
   .p-card .pc-name { font-weight: 700; font-size: 1.05rem; }
-  .p-card .pc-total { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.6rem; color: var(--gold); text-align: right; line-height: 1; }
+  .p-card .pc-total { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.6rem; color: var(--bg-top); text-align: right; line-height: 1; }
   .p-card .pc-total small { display: block; font-size: 0.6rem; letter-spacing: 1px; text-transform: uppercase; color: var(--text-dim); font-family: 'Inter'; }
   .p-card .pc-teams { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-  .p-card .pc-team { background: rgba(0,0,0,0.22); border-radius: 10px; padding: 8px; text-align: center; }
+  .p-card .pc-team { background: rgba(14,90,90,0.08); border-radius: 10px; padding: 8px; text-align: center; }
   .p-card .pc-team .t-n { font-size: 0.82rem; font-weight: 500; }
-  .p-card .pc-team .t-p { font-size: 0.78rem; font-weight: 700; color: var(--teal-bright); margin-top: 3px; }
+  .p-card .pc-team .t-p { font-size: 0.78rem; font-weight: 700; color: var(--teal); margin-top: 3px; }
 
   /* ============ RESULTS TICKER ============ */
   .ticker-card { padding: 0; }
@@ -343,21 +406,22 @@
     text-transform: uppercase;
     font-size: calc(0.95rem * var(--tv-scale));
     color: var(--text);
-    border-bottom: 1px solid rgba(255,255,255,0.07);
+    border-bottom: 1px solid rgba(0,0,0,0.08);
     display: flex; align-items: center; gap: 9px;
   }
   .ticker-head .live-dot {
     width: 8px; height: 8px; border-radius: 50%; background: var(--coral);
     box-shadow: 0 0 8px var(--coral); animation: pulse 1.6s infinite;
   }
+  @keyframes pulse { 0%, 100% { opacity: 1; } 50% { opacity: 0.4; } }
   .ticker-viewport { overflow: hidden; white-space: nowrap; padding: 14px 0; }
   .ticker-track { display: inline-flex; gap: 14px; padding-inline: 18px; animation: scrollTicker 38s linear infinite; }
   .ticker-track:hover { animation-play-state: paused; }
   @keyframes scrollTicker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   .result-chip {
     display: inline-flex; align-items: center; gap: 10px;
-    background: var(--navy-light);
-    border: 1px solid rgba(255,255,255,0.08);
+    background: linear-gradient(135deg, rgba(14,90,90,0.1), rgba(11,61,107,0.08));
+    border: 1px solid rgba(14,90,90,0.2);
     border-radius: 12px;
     padding: 9px 15px;
     font-size: calc(0.9rem * var(--tv-scale));
@@ -367,12 +431,12 @@
     background: var(--teal); color: #fff; font-weight: 700;
     border-radius: 6px; padding: 2px 8px; font-size: calc(0.72rem * var(--tv-scale));
   }
-  .result-chip .score { font-family: 'Oswald', sans-serif; font-weight: 700; color: var(--gold); font-size: calc(1rem * var(--tv-scale)); }
+  .result-chip .score { font-family: 'Oswald', sans-serif; font-weight: 700; color: var(--coral); font-size: calc(1rem * var(--tv-scale)); }
   .result-chip .tm { font-weight: 500; }
   .ticker-empty { padding: 18px 24px; color: var(--text-dim); font-size: calc(0.9rem * var(--tv-scale)); text-align: center; }
 
   .footer-note {
-    text-align: center; color: var(--text-dim);
+    text-align: center; color: rgba(255,255,255,0.6);
     font-size: calc(0.72rem * var(--tv-scale));
     padding: 4px 0 8px;
   }
@@ -382,6 +446,7 @@
     table.leaderboard, .lb-scroll { display: none; }
     .lb-cards { display: flex; }
     .header h1 { padding-right: 50px; }
+    .leaderboard-wrapper::before, .leaderboard-wrapper::after { display: none; }
   }
   @media (min-width: 769px) and (max-width: 1024px) {
     table.leaderboard { min-width: 640px; }
@@ -399,64 +464,72 @@
 </style>
 </head>
 <body>
+  <!-- Floating football decorations -->
+  <div class="football-bg">
+    <span class="fb">⚽</span><span class="fb">⚽</span><span class="fb">⚽</span>
+    <span class="fb">⚽</span><span class="fb">⚽</span><span class="fb">⚽</span>
+    <span class="fb">⚽</span><span class="fb">⚽</span><span class="fb">⚽</span>
+    <span class="fb">⚽</span>
+  </div>
+
   <div class="shell">
 
     <div class="error-banner" id="errorBanner">
       <span class="dot"></span>
-      <span id="errorText">Couldn't refresh live data — showing the last loaded standings.</span>
+      <span id="errorMsg">Unable to refresh data.</span>
     </div>
 
     <!-- HEADER -->
-    <header class="header view-section" id="headerSection">
-      <div class="logo" title="Protiviti">P</div>
+    <header class="header">
+      <div class="logo">P</div>
       <h1>🏆 Protiviti World Cup 2026 Sweepstakes</h1>
-      <div class="subtitle">Office Leaderboard</div>
-
-      <div class="phase-row">
-        <span class="phase-pill" id="phasePill">Loading…</span>
-        <span class="matches-meta" id="matchesMeta"></span>
-      </div>
-
-      <div class="progress-wrap">
-        <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
-        <div class="progress-label">
-          <span id="progressText">0 of 104 matches played</span>
-          <span id="progressPct">0%</span>
+      <div class="subtitle">⚽ Office Leaderboard ⚽</div>
+      <div class="meta-row">
+        <span class="phase-pill" id="phasePill">Group Stage</span>
+        <div class="progress-wrap">
+          <div class="progress-bar"><div class="progress-fill" id="progressFill" style="width:0%"></div></div>
+          <span class="progress-label" id="progressLabel">0 / 104</span>
         </div>
       </div>
-      <div class="updated"><span class="pulse"></span><span id="updatedText">Last updated: —</span></div>
+      <div class="updated-stamp" id="updatedStamp"></div>
     </header>
 
     <!-- LEADERBOARD -->
-    <section class="card view-section" id="leaderboardSection">
-      <div class="card-head"><span class="accent">📊</span> Standings</div>
-      <div class="lb-scroll">
-        <table class="leaderboard">
-          <thead>
-            <tr>
-              <th class="col-rank">Rank</th>
-              <th>Player</th>
-              <th>Team 1</th>
-              <th>Team 2</th>
-              <th>Team 3</th>
-              <th class="col-total">Total</th>
-            </tr>
-          </thead>
-          <tbody id="lbBody"></tbody>
-        </table>
+    <div id="leaderboardSection" class="view-section">
+      <div class="leaderboard-wrapper">
+        <div class="card">
+          <div class="section-title"><span class="icon">⚽</span> Leaderboard <span class="icon">⚽</span></div>
+          <div class="lb-scroll">
+            <table class="leaderboard">
+              <thead>
+                <tr>
+                  <th class="col-rank">Rank</th>
+                  <th>Player</th>
+                  <th>Team 1</th>
+                  <th>Team 2</th>
+                  <th>Team 3</th>
+                  <th style="text-align:right">Total</th>
+                </tr>
+              </thead>
+              <tbody id="lbBody"></tbody>
+            </table>
+          </div>
+          <div class="lb-cards" id="lbCards"></div>
+        </div>
       </div>
-      <div class="lb-cards" id="lbCards"></div>
-    </section>
+    </div>
 
-    <!-- RESULTS TICKER -->
-    <section class="card ticker-card view-section" id="resultsSection">
-      <div class="ticker-head"><span class="live-dot"></span> Recent Results</div>
-      <div class="ticker-viewport" id="tickerViewport">
-        <div class="ticker-track" id="tickerTrack"></div>
+    <!-- RECENT RESULTS -->
+    <div id="resultsSection" class="view-section">
+      <div class="card ticker-card">
+        <div class="ticker-head"><span class="icon">🏟️</span> Recent Results <span class="live-dot"></span></div>
+        <div class="ticker-viewport" id="tickerViewport">
+          <div class="ticker-track" id="tickerTrack"></div>
+        </div>
       </div>
-    </section>
+    </div>
 
-    <div class="footer-note">Auto-refreshes every 60 seconds · Add <code>?mode=tv</code> to the URL for TV display mode</div>
+    <div class="footer-note">Data refreshes automatically · Protiviti Sydney · FIFA World Cup 2026™</div>
   </div>
 
 <script>
@@ -465,110 +538,59 @@
 
   var DATA_URL = "leaderboard.json";
   var REFRESH_MS = 60000;
-  var TOTAL_MATCHES = 104;
   var TV_CYCLE_MS = 30000;
-
-  var params = new URLSearchParams(window.location.search);
-  var TV_MODE = params.get("mode") === "tv";
+  var TV_MODE = /[?&]mode=tv/i.test(location.search);
 
   var lastGoodData = null;
   var refreshCount = 0;
 
-  // -------- helpers --------
-  function esc(s) {
-    return String(s == null ? "" : s)
-      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
-      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
-  }
-
-  function fmtSydney(iso) {
-    if (!iso) return "—";
-    try {
-      var d = new Date(iso);
-      if (isNaN(d.getTime())) return esc(iso);
-      var opts = {
-        timeZone: "Australia/Sydney",
-        weekday: "short", day: "numeric", month: "short",
-        hour: "numeric", minute: "2-digit", hour12: true
-      };
-      return new Intl.DateTimeFormat("en-AU", opts).format(d) + " AEST";
-    } catch (e) {
-      console.warn("[WC2026] Timestamp format failed:", e);
-      return esc(iso);
-    }
-  }
-
-  function medalFor(rank) {
-    if (rank === 1) return "🥇";
-    if (rank === 2) return "🥈";
-    if (rank === 3) return "🥉";
-    return "";
-  }
-
-  function teamCell(name, pts) {
-    return '<div class="team-cell">' +
-             '<div class="team-name">' + esc(name || "—") + '</div>' +
-             '<div class="team-pts">' + (pts == null ? "0" : esc(pts)) + ' pts</div>' +
-           '</div>';
-  }
-
-  // -------- error banner --------
-  function showError(msg) {
-    var b = document.getElementById("errorBanner");
-    document.getElementById("errorText").textContent = msg ||
-      "Couldn't refresh live data — showing the last loaded standings.";
-    b.classList.add("show");
-  }
-  function clearError() {
-    document.getElementById("errorBanner").classList.remove("show");
-  }
+  function esc(v) { var d = document.createElement("div"); d.textContent = v == null ? "" : String(v); return d.innerHTML; }
+  function showError(msg) { var b = document.getElementById("errorBanner"); b.classList.add("show"); document.getElementById("errorMsg").textContent = msg; }
+  function clearError() { document.getElementById("errorBanner").classList.remove("show"); }
+  function medalFor(rank) { return rank === 1 ? "\uD83E\uDD47" : rank === 2 ? "\uD83E\uDD48" : rank === 3 ? "\uD83E\uDD49" : ""; }
 
   // -------- render header --------
   function renderHeader(data) {
     var info = data.tournamentInfo || {};
     var played = Number(info.totalMatchesPlayed) || 0;
-    var pct = Math.max(0, Math.min(100, Math.round((played / TOTAL_MATCHES) * 100)));
+    var total = 104;
+    var pct = Math.min(100, Math.round((played / total) * 100));
 
-    document.getElementById("phasePill").textContent = info.currentPhase || "Tournament";
-    var remaining = (info.totalMatchesRemaining != null)
-      ? info.totalMatchesRemaining
-      : (TOTAL_MATCHES - played);
-    document.getElementById("matchesMeta").innerHTML =
-      "<strong>" + esc(played) + "</strong> played · <strong>" + esc(remaining) + "</strong> remaining";
+    document.getElementById("phasePill").textContent = info.currentPhase || "Group Stage";
+    document.getElementById("progressFill").style.width = pct + "%";
+    document.getElementById("progressLabel").textContent = played + " / " + total + " matches";
 
-    document.getElementById("progressText").textContent = played + " of " + TOTAL_MATCHES + " matches played";
-    document.getElementById("progressPct").textContent = pct + "%";
-    // delay so the CSS transition animates from 0
-    requestAnimationFrame(function () {
-      requestAnimationFrame(function () {
-        document.getElementById("progressFill").style.width = pct + "%";
-      });
-    });
-
-    document.getElementById("updatedText").textContent = "Last updated: " + fmtSydney(data.lastUpdated);
+    if (data.lastUpdated) {
+      try {
+        var d = new Date(data.lastUpdated);
+        document.getElementById("updatedStamp").textContent =
+          "Last updated: " + d.toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" });
+      } catch (e) {
+        document.getElementById("updatedStamp").textContent = "Last updated: " + data.lastUpdated;
+      }
+    }
   }
 
   // -------- render leaderboard --------
   function renderLeaderboard(data) {
-    var rows = Array.isArray(data.leaderboard) ? data.leaderboard.slice() : [];
-    // visually confirm sort by totalPoints desc
-    rows.sort(function (a, b) { return (Number(b.totalPoints) || 0) - (Number(a.totalPoints) || 0); });
+    var players = Array.isArray(data.leaderboard) ? data.leaderboard.slice() : [];
+    players.sort(function (a, b) { return (Number(b.totalPoints) || 0) - (Number(a.totalPoints) || 0); });
 
     var body = document.getElementById("lbBody");
     var cards = document.getElementById("lbCards");
+    var tableHtml = "";
+    var cardHtml = "";
 
-    if (!rows.length) {
-      body.innerHTML = '<tr><td colspan="6" class="empty-state">No players yet — the leaderboard will appear once the sweepstakes begins.</td></tr>';
-      cards.innerHTML = '<div class="empty-state">No players yet — the leaderboard will appear once the sweepstakes begins.</div>';
-      return;
+    function teamCell(name, pts) {
+      return '<div class="team-info"><span class="team-name">' + esc(name || "\u2014") +
+             '</span><span class="team-pts">' + (pts == null ? 0 : esc(pts)) + ' pts</span></div>';
     }
 
-    var tableHtml = "", cardHtml = "";
-    rows.forEach(function (p, i) {
+    players.forEach(function (p, i) {
       var rank = (p.rank != null) ? Number(p.rank) : (i + 1);
       var rankClass = rank <= 3 ? ("rank-" + rank) : (i % 2 === 0 ? "r-odd" : "r-even");
       var hot = (typeof p.pointsChange === "number" && p.pointsChange > 0) ? " hot" : "";
-      var fire = hot ? ' <span class="fire" title="+' + esc(p.pointsChange) + ' since last update">🔥</span>' : "";
+      var fire = hot ? ' <span class="fire" title="+' + esc(p.pointsChange) + ' since last update">\uD83D\uDD25</span>' : "";
       var medal = medalFor(rank);
       var medalHtml = medal ? '<span class="medal">' + medal + '</span> ' : "";
       var delay = "animation-delay:" + (i * 50) + "ms;";
@@ -591,9 +613,9 @@
             '<div class="pc-total">' + (Number(p.totalPoints) || 0) + '<small>total pts</small></div>' +
           '</div>' +
           '<div class="pc-teams">' +
-            '<div class="pc-team"><div class="t-n">' + esc(p.team1 || "—") + '</div><div class="t-p">' + (p.team1Pts == null ? 0 : esc(p.team1Pts)) + ' pts</div></div>' +
-            '<div class="pc-team"><div class="t-n">' + esc(p.team2 || "—") + '</div><div class="t-p">' + (p.team2Pts == null ? 0 : esc(p.team2Pts)) + ' pts</div></div>' +
-            '<div class="pc-team"><div class="t-n">' + esc(p.team3 || "—") + '</div><div class="t-p">' + (p.team3Pts == null ? 0 : esc(p.team3Pts)) + ' pts</div></div>' +
+            '<div class="pc-team"><div class="t-n">' + esc(p.team1 || "\u2014") + '</div><div class="t-p">' + (p.team1Pts == null ? 0 : esc(p.team1Pts)) + ' pts</div></div>' +
+            '<div class="pc-team"><div class="t-n">' + esc(p.team2 || "\u2014") + '</div><div class="t-p">' + (p.team2Pts == null ? 0 : esc(p.team2Pts)) + ' pts</div></div>' +
+            '<div class="pc-team"><div class="t-n">' + esc(p.team3 || "\u2014") + '</div><div class="t-p">' + (p.team3Pts == null ? 0 : esc(p.team3Pts)) + ' pts</div></div>' +
           '</div>' +
         '</div>';
     });
@@ -610,7 +632,7 @@
 
     if (!results.length) {
       track.style.animation = "none";
-      track.innerHTML = '<div class="ticker-empty">No matches today — next matches tomorrow.</div>';
+      track.innerHTML = '<div class="ticker-empty">No matches today \u2014 next matches tomorrow.</div>';
       return;
     }
 
@@ -618,17 +640,16 @@
       return '<div class="result-chip">' +
                '<span class="grp">' + esc(r.group || "?") + '</span>' +
                '<span class="tm">' + esc(r.homeTeam) + '</span>' +
-               '<span class="score">' + (r.homeScore == null ? "–" : esc(r.homeScore)) +
-                 ' - ' + (r.awayScore == null ? "–" : esc(r.awayScore)) + '</span>' +
+               '<span class="score">' + (r.homeScore == null ? "\u2013" : esc(r.homeScore)) +
+                 ' - ' + (r.awayScore == null ? "\u2013" : esc(r.awayScore)) + '</span>' +
                '<span class="tm">' + esc(r.awayTeam) + '</span>' +
              '</div>';
     }
 
     var chips = results.map(chip).join("");
-    // duplicate the set so the marquee loops seamlessly
     track.innerHTML = chips + chips;
     track.style.animation = "scrollTicker 38s linear infinite";
-    void viewport.offsetWidth; // reflow
+    void viewport.offsetWidth;
   }
 
   // -------- main render --------
@@ -642,7 +663,7 @@
   function load() {
     refreshCount++;
     var cycle = refreshCount;
-    console.log("[WC2026] Refresh cycle #" + cycle + " — fetching " + DATA_URL);
+    console.log("[WC2026] Refresh cycle #" + cycle + " \u2014 fetching " + DATA_URL);
 
     fetch(DATA_URL, { cache: "no-store" })
       .then(function (res) {
@@ -654,14 +675,14 @@
         lastGoodData = data;
         clearError();
         render(data);
-        console.log("[WC2026] Cycle #" + cycle + " OK — " +
+        console.log("[WC2026] Cycle #" + cycle + " OK \u2014 " +
           ((data.leaderboard && data.leaderboard.length) || 0) + " players, " +
           ((data.recentResults && data.recentResults.length) || 0) + " results.");
       })
       .catch(function (err) {
         console.error("[WC2026] Cycle #" + cycle + " FAILED:", err);
         if (lastGoodData) {
-          showError("Couldn't refresh live data (" + err.message + ") — showing the last loaded standings.");
+          showError("Couldn't refresh live data (" + err.message + ") \u2014 showing the last loaded standings.");
         } else {
           showError("Couldn't load the leaderboard data (" + err.message + "). Check that leaderboard.json is in the same folder.");
           document.getElementById("lbBody").innerHTML =
@@ -684,7 +705,6 @@
     };
     var showingResults = false;
 
-    // Auto-cycle between leaderboard and recent results
     setInterval(function () {
       showingResults = !showingResults;
       var hideEl = showingResults ? sections.board : sections.results;
@@ -697,7 +717,6 @@
       }, 600);
     }, TV_CYCLE_MS);
 
-    // Slow auto-scroll if board overflows the viewport
     var dir = 1;
     setInterval(function () {
       if (showingResults) return;
