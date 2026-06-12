@@ -103,7 +103,7 @@
     color: #ffd7da;
     padding: 10px 16px; border-radius: 12px;
     font-size: calc(0.85rem * var(--tv-scale)); font-weight: 500;
-    backdrop-filter: blur(12px);
+    /* backdrop-filter removed for tooltip fix */
   }
   .error-banner.show { display: flex; }
   .error-banner .dot {
@@ -208,7 +208,7 @@
     background: var(--card-bg);
     border: 1px solid var(--card-border);
     border-radius: 18px; box-shadow: var(--shadow);
-    overflow: hidden; backdrop-filter: blur(12px);
+    overflow: hidden; /* backdrop-filter removed for tooltip fix */
   }
 
   /* ============ SECTION HEADINGS ============ */
@@ -375,10 +375,10 @@
   .view-section.fade-out { opacity: 0; }
 
   .team-cell-wrap{position:relative;cursor:pointer;}
-  .team-tooltip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9999;background:#0a1225;background-color:#0a1225;border:2px solid #556688;border-radius:14px;padding:12px 14px;min-width:240px;max-width:320px;box-shadow:0 14px 44px rgba(0,0,0,0.9);pointer-events:none;}
+  .team-tooltip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9999;background:#0a1225;border:2px solid #556688;border-radius:14px;padding:12px 14px;min-width:240px;max-width:320px;box-shadow:0 14px 44px rgba(0,0,0,0.9);pointer-events:none;}
   .team-cell-wrap:hover>.team-tooltip,.team-cell-wrap.tt-active>.team-tooltip{display:block;}
   .team-tooltip::after{content:"";position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:7px solid transparent;border-bottom-color:#0a1225;}
-  .team-cell-wrap.tt-above>.team-tooltip{top:auto;bottom:calc(100% + 8px);background:#0a1225;background-color:#0a1225;}
+  .team-cell-wrap.tt-above>.team-tooltip{top:auto;bottom:calc(100% + 8px);}
   .team-cell-wrap.tt-above>.team-tooltip::after{bottom:auto;top:100%;border-bottom-color:transparent;border-top-color:#0a1225;}
   .team-cell-wrap.tt-right>.team-tooltip{left:auto;right:0;transform:none;}
   .team-cell-wrap.tt-right>.team-tooltip::after{left:auto;right:20px;transform:none;}
@@ -516,7 +516,7 @@
 
   function teamCell(name, pts) {
     var m = (TR && name && TR[name]) ? TR[name] : [];
-    var t = '<div class="team-tooltip" style="background:#0a1225 !important;background-color:#0a1225 !important;border:2px solid #556688;color:#e8ecf1;"><div class="tt-header">' + esc(name || "\u2014") + '</div>';
+    var t = '<div class="team-tooltip" style="background:#0a1225;border:2px solid #556688;color:#e8ecf1;"><div class="tt-header">' + esc(name || "\u2014") + '</div>';
     if (!m.length) { t += '<div class="tt-empty">No matches played yet</div>'; }
     else {
       m.forEach(function(g) {
@@ -647,9 +647,8 @@
     }
 
     var chips = results.map(chip).join("");
-    // Only duplicate for seamless scroll if 3+ results
-    track.innerHTML = results.length >= 3 ? chips + chips : chips;
-    track.style.animation = results.length >= 3 ? "scrollTicker 38s linear infinite" : "none";
+    track.innerHTML = chips;
+    track.style.animation = "none";
     void viewport.offsetWidth; // reflow
   }
 
