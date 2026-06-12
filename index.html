@@ -12,12 +12,10 @@
     --bg-top: #0b3d6b;
     --bg-mid: #0e5a5a;
     --bg-bottom: #1a8a6e;
-    --card-bg: rgba(255,255,255,0.92);
-    --card-bg-alt: rgba(255,255,255,0.85);
-    --card-border: rgba(255,255,255,0.5);
+    --card-bg: rgba(12, 22, 45, 0.88);
+    --card-border: rgba(255,255,255,0.12);
     --pitch-green: #2e7d32;
     --pitch-light: #4caf50;
-    --pitch-line: rgba(255,255,255,0.25);
     --teal: #16697a;
     --teal-bright: #1f8fa6;
     --coral: #e63946;
@@ -25,13 +23,13 @@
     --gold-medal: #ffd700;
     --silver-medal: #c0c0c0;
     --bronze-medal: #cd7f32;
-    --text: #1a1a2e;
+    --text: #e8ecf1;
     --text-light: #fff;
-    --text-dim: #556677;
-    --row-odd: rgba(240,248,255,0.7);
-    --row-even: rgba(255,255,255,0.5);
+    --text-dim: #8899aa;
+    --row-odd: rgba(255,255,255,0.06);
+    --row-even: rgba(255,255,255,0.03);
     --navy: #1a1a2e;
-    --shadow: 0 18px 50px rgba(0,0,0,0.25);
+    --shadow: 0 18px 50px rgba(0,0,0,0.4);
     --tv-scale: 1;
   }
 
@@ -64,18 +62,12 @@
     z-index: 0;
   }
 
-  /* Floating football emojis */
   .football-bg {
-    position: fixed;
-    inset: 0;
-    pointer-events: none;
-    z-index: 0;
-    overflow: hidden;
+    position: fixed; inset: 0;
+    pointer-events: none; z-index: 0; overflow: hidden;
   }
   .football-bg .fb {
-    position: absolute;
-    font-size: 2.5rem;
-    opacity: 0.08;
+    position: absolute; font-size: 2.5rem; opacity: 0.08;
     animation: floatBall 25s infinite ease-in-out;
   }
   .football-bg .fb:nth-child(1) { top: 5%; left: 3%; animation-delay: 0s; font-size: 3rem; }
@@ -97,35 +89,26 @@
   }
 
   .shell {
-    max-width: 1280px;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
+    max-width: 1280px; margin: 0 auto;
+    display: flex; flex-direction: column;
     gap: clamp(16px, 2.4vw, 28px);
-    position: relative;
-    z-index: 1;
+    position: relative; z-index: 1;
   }
 
   /* ============ ERROR BANNER ============ */
   .error-banner {
-    display: none;
-    align-items: center;
-    gap: 10px;
-    background: rgba(230,57,70,0.12);
+    display: none; align-items: center; gap: 10px;
+    background: rgba(230,57,70,0.15);
     border: 1px solid rgba(230,57,70,0.5);
-    color: #8b1a1a;
-    padding: 10px 16px;
-    border-radius: 12px;
-    font-size: calc(0.85rem * var(--tv-scale));
-    font-weight: 500;
+    color: #ffd7da;
+    padding: 10px 16px; border-radius: 12px;
+    font-size: calc(0.85rem * var(--tv-scale)); font-weight: 500;
     backdrop-filter: blur(12px);
   }
   .error-banner.show { display: flex; }
   .error-banner .dot {
     width: 9px; height: 9px; border-radius: 50%;
-    background: var(--coral);
-    box-shadow: 0 0 10px var(--coral);
-    flex: 0 0 auto;
+    background: var(--coral); box-shadow: 0 0 10px var(--coral); flex: 0 0 auto;
   }
 
   /* ============ HEADER ============ */
@@ -135,132 +118,88 @@
     border: 1px solid rgba(255,255,255,0.2);
     border-radius: 22px;
     padding: clamp(20px, 3vw, 34px) clamp(22px, 3.5vw, 44px);
-    box-shadow: var(--shadow);
-    overflow: hidden;
+    box-shadow: var(--shadow); overflow: hidden;
     color: var(--text-light);
   }
   .header::before {
-    content: "";
-    position: absolute; inset: 0;
+    content: ""; position: absolute; inset: 0;
     background: linear-gradient(90deg, var(--gold), var(--teal-bright), var(--coral), var(--pitch-light));
     height: 5px;
   }
-  /* Pitch lines decoration on header */
   .header::after {
-    content: "";
-    position: absolute;
-    right: -40px; top: 50%;
-    transform: translateY(-50%);
+    content: ""; position: absolute;
+    right: -40px; top: 50%; transform: translateY(-50%);
     width: 200px; height: 200px;
     border: 3px solid rgba(255,255,255,0.08);
-    border-radius: 50%;
-    pointer-events: none;
+    border-radius: 50%; pointer-events: none;
   }
   .logo {
     position: absolute;
-    top: clamp(18px, 2.5vw, 28px);
-    right: clamp(18px, 2.5vw, 28px);
-    width: calc(54px * var(--tv-scale));
-    height: calc(54px * var(--tv-scale));
+    top: clamp(18px, 2.5vw, 28px); right: clamp(18px, 2.5vw, 28px);
+    width: calc(54px * var(--tv-scale)); height: calc(54px * var(--tv-scale));
     border-radius: 50%;
     background: linear-gradient(135deg, var(--coral), #b71d2b);
     display: grid; place-items: center;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
-    font-size: calc(1.9rem * var(--tv-scale));
-    color: #fff;
+    font-family: 'Oswald', sans-serif; font-weight: 700;
+    font-size: calc(1.9rem * var(--tv-scale)); color: #fff;
     box-shadow: 0 6px 18px rgba(230,57,70,0.45);
     border: 2px solid rgba(255,255,255,0.25);
   }
   .header h1 {
-    font-family: 'Bebas Neue', 'Oswald', sans-serif;
-    font-weight: 400;
+    font-family: 'Bebas Neue', 'Oswald', sans-serif; font-weight: 400;
     letter-spacing: 1.5px;
     font-size: calc(clamp(2rem, 5vw, 3.4rem) * var(--tv-scale));
-    line-height: 1.02;
-    margin-bottom: 4px;
+    line-height: 1.02; margin-bottom: 4px;
     background: linear-gradient(90deg, #fff 30%, var(--gold) 100%);
-    -webkit-background-clip: text;
-    background-clip: text;
-    -webkit-text-fill-color: transparent;
-    padding-right: 60px;
+    -webkit-background-clip: text; background-clip: text;
+    -webkit-text-fill-color: transparent; padding-right: 60px;
   }
   .header .subtitle {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 500;
-    letter-spacing: 3px;
-    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif; font-weight: 500;
+    letter-spacing: 3px; text-transform: uppercase;
     color: var(--gold);
     font-size: calc(clamp(0.85rem, 2vw, 1.1rem) * var(--tv-scale));
     margin-bottom: 14px;
   }
   .header .meta-row {
-    display: flex; flex-wrap: wrap; align-items: center; gap: 14px;
-    margin-top: 12px;
+    display: flex; flex-wrap: wrap; align-items: center; gap: 14px; margin-top: 12px;
   }
   .phase-pill {
     background: linear-gradient(135deg, var(--coral), #c92a36);
-    color: #fff;
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    font-size: calc(0.82rem * var(--tv-scale));
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    padding: 5px 16px;
-    border-radius: 20px;
-    white-space: nowrap;
+    color: #fff; font-family: 'Oswald', sans-serif; font-weight: 600;
+    font-size: calc(0.82rem * var(--tv-scale)); letter-spacing: 1px;
+    text-transform: uppercase; padding: 5px 16px; border-radius: 20px; white-space: nowrap;
   }
-  .progress-wrap {
-    flex: 1 1 200px;
-    display: flex; align-items: center; gap: 10px;
-    min-width: 0;
-  }
+  .progress-wrap { flex: 1 1 200px; display: flex; align-items: center; gap: 10px; min-width: 0; }
   .progress-bar {
-    flex: 1;
-    height: 12px;
-    background: rgba(255,255,255,0.2);
-    border-radius: 6px;
-    overflow: hidden;
-    position: relative;
+    flex: 1; height: 12px; background: rgba(255,255,255,0.2);
+    border-radius: 6px; overflow: hidden; position: relative;
   }
   .progress-fill {
-    height: 100%;
-    border-radius: 6px;
+    height: 100%; border-radius: 6px;
     background: linear-gradient(90deg, var(--pitch-light), var(--gold));
     transition: width 1.2s cubic-bezier(.4,0,.2,1);
     box-shadow: 0 0 12px rgba(255,195,0,0.4);
   }
   .progress-label {
-    font-size: calc(0.78rem * var(--tv-scale));
-    font-weight: 600;
-    white-space: nowrap;
-    color: rgba(255,255,255,0.85);
+    font-size: calc(0.78rem * var(--tv-scale)); font-weight: 600;
+    white-space: nowrap; color: rgba(255,255,255,0.85);
   }
   .updated-stamp {
-    width: 100%;
-    margin-top: 8px;
-    font-size: calc(0.72rem * var(--tv-scale));
-    color: rgba(255,255,255,0.55);
+    width: 100%; margin-top: 8px;
+    font-size: calc(0.72rem * var(--tv-scale)); color: rgba(255,255,255,0.55);
   }
 
   /* ============ PITCH-STYLE LEADERBOARD WRAPPER ============ */
   .leaderboard-wrapper {
     position: relative;
-    background:
-      linear-gradient(180deg, rgba(46,125,50,0.08) 0%, rgba(46,125,50,0.03) 100%);
-    border: 2px solid rgba(46,125,50,0.2);
-    border-radius: 22px;
-    padding: 4px;
-    overflow: hidden;
+    background: linear-gradient(180deg, rgba(46,125,50,0.12) 0%, rgba(46,125,50,0.05) 100%);
+    border: 2px solid rgba(46,125,50,0.3);
+    border-radius: 22px; padding: 4px; overflow: hidden;
   }
-  /* Corner flag decorations */
   .leaderboard-wrapper::before,
   .leaderboard-wrapper::after {
-    content: "🚩";
-    position: absolute;
-    font-size: 1.2rem;
-    opacity: 0.3;
-    z-index: 2;
+    content: "\1F6A9"; position: absolute; font-size: 1.2rem; opacity: 0.3; z-index: 2;
   }
   .leaderboard-wrapper::before { top: 8px; left: 12px; }
   .leaderboard-wrapper::after { top: 8px; right: 12px; }
@@ -268,52 +207,40 @@
   .card {
     background: var(--card-bg);
     border: 1px solid var(--card-border);
-    border-radius: 18px;
-    box-shadow: var(--shadow);
-    overflow: hidden;
-    backdrop-filter: blur(12px);
+    border-radius: 18px; box-shadow: var(--shadow);
+    overflow: hidden; backdrop-filter: blur(12px);
   }
 
   /* ============ SECTION HEADINGS ============ */
   .section-title {
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 2px;
-    text-transform: uppercase;
-    font-size: calc(1rem * var(--tv-scale));
-    color: var(--text);
+    font-family: 'Oswald', sans-serif; letter-spacing: 2px; text-transform: uppercase;
+    font-size: calc(1rem * var(--tv-scale)); color: var(--text);
     padding: 16px clamp(18px, 3vw, 28px) 10px;
     display: flex; align-items: center; gap: 10px;
-    border-bottom: 2px solid rgba(46,125,50,0.15);
+    border-bottom: 2px solid rgba(255,255,255,0.08);
   }
   .section-title .icon { font-size: 1.3rem; }
 
   /* ============ LEADERBOARD TABLE ============ */
   .lb-scroll { overflow-x: auto; }
   table.leaderboard {
-    width: 100%;
-    border-collapse: collapse;
-    min-width: 720px;
+    width: 100%; border-collapse: collapse; min-width: 720px;
     font-size: calc(0.95rem * var(--tv-scale));
   }
   table.leaderboard thead th {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 600;
-    letter-spacing: 1px;
-    text-transform: uppercase;
+    font-family: 'Oswald', sans-serif; font-weight: 600;
+    letter-spacing: 1px; text-transform: uppercase;
     font-size: calc(0.78rem * var(--tv-scale));
     color: #fff;
     background: linear-gradient(135deg, var(--bg-top), var(--teal));
-    padding: 13px 14px;
-    position: sticky; top: 0; z-index: 2;
-    white-space: nowrap;
-    text-align: left;
+    padding: 13px 14px; position: sticky; top: 0; z-index: 2;
+    white-space: nowrap; text-align: left;
   }
   table.leaderboard thead th:first-child { border-radius: 10px 0 0 0; }
   table.leaderboard thead th:last-child { border-radius: 0 10px 0 0; text-align: right; }
   table.leaderboard tbody td {
-    padding: 12px 14px;
-    vertical-align: middle;
-    border-bottom: 1px solid rgba(0,0,0,0.06);
+    padding: 12px 14px; vertical-align: middle;
+    border-bottom: 1px solid rgba(255,255,255,0.07);
   }
   .col-rank { width: 64px; text-align: center; }
   .rank-num { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: calc(1.1rem * var(--tv-scale)); }
@@ -323,22 +250,17 @@
   .fire { cursor: default; }
   .team-info { display: flex; flex-direction: column; gap: 1px; line-height: 1.3; }
   .team-name { font-size: calc(0.88rem * var(--tv-scale)); font-weight: 500; }
-  .team-pts { font-size: calc(0.82rem * var(--tv-scale)); font-weight: 800; color: var(--teal); }
+  .team-pts { font-size: calc(0.82rem * var(--tv-scale)); font-weight: 800; color: var(--teal-bright); }
   .col-total { text-align: right; padding-right: 20px !important; }
   .total-val {
-    font-family: 'Oswald', sans-serif;
-    font-weight: 700;
+    font-family: 'Oswald', sans-serif; font-weight: 700;
     font-size: calc(1.5rem * var(--tv-scale));
-    color: var(--bg-top);
-    line-height: 1;
+    color: var(--gold); line-height: 1;
   }
   .total-lbl {
-    display: block;
-    font-size: calc(0.6rem * var(--tv-scale));
-    letter-spacing: 1px;
-    text-transform: uppercase;
-    color: var(--text-dim);
-    font-weight: 600;
+    display: block; font-size: calc(0.6rem * var(--tv-scale));
+    letter-spacing: 1px; text-transform: uppercase;
+    color: var(--text-dim); font-weight: 600;
   }
 
   /* Row styles */
@@ -350,63 +272,56 @@
 
   /* Medal rows */
   .rank-1 {
-    background: linear-gradient(135deg, rgba(255,215,0,0.35), rgba(255,215,0,0.12)) !important;
+    background: linear-gradient(135deg, rgba(255,215,0,0.25), rgba(255,215,0,0.08)) !important;
     border-left: 4px solid var(--gold-medal);
   }
   .rank-2 {
-    background: linear-gradient(135deg, rgba(192,192,192,0.3), rgba(192,192,192,0.1)) !important;
+    background: linear-gradient(135deg, rgba(192,192,192,0.2), rgba(192,192,192,0.06)) !important;
     border-left: 4px solid var(--silver-medal);
   }
   .rank-3 {
-    background: linear-gradient(135deg, rgba(205,127,50,0.3), rgba(205,127,50,0.1)) !important;
+    background: linear-gradient(135deg, rgba(205,127,50,0.25), rgba(205,127,50,0.08)) !important;
     border-left: 4px solid var(--bronze-medal);
   }
 
   /* Hot / points change */
-  .hot { box-shadow: inset 0 0 0 1px rgba(70,209,127,0.5); background: linear-gradient(135deg, rgba(70,209,127,0.12), rgba(70,209,127,0.03)) !important; }
+  .hot { box-shadow: inset 0 0 0 1px rgba(70,209,127,0.5); background: linear-gradient(135deg, rgba(70,209,127,0.18), rgba(70,209,127,0.06)) !important; }
 
   .empty-state { text-align: center; padding: 40px; color: var(--text-dim); font-size: calc(1rem * var(--tv-scale)); }
 
   /* ============ MOBILE CARDS ============ */
   .lb-cards {
-    display: none;
-    flex-direction: column;
-    gap: 10px;
+    display: none; flex-direction: column; gap: 10px;
     padding: 12px clamp(12px, 2.5vw, 20px);
   }
   .p-card {
-    background: var(--card-bg);
-    border: 1px solid var(--card-border);
-    border-radius: 14px;
-    padding: 14px;
-    animation: fadeRow 0.5s both;
-    box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+    background: var(--card-bg); border: 1px solid var(--card-border);
+    border-radius: 14px; padding: 14px;
+    animation: fadeRow 0.5s both; box-shadow: 0 4px 12px rgba(0,0,0,0.3);
   }
-  .p-card.rank-1 { background: linear-gradient(135deg, rgba(255,215,0,0.3), rgba(255,215,0,0.08)); border-color: rgba(255,215,0,0.5); }
-  .p-card.rank-2 { background: linear-gradient(135deg, rgba(192,192,192,0.25), rgba(192,192,192,0.08)); border-color: rgba(192,192,192,0.4); }
-  .p-card.rank-3 { background: linear-gradient(135deg, rgba(205,127,50,0.3), rgba(205,127,50,0.1)); border-color: rgba(205,127,50,0.45); }
-  .p-card.hot { box-shadow: 0 0 0 1px rgba(70,209,127,0.55), 0 0 24px rgba(70,209,127,0.15); }
+  .p-card.rank-1 { background: linear-gradient(135deg, rgba(255,215,0,0.25), rgba(255,215,0,0.08)); border-color: rgba(255,215,0,0.5); }
+  .p-card.rank-2 { background: linear-gradient(135deg, rgba(192,192,192,0.2), rgba(192,192,192,0.06)); border-color: rgba(192,192,192,0.4); }
+  .p-card.rank-3 { background: linear-gradient(135deg, rgba(205,127,50,0.25), rgba(205,127,50,0.08)); border-color: rgba(205,127,50,0.45); }
+  .p-card.hot { box-shadow: 0 0 0 1px rgba(70,209,127,0.55), 0 0 24px rgba(70,209,127,0.2); }
   .p-card .pc-top { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-bottom: 10px; }
   .p-card .pc-left { display: flex; align-items: center; gap: 9px; }
   .p-card .pc-rank { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.2rem; }
   .p-card .pc-name { font-weight: 700; font-size: 1.05rem; }
-  .p-card .pc-total { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.6rem; color: var(--bg-top); text-align: right; line-height: 1; }
+  .p-card .pc-total { font-family: 'Oswald', sans-serif; font-weight: 700; font-size: 1.6rem; color: var(--gold); text-align: right; line-height: 1; }
   .p-card .pc-total small { display: block; font-size: 0.6rem; letter-spacing: 1px; text-transform: uppercase; color: var(--text-dim); font-family: 'Inter'; }
   .p-card .pc-teams { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-  .p-card .pc-team { background: rgba(14,90,90,0.08); border-radius: 10px; padding: 8px; text-align: center; }
+  .p-card .pc-team { background: rgba(255,255,255,0.08); border-radius: 10px; padding: 8px; text-align: center; }
   .p-card .pc-team .t-n { font-size: 0.82rem; font-weight: 500; }
-  .p-card .pc-team .t-p { font-size: 0.78rem; font-weight: 700; color: var(--teal); margin-top: 3px; }
+  .p-card .pc-team .t-p { font-size: 0.78rem; font-weight: 700; color: var(--teal-bright); margin-top: 3px; }
 
   /* ============ RESULTS TICKER ============ */
   .ticker-card { padding: 0; }
   .ticker-head {
     padding: 12px clamp(18px, 3vw, 28px);
-    font-family: 'Oswald', sans-serif;
-    letter-spacing: 1.5px;
-    text-transform: uppercase;
-    font-size: calc(0.95rem * var(--tv-scale));
+    font-family: 'Oswald', sans-serif; letter-spacing: 1.5px;
+    text-transform: uppercase; font-size: calc(0.95rem * var(--tv-scale));
     color: var(--text);
-    border-bottom: 1px solid rgba(0,0,0,0.08);
+    border-bottom: 1px solid rgba(255,255,255,0.08);
     display: flex; align-items: center; gap: 9px;
   }
   .ticker-head .live-dot {
@@ -420,25 +335,22 @@
   @keyframes scrollTicker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
   .result-chip {
     display: inline-flex; align-items: center; gap: 10px;
-    background: linear-gradient(135deg, rgba(14,90,90,0.1), rgba(11,61,107,0.08));
-    border: 1px solid rgba(14,90,90,0.2);
-    border-radius: 12px;
-    padding: 9px 15px;
-    font-size: calc(0.9rem * var(--tv-scale));
-    white-space: nowrap;
+    background: rgba(255,255,255,0.08);
+    border: 1px solid rgba(255,255,255,0.12);
+    border-radius: 12px; padding: 9px 15px;
+    font-size: calc(0.9rem * var(--tv-scale)); white-space: nowrap;
   }
   .result-chip .grp {
     background: var(--teal); color: #fff; font-weight: 700;
     border-radius: 6px; padding: 2px 8px; font-size: calc(0.72rem * var(--tv-scale));
   }
-  .result-chip .score { font-family: 'Oswald', sans-serif; font-weight: 700; color: var(--coral); font-size: calc(1rem * var(--tv-scale)); }
+  .result-chip .score { font-family: 'Oswald', sans-serif; font-weight: 700; color: var(--gold); font-size: calc(1rem * var(--tv-scale)); }
   .result-chip .tm { font-weight: 500; }
   .ticker-empty { padding: 18px 24px; color: var(--text-dim); font-size: calc(0.9rem * var(--tv-scale)); text-align: center; }
 
   .footer-note {
     text-align: center; color: rgba(255,255,255,0.6);
-    font-size: calc(0.72rem * var(--tv-scale));
-    padding: 4px 0 8px;
+    font-size: calc(0.72rem * var(--tv-scale)); padding: 4px 0 8px;
   }
 
   /* ============ RESPONSIVE ============ */
@@ -538,59 +450,110 @@
 
   var DATA_URL = "leaderboard.json";
   var REFRESH_MS = 60000;
+  var TOTAL_MATCHES = 104;
   var TV_CYCLE_MS = 30000;
-  var TV_MODE = /[?&]mode=tv/i.test(location.search);
+
+  var params = new URLSearchParams(window.location.search);
+  var TV_MODE = params.get("mode") === "tv";
 
   var lastGoodData = null;
   var refreshCount = 0;
 
-  function esc(v) { var d = document.createElement("div"); d.textContent = v == null ? "" : String(v); return d.innerHTML; }
-  function showError(msg) { var b = document.getElementById("errorBanner"); b.classList.add("show"); document.getElementById("errorMsg").textContent = msg; }
-  function clearError() { document.getElementById("errorBanner").classList.remove("show"); }
-  function medalFor(rank) { return rank === 1 ? "\uD83E\uDD47" : rank === 2 ? "\uD83E\uDD48" : rank === 3 ? "\uD83E\uDD49" : ""; }
+  // -------- helpers --------
+  function esc(s) {
+    return String(s == null ? "" : s)
+      .replace(/&/g, "&amp;").replace(/</g, "&lt;").replace(/>/g, "&gt;")
+      .replace(/"/g, "&quot;").replace(/'/g, "&#39;");
+  }
+
+  function fmtSydney(iso) {
+    if (!iso) return "—";
+    try {
+      var d = new Date(iso);
+      if (isNaN(d.getTime())) return esc(iso);
+      var opts = {
+        timeZone: "Australia/Sydney",
+        weekday: "short", day: "numeric", month: "short",
+        hour: "numeric", minute: "2-digit", hour12: true
+      };
+      return new Intl.DateTimeFormat("en-AU", opts).format(d) + " AEST";
+    } catch (e) {
+      console.warn("[WC2026] Timestamp format failed:", e);
+      return esc(iso);
+    }
+  }
+
+  function medalFor(rank) {
+    if (rank === 1) return "🥇";
+    if (rank === 2) return "🥈";
+    if (rank === 3) return "🥉";
+    return "";
+  }
+
+  function teamCell(name, pts) {
+    return '<div class="team-cell">' +
+             '<div class="team-name">' + esc(name || "—") + '</div>' +
+             '<div class="team-pts">' + (pts == null ? "0" : esc(pts)) + ' pts</div>' +
+           '</div>';
+  }
+
+  // -------- error banner --------
+  function showError(msg) {
+    var b = document.getElementById("errorBanner");
+    document.getElementById("errorText").textContent = msg ||
+      "Couldn't refresh live data — showing the last loaded standings.";
+    b.classList.add("show");
+  }
+  function clearError() {
+    document.getElementById("errorBanner").classList.remove("show");
+  }
 
   // -------- render header --------
   function renderHeader(data) {
     var info = data.tournamentInfo || {};
     var played = Number(info.totalMatchesPlayed) || 0;
-    var total = 104;
-    var pct = Math.min(100, Math.round((played / total) * 100));
+    var pct = Math.max(0, Math.min(100, Math.round((played / TOTAL_MATCHES) * 100)));
 
-    document.getElementById("phasePill").textContent = info.currentPhase || "Group Stage";
-    document.getElementById("progressFill").style.width = pct + "%";
-    document.getElementById("progressLabel").textContent = played + " / " + total + " matches";
+    document.getElementById("phasePill").textContent = info.currentPhase || "Tournament";
+    var remaining = (info.totalMatchesRemaining != null)
+      ? info.totalMatchesRemaining
+      : (TOTAL_MATCHES - played);
+    document.getElementById("matchesMeta").innerHTML =
+      "<strong>" + esc(played) + "</strong> played · <strong>" + esc(remaining) + "</strong> remaining";
 
-    if (data.lastUpdated) {
-      try {
-        var d = new Date(data.lastUpdated);
-        document.getElementById("updatedStamp").textContent =
-          "Last updated: " + d.toLocaleString("en-AU", { timeZone: "Australia/Sydney", dateStyle: "medium", timeStyle: "short" });
-      } catch (e) {
-        document.getElementById("updatedStamp").textContent = "Last updated: " + data.lastUpdated;
-      }
-    }
+    document.getElementById("progressText").textContent = played + " of " + TOTAL_MATCHES + " matches played";
+    document.getElementById("progressPct").textContent = pct + "%";
+    // delay so the CSS transition animates from 0
+    requestAnimationFrame(function () {
+      requestAnimationFrame(function () {
+        document.getElementById("progressFill").style.width = pct + "%";
+      });
+    });
+
+    document.getElementById("updatedText").textContent = "Last updated: " + fmtSydney(data.lastUpdated);
   }
 
   // -------- render leaderboard --------
   function renderLeaderboard(data) {
-    var players = Array.isArray(data.leaderboard) ? data.leaderboard.slice() : [];
-    players.sort(function (a, b) { return (Number(b.totalPoints) || 0) - (Number(a.totalPoints) || 0); });
+    var rows = Array.isArray(data.leaderboard) ? data.leaderboard.slice() : [];
+    // visually confirm sort by totalPoints desc
+    rows.sort(function (a, b) { return (Number(b.totalPoints) || 0) - (Number(a.totalPoints) || 0); });
 
     var body = document.getElementById("lbBody");
     var cards = document.getElementById("lbCards");
-    var tableHtml = "";
-    var cardHtml = "";
 
-    function teamCell(name, pts) {
-      return '<div class="team-info"><span class="team-name">' + esc(name || "\u2014") +
-             '</span><span class="team-pts">' + (pts == null ? 0 : esc(pts)) + ' pts</span></div>';
+    if (!rows.length) {
+      body.innerHTML = '<tr><td colspan="6" class="empty-state">No players yet — the leaderboard will appear once the sweepstakes begins.</td></tr>';
+      cards.innerHTML = '<div class="empty-state">No players yet — the leaderboard will appear once the sweepstakes begins.</div>';
+      return;
     }
 
-    players.forEach(function (p, i) {
+    var tableHtml = "", cardHtml = "";
+    rows.forEach(function (p, i) {
       var rank = (p.rank != null) ? Number(p.rank) : (i + 1);
       var rankClass = rank <= 3 ? ("rank-" + rank) : (i % 2 === 0 ? "r-odd" : "r-even");
       var hot = (typeof p.pointsChange === "number" && p.pointsChange > 0) ? " hot" : "";
-      var fire = hot ? ' <span class="fire" title="+' + esc(p.pointsChange) + ' since last update">\uD83D\uDD25</span>' : "";
+      var fire = hot ? ' <span class="fire" title="+' + esc(p.pointsChange) + ' since last update">🔥</span>' : "";
       var medal = medalFor(rank);
       var medalHtml = medal ? '<span class="medal">' + medal + '</span> ' : "";
       var delay = "animation-delay:" + (i * 50) + "ms;";
@@ -613,9 +576,9 @@
             '<div class="pc-total">' + (Number(p.totalPoints) || 0) + '<small>total pts</small></div>' +
           '</div>' +
           '<div class="pc-teams">' +
-            '<div class="pc-team"><div class="t-n">' + esc(p.team1 || "\u2014") + '</div><div class="t-p">' + (p.team1Pts == null ? 0 : esc(p.team1Pts)) + ' pts</div></div>' +
-            '<div class="pc-team"><div class="t-n">' + esc(p.team2 || "\u2014") + '</div><div class="t-p">' + (p.team2Pts == null ? 0 : esc(p.team2Pts)) + ' pts</div></div>' +
-            '<div class="pc-team"><div class="t-n">' + esc(p.team3 || "\u2014") + '</div><div class="t-p">' + (p.team3Pts == null ? 0 : esc(p.team3Pts)) + ' pts</div></div>' +
+            '<div class="pc-team"><div class="t-n">' + esc(p.team1 || "—") + '</div><div class="t-p">' + (p.team1Pts == null ? 0 : esc(p.team1Pts)) + ' pts</div></div>' +
+            '<div class="pc-team"><div class="t-n">' + esc(p.team2 || "—") + '</div><div class="t-p">' + (p.team2Pts == null ? 0 : esc(p.team2Pts)) + ' pts</div></div>' +
+            '<div class="pc-team"><div class="t-n">' + esc(p.team3 || "—") + '</div><div class="t-p">' + (p.team3Pts == null ? 0 : esc(p.team3Pts)) + ' pts</div></div>' +
           '</div>' +
         '</div>';
     });
@@ -632,7 +595,7 @@
 
     if (!results.length) {
       track.style.animation = "none";
-      track.innerHTML = '<div class="ticker-empty">No matches today \u2014 next matches tomorrow.</div>';
+      track.innerHTML = '<div class="ticker-empty">No matches today — next matches tomorrow.</div>';
       return;
     }
 
@@ -640,16 +603,17 @@
       return '<div class="result-chip">' +
                '<span class="grp">' + esc(r.group || "?") + '</span>' +
                '<span class="tm">' + esc(r.homeTeam) + '</span>' +
-               '<span class="score">' + (r.homeScore == null ? "\u2013" : esc(r.homeScore)) +
-                 ' - ' + (r.awayScore == null ? "\u2013" : esc(r.awayScore)) + '</span>' +
+               '<span class="score">' + (r.homeScore == null ? "–" : esc(r.homeScore)) +
+                 ' - ' + (r.awayScore == null ? "–" : esc(r.awayScore)) + '</span>' +
                '<span class="tm">' + esc(r.awayTeam) + '</span>' +
              '</div>';
     }
 
     var chips = results.map(chip).join("");
+    // duplicate the set so the marquee loops seamlessly
     track.innerHTML = chips + chips;
     track.style.animation = "scrollTicker 38s linear infinite";
-    void viewport.offsetWidth;
+    void viewport.offsetWidth; // reflow
   }
 
   // -------- main render --------
@@ -663,7 +627,7 @@
   function load() {
     refreshCount++;
     var cycle = refreshCount;
-    console.log("[WC2026] Refresh cycle #" + cycle + " \u2014 fetching " + DATA_URL);
+    console.log("[WC2026] Refresh cycle #" + cycle + " — fetching " + DATA_URL);
 
     fetch(DATA_URL, { cache: "no-store" })
       .then(function (res) {
@@ -675,14 +639,14 @@
         lastGoodData = data;
         clearError();
         render(data);
-        console.log("[WC2026] Cycle #" + cycle + " OK \u2014 " +
+        console.log("[WC2026] Cycle #" + cycle + " OK — " +
           ((data.leaderboard && data.leaderboard.length) || 0) + " players, " +
           ((data.recentResults && data.recentResults.length) || 0) + " results.");
       })
       .catch(function (err) {
         console.error("[WC2026] Cycle #" + cycle + " FAILED:", err);
         if (lastGoodData) {
-          showError("Couldn't refresh live data (" + err.message + ") \u2014 showing the last loaded standings.");
+          showError("Couldn't refresh live data (" + err.message + ") — showing the last loaded standings.");
         } else {
           showError("Couldn't load the leaderboard data (" + err.message + "). Check that leaderboard.json is in the same folder.");
           document.getElementById("lbBody").innerHTML =
@@ -705,6 +669,7 @@
     };
     var showingResults = false;
 
+    // Auto-cycle between leaderboard and recent results
     setInterval(function () {
       showingResults = !showingResults;
       var hideEl = showingResults ? sections.board : sections.results;
@@ -717,6 +682,7 @@
       }, 600);
     }, TV_CYCLE_MS);
 
+    // Slow auto-scroll if board overflows the viewport
     var dir = 1;
     setInterval(function () {
       if (showingResults) return;
