@@ -374,18 +374,19 @@
   .view-section { transition: opacity 0.6s ease; }
   .view-section.fade-out { opacity: 0; }
 
+  /* TOOLTIPS - SOLID OPAQUE */
   .team-cell-wrap{position:relative;cursor:pointer;}
-  .team-tooltip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:200;background:#0a1225;background-color:#0a1225;border:2px solid rgba(255,255,255,0.35);border-radius:14px;padding:12px 14px;min-width:240px;max-width:320px;box-shadow:0 14px 44px rgba(0,0,0,0.85);pointer-events:none;}
-  .team-cell-wrap:hover .team-tooltip,.team-cell-wrap.tt-active .team-tooltip{display:block;}
-  .team-tooltip::after{content:"";position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:7px solid transparent;border-bottom-color:#0a1225;}
-  .team-cell-wrap.tt-above .team-tooltip{top:auto;bottom:calc(100% + 8px);}
-  .team-cell-wrap.tt-above .team-tooltip::after{bottom:auto;top:100%;border-bottom-color:transparent;border-top-color:#0a1225;}
-  .team-cell-wrap.tt-right .team-tooltip{left:auto;right:0;transform:none;}
-  .team-cell-wrap.tt-right .team-tooltip::after{left:auto;right:20px;transform:none;}
+  div.team-tooltip{display:none !important;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9999;background:#0a1225 !important;background-color:#0a1225 !important;opacity:1 !important;border:2px solid #556688;border-radius:14px;padding:12px 14px;min-width:240px;max-width:320px;box-shadow:0 14px 44px rgba(0,0,0,0.9);pointer-events:none;}
+  .team-cell-wrap:hover>div.team-tooltip,.team-cell-wrap.tt-active>div.team-tooltip{display:block !important;}
+  div.team-tooltip::after{content:"";position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:7px solid transparent;border-bottom-color:#0a1225;}
+  .team-cell-wrap.tt-above>div.team-tooltip{top:auto;bottom:calc(100% + 8px);}
+  .team-cell-wrap.tt-above>div.team-tooltip::after{bottom:auto;top:100%;border-bottom-color:transparent;border-top-color:#0a1225;}
+  .team-cell-wrap.tt-right>div.team-tooltip{left:auto;right:0;transform:none;}
+  .team-cell-wrap.tt-right>div.team-tooltip::after{left:auto;right:20px;transform:none;}
   .tt-header{font-family:'Oswald',sans-serif;font-weight:600;font-size:0.9rem;color:var(--gold);margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.15);display:flex;align-items:center;gap:6px;}
   .tt-match{display:flex;align-items:center;gap:8px;padding:5px 0;font-size:0.82rem;color:#d0d6e0;border-bottom:1px solid rgba(255,255,255,0.06);}
   .tt-match:last-child{border-bottom:none;}
-  .tt-date{color:var(--text-dim);font-size:0.72rem;min-width:44px;}
+  .tt-date{color:var(--text-dim);font-size:0.75rem;min-width:44px;}
   .tt-vs{flex:1;font-weight:500;white-space:nowrap;overflow:hidden;text-overflow:ellipsis;}
   .tt-score{font-family:'Oswald',sans-serif;font-weight:700;font-size:0.88rem;min-width:38px;text-align:center;}
   .tt-badge{font-size:0.7rem;font-weight:700;padding:2px 7px;border-radius:6px;min-width:24px;text-align:center;}
@@ -395,9 +396,12 @@
   .tt-empty{color:var(--text-dim);font-size:0.8rem;font-style:italic;padding:4px 0;}
   .tt-summary{margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.15);font-size:0.75rem;color:var(--text-dim);display:flex;justify-content:space-between;}
   .tt-summary .tt-total{color:var(--gold);font-weight:700;font-family:'Oswald',sans-serif;font-size:0.85rem;}
-  #leaderboardSection.card{overflow:visible;}
+  #leaderboardSection.card{overflow:visible !important;}
   .lb-scroll{overflow:visible !important;}
-  @media(max-width:768px){.team-cell-wrap:hover .team-tooltip{display:none;}.team-cell-wrap.tt-active .team-tooltip{display:block;}.team-tooltip{min-width:200px;font-size:0.78rem;}}
+  table.leaderboard{overflow:visible !important;}
+  table.leaderboard tbody{overflow:visible !important;}
+  table.leaderboard tbody td{position:relative;}
+  @media(max-width:768px){.team-cell-wrap:hover>div.team-tooltip{display:none !important;}.team-cell-wrap.tt-active>div.team-tooltip{display:block !important;}.team-tooltip{min-width:200px;font-size:0.78rem;}}
 </style>
 </head>
 <body>
@@ -417,19 +421,19 @@
     </div>
 
     <!-- HEADER -->
-    <header class="header view-section" id="headerSection">
+    <header class="header view-section" id="headerSection" style="padding:clamp(28px,4vw,44px) clamp(28px,4vw,50px);">
       <div class="logo" title="Protiviti">P</div>
-      <h1>&#127942; Protiviti World Cup 2026 Sweepstakes</h1>
-      <div class="subtitle">&#9917; Office Leaderboard &#9917;</div>
-      <div class="phase-row">
+      <h1 style="margin-bottom:10px;">&#127942; Protiviti World Cup 2026 Sweepstakes</h1>
+      <div class="subtitle" style="margin-bottom:20px;">&#9917; Office Leaderboard &#9917;</div>
+      <div class="phase-row" style="margin-bottom:18px;">
         <span class="phase-pill" id="phasePill">Loading&hellip;</span>
-        <span class="matches-meta" id="matchesMeta"></span>
+        <span class="matches-meta" id="matchesMeta" style="font-size:0.95rem;"></span>
       </div>
-      <div class="progress-wrap">
+      <div class="progress-wrap" style="margin-bottom:14px;">
         <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
       </div>
-      <div class="progress-label"><span id="progressText"></span><span id="progressPct"></span></div>
-      <div class="updated"><span class="pulse"></span><span id="updatedText">Last updated: &mdash;</span></div>
+      <div class="progress-label" style="display:none;"><span id="progressText"></span><span id="progressPct"></span></div>
+      <div class="updated" style="margin-top:14px;font-size:0.82rem;"><span class="pulse"></span><span id="updatedText">Last updated: &mdash;</span></div>
     </header>
 
     <!-- LEADERBOARD -->
@@ -524,9 +528,8 @@
     else {
       m.forEach(function(g) {
         var bc = g.result === "W" ? "win" : g.result === "D" ? "draw" : "loss";
-        var dp = (g.date || "").split("-");
-        var sd = dp.length === 3 ? dp[2] + "/" + dp[1] : g.date;
-        t += '<div class="tt-match"><span class="tt-date">' + esc(sd) + '</span><span class="tt-vs">vs ' + esc(g.vs) + '</span><span class="tt-score">' + esc(g.score) + '</span><span class="tt-badge ' + bc + '">' + esc(g.result) + '</span></div>';
+        var dd = g.displayDate || g.date || "";
+        t += '<div class="tt-match"><span class="tt-date">' + esc(dd) + '</span><span class="tt-vs">vs ' + esc(g.vs) + '</span><span class="tt-score">' + esc(g.score) + '</span><span class="tt-badge ' + bc + '">' + esc(g.result) + '</span></div>';
       });
       t += '<div class="tt-summary"><span>' + m.length + ' match' + (m.length !== 1 ? 'es' : '') + '</span><span class="tt-total">' + (pts == null ? 0 : esc(pts)) + ' pts</span></div>';
     }
@@ -556,7 +559,6 @@
       ? info.totalMatchesRemaining
       : (TOTAL_MATCHES - played);
     document.getElementById("matchesMeta").textContent = played + " of " + TOTAL_MATCHES + " matches played";
-
     document.getElementById("progressText").textContent = "";
     document.getElementById("progressPct").textContent = "";
     // delay so the CSS transition animates from 0
@@ -642,12 +644,11 @@
     }
 
     function chip(r) {
-      var hs = (r.homeScore !== null && r.homeScore !== undefined) ? String(r.homeScore) : "?";
-      var as2 = (r.awayScore !== null && r.awayScore !== undefined) ? String(r.awayScore) : "?";
+      var sc = r.displayScore || ((r.homeScore != null ? r.homeScore : "?") + " - " + (r.awayScore != null ? r.awayScore : "?"));
       return '<div class="result-chip">' +
                '<span class="grp">' + esc(r.group || "?") + '</span>' +
                '<span class="tm">' + esc(r.homeTeam) + '</span>' +
-               '<span class="score">' + hs + ' - ' + as2 + '</span>' +
+               '<span class="score">' + esc(sc) + '</span>' +
                '<span class="tm">' + esc(r.awayTeam) + '</span>' +
              '</div>';
     }
