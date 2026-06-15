@@ -1,8 +1,30 @@
 {
-  "lastUpdated": "2026-06-15T10:24:10+10:00",
+  "lastUpdated": "2026-06-15T14:27:33+10:00",
   "leaderboard": [
     {
       "rank": 1,
+      "playerName": "Cyrus Si Tu",
+      "team1": "Croatia",
+      "team1Pts": 0,
+      "team2": "Australia",
+      "team2Pts": 3,
+      "team3": "Sweden",
+      "team3Pts": 3,
+      "totalPoints": 6
+    },
+    {
+      "rank": 2,
+      "playerName": "Harini Elamurugan",
+      "team1": "Mexico",
+      "team1Pts": 3,
+      "team2": "Egypt",
+      "team2Pts": 0,
+      "team3": "Sweden",
+      "team3Pts": 3,
+      "totalPoints": 6
+    },
+    {
+      "rank": 3,
       "playerName": "Aayushi Malhotra",
       "team1": "Brazil",
       "team1Pts": 1,
@@ -13,7 +35,7 @@
       "totalPoints": 4
     },
     {
-      "rank": 2,
+      "rank": 4,
       "playerName": "Ben Kempton",
       "team1": "Mexico",
       "team1Pts": 3,
@@ -24,7 +46,18 @@
       "totalPoints": 4
     },
     {
-      "rank": 3,
+      "rank": 5,
+      "playerName": "Brian O'Connell",
+      "team1": "Netherlands",
+      "team1Pts": 1,
+      "team2": "Côte d'Ivoire",
+      "team2Pts": 3,
+      "team3": "Curaçao",
+      "team3Pts": 0,
+      "totalPoints": 4
+    },
+    {
+      "rank": 6,
       "playerName": "Carlos Fausto",
       "team1": "Germany",
       "team1Pts": 3,
@@ -35,7 +68,7 @@
       "totalPoints": 4
     },
     {
-      "rank": 4,
+      "rank": 7,
       "playerName": "Steph McCourt",
       "team1": "Morocco",
       "team1Pts": 1,
@@ -46,7 +79,7 @@
       "totalPoints": 4
     },
     {
-      "rank": 5,
+      "rank": 8,
       "playerName": "Adithya Raj",
       "team1": "Colombia",
       "team1Pts": 0,
@@ -57,18 +90,18 @@
       "totalPoints": 3
     },
     {
-      "rank": 6,
-      "playerName": "Cyrus Si Tu",
-      "team1": "Croatia",
+      "rank": 9,
+      "playerName": "Bjorn Myers",
+      "team1": "Senegal",
       "team1Pts": 0,
-      "team2": "Australia",
+      "team2": "Côte d'Ivoire",
       "team2Pts": 3,
-      "team3": "Sweden",
+      "team3": "Ghana",
       "team3Pts": 0,
       "totalPoints": 3
     },
     {
-      "rank": 7,
+      "rank": 10,
       "playerName": "Darryl Gao",
       "team1": "USA",
       "team1Pts": 3,
@@ -79,7 +112,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 8,
+      "rank": 11,
       "playerName": "Hari Vaheesan",
       "team1": "Germany",
       "team1Pts": 3,
@@ -90,18 +123,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 9,
-      "playerName": "Harini Elamurugan",
-      "team1": "Mexico",
-      "team1Pts": 3,
-      "team2": "Egypt",
-      "team2Pts": 0,
-      "team3": "Sweden",
-      "team3Pts": 0,
-      "totalPoints": 3
-    },
-    {
-      "rank": 10,
+      "rank": 12,
       "playerName": "Mia Paredes",
       "team1": "Spain",
       "team1Pts": 0,
@@ -112,7 +134,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 11,
+      "rank": 13,
       "playerName": "Miles Branagan",
       "team1": "USA",
       "team1Pts": 3,
@@ -123,7 +145,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 12,
+      "rank": 14,
       "playerName": "Phil Tugnait",
       "team1": "Morocco",
       "team1Pts": 1,
@@ -134,7 +156,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 13,
+      "rank": 15,
       "playerName": "Theo Vomvellis",
       "team1": "Croatia",
       "team1Pts": 0,
@@ -145,7 +167,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 14,
+      "rank": 16,
       "playerName": "Ashina Padayachy",
       "team1": "Uruguay",
       "team1Pts": 0,
@@ -156,18 +178,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 15,
-      "playerName": "Brian O'Connell",
-      "team1": "Netherlands",
-      "team1Pts": 1,
-      "team2": "Côte d'Ivoire",
-      "team2Pts": 0,
-      "team3": "Curaçao",
-      "team3Pts": 0,
-      "totalPoints": 1
-    },
-    {
-      "rank": 16,
+      "rank": 17,
       "playerName": "Chantelle Salas",
       "team1": "Belgium",
       "team1Pts": 0,
@@ -178,7 +189,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 17,
+      "rank": 18,
       "playerName": "David McIntosh",
       "team1": "Spain",
       "team1Pts": 0,
@@ -189,7 +200,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 18,
+      "rank": 19,
       "playerName": "Kumal Perea",
       "team1": "England",
       "team1Pts": 0,
@@ -200,7 +211,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 19,
+      "rank": 20,
       "playerName": "Roshan Paheerathan",
       "team1": "Netherlands",
       "team1Pts": 1,
@@ -211,7 +222,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 20,
+      "rank": 21,
       "playerName": "Ru Wellalage",
       "team1": "Senegal",
       "team1Pts": 0,
@@ -222,7 +233,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 21,
+      "rank": 22,
       "playerName": "Tom Hopwood",
       "team1": "France",
       "team1Pts": 0,
@@ -233,7 +244,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 22,
+      "rank": 23,
       "playerName": "Zsofia Balogh",
       "team1": "Brazil",
       "team1Pts": 1,
@@ -244,7 +255,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 23,
+      "rank": 24,
       "playerName": "Aaron Kiss",
       "team1": "Portugal",
       "team1Pts": 0,
@@ -255,7 +266,7 @@
       "totalPoints": 0
     },
     {
-      "rank": 24,
+      "rank": 25,
       "playerName": "Aimee Whoriskey",
       "team1": "Argentina",
       "team1Pts": 0,
@@ -266,7 +277,7 @@
       "totalPoints": 0
     },
     {
-      "rank": 25,
+      "rank": 26,
       "playerName": "Alejandro Pedroza",
       "team1": "Belgium",
       "team1Pts": 0,
@@ -277,24 +288,13 @@
       "totalPoints": 0
     },
     {
-      "rank": 26,
+      "rank": 27,
       "playerName": "Annika Mountstephens",
       "team1": "Portugal",
       "team1Pts": 0,
       "team2": "Ecuador",
       "team2Pts": 0,
       "team3": "Czechia",
-      "team3Pts": 0,
-      "totalPoints": 0
-    },
-    {
-      "rank": 27,
-      "playerName": "Bjorn Myers",
-      "team1": "Senegal",
-      "team1Pts": 0,
-      "team2": "Côte d'Ivoire",
-      "team2Pts": 0,
-      "team3": "Ghana",
       "team3Pts": 0,
       "totalPoints": 0
     },
@@ -438,6 +438,16 @@
     {
       "date": "2026-06-15",
       "group": "E",
+      "homeTeam": "Côte d'Ivoire",
+      "awayTeam": "Ecuador",
+      "homeScore": 1,
+      "awayScore": 0,
+      "displayScore": "1 - 0",
+      "displayDate": "15/06/2026"
+    },
+    {
+      "date": "2026-06-15",
+      "group": "E",
       "homeTeam": "Germany",
       "awayTeam": "Curaçao",
       "homeScore": 7,
@@ -453,6 +463,16 @@
       "homeScore": 2,
       "awayScore": 2,
       "displayScore": "2 - 2",
+      "displayDate": "15/06/2026"
+    },
+    {
+      "date": "2026-06-15",
+      "group": "F",
+      "homeTeam": "Sweden",
+      "awayTeam": "Tunisia",
+      "homeScore": 5,
+      "awayScore": 1,
+      "displayScore": "5 - 1",
       "displayDate": "15/06/2026"
     }
   ],
@@ -627,8 +647,26 @@
         "displayDate": "15/06/2026"
       }
     ],
-    "Côte d'Ivoire": [],
-    "Ecuador": [],
+    "Côte d'Ivoire": [
+      {
+        "date": "2026-06-15",
+        "vs": "Ecuador",
+        "score": "1-0",
+        "result": "W",
+        "pts": 3,
+        "displayDate": "15/06/2026"
+      }
+    ],
+    "Ecuador": [
+      {
+        "date": "2026-06-15",
+        "vs": "Côte d'Ivoire",
+        "score": "0-1",
+        "result": "L",
+        "pts": 0,
+        "displayDate": "15/06/2026"
+      }
+    ],
     "Germany": [
       {
         "date": "2026-06-15",
@@ -659,8 +697,26 @@
         "displayDate": "15/06/2026"
       }
     ],
-    "Sweden": [],
-    "Tunisia": [],
+    "Sweden": [
+      {
+        "date": "2026-06-15",
+        "vs": "Tunisia",
+        "score": "5-1",
+        "result": "W",
+        "pts": 3,
+        "displayDate": "15/06/2026"
+      }
+    ],
+    "Tunisia": [
+      {
+        "date": "2026-06-15",
+        "vs": "Sweden",
+        "score": "1-5",
+        "result": "L",
+        "pts": 0,
+        "displayDate": "15/06/2026"
+      }
+    ],
     "Belgium": [],
     "Egypt": [],
     "Iran": [],
@@ -687,8 +743,8 @@
     "Panama": []
   },
   "tournamentInfo": {
-    "totalMatchesPlayed": 10,
-    "totalMatchesRemaining": 94,
+    "totalMatchesPlayed": 12,
+    "totalMatchesRemaining": 92,
     "currentPhase": "Group Stage"
   }
 }
