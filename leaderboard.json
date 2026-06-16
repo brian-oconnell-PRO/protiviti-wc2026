@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T09:40:47+10:00",
+  "lastUpdated": "2026-06-16T11:10:03+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -31,8 +31,8 @@
       "team2": "South Korea",
       "team2Pts": 3,
       "team3": "Saudi Arabia",
-      "team3Pts": 0,
-      "totalPoints": 4
+      "team3Pts": 1,
+      "totalPoints": 5
     },
     {
       "rank": 4,
@@ -157,6 +157,17 @@
     },
     {
       "rank": 15,
+      "playerName": "Rich Turley",
+      "team1": "Uruguay",
+      "team1Pts": 1,
+      "team2": "Egypt",
+      "team2Pts": 1,
+      "team3": "Saudi Arabia",
+      "team3Pts": 1,
+      "totalPoints": 3
+    },
+    {
+      "rank": 16,
       "playerName": "Theo Vomvellis",
       "team1": "Croatia",
       "team1Pts": 0,
@@ -167,7 +178,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 16,
+      "rank": 17,
       "playerName": "Alejandro Pedroza",
       "team1": "Belgium",
       "team1Pts": 1,
@@ -178,7 +189,18 @@
       "totalPoints": 2
     },
     {
-      "rank": 17,
+      "rank": 18,
+      "playerName": "Ashina Padayachy",
+      "team1": "Uruguay",
+      "team1Pts": 1,
+      "team2": "Canada",
+      "team2Pts": 1,
+      "team3": "DR Congo",
+      "team3Pts": 0,
+      "totalPoints": 2
+    },
+    {
+      "rank": 19,
       "playerName": "Chantelle Salas",
       "team1": "Belgium",
       "team1Pts": 1,
@@ -189,7 +211,7 @@
       "totalPoints": 2
     },
     {
-      "rank": 18,
+      "rank": 20,
       "playerName": "David McIntosh",
       "team1": "Spain",
       "team1Pts": 1,
@@ -200,18 +222,7 @@
       "totalPoints": 2
     },
     {
-      "rank": 19,
-      "playerName": "Ashina Padayachy",
-      "team1": "Uruguay",
-      "team1Pts": 0,
-      "team2": "Canada",
-      "team2Pts": 1,
-      "team3": "DR Congo",
-      "team3Pts": 0,
-      "totalPoints": 1
-    },
-    {
-      "rank": 20,
+      "rank": 21,
       "playerName": "Kumal Perera",
       "team1": "England",
       "team1Pts": 0,
@@ -222,7 +233,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 21,
+      "rank": 22,
       "playerName": "Lucinda Uhd",
       "team1": "England",
       "team1Pts": 0,
@@ -230,17 +241,6 @@
       "team2Pts": 0,
       "team3": "Cabo Verde",
       "team3Pts": 1,
-      "totalPoints": 1
-    },
-    {
-      "rank": 22,
-      "playerName": "Rich Turley",
-      "team1": "Uruguay",
-      "team1Pts": 0,
-      "team2": "Egypt",
-      "team2Pts": 1,
-      "team3": "Saudi Arabia",
-      "team3Pts": 0,
       "totalPoints": 1
     },
     {
@@ -480,6 +480,16 @@
       "group": "G",
       "homeTeam": "Belgium",
       "awayTeam": "Egypt",
+      "homeScore": 1,
+      "awayScore": 1,
+      "displayScore": "1 - 1",
+      "displayDate": "16/06/2026"
+    },
+    {
+      "date": "2026-06-16",
+      "group": "H",
+      "homeTeam": "Saudi Arabia",
+      "awayTeam": "Uruguay",
       "homeScore": 1,
       "awayScore": 1,
       "displayScore": "1 - 1",
@@ -769,7 +779,16 @@
         "displayDate": "16/06/2026"
       }
     ],
-    "Saudi Arabia": [],
+    "Saudi Arabia": [
+      {
+        "date": "2026-06-16",
+        "vs": "Uruguay",
+        "score": "1-1",
+        "result": "D",
+        "pts": 1,
+        "displayDate": "16/06/2026"
+      }
+    ],
     "Spain": [
       {
         "date": "2026-06-16",
@@ -780,7 +799,16 @@
         "displayDate": "16/06/2026"
       }
     ],
-    "Uruguay": [],
+    "Uruguay": [
+      {
+        "date": "2026-06-16",
+        "vs": "Saudi Arabia",
+        "score": "1-1",
+        "result": "D",
+        "pts": 1,
+        "displayDate": "16/06/2026"
+      }
+    ],
     "France": [],
     "Iraq": [],
     "Norway": [],
@@ -799,8 +827,8 @@
     "Panama": []
   },
   "tournamentInfo": {
-    "totalMatchesPlayed": 14,
-    "totalMatchesRemaining": 90,
+    "totalMatchesPlayed": 15,
+    "totalMatchesRemaining": 89,
     "currentPhase": "Group Stage"
   }
 }
