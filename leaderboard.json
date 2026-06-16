@@ -514,7 +514,8 @@
         "score": "1-2",
         "result": "L",
         "pts": 0,
-        "displayDate": "12/06/2026"
+        "displayDate": "12/06/2026",
+        "group": "A"
       }
     ],
     "Mexico": [
@@ -524,7 +525,8 @@
         "score": "2-0",
         "result": "W",
         "pts": 3,
-        "displayDate": "12/06/2026"
+        "displayDate": "12/06/2026",
+        "group": "A"
       }
     ],
     "South Africa": [
@@ -534,7 +536,8 @@
         "score": "0-2",
         "result": "L",
         "pts": 0,
-        "displayDate": "12/06/2026"
+        "displayDate": "12/06/2026",
+        "group": "A"
       }
     ],
     "South Korea": [
@@ -544,7 +547,8 @@
         "score": "2-1",
         "result": "W",
         "pts": 3,
-        "displayDate": "12/06/2026"
+        "displayDate": "12/06/2026",
+        "group": "A"
       }
     ],
     "Bosnia and Herzegovina": [
@@ -554,7 +558,8 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "13/06/2026"
+        "displayDate": "13/06/2026",
+        "group": "B"
       }
     ],
     "Canada": [
@@ -564,7 +569,8 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "13/06/2026"
+        "displayDate": "13/06/2026",
+        "group": "B"
       }
     ],
     "Qatar": [
@@ -574,7 +580,8 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "14/06/2026"
+        "displayDate": "14/06/2026",
+        "group": "B"
       }
     ],
     "Switzerland": [
@@ -584,7 +591,8 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "14/06/2026"
+        "displayDate": "14/06/2026",
+        "group": "B"
       }
     ],
     "Brazil": [
@@ -594,7 +602,8 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "14/06/2026"
+        "displayDate": "14/06/2026",
+        "group": "C"
       }
     ],
     "Haiti": [
@@ -604,7 +613,8 @@
         "score": "0-1",
         "result": "L",
         "pts": 0,
-        "displayDate": "14/06/2026"
+        "displayDate": "14/06/2026",
+        "group": "C"
       }
     ],
     "Morocco": [
@@ -614,7 +624,8 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "14/06/2026"
+        "displayDate": "14/06/2026",
+        "group": "C"
       }
     ],
     "Scotland": [
@@ -624,7 +635,8 @@
         "score": "1-0",
         "result": "W",
         "pts": 3,
-        "displayDate": "14/06/2026"
+        "displayDate": "14/06/2026",
+        "group": "C"
       }
     ],
     "Australia": [
@@ -634,7 +646,8 @@
         "score": "2-0",
         "result": "W",
         "pts": 3,
-        "displayDate": "14/06/2026"
+        "displayDate": "14/06/2026",
+        "group": "D"
       }
     ],
     "Paraguay": [
@@ -644,7 +657,8 @@
         "score": "1-4",
         "result": "L",
         "pts": 0,
-        "displayDate": "13/06/2026"
+        "displayDate": "13/06/2026",
+        "group": "D"
       }
     ],
     "Türkiye": [
@@ -654,7 +668,8 @@
         "score": "0-2",
         "result": "L",
         "pts": 0,
-        "displayDate": "14/06/2026"
+        "displayDate": "14/06/2026",
+        "group": "D"
       }
     ],
     "USA": [
@@ -664,7 +679,8 @@
         "score": "4-1",
         "result": "W",
         "pts": 3,
-        "displayDate": "13/06/2026"
+        "displayDate": "13/06/2026",
+        "group": "D"
       }
     ],
     "Curaçao": [
@@ -674,7 +690,8 @@
         "score": "1-7",
         "result": "L",
         "pts": 0,
-        "displayDate": "15/06/2026"
+        "displayDate": "15/06/2026",
+        "group": "E"
       }
     ],
     "Côte d'Ivoire": [
@@ -684,7 +701,8 @@
         "score": "1-0",
         "result": "W",
         "pts": 3,
-        "displayDate": "15/06/2026"
+        "displayDate": "15/06/2026",
+        "group": "E"
       }
     ],
     "Ecuador": [
@@ -694,7 +712,8 @@
         "score": "0-1",
         "result": "L",
         "pts": 0,
-        "displayDate": "15/06/2026"
+        "displayDate": "15/06/2026",
+        "group": "E"
       }
     ],
     "Germany": [
@@ -704,7 +723,8 @@
         "score": "7-1",
         "result": "W",
         "pts": 3,
-        "displayDate": "15/06/2026"
+        "displayDate": "15/06/2026",
+        "group": "E"
       }
     ],
     "Japan": [
@@ -714,7 +734,8 @@
         "score": "2-2",
         "result": "D",
         "pts": 1,
-        "displayDate": "15/06/2026"
+        "displayDate": "15/06/2026",
+        "group": "F"
       }
     ],
     "Netherlands": [
@@ -724,7 +745,8 @@
         "score": "2-2",
         "result": "D",
         "pts": 1,
-        "displayDate": "15/06/2026"
+        "displayDate": "15/06/2026",
+        "group": "F"
       }
     ],
     "Sweden": [
@@ -734,7 +756,8 @@
         "score": "5-1",
         "result": "W",
         "pts": 3,
-        "displayDate": "15/06/2026"
+        "displayDate": "15/06/2026",
+        "group": "F"
       }
     ],
     "Tunisia": [
@@ -744,7 +767,8 @@
         "score": "1-5",
         "result": "L",
         "pts": 0,
-        "displayDate": "15/06/2026"
+        "displayDate": "15/06/2026",
+        "group": "F"
       }
     ],
     "Belgium": [
@@ -754,7 +778,8 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "16/06/2026"
+        "displayDate": "16/06/2026",
+        "group": "G"
       }
     ],
     "Egypt": [
@@ -764,7 +789,8 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "16/06/2026"
+        "displayDate": "16/06/2026",
+        "group": "G"
       }
     ],
     "Iran": [],
@@ -776,7 +802,8 @@
         "score": "0-0",
         "result": "D",
         "pts": 1,
-        "displayDate": "16/06/2026"
+        "displayDate": "16/06/2026",
+        "group": "H"
       }
     ],
     "Saudi Arabia": [
@@ -786,7 +813,8 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "16/06/2026"
+        "displayDate": "16/06/2026",
+        "group": "H"
       }
     ],
     "Spain": [
@@ -796,7 +824,8 @@
         "score": "0-0",
         "result": "D",
         "pts": 1,
-        "displayDate": "16/06/2026"
+        "displayDate": "16/06/2026",
+        "group": "H"
       }
     ],
     "Uruguay": [
@@ -806,7 +835,8 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "16/06/2026"
+        "displayDate": "16/06/2026",
+        "group": "H"
       }
     ],
     "France": [],

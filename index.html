@@ -375,31 +375,44 @@
   .view-section.fade-out { opacity: 0; }
 
   .team-cell-wrap{position:relative;cursor:pointer;}
-  .team-tooltip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9999;background:#222b44;border:2px solid #556688;border-radius:14px;padding:12px 14px;min-width:240px;max-width:320px;box-shadow:0 14px 44px rgba(0,0,0,0.9);pointer-events:none;}
+  .team-cell{display:flex;flex-direction:column;gap:1px;}
+  .team-tooltip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9999;background:#0a1225;border:2px solid #556688;border-radius:14px;padding:12px 12px 10px;width:300px;max-width:min(340px,calc(100vw - 32px));max-height:360px;overflow-y:auto;box-shadow:0 14px 44px rgba(0,0,0,0.9);pointer-events:none;scrollbar-width:thin;scrollbar-color:rgba(255,255,255,0.22) transparent;}
+  .team-tooltip::-webkit-scrollbar{width:8px;}
+  .team-tooltip::-webkit-scrollbar-track{background:transparent;}
+  .team-tooltip::-webkit-scrollbar-thumb{background:rgba(255,255,255,0.22);border-radius:999px;}
   .team-cell-wrap:hover>.team-tooltip,.team-cell-wrap.tt-active>.team-tooltip{display:block;}
-  .team-tooltip::after{content:"";position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:7px solid transparent;border-bottom-color:#222b44;}
+  .team-tooltip::after{content:"";position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:7px solid transparent;border-bottom-color:#0a1225;}
   .team-cell-wrap.tt-above>.team-tooltip{top:auto;bottom:calc(100% + 8px);}
-  .team-cell-wrap.tt-above>.team-tooltip::after{bottom:auto;top:100%;border-bottom-color:transparent;border-top-color:#222b44;}
+  .team-cell-wrap.tt-above>.team-tooltip::after{bottom:auto;top:100%;border-bottom-color:transparent;border-top-color:#0a1225;}
   .team-cell-wrap.tt-right>.team-tooltip{left:auto;right:0;transform:none;}
   .team-cell-wrap.tt-right>.team-tooltip::after{left:auto;right:20px;transform:none;}
-  .tt-header{font-family:'Oswald',sans-serif;font-weight:600;font-size:0.9rem;color:var(--gold);margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.15);}
-  .tt-match{display:flex;align-items:center;gap:8px;padding:5px 0;font-size:0.82rem;color:#d0d6e0;border-bottom:1px solid rgba(255,255,255,0.06);}
+  .tt-header{font-family:'Oswald',sans-serif;font-weight:600;font-size:0.98rem;color:var(--gold);margin-bottom:8px;padding-bottom:6px;border-bottom:1px solid rgba(255,255,255,0.15);display:flex;justify-content:space-between;align-items:center;gap:10px;}
+  .tt-team-meta{font-size:0.72rem;color:#8ea0b8;font-family:'Inter',sans-serif;font-weight:600;letter-spacing:.4px;text-transform:uppercase;}
+  .tt-section{margin-top:8px;}
+  .tt-section-title{font-size:0.72rem;font-weight:800;letter-spacing:.7px;color:#8ea0b8;text-transform:uppercase;margin-bottom:5px;display:flex;align-items:center;justify-content:space-between;gap:8px;}
+  .tt-section-count{font-size:0.68rem;color:#6e839d;font-weight:700;}
+  .tt-match{display:grid;grid-template-columns:60px 58px 1fr auto;align-items:center;gap:8px;padding:6px 0;font-size:0.82rem;color:#d0d6e0;border-bottom:1px solid rgba(255,255,255,0.06);}
   .tt-match:last-child{border-bottom:none;}
-  .tt-date{color:#8ea0b8;font-size:0.72rem;min-width:72px;}
-  .tt-vs{flex:1;font-weight:500;}
+  .tt-date{color:#8ea0b8;font-size:0.72rem;}
+  .tt-group{font-size:0.66rem;font-weight:800;color:#b9c7d8;background:rgba(255,255,255,0.08);border:1px solid rgba(255,255,255,0.10);border-radius:999px;padding:2px 6px;display:inline-block;text-align:center;min-width:54px;}
+  .tt-vs{font-weight:500;line-height:1.2;}
   .tt-score{font-family:'Oswald',sans-serif;font-weight:700;font-size:0.88rem;min-width:38px;text-align:center;}
-  .tt-badge{font-size:0.7rem;font-weight:700;padding:2px 7px;border-radius:6px;min-width:24px;text-align:center;}
+  .tt-badge{font-size:0.7rem;font-weight:800;padding:2px 7px;border-radius:999px;min-width:28px;text-align:center;}
   .tt-badge.win{background:rgba(76,175,80,0.3);color:#66bb6a;border:1px solid rgba(76,175,80,0.4);}
-  .tt-badge.draw{background:rgba(255,195,0,0.25);color:#ffc300;border:1px solid rgba(255,195,0,0.4);}
+  .tt-badge.draw{background:rgba(255,195,0,0.25);color:#ffd54f;border:1px solid rgba(255,195,0,0.4);}
   .tt-badge.loss{background:rgba(230,57,70,0.25);color:#ef5350;border:1px solid rgba(230,57,70,0.4);}
+  .tt-badge.upcoming{background:rgba(56,189,248,0.18);color:#7dd3fc;border:1px solid rgba(56,189,248,0.35);}
+  .tt-match.next-match{background:linear-gradient(90deg, rgba(255,195,0,0.16), rgba(255,195,0,0.03));border-radius:10px;padding:8px 8px 8px 6px;margin:4px -4px;box-shadow:inset 0 0 0 1px rgba(255,195,0,0.22);}
+  .tt-match.next-match .tt-date,.tt-match.next-match .tt-vs{color:#fff0b8;}
+  .tt-next-flag{font-size:0.62rem;font-weight:800;letter-spacing:.6px;color:#0a1225;background:var(--gold);padding:2px 6px;border-radius:999px;text-transform:uppercase;display:inline-block;margin-left:6px;vertical-align:middle;}
   .tt-empty{color:#8ea0b8;font-size:0.8rem;font-style:italic;padding:4px 0;}
-  .tt-summary{margin-top:6px;padding-top:6px;border-top:1px solid rgba(255,255,255,0.15);font-size:0.75rem;color:#8ea0b8;display:flex;justify-content:space-between;}
-  .tt-summary .tt-total{color:var(--gold);font-weight:700;font-family:'Oswald',sans-serif;font-size:0.85rem;}
+  .tt-summary{margin-top:8px;padding-top:8px;border-top:1px solid rgba(255,255,255,0.15);font-size:0.75rem;color:#8ea0b8;display:flex;justify-content:space-between;align-items:center;gap:8px;}
+  .tt-summary .tt-total{color:var(--gold);font-weight:700;font-family:'Oswald',sans-serif;font-size:0.9rem;}
   #leaderboardSection.card{overflow:visible !important;}
   .lb-scroll{overflow:visible !important;}
   table.leaderboard{overflow:visible !important;}
   table.leaderboard tbody td{position:relative;}
-  @media(max-width:768px){.team-cell-wrap:hover>.team-tooltip{display:none;}.team-cell-wrap.tt-active>.team-tooltip{display:block;}.team-tooltip{min-width:200px;font-size:0.78rem;}}
+  @media(max-width:768px){.team-cell-wrap:hover>.team-tooltip{display:none;}.team-cell-wrap.tt-active>.team-tooltip{display:block;}.team-tooltip{width:min(300px,calc(100vw - 32px));max-height:300px;font-size:0.78rem;}}
 </style>
 </head>
 <body>
@@ -515,21 +528,73 @@
   }
 
   function teamCell(name, pts) {
-    var m = (TR && name && TR[name]) ? TR[name] : [];
-    var t = '<div class="team-tooltip" style="background:#0a1225;border:2px solid #556688;color:#e8ecf1;"><div class="tt-header">' + esc(name || "\u2014") + '</div>';
-    if (!m.length) { t += '<div class="tt-empty">No matches played yet</div>'; }
-    else {
-      m.forEach(function(g) {
-        var bc = g.result === "W" ? "win" : g.result === "D" ? "draw" : "loss";
+    var matches = (TR && name && TR[name]) ? TR[name].slice() : [];
+
+    function toTime(v) {
+      if (!v) return Number.POSITIVE_INFINITY;
+      var d = new Date(v);
+      return isNaN(d.getTime()) ? Number.POSITIVE_INFINITY : d.getTime();
+    }
+
+    var played = matches.filter(function (m) { return m && m.score; }).sort(function (a, b) {
+      return toTime(b.date) - toTime(a.date);
+    });
+    var upcoming = matches.filter(function (m) {
+      return m && (!m.score || m.status === "UPCOMING");
+    }).sort(function (a, b) {
+      return toTime(a.date) - toTime(b.date);
+    });
+
+    var nextKey = upcoming.length ? ((upcoming[0].date || "") + "|" + (upcoming[0].vs || "")) : null;
+    var t = '<div class="team-tooltip">';
+    t += '<div class="tt-header"><span>' + esc(name || "—") + '</span><span class="tt-team-meta">' + (upcoming.length ? esc(String(upcoming.length) + ' fixture' + (upcoming.length !== 1 ? 's' : '') + ' left') : 'Group matches') + '</span></div>';
+
+    t += '<div class="tt-section">';
+    t += '<div class="tt-section-title"><span>Results</span><span class="tt-section-count">' + played.length + '</span></div>';
+    if (!played.length) {
+      t += '<div class="tt-empty">No completed matches</div>';
+    } else {
+      played.forEach(function(g) {
+        var cls = g.result === "W" ? "win" : g.result === "D" ? "draw" : "loss";
         var dd = g.displayDate || g.date || "";
-        t += '<div class="tt-match"><span class="tt-date">' + esc(dd) + '</span><span class="tt-vs">vs ' + esc(g.vs) + '</span><span class="tt-score">' + esc(g.score) + '</span><span class="tt-badge ' + bc + '">' + esc(g.result) + '</span></div>';
+        var grp = g.group ? ('Group ' + g.group) : 'Group —';
+        t += '<div class="tt-match">'
+          + '<span class="tt-date">' + esc(dd) + '</span>'
+          + '<span class="tt-group">' + esc(grp) + '</span>'
+          + '<span class="tt-vs">vs ' + esc(g.vs) + '</span>'
+          + '<span style="display:inline-flex;align-items:center;gap:8px;justify-self:end;">'
+          +   '<span class="tt-score">' + esc(g.score) + '</span>'
+          +   '<span class="tt-badge ' + cls + '">' + esc(g.result) + '</span>'
+          + '</span>'
+          + '</div>';
       });
-      t += '<div class="tt-summary"><span>' + m.length + ' match' + (m.length !== 1 ? 'es' : '') + '</span><span class="tt-total">' + (pts == null ? 0 : esc(pts)) + ' pts</span></div>';
     }
     t += '</div>';
-    return '<div class="team-cell-wrap"><div class="team-cell"><div class="team-name">' + esc(name || "\u2014") + '</div><div class="team-pts">' + (pts == null ? "0" : esc(pts)) + ' pts</div></div>' + t + '</div>';
-  }
 
+    t += '<div class="tt-section">';
+    t += '<div class="tt-section-title"><span>Fixtures</span><span class="tt-section-count">' + upcoming.length + '</span></div>';
+    if (!upcoming.length) {
+      t += '<div class="tt-empty">No remaining matches</div>';
+    } else {
+      upcoming.forEach(function(g) {
+        var dd = g.displayDate || g.date || "";
+        var grp = g.group ? ('Group ' + g.group) : 'Group —';
+        var isNext = nextKey && ((g.date || "") + '|' + (g.vs || "")) === nextKey;
+        t += '<div class="tt-match' + (isNext ? ' next-match' : '') + '">'
+          + '<span class="tt-date">' + esc(dd) + '</span>'
+          + '<span class="tt-group">' + esc(grp) + '</span>'
+          + '<span class="tt-vs">vs ' + esc(g.vs) + (isNext ? ' <span class="tt-next-flag">Next</span>' : '') + '</span>'
+          + '<span style="justify-self:end;"><span class="tt-badge upcoming">Upcoming</span></span>'
+          + '</div>';
+      });
+    }
+    t += '</div>';
+
+    t += '<div class="tt-summary"><span>' + played.length + ' played · ' + upcoming.length + ' to go</span><span class="tt-total">' + (pts == null ? 0 : esc(pts)) + ' pts</span></div>';
+    t += '</div>';
+
+    return '<div class="team-cell-wrap"><div class="team-cell"><div class="team-name">' + esc(name || "—") + '</div><div class="team-pts">' + (pts == null ? "0" : esc(pts)) + ' pts</div></div>' + t + '</div>';
+  }
   // -------- error banner --------
   function showError(msg) {
     var b = document.getElementById("errorBanner");
