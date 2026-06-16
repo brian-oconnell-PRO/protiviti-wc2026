@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-16T11:30:03+10:00",
+  "lastUpdated": "2026-06-16T14:20:30+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -36,6 +36,28 @@
     },
     {
       "rank": 4,
+      "playerName": "Darryl Gao",
+      "team1": "USA",
+      "team1Pts": 3,
+      "team2": "Iran",
+      "team2Pts": 1,
+      "team3": "New Zealand",
+      "team3Pts": 1,
+      "totalPoints": 5
+    },
+    {
+      "rank": 5,
+      "playerName": "Adithya Raj",
+      "team1": "Colombia",
+      "team1Pts": 0,
+      "team2": "Australia",
+      "team2Pts": 3,
+      "team3": "New Zealand",
+      "team3Pts": 1,
+      "totalPoints": 4
+    },
+    {
+      "rank": 6,
       "playerName": "Ben Kempton",
       "team1": "Mexico",
       "team1Pts": 3,
@@ -46,7 +68,7 @@
       "totalPoints": 4
     },
     {
-      "rank": 5,
+      "rank": 7,
       "playerName": "Brian O'Connell",
       "team1": "Netherlands",
       "team1Pts": 1,
@@ -57,7 +79,7 @@
       "totalPoints": 4
     },
     {
-      "rank": 6,
+      "rank": 8,
       "playerName": "Carlos Fausto",
       "team1": "Germany",
       "team1Pts": 3,
@@ -68,7 +90,7 @@
       "totalPoints": 4
     },
     {
-      "rank": 7,
+      "rank": 9,
       "playerName": "Mia Paredes",
       "team1": "Spain",
       "team1Pts": 1,
@@ -79,7 +101,7 @@
       "totalPoints": 4
     },
     {
-      "rank": 8,
+      "rank": 10,
       "playerName": "Steph McCourt",
       "team1": "Morocco",
       "team1Pts": 1,
@@ -90,35 +112,13 @@
       "totalPoints": 4
     },
     {
-      "rank": 9,
-      "playerName": "Adithya Raj",
-      "team1": "Colombia",
-      "team1Pts": 0,
-      "team2": "Australia",
-      "team2Pts": 3,
-      "team3": "New Zealand",
-      "team3Pts": 0,
-      "totalPoints": 3
-    },
-    {
-      "rank": 10,
+      "rank": 11,
       "playerName": "Bjorn Myers",
       "team1": "Senegal",
       "team1Pts": 0,
       "team2": "Côte d'Ivoire",
       "team2Pts": 3,
       "team3": "Ghana",
-      "team3Pts": 0,
-      "totalPoints": 3
-    },
-    {
-      "rank": 11,
-      "playerName": "Darryl Gao",
-      "team1": "USA",
-      "team1Pts": 3,
-      "team2": "Iran",
-      "team2Pts": 0,
-      "team3": "New Zealand",
       "team3Pts": 0,
       "totalPoints": 3
     },
@@ -223,6 +223,17 @@
     },
     {
       "rank": 21,
+      "playerName": "Aaron Kiss",
+      "team1": "Portugal",
+      "team1Pts": 0,
+      "team2": "Iran",
+      "team2Pts": 1,
+      "team3": "Iraq",
+      "team3Pts": 0,
+      "totalPoints": 1
+    },
+    {
+      "rank": 22,
       "playerName": "Kumal Perera",
       "team1": "England",
       "team1Pts": 0,
@@ -233,7 +244,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 22,
+      "rank": 23,
       "playerName": "Lucinda Uhd",
       "team1": "England",
       "team1Pts": 0,
@@ -244,7 +255,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 23,
+      "rank": 24,
       "playerName": "Roshan Paheerathan",
       "team1": "Netherlands",
       "team1Pts": 1,
@@ -255,7 +266,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 24,
+      "rank": 25,
       "playerName": "Ru Wellalage",
       "team1": "Senegal",
       "team1Pts": 0,
@@ -266,7 +277,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 25,
+      "rank": 26,
       "playerName": "Tom Hopwood",
       "team1": "France",
       "team1Pts": 0,
@@ -277,7 +288,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 26,
+      "rank": 27,
       "playerName": "Zsofia Balogh",
       "team1": "Brazil",
       "team1Pts": 1,
@@ -286,17 +297,6 @@
       "team3": "Haiti",
       "team3Pts": 0,
       "totalPoints": 1
-    },
-    {
-      "rank": 27,
-      "playerName": "Aaron Kiss",
-      "team1": "Portugal",
-      "team1Pts": 0,
-      "team2": "Iran",
-      "team2Pts": 0,
-      "team3": "Iraq",
-      "team3Pts": 0,
-      "totalPoints": 0
     },
     {
       "rank": 28,
@@ -478,6 +478,16 @@
     {
       "date": "2026-06-16",
       "group": "G",
+      "homeTeam": "Iran",
+      "awayTeam": "New Zealand",
+      "homeScore": 2,
+      "awayScore": 2,
+      "displayScore": "2 - 2",
+      "displayDate": "16/06/2026"
+    },
+    {
+      "date": "2026-06-16",
+      "group": "G",
       "homeTeam": "Belgium",
       "awayTeam": "Egypt",
       "homeScore": 1,
@@ -514,8 +524,26 @@
         "score": "1-2",
         "result": "L",
         "pts": 0,
-        "displayDate": "12/06/2026",
-        "group": "A"
+        "group": "A",
+        "displayDate": "12/06/2026"
+      },
+      {
+        "date": "2026-06-19",
+        "vs": "South Africa",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "A",
+        "displayDate": "19/06/2026"
+      },
+      {
+        "date": "2026-06-26",
+        "vs": "Mexico",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "A",
+        "displayDate": "26/06/2026"
       }
     ],
     "Mexico": [
@@ -525,8 +553,26 @@
         "score": "2-0",
         "result": "W",
         "pts": 3,
-        "displayDate": "12/06/2026",
-        "group": "A"
+        "group": "A",
+        "displayDate": "12/06/2026"
+      },
+      {
+        "date": "2026-06-20",
+        "vs": "South Korea",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "A",
+        "displayDate": "20/06/2026"
+      },
+      {
+        "date": "2026-06-26",
+        "vs": "Czechia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "A",
+        "displayDate": "26/06/2026"
       }
     ],
     "South Africa": [
@@ -536,8 +582,26 @@
         "score": "0-2",
         "result": "L",
         "pts": 0,
-        "displayDate": "12/06/2026",
-        "group": "A"
+        "group": "A",
+        "displayDate": "12/06/2026"
+      },
+      {
+        "date": "2026-06-19",
+        "vs": "Czechia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "A",
+        "displayDate": "19/06/2026"
+      },
+      {
+        "date": "2026-06-26",
+        "vs": "South Korea",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "A",
+        "displayDate": "26/06/2026"
       }
     ],
     "South Korea": [
@@ -547,8 +611,26 @@
         "score": "2-1",
         "result": "W",
         "pts": 3,
-        "displayDate": "12/06/2026",
-        "group": "A"
+        "group": "A",
+        "displayDate": "12/06/2026"
+      },
+      {
+        "date": "2026-06-20",
+        "vs": "Mexico",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "A",
+        "displayDate": "20/06/2026"
+      },
+      {
+        "date": "2026-06-26",
+        "vs": "South Africa",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "A",
+        "displayDate": "26/06/2026"
       }
     ],
     "Bosnia and Herzegovina": [
@@ -558,8 +640,26 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "13/06/2026",
-        "group": "B"
+        "group": "B",
+        "displayDate": "13/06/2026"
+      },
+      {
+        "date": "2026-06-19",
+        "vs": "Switzerland",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "B",
+        "displayDate": "19/06/2026"
+      },
+      {
+        "date": "2026-06-25",
+        "vs": "Qatar",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "B",
+        "displayDate": "25/06/2026"
       }
     ],
     "Canada": [
@@ -569,8 +669,26 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "13/06/2026",
-        "group": "B"
+        "group": "B",
+        "displayDate": "13/06/2026"
+      },
+      {
+        "date": "2026-06-19",
+        "vs": "Qatar",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "B",
+        "displayDate": "19/06/2026"
+      },
+      {
+        "date": "2026-06-25",
+        "vs": "Switzerland",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "B",
+        "displayDate": "25/06/2026"
       }
     ],
     "Qatar": [
@@ -580,8 +698,26 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "14/06/2026",
-        "group": "B"
+        "group": "B",
+        "displayDate": "14/06/2026"
+      },
+      {
+        "date": "2026-06-19",
+        "vs": "Canada",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "B",
+        "displayDate": "19/06/2026"
+      },
+      {
+        "date": "2026-06-25",
+        "vs": "Bosnia and Herzegovina",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "B",
+        "displayDate": "25/06/2026"
       }
     ],
     "Switzerland": [
@@ -591,8 +727,26 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "14/06/2026",
-        "group": "B"
+        "group": "B",
+        "displayDate": "14/06/2026"
+      },
+      {
+        "date": "2026-06-19",
+        "vs": "Bosnia and Herzegovina",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "B",
+        "displayDate": "19/06/2026"
+      },
+      {
+        "date": "2026-06-25",
+        "vs": "Canada",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "B",
+        "displayDate": "25/06/2026"
       }
     ],
     "Brazil": [
@@ -602,8 +756,26 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "14/06/2026",
-        "group": "C"
+        "group": "C",
+        "displayDate": "14/06/2026"
+      },
+      {
+        "date": "2026-06-20",
+        "vs": "Haiti",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "C",
+        "displayDate": "20/06/2026"
+      },
+      {
+        "date": "2026-06-25",
+        "vs": "Scotland",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "C",
+        "displayDate": "25/06/2026"
       }
     ],
     "Haiti": [
@@ -613,8 +785,26 @@
         "score": "0-1",
         "result": "L",
         "pts": 0,
-        "displayDate": "14/06/2026",
-        "group": "C"
+        "group": "C",
+        "displayDate": "14/06/2026"
+      },
+      {
+        "date": "2026-06-20",
+        "vs": "Brazil",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "C",
+        "displayDate": "20/06/2026"
+      },
+      {
+        "date": "2026-06-25",
+        "vs": "Morocco",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "C",
+        "displayDate": "25/06/2026"
       }
     ],
     "Morocco": [
@@ -624,8 +814,26 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "14/06/2026",
-        "group": "C"
+        "group": "C",
+        "displayDate": "14/06/2026"
+      },
+      {
+        "date": "2026-06-20",
+        "vs": "Scotland",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "C",
+        "displayDate": "20/06/2026"
+      },
+      {
+        "date": "2026-06-25",
+        "vs": "Haiti",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "C",
+        "displayDate": "25/06/2026"
       }
     ],
     "Scotland": [
@@ -635,8 +843,26 @@
         "score": "1-0",
         "result": "W",
         "pts": 3,
-        "displayDate": "14/06/2026",
-        "group": "C"
+        "group": "C",
+        "displayDate": "14/06/2026"
+      },
+      {
+        "date": "2026-06-20",
+        "vs": "Morocco",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "C",
+        "displayDate": "20/06/2026"
+      },
+      {
+        "date": "2026-06-25",
+        "vs": "Brazil",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "C",
+        "displayDate": "25/06/2026"
       }
     ],
     "Australia": [
@@ -646,8 +872,26 @@
         "score": "2-0",
         "result": "W",
         "pts": 3,
-        "displayDate": "14/06/2026",
-        "group": "D"
+        "group": "D",
+        "displayDate": "14/06/2026"
+      },
+      {
+        "date": "2026-06-19",
+        "vs": "Paraguay",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "D",
+        "displayDate": "19/06/2026"
+      },
+      {
+        "date": "2026-06-26",
+        "vs": "Paraguay",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "D",
+        "displayDate": "26/06/2026"
       }
     ],
     "Paraguay": [
@@ -657,8 +901,26 @@
         "score": "1-4",
         "result": "L",
         "pts": 0,
-        "displayDate": "13/06/2026",
-        "group": "D"
+        "group": "D",
+        "displayDate": "13/06/2026"
+      },
+      {
+        "date": "2026-06-19",
+        "vs": "Australia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "D",
+        "displayDate": "19/06/2026"
+      },
+      {
+        "date": "2026-06-26",
+        "vs": "Australia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "D",
+        "displayDate": "26/06/2026"
       }
     ],
     "Türkiye": [
@@ -668,8 +930,26 @@
         "score": "0-2",
         "result": "L",
         "pts": 0,
-        "displayDate": "14/06/2026",
-        "group": "D"
+        "group": "D",
+        "displayDate": "14/06/2026"
+      },
+      {
+        "date": "2026-06-20",
+        "vs": "USA",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "D",
+        "displayDate": "20/06/2026"
+      },
+      {
+        "date": "2026-06-26",
+        "vs": "USA",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "D",
+        "displayDate": "26/06/2026"
       }
     ],
     "USA": [
@@ -679,8 +959,26 @@
         "score": "4-1",
         "result": "W",
         "pts": 3,
-        "displayDate": "13/06/2026",
-        "group": "D"
+        "group": "D",
+        "displayDate": "13/06/2026"
+      },
+      {
+        "date": "2026-06-20",
+        "vs": "Türkiye",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "D",
+        "displayDate": "20/06/2026"
+      },
+      {
+        "date": "2026-06-26",
+        "vs": "Türkiye",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "D",
+        "displayDate": "26/06/2026"
       }
     ],
     "Curaçao": [
@@ -690,8 +988,26 @@
         "score": "1-7",
         "result": "L",
         "pts": 0,
-        "displayDate": "15/06/2026",
-        "group": "E"
+        "group": "E",
+        "displayDate": "15/06/2026"
+      },
+      {
+        "date": "2026-06-21",
+        "vs": "Côte d'Ivoire",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "E",
+        "displayDate": "21/06/2026"
+      },
+      {
+        "date": "2026-06-27",
+        "vs": "Ecuador",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "E",
+        "displayDate": "27/06/2026"
       }
     ],
     "Côte d'Ivoire": [
@@ -701,8 +1017,26 @@
         "score": "1-0",
         "result": "W",
         "pts": 3,
-        "displayDate": "15/06/2026",
-        "group": "E"
+        "group": "E",
+        "displayDate": "15/06/2026"
+      },
+      {
+        "date": "2026-06-21",
+        "vs": "Curaçao",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "E",
+        "displayDate": "21/06/2026"
+      },
+      {
+        "date": "2026-06-27",
+        "vs": "Germany",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "E",
+        "displayDate": "27/06/2026"
       }
     ],
     "Ecuador": [
@@ -712,8 +1046,26 @@
         "score": "0-1",
         "result": "L",
         "pts": 0,
-        "displayDate": "15/06/2026",
-        "group": "E"
+        "group": "E",
+        "displayDate": "15/06/2026"
+      },
+      {
+        "date": "2026-06-21",
+        "vs": "Germany",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "E",
+        "displayDate": "21/06/2026"
+      },
+      {
+        "date": "2026-06-27",
+        "vs": "Curaçao",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "E",
+        "displayDate": "27/06/2026"
       }
     ],
     "Germany": [
@@ -723,8 +1075,26 @@
         "score": "7-1",
         "result": "W",
         "pts": 3,
-        "displayDate": "15/06/2026",
-        "group": "E"
+        "group": "E",
+        "displayDate": "15/06/2026"
+      },
+      {
+        "date": "2026-06-21",
+        "vs": "Ecuador",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "E",
+        "displayDate": "21/06/2026"
+      },
+      {
+        "date": "2026-06-27",
+        "vs": "Côte d'Ivoire",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "E",
+        "displayDate": "27/06/2026"
       }
     ],
     "Japan": [
@@ -734,8 +1104,26 @@
         "score": "2-2",
         "result": "D",
         "pts": 1,
-        "displayDate": "15/06/2026",
-        "group": "F"
+        "group": "F",
+        "displayDate": "15/06/2026"
+      },
+      {
+        "date": "2026-06-21",
+        "vs": "Tunisia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "F",
+        "displayDate": "21/06/2026"
+      },
+      {
+        "date": "2026-06-27",
+        "vs": "Sweden",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "F",
+        "displayDate": "27/06/2026"
       }
     ],
     "Netherlands": [
@@ -745,8 +1133,26 @@
         "score": "2-2",
         "result": "D",
         "pts": 1,
-        "displayDate": "15/06/2026",
-        "group": "F"
+        "group": "F",
+        "displayDate": "15/06/2026"
+      },
+      {
+        "date": "2026-06-21",
+        "vs": "Sweden",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "F",
+        "displayDate": "21/06/2026"
+      },
+      {
+        "date": "2026-06-27",
+        "vs": "Tunisia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "F",
+        "displayDate": "27/06/2026"
       }
     ],
     "Sweden": [
@@ -756,8 +1162,26 @@
         "score": "5-1",
         "result": "W",
         "pts": 3,
-        "displayDate": "15/06/2026",
-        "group": "F"
+        "group": "F",
+        "displayDate": "15/06/2026"
+      },
+      {
+        "date": "2026-06-21",
+        "vs": "Netherlands",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "F",
+        "displayDate": "21/06/2026"
+      },
+      {
+        "date": "2026-06-27",
+        "vs": "Japan",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "F",
+        "displayDate": "27/06/2026"
       }
     ],
     "Tunisia": [
@@ -767,8 +1191,26 @@
         "score": "1-5",
         "result": "L",
         "pts": 0,
-        "displayDate": "15/06/2026",
-        "group": "F"
+        "group": "F",
+        "displayDate": "15/06/2026"
+      },
+      {
+        "date": "2026-06-21",
+        "vs": "Japan",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "F",
+        "displayDate": "21/06/2026"
+      },
+      {
+        "date": "2026-06-27",
+        "vs": "Netherlands",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "F",
+        "displayDate": "27/06/2026"
       }
     ],
     "Belgium": [
@@ -778,8 +1220,26 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "16/06/2026",
-        "group": "G"
+        "group": "G",
+        "displayDate": "16/06/2026"
+      },
+      {
+        "date": "2026-06-22",
+        "vs": "New Zealand",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "G",
+        "displayDate": "22/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "New Zealand",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "G",
+        "displayDate": "28/06/2026"
       }
     ],
     "Egypt": [
@@ -789,12 +1249,86 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "16/06/2026",
-        "group": "G"
+        "group": "G",
+        "displayDate": "16/06/2026"
+      },
+      {
+        "date": "2026-06-22",
+        "vs": "Iran",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "G",
+        "displayDate": "22/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Iran",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "G",
+        "displayDate": "28/06/2026"
       }
     ],
-    "Iran": [],
-    "New Zealand": [],
+    "Iran": [
+      {
+        "date": "2026-06-16",
+        "vs": "New Zealand",
+        "score": "2-2",
+        "result": "D",
+        "pts": 1,
+        "group": "G",
+        "displayDate": "16/06/2026"
+      },
+      {
+        "date": "2026-06-22",
+        "vs": "Egypt",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "G",
+        "displayDate": "22/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Egypt",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "G",
+        "displayDate": "28/06/2026"
+      }
+    ],
+    "New Zealand": [
+      {
+        "date": "2026-06-16",
+        "vs": "Iran",
+        "score": "2-2",
+        "result": "D",
+        "pts": 1,
+        "group": "G",
+        "displayDate": "16/06/2026"
+      },
+      {
+        "date": "2026-06-22",
+        "vs": "Belgium",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "G",
+        "displayDate": "22/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Belgium",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "G",
+        "displayDate": "28/06/2026"
+      }
+    ],
     "Cabo Verde": [
       {
         "date": "2026-06-16",
@@ -802,8 +1336,26 @@
         "score": "0-0",
         "result": "D",
         "pts": 1,
-        "displayDate": "16/06/2026",
-        "group": "H"
+        "group": "H",
+        "displayDate": "16/06/2026"
+      },
+      {
+        "date": "2026-06-22",
+        "vs": "Uruguay",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "H",
+        "displayDate": "22/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Spain",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "H",
+        "displayDate": "28/06/2026"
       }
     ],
     "Saudi Arabia": [
@@ -813,8 +1365,26 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "16/06/2026",
-        "group": "H"
+        "group": "H",
+        "displayDate": "16/06/2026"
+      },
+      {
+        "date": "2026-06-22",
+        "vs": "Spain",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "H",
+        "displayDate": "22/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Uruguay",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "H",
+        "displayDate": "28/06/2026"
       }
     ],
     "Spain": [
@@ -824,8 +1394,26 @@
         "score": "0-0",
         "result": "D",
         "pts": 1,
-        "displayDate": "16/06/2026",
-        "group": "H"
+        "group": "H",
+        "displayDate": "16/06/2026"
+      },
+      {
+        "date": "2026-06-22",
+        "vs": "Saudi Arabia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "H",
+        "displayDate": "22/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Cabo Verde",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "H",
+        "displayDate": "28/06/2026"
       }
     ],
     "Uruguay": [
@@ -835,30 +1423,496 @@
         "score": "1-1",
         "result": "D",
         "pts": 1,
-        "displayDate": "16/06/2026",
-        "group": "H"
+        "group": "H",
+        "displayDate": "16/06/2026"
+      },
+      {
+        "date": "2026-06-22",
+        "vs": "Cabo Verde",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "H",
+        "displayDate": "22/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Saudi Arabia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "H",
+        "displayDate": "28/06/2026"
       }
     ],
-    "France": [],
-    "Iraq": [],
-    "Norway": [],
-    "Senegal": [],
-    "Algeria": [],
-    "Argentina": [],
-    "Austria": [],
-    "Jordan": [],
-    "Colombia": [],
-    "DR Congo": [],
-    "Portugal": [],
-    "Uzbekistan": [],
-    "Croatia": [],
-    "England": [],
-    "Ghana": [],
-    "Panama": []
+    "France": [
+      {
+        "date": "2026-06-17",
+        "vs": "Senegal",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "I",
+        "displayDate": "17/06/2026"
+      },
+      {
+        "date": "2026-06-23",
+        "vs": "Norway",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "I",
+        "displayDate": "23/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Iraq",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "I",
+        "displayDate": "28/06/2026"
+      }
+    ],
+    "Iraq": [
+      {
+        "date": "2026-06-17",
+        "vs": "Norway",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "I",
+        "displayDate": "17/06/2026"
+      },
+      {
+        "date": "2026-06-23",
+        "vs": "Senegal",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "I",
+        "displayDate": "23/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "France",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "I",
+        "displayDate": "28/06/2026"
+      }
+    ],
+    "Norway": [
+      {
+        "date": "2026-06-17",
+        "vs": "Iraq",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "I",
+        "displayDate": "17/06/2026"
+      },
+      {
+        "date": "2026-06-23",
+        "vs": "France",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "I",
+        "displayDate": "23/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Senegal",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "I",
+        "displayDate": "28/06/2026"
+      }
+    ],
+    "Senegal": [
+      {
+        "date": "2026-06-17",
+        "vs": "France",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "I",
+        "displayDate": "17/06/2026"
+      },
+      {
+        "date": "2026-06-23",
+        "vs": "Iraq",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "I",
+        "displayDate": "23/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Norway",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "I",
+        "displayDate": "28/06/2026"
+      }
+    ],
+    "Algeria": [
+      {
+        "date": "2026-06-17",
+        "vs": "Argentina",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "J",
+        "displayDate": "17/06/2026"
+      },
+      {
+        "date": "2026-06-23",
+        "vs": "Austria",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "J",
+        "displayDate": "23/06/2026"
+      },
+      {
+        "date": "2026-06-27",
+        "vs": "Austria",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "J",
+        "displayDate": "27/06/2026"
+      }
+    ],
+    "Argentina": [
+      {
+        "date": "2026-06-17",
+        "vs": "Algeria",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "J",
+        "displayDate": "17/06/2026"
+      },
+      {
+        "date": "2026-06-23",
+        "vs": "Jordan",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "J",
+        "displayDate": "23/06/2026"
+      },
+      {
+        "date": "2026-06-27",
+        "vs": "Jordan",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "J",
+        "displayDate": "27/06/2026"
+      }
+    ],
+    "Austria": [
+      {
+        "date": "2026-06-17",
+        "vs": "Jordan",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "J",
+        "displayDate": "17/06/2026"
+      },
+      {
+        "date": "2026-06-23",
+        "vs": "Algeria",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "J",
+        "displayDate": "23/06/2026"
+      },
+      {
+        "date": "2026-06-27",
+        "vs": "Algeria",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "J",
+        "displayDate": "27/06/2026"
+      }
+    ],
+    "Jordan": [
+      {
+        "date": "2026-06-17",
+        "vs": "Austria",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "J",
+        "displayDate": "17/06/2026"
+      },
+      {
+        "date": "2026-06-23",
+        "vs": "Argentina",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "J",
+        "displayDate": "23/06/2026"
+      },
+      {
+        "date": "2026-06-27",
+        "vs": "Argentina",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "J",
+        "displayDate": "27/06/2026"
+      }
+    ],
+    "Colombia": [
+      {
+        "date": "2026-06-18",
+        "vs": "Uzbekistan",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "K",
+        "displayDate": "18/06/2026"
+      },
+      {
+        "date": "2026-06-24",
+        "vs": "Portugal",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "K",
+        "displayDate": "24/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "DR Congo",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "K",
+        "displayDate": "28/06/2026"
+      }
+    ],
+    "DR Congo": [
+      {
+        "date": "2026-06-18",
+        "vs": "Portugal",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "K",
+        "displayDate": "18/06/2026"
+      },
+      {
+        "date": "2026-06-24",
+        "vs": "Uzbekistan",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "K",
+        "displayDate": "24/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Colombia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "K",
+        "displayDate": "28/06/2026"
+      }
+    ],
+    "Portugal": [
+      {
+        "date": "2026-06-18",
+        "vs": "DR Congo",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "K",
+        "displayDate": "18/06/2026"
+      },
+      {
+        "date": "2026-06-24",
+        "vs": "Colombia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "K",
+        "displayDate": "24/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Uzbekistan",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "K",
+        "displayDate": "28/06/2026"
+      }
+    ],
+    "Uzbekistan": [
+      {
+        "date": "2026-06-18",
+        "vs": "Colombia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "K",
+        "displayDate": "18/06/2026"
+      },
+      {
+        "date": "2026-06-24",
+        "vs": "DR Congo",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "K",
+        "displayDate": "24/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Portugal",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "K",
+        "displayDate": "28/06/2026"
+      }
+    ],
+    "Croatia": [
+      {
+        "date": "2026-06-18",
+        "vs": "England",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "L",
+        "displayDate": "18/06/2026"
+      },
+      {
+        "date": "2026-06-24",
+        "vs": "Ghana",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "L",
+        "displayDate": "24/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Ghana",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "L",
+        "displayDate": "28/06/2026"
+      }
+    ],
+    "England": [
+      {
+        "date": "2026-06-18",
+        "vs": "Croatia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "L",
+        "displayDate": "18/06/2026"
+      },
+      {
+        "date": "2026-06-24",
+        "vs": "Panama",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "L",
+        "displayDate": "24/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Panama",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "L",
+        "displayDate": "28/06/2026"
+      }
+    ],
+    "Ghana": [
+      {
+        "date": "2026-06-18",
+        "vs": "Panama",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "L",
+        "displayDate": "18/06/2026"
+      },
+      {
+        "date": "2026-06-24",
+        "vs": "Croatia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "L",
+        "displayDate": "24/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "Croatia",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "L",
+        "displayDate": "28/06/2026"
+      }
+    ],
+    "Panama": [
+      {
+        "date": "2026-06-18",
+        "vs": "Ghana",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "L",
+        "displayDate": "18/06/2026"
+      },
+      {
+        "date": "2026-06-24",
+        "vs": "England",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "L",
+        "displayDate": "24/06/2026"
+      },
+      {
+        "date": "2026-06-28",
+        "vs": "England",
+        "score": null,
+        "result": null,
+        "status": "UPCOMING",
+        "group": "L",
+        "displayDate": "28/06/2026"
+      }
+    ]
   },
   "tournamentInfo": {
-    "totalMatchesPlayed": 15,
-    "totalMatchesRemaining": 89,
+    "totalMatchesPlayed": 16,
+    "totalMatchesRemaining": 88,
     "currentPhase": "Group Stage"
   }
 }
