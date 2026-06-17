@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-17T13:45:33+10:00",
+  "lastUpdated": "2026-06-17T17:20:37+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -135,6 +135,28 @@
     },
     {
       "rank": 13,
+      "playerName": "Lucinda Uhd",
+      "team1": "England",
+      "team1Pts": 0,
+      "team2": "Austria",
+      "team2Pts": 3,
+      "team3": "Cabo Verde",
+      "team3Pts": 1,
+      "totalPoints": 4
+    },
+    {
+      "rank": 14,
+      "playerName": "Zsofia Balogh",
+      "team1": "Brazil",
+      "team1Pts": 1,
+      "team2": "Austria",
+      "team2Pts": 3,
+      "team3": "Haiti",
+      "team3Pts": 0,
+      "totalPoints": 4
+    },
+    {
+      "rank": 15,
       "playerName": "Bjorn Myers",
       "team1": "Senegal",
       "team1Pts": 0,
@@ -145,7 +167,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 14,
+      "rank": 16,
       "playerName": "Hari Vaheesan",
       "team1": "Germany",
       "team1Pts": 3,
@@ -156,7 +178,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 15,
+      "rank": 17,
       "playerName": "Phil Tugnait",
       "team1": "Morocco",
       "team1Pts": 1,
@@ -167,7 +189,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 16,
+      "rank": 18,
       "playerName": "Rich Turley",
       "team1": "Uruguay",
       "team1Pts": 1,
@@ -178,7 +200,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 17,
+      "rank": 19,
       "playerName": "Theo Vomvellis",
       "team1": "Croatia",
       "team1Pts": 0,
@@ -189,7 +211,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 18,
+      "rank": 20,
       "playerName": "Dan Corrente",
       "team1": "France",
       "team1Pts": 3,
@@ -200,7 +222,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 19,
+      "rank": 21,
       "playerName": "Aimee Whoriskey",
       "team1": "Argentina",
       "team1Pts": 3,
@@ -211,7 +233,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 20,
+      "rank": 22,
       "playerName": "Jack Davis",
       "team1": "Argentina",
       "team1Pts": 3,
@@ -222,7 +244,7 @@
       "totalPoints": 3
     },
     {
-      "rank": 21,
+      "rank": 23,
       "playerName": "Alejandro Pedroza",
       "team1": "Belgium",
       "team1Pts": 1,
@@ -233,7 +255,7 @@
       "totalPoints": 2
     },
     {
-      "rank": 22,
+      "rank": 24,
       "playerName": "Ashina Padayachy",
       "team1": "Uruguay",
       "team1Pts": 1,
@@ -244,7 +266,7 @@
       "totalPoints": 2
     },
     {
-      "rank": 23,
+      "rank": 25,
       "playerName": "Chantelle Salas",
       "team1": "Belgium",
       "team1Pts": 1,
@@ -255,7 +277,7 @@
       "totalPoints": 2
     },
     {
-      "rank": 24,
+      "rank": 26,
       "playerName": "David McIntosh",
       "team1": "Spain",
       "team1Pts": 1,
@@ -266,7 +288,7 @@
       "totalPoints": 2
     },
     {
-      "rank": 25,
+      "rank": 27,
       "playerName": "Aaron Kiss",
       "team1": "Portugal",
       "team1Pts": 0,
@@ -277,7 +299,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 26,
+      "rank": 28,
       "playerName": "Kumal Perera",
       "team1": "England",
       "team1Pts": 0,
@@ -288,18 +310,7 @@
       "totalPoints": 1
     },
     {
-      "rank": 27,
-      "playerName": "Lucinda Uhd",
-      "team1": "England",
-      "team1Pts": 0,
-      "team2": "Austria",
-      "team2Pts": 0,
-      "team3": "Cabo Verde",
-      "team3Pts": 1,
-      "totalPoints": 1
-    },
-    {
-      "rank": 28,
+      "rank": 29,
       "playerName": "Roshan Paheerathan",
       "team1": "Netherlands",
       "team1Pts": 1,
@@ -310,24 +321,13 @@
       "totalPoints": 1
     },
     {
-      "rank": 29,
+      "rank": 30,
       "playerName": "Ru Wellalage",
       "team1": "Senegal",
       "team1Pts": 0,
       "team2": "Switzerland",
       "team2Pts": 1,
       "team3": "Jordan",
-      "team3Pts": 0,
-      "totalPoints": 1
-    },
-    {
-      "rank": 30,
-      "playerName": "Zsofia Balogh",
-      "team1": "Brazil",
-      "team1Pts": 1,
-      "team2": "Austria",
-      "team2Pts": 0,
-      "team3": "Haiti",
       "team3Pts": 0,
       "totalPoints": 1
     },
@@ -543,6 +543,16 @@
       "homeScore": 3,
       "awayScore": 0,
       "displayScore": "3 - 0",
+      "displayDate": "17/06/2026"
+    },
+    {
+      "date": "2026-06-17",
+      "group": "J",
+      "homeTeam": "Austria",
+      "awayTeam": "Jordan",
+      "homeScore": 3,
+      "awayScore": 1,
+      "displayScore": "3 - 1",
       "displayDate": "17/06/2026"
     }
   ],
@@ -1653,9 +1663,9 @@
       {
         "date": "2026-06-17",
         "vs": "Jordan",
-        "score": null,
-        "result": null,
-        "status": "UPCOMING",
+        "score": "3-1",
+        "result": "W",
+        "pts": 3,
         "group": "J",
         "displayDate": "17/06/2026"
       },
@@ -1682,9 +1692,9 @@
       {
         "date": "2026-06-17",
         "vs": "Austria",
-        "score": null,
-        "result": null,
-        "status": "UPCOMING",
+        "score": "1-3",
+        "result": "L",
+        "pts": 0,
         "group": "J",
         "displayDate": "17/06/2026"
       },
@@ -1941,8 +1951,8 @@
     ]
   },
   "tournamentInfo": {
-    "totalMatchesPlayed": 19,
-    "totalMatchesRemaining": 85,
+    "totalMatchesPlayed": 20,
+    "totalMatchesRemaining": 84,
     "currentPhase": "Group Stage"
   }
 }
