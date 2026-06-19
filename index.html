@@ -196,6 +196,8 @@
     background: linear-gradient(180deg, rgba(46,125,50,0.12) 0%, rgba(46,125,50,0.05) 100%);
     border: 2px solid rgba(46,125,50,0.3);
     border-radius: 22px; padding: 4px; overflow: hidden;
+    z-index: 0;
+     /* backdrop-filter removed */
   }
   .leaderboard-wrapper::before,
   .leaderboard-wrapper::after {
@@ -376,7 +378,33 @@
 
   .team-cell-wrap{position:relative;cursor:pointer;}
   .team-cell{display:flex;flex-direction:column;gap:1px;}
-  .team-tooltip{display:none;position:absolute;top:calc(100% + 8px);left:50%;transform:translateX(-50%);z-index:9999;background:#0a1225 !important;opacity:1 !important;border:2px solid #556688;border-radius:14px;padding:16px;width:340px;max-width:360px;box-shadow:0 20px 60px rgba(0,0,0,1);pointer-events:none;max-height:none;overflow:visible;} 
+  .team-tooltip{
+  display: none;
+  position: absolute;
+  top: calc(100% + 8px);
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 999999;
+  
+  background: #0a1225;
+  opacity: 1;
+  
+  border: 2px solid #556688;
+  border-radius: 14px;
+  padding: 16px;
+  
+  width: 340px;
+  max-width: 360px;
+  
+  box-shadow: 0 20px 60px rgba(0,0,0,1);
+  
+  pointer-events: none;
+
+  /* ✅ ADD THIS (CRITICAL FIX) */
+  isolation: isolate;
+  backdrop-filter: none !important;
+  mix-blend-mode: normal;
+} 
   .team-cell-wrap:hover>.team-tooltip,.team-cell-wrap.tt-active>.team-tooltip{display:block;}
   .team-tooltip::after{content:"";position:absolute;bottom:100%;left:50%;transform:translateX(-50%);border:7px solid transparent;border-bottom-color:#0a1225;}
   .team-cell-wrap.tt-above>.team-tooltip{top:auto;bottom:calc(100% + 8px);}
@@ -405,7 +433,7 @@
   #leaderboardSection.card{overflow:visible !important;}
   .lb-scroll{overflow:visible !important;}
   table.leaderboard{overflow:visible !important;}
-  table.leaderboard tbody td{position:relative;}
+  table.leaderboard tbody td{position:relative; z-index:1;}
   @media(max-width:768px){.team-cell-wrap:hover>.team-tooltip{display:none;}.team-cell-wrap.tt-active>.team-tooltip{display:block;}.team-tooltip{width:min(340px,calc(100vw - 32px));max-width:calc(100vw - 32px);font-size:0.78rem;}}
 </style>
 </head>
