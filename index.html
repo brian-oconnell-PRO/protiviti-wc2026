@@ -590,6 +590,23 @@
       track.innerHTML = '<span class="empty">No recent results.</span>';
       return;
     }
+
+    // ✅ STEP 1: filter to last 72 hours
+    var now = Date.now();
+    var cutoff = now - (72 * 60 * 60 * 1000);
+
+    var filtered = results.filter(function (r) {
+      if (!r.date) return false;
+      var d = new Date(r.date);
+      return !isNaN(d.getTime()) && d.getTime() >= cutoff;
+    });
+    
+    
+    // ✅ STEP 2: fallback if too few results
+    if (!filtered.length) {
+    filtered = results; // fallback to full list
+    }
+
     function chip(r) {
       var score = r.displayScore || String(r.homeScore == null ? '?' : r.homeScore) + ' - ' + String(r.awayScore == null ? '?' : r.awayScore);
       return '<span class="chip"><span class="grp">' + esc(r.group || '?') + '</span><span>' + esc(r.homeTeam || '—') + '</span><span class="sc">' + esc(score) + '</span><span>' + esc(r.awayTeam || '—') + '</span></span>';
