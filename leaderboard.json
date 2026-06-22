@@ -1,8 +1,19 @@
 {
-  "lastUpdated": "2026-06-22T13:31:52+10:00",
+  "lastUpdated": "2026-06-22T17:23:52+10:00",
   "leaderboard": [
     {
       "rank": 1,
+      "playerName": "Harini Elamurugan",
+      "team1": "Mexico",
+      "team1Pts": 6,
+      "team2": "Egypt",
+      "team2Pts": 4,
+      "team3": "Sweden",
+      "team3Pts": 3,
+      "totalPoints": 13
+    },
+    {
+      "rank": 2,
       "playerName": "Carlos Fausto",
       "team1": "Germany",
       "team1Pts": 6,
@@ -11,17 +22,6 @@
       "team3": "DR Congo",
       "team3Pts": 1,
       "totalPoints": 11
-    },
-    {
-      "rank": 2,
-      "playerName": "Harini Elamurugan",
-      "team1": "Mexico",
-      "team1Pts": 6,
-      "team2": "Egypt",
-      "team2Pts": 1,
-      "team3": "Sweden",
-      "team3Pts": 3,
-      "totalPoints": 10
     },
     {
       "rank": 3,
@@ -201,6 +201,17 @@
     },
     {
       "rank": 19,
+      "playerName": "Rich Turley",
+      "team1": "Uruguay",
+      "team1Pts": 2,
+      "team2": "Egypt",
+      "team2Pts": 4,
+      "team3": "Saudi Arabia",
+      "team3Pts": 1,
+      "totalPoints": 7
+    },
+    {
+      "rank": 20,
       "playerName": "Cyrus Si Tu",
       "team1": "Croatia",
       "team1Pts": 0,
@@ -211,7 +222,7 @@
       "totalPoints": 6
     },
     {
-      "rank": 20,
+      "rank": 21,
       "playerName": "Bjorn Myers",
       "team1": "Senegal",
       "team1Pts": 0,
@@ -222,7 +233,7 @@
       "totalPoints": 6
     },
     {
-      "rank": 21,
+      "rank": 22,
       "playerName": "Dan Corrente",
       "team1": "France",
       "team1Pts": 3,
@@ -233,7 +244,7 @@
       "totalPoints": 6
     },
     {
-      "rank": 22,
+      "rank": 23,
       "playerName": "Aimee Whoriskey",
       "team1": "Argentina",
       "team1Pts": 3,
@@ -244,24 +255,13 @@
       "totalPoints": 6
     },
     {
-      "rank": 23,
+      "rank": 24,
       "playerName": "Kumal Perera",
       "team1": "England",
       "team1Pts": 3,
       "team2": "Panama",
       "team2Pts": 0,
       "team3": "Qatar",
-      "team3Pts": 1,
-      "totalPoints": 4
-    },
-    {
-      "rank": 24,
-      "playerName": "Rich Turley",
-      "team1": "Uruguay",
-      "team1Pts": 2,
-      "team2": "Egypt",
-      "team2Pts": 1,
-      "team3": "Saudi Arabia",
       "team3Pts": 1,
       "totalPoints": 4
     },
@@ -363,7 +363,7 @@
       "homeScore": 2,
       "awayScore": 0,
       "displayScore": "2 - 0",
-      "displayDate": "12/06/2026"
+      "displayDate": "06/12/2026"
     },
     {
       "date": "2026-06-12",
@@ -373,7 +373,7 @@
       "homeScore": 2,
       "awayScore": 1,
       "displayScore": "2 - 1",
-      "displayDate": "12/06/2026"
+      "displayDate": "06/12/2026"
     },
     {
       "date": "2026-06-13",
@@ -383,7 +383,7 @@
       "homeScore": 1,
       "awayScore": 1,
       "displayScore": "1 - 1",
-      "displayDate": "13/06/2026"
+      "displayDate": "06/13/2026"
     },
     {
       "date": "2026-06-13",
@@ -393,7 +393,7 @@
       "homeScore": 4,
       "awayScore": 1,
       "displayScore": "4 - 1",
-      "displayDate": "13/06/2026"
+      "displayDate": "06/13/2026"
     },
     {
       "date": "2026-06-14",
@@ -403,7 +403,7 @@
       "homeScore": 1,
       "awayScore": 1,
       "displayScore": "1 - 1",
-      "displayDate": "14/06/2026"
+      "displayDate": "06/14/2026"
     },
     {
       "date": "2026-06-14",
@@ -413,7 +413,7 @@
       "homeScore": 1,
       "awayScore": 1,
       "displayScore": "1 - 1",
-      "displayDate": "14/06/2026"
+      "displayDate": "06/14/2026"
     },
     {
       "date": "2026-06-14",
@@ -423,7 +423,7 @@
       "homeScore": 0,
       "awayScore": 1,
       "displayScore": "0 - 1",
-      "displayDate": "14/06/2026"
+      "displayDate": "06/14/2026"
     },
     {
       "date": "2026-06-14",
@@ -433,7 +433,7 @@
       "homeScore": 2,
       "awayScore": 0,
       "displayScore": "2 - 0",
-      "displayDate": "14/06/2026"
+      "displayDate": "06/14/2026"
     },
     {
       "date": "2026-06-15",
@@ -443,7 +443,7 @@
       "homeScore": 1,
       "awayScore": 0,
       "displayScore": "1 - 0",
-      "displayDate": "15/06/2026"
+      "displayDate": "06/15/2026"
     },
     {
       "date": "2026-06-15",
@@ -453,7 +453,7 @@
       "homeScore": 7,
       "awayScore": 1,
       "displayScore": "7 - 1",
-      "displayDate": "15/06/2026"
+      "displayDate": "06/15/2026"
     },
     {
       "date": "2026-06-15",
@@ -463,7 +463,7 @@
       "homeScore": 2,
       "awayScore": 2,
       "displayScore": "2 - 2",
-      "displayDate": "15/06/2026"
+      "displayDate": "06/15/2026"
     },
     {
       "date": "2026-06-15",
@@ -473,7 +473,7 @@
       "homeScore": 5,
       "awayScore": 1,
       "displayScore": "5 - 1",
-      "displayDate": "15/06/2026"
+      "displayDate": "06/15/2026"
     },
     {
       "date": "2026-06-16",
@@ -483,7 +483,7 @@
       "homeScore": 2,
       "awayScore": 2,
       "displayScore": "2 - 2",
-      "displayDate": "16/06/2026"
+      "displayDate": "06/16/2026"
     },
     {
       "date": "2026-06-16",
@@ -493,7 +493,7 @@
       "homeScore": 1,
       "awayScore": 1,
       "displayScore": "1 - 1",
-      "displayDate": "16/06/2026"
+      "displayDate": "06/16/2026"
     },
     {
       "date": "2026-06-16",
@@ -503,7 +503,7 @@
       "homeScore": 1,
       "awayScore": 1,
       "displayScore": "1 - 1",
-      "displayDate": "16/06/2026"
+      "displayDate": "06/16/2026"
     },
     {
       "date": "2026-06-16",
@@ -513,7 +513,7 @@
       "homeScore": 0,
       "awayScore": 0,
       "displayScore": "0 - 0",
-      "displayDate": "16/06/2026"
+      "displayDate": "06/16/2026"
     },
     {
       "date": "2026-06-17",
@@ -523,7 +523,7 @@
       "homeScore": 3,
       "awayScore": 1,
       "displayScore": "3 - 1",
-      "displayDate": "17/06/2026"
+      "displayDate": "06/17/2026"
     },
     {
       "date": "2026-06-17",
@@ -533,7 +533,7 @@
       "homeScore": 1,
       "awayScore": 4,
       "displayScore": "1 - 4",
-      "displayDate": "17/06/2026"
+      "displayDate": "06/17/2026"
     },
     {
       "date": "2026-06-17",
@@ -543,7 +543,7 @@
       "homeScore": 3,
       "awayScore": 0,
       "displayScore": "3 - 0",
-      "displayDate": "17/06/2026"
+      "displayDate": "06/17/2026"
     },
     {
       "date": "2026-06-17",
@@ -553,7 +553,7 @@
       "homeScore": 3,
       "awayScore": 1,
       "displayScore": "3 - 1",
-      "displayDate": "17/06/2026"
+      "displayDate": "06/17/2026"
     },
     {
       "date": "2026-06-18",
@@ -563,7 +563,7 @@
       "homeScore": 1,
       "awayScore": 1,
       "displayScore": "1 - 1",
-      "displayDate": "18/06/2026"
+      "displayDate": "06/18/2026"
     },
     {
       "date": "2026-06-18",
@@ -573,7 +573,7 @@
       "homeScore": 1,
       "awayScore": 3,
       "displayScore": "1 - 3",
-      "displayDate": "18/06/2026"
+      "displayDate": "06/18/2026"
     },
     {
       "date": "2026-06-18",
@@ -583,7 +583,7 @@
       "homeScore": 1,
       "awayScore": 0,
       "displayScore": "1 - 0",
-      "displayDate": "18/06/2026"
+      "displayDate": "06/18/2026"
     },
     {
       "date": "2026-06-18",
@@ -593,7 +593,7 @@
       "homeScore": 4,
       "awayScore": 2,
       "displayScore": "4 - 2",
-      "displayDate": "18/06/2026"
+      "displayDate": "06/18/2026"
     },
     {
       "date": "2026-06-19",
@@ -603,7 +603,7 @@
       "homeScore": 1,
       "awayScore": 1,
       "displayScore": "1 - 1",
-      "displayDate": "19/06/2026"
+      "displayDate": "06/19/2026"
     },
     {
       "date": "2026-06-19",
@@ -613,7 +613,7 @@
       "homeScore": 4,
       "awayScore": 1,
       "displayScore": "4 - 1",
-      "displayDate": "19/06/2026"
+      "displayDate": "06/19/2026"
     },
     {
       "date": "2026-06-19",
@@ -623,7 +623,7 @@
       "homeScore": 6,
       "awayScore": 0,
       "displayScore": "6 - 0",
-      "displayDate": "19/06/2026"
+      "displayDate": "06/19/2026"
     },
     {
       "date": "2026-06-19",
@@ -633,7 +633,7 @@
       "homeScore": 2,
       "awayScore": 0,
       "displayScore": "2 - 0",
-      "displayDate": "19/06/2026"
+      "displayDate": "06/19/2026"
     },
     {
       "date": "2026-06-20",
@@ -643,7 +643,7 @@
       "homeScore": 1,
       "awayScore": 0,
       "displayScore": "1 - 0",
-      "displayDate": "20/06/2026"
+      "displayDate": "06/20/2026"
     },
     {
       "date": "2026-06-20",
@@ -653,7 +653,7 @@
       "homeScore": 3,
       "awayScore": 0,
       "displayScore": "3 - 0",
-      "displayDate": "20/06/2026"
+      "displayDate": "06/20/2026"
     },
     {
       "date": "2026-06-20",
@@ -663,7 +663,7 @@
       "homeScore": 0,
       "awayScore": 1,
       "displayScore": "0 - 1",
-      "displayDate": "20/06/2026"
+      "displayDate": "06/20/2026"
     },
     {
       "date": "2026-06-20",
@@ -673,7 +673,7 @@
       "homeScore": 0,
       "awayScore": 1,
       "displayScore": "0 - 1",
-      "displayDate": "20/06/2026"
+      "displayDate": "06/20/2026"
     },
     {
       "date": "2026-06-21",
@@ -683,7 +683,7 @@
       "homeScore": 2,
       "awayScore": 1,
       "displayScore": "2 - 1",
-      "displayDate": "21/06/2026"
+      "displayDate": "06/21/2026"
     },
     {
       "date": "2026-06-21",
@@ -693,7 +693,7 @@
       "homeScore": 0,
       "awayScore": 0,
       "displayScore": "0 - 0",
-      "displayDate": "21/06/2026"
+      "displayDate": "06/21/2026"
     },
     {
       "date": "2026-06-21",
@@ -703,7 +703,7 @@
       "homeScore": 0,
       "awayScore": 4,
       "displayScore": "0 - 4",
-      "displayDate": "21/06/2026"
+      "displayDate": "06/21/2026"
     },
     {
       "date": "2026-06-21",
@@ -713,7 +713,7 @@
       "homeScore": 5,
       "awayScore": 1,
       "displayScore": "5 - 1",
-      "displayDate": "21/06/2026"
+      "displayDate": "06/21/2026"
     },
     {
       "date": "2026-06-22",
@@ -723,7 +723,17 @@
       "homeScore": 0,
       "awayScore": 0,
       "displayScore": "0 - 0",
-      "displayDate": "22/06/2026"
+      "displayDate": "06/22/2026"
+    },
+    {
+      "date": "2026-06-22",
+      "group": "G",
+      "homeTeam": "New Zealand",
+      "awayTeam": "Egypt",
+      "homeScore": 1,
+      "awayScore": 3,
+      "displayScore": "1 - 3",
+      "displayDate": "06/22/2026"
     },
     {
       "date": "2026-06-22",
@@ -733,7 +743,7 @@
       "homeScore": 2,
       "awayScore": 2,
       "displayScore": "2 - 2",
-      "displayDate": "22/06/2026"
+      "displayDate": "06/22/2026"
     },
     {
       "date": "2026-06-22",
@@ -743,7 +753,7 @@
       "homeScore": 4,
       "awayScore": 0,
       "displayScore": "4 - 0",
-      "displayDate": "22/06/2026"
+      "displayDate": "06/22/2026"
     }
   ],
   "teamResults": {
@@ -755,7 +765,7 @@
         "result": "L",
         "pts": 0,
         "group": "A",
-        "displayDate": "12/06/2026"
+        "displayDate": "06/12/2026"
       },
       {
         "date": "2026-06-19",
@@ -764,7 +774,7 @@
         "result": "D",
         "pts": 1,
         "group": "A",
-        "displayDate": "19/06/2026"
+        "displayDate": "06/19/2026"
       },
       {
         "date": "2026-06-26",
@@ -773,7 +783,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "A",
-        "displayDate": "26/06/2026"
+        "displayDate": "06/26/2026"
       }
     ],
     "Mexico": [
@@ -784,7 +794,7 @@
         "result": "W",
         "pts": 3,
         "group": "A",
-        "displayDate": "12/06/2026"
+        "displayDate": "06/12/2026"
       },
       {
         "date": "2026-06-20",
@@ -793,7 +803,7 @@
         "result": "W",
         "pts": 3,
         "group": "A",
-        "displayDate": "20/06/2026"
+        "displayDate": "06/20/2026"
       },
       {
         "date": "2026-06-26",
@@ -802,7 +812,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "A",
-        "displayDate": "26/06/2026"
+        "displayDate": "06/26/2026"
       }
     ],
     "South Africa": [
@@ -813,7 +823,7 @@
         "result": "L",
         "pts": 0,
         "group": "A",
-        "displayDate": "12/06/2026"
+        "displayDate": "06/12/2026"
       },
       {
         "date": "2026-06-19",
@@ -822,7 +832,7 @@
         "result": "D",
         "pts": 1,
         "group": "A",
-        "displayDate": "19/06/2026"
+        "displayDate": "06/19/2026"
       },
       {
         "date": "2026-06-26",
@@ -831,7 +841,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "A",
-        "displayDate": "26/06/2026"
+        "displayDate": "06/26/2026"
       }
     ],
     "South Korea": [
@@ -842,7 +852,7 @@
         "result": "W",
         "pts": 3,
         "group": "A",
-        "displayDate": "12/06/2026"
+        "displayDate": "06/12/2026"
       },
       {
         "date": "2026-06-20",
@@ -851,7 +861,7 @@
         "result": "L",
         "pts": 0,
         "group": "A",
-        "displayDate": "20/06/2026"
+        "displayDate": "06/20/2026"
       },
       {
         "date": "2026-06-26",
@@ -860,7 +870,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "A",
-        "displayDate": "26/06/2026"
+        "displayDate": "06/26/2026"
       }
     ],
     "Bosnia and Herzegovina": [
@@ -871,7 +881,7 @@
         "result": "D",
         "pts": 1,
         "group": "B",
-        "displayDate": "13/06/2026"
+        "displayDate": "06/13/2026"
       },
       {
         "date": "2026-06-19",
@@ -880,7 +890,7 @@
         "result": "L",
         "pts": 0,
         "group": "B",
-        "displayDate": "19/06/2026"
+        "displayDate": "06/19/2026"
       },
       {
         "date": "2026-06-25",
@@ -889,7 +899,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "B",
-        "displayDate": "25/06/2026"
+        "displayDate": "06/25/2026"
       }
     ],
     "Canada": [
@@ -900,7 +910,7 @@
         "result": "D",
         "pts": 1,
         "group": "B",
-        "displayDate": "13/06/2026"
+        "displayDate": "06/13/2026"
       },
       {
         "date": "2026-06-19",
@@ -909,7 +919,7 @@
         "result": "W",
         "pts": 3,
         "group": "B",
-        "displayDate": "19/06/2026"
+        "displayDate": "06/19/2026"
       },
       {
         "date": "2026-06-25",
@@ -918,7 +928,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "B",
-        "displayDate": "25/06/2026"
+        "displayDate": "06/25/2026"
       }
     ],
     "Qatar": [
@@ -929,7 +939,7 @@
         "result": "D",
         "pts": 1,
         "group": "B",
-        "displayDate": "14/06/2026"
+        "displayDate": "06/14/2026"
       },
       {
         "date": "2026-06-19",
@@ -938,7 +948,7 @@
         "result": "L",
         "pts": 0,
         "group": "B",
-        "displayDate": "19/06/2026"
+        "displayDate": "06/19/2026"
       },
       {
         "date": "2026-06-25",
@@ -947,7 +957,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "B",
-        "displayDate": "25/06/2026"
+        "displayDate": "06/25/2026"
       }
     ],
     "Switzerland": [
@@ -958,7 +968,7 @@
         "result": "D",
         "pts": 1,
         "group": "B",
-        "displayDate": "14/06/2026"
+        "displayDate": "06/14/2026"
       },
       {
         "date": "2026-06-19",
@@ -967,7 +977,7 @@
         "result": "W",
         "pts": 3,
         "group": "B",
-        "displayDate": "19/06/2026"
+        "displayDate": "06/19/2026"
       },
       {
         "date": "2026-06-25",
@@ -976,7 +986,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "B",
-        "displayDate": "25/06/2026"
+        "displayDate": "06/25/2026"
       }
     ],
     "Brazil": [
@@ -987,7 +997,7 @@
         "result": "D",
         "pts": 1,
         "group": "C",
-        "displayDate": "14/06/2026"
+        "displayDate": "06/14/2026"
       },
       {
         "date": "2026-06-20",
@@ -996,7 +1006,7 @@
         "result": "W",
         "pts": 3,
         "group": "C",
-        "displayDate": "20/06/2026"
+        "displayDate": "06/20/2026"
       },
       {
         "date": "2026-06-25",
@@ -1005,7 +1015,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "C",
-        "displayDate": "25/06/2026"
+        "displayDate": "06/25/2026"
       }
     ],
     "Haiti": [
@@ -1016,7 +1026,7 @@
         "result": "L",
         "pts": 0,
         "group": "C",
-        "displayDate": "14/06/2026"
+        "displayDate": "06/14/2026"
       },
       {
         "date": "2026-06-20",
@@ -1025,7 +1035,7 @@
         "result": "L",
         "pts": 0,
         "group": "C",
-        "displayDate": "20/06/2026"
+        "displayDate": "06/20/2026"
       },
       {
         "date": "2026-06-25",
@@ -1034,7 +1044,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "C",
-        "displayDate": "25/06/2026"
+        "displayDate": "06/25/2026"
       }
     ],
     "Morocco": [
@@ -1045,7 +1055,7 @@
         "result": "D",
         "pts": 1,
         "group": "C",
-        "displayDate": "14/06/2026"
+        "displayDate": "06/14/2026"
       },
       {
         "date": "2026-06-20",
@@ -1054,7 +1064,7 @@
         "result": "W",
         "pts": 3,
         "group": "C",
-        "displayDate": "20/06/2026"
+        "displayDate": "06/20/2026"
       },
       {
         "date": "2026-06-25",
@@ -1063,7 +1073,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "C",
-        "displayDate": "25/06/2026"
+        "displayDate": "06/25/2026"
       }
     ],
     "Scotland": [
@@ -1074,7 +1084,7 @@
         "result": "W",
         "pts": 3,
         "group": "C",
-        "displayDate": "14/06/2026"
+        "displayDate": "06/14/2026"
       },
       {
         "date": "2026-06-20",
@@ -1083,7 +1093,7 @@
         "result": "L",
         "pts": 0,
         "group": "C",
-        "displayDate": "20/06/2026"
+        "displayDate": "06/20/2026"
       },
       {
         "date": "2026-06-25",
@@ -1092,7 +1102,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "C",
-        "displayDate": "25/06/2026"
+        "displayDate": "06/25/2026"
       }
     ],
     "Australia": [
@@ -1103,7 +1113,7 @@
         "result": "W",
         "pts": 3,
         "group": "D",
-        "displayDate": "14/06/2026"
+        "displayDate": "06/14/2026"
       },
       {
         "date": "2026-06-19",
@@ -1112,7 +1122,7 @@
         "result": "L",
         "pts": 0,
         "group": "D",
-        "displayDate": "19/06/2026"
+        "displayDate": "06/19/2026"
       },
       {
         "date": "2026-06-26",
@@ -1121,7 +1131,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "D",
-        "displayDate": "26/06/2026"
+        "displayDate": "06/26/2026"
       }
     ],
     "Paraguay": [
@@ -1132,7 +1142,7 @@
         "result": "L",
         "pts": 0,
         "group": "D",
-        "displayDate": "13/06/2026"
+        "displayDate": "06/13/2026"
       },
       {
         "date": "2026-06-20",
@@ -1141,7 +1151,7 @@
         "result": "W",
         "pts": 3,
         "group": "D",
-        "displayDate": "20/06/2026"
+        "displayDate": "06/20/2026"
       },
       {
         "date": "2026-06-26",
@@ -1150,7 +1160,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "D",
-        "displayDate": "26/06/2026"
+        "displayDate": "06/26/2026"
       }
     ],
     "Türkiye": [
@@ -1161,7 +1171,7 @@
         "result": "L",
         "pts": 0,
         "group": "D",
-        "displayDate": "14/06/2026"
+        "displayDate": "06/14/2026"
       },
       {
         "date": "2026-06-20",
@@ -1170,7 +1180,7 @@
         "result": "L",
         "pts": 0,
         "group": "D",
-        "displayDate": "20/06/2026"
+        "displayDate": "06/20/2026"
       },
       {
         "date": "2026-06-26",
@@ -1179,7 +1189,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "D",
-        "displayDate": "26/06/2026"
+        "displayDate": "06/26/2026"
       }
     ],
     "USA": [
@@ -1190,7 +1200,7 @@
         "result": "W",
         "pts": 3,
         "group": "D",
-        "displayDate": "13/06/2026"
+        "displayDate": "06/13/2026"
       },
       {
         "date": "2026-06-19",
@@ -1199,7 +1209,7 @@
         "result": "W",
         "pts": 3,
         "group": "D",
-        "displayDate": "19/06/2026"
+        "displayDate": "06/19/2026"
       },
       {
         "date": "2026-06-26",
@@ -1208,7 +1218,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "D",
-        "displayDate": "26/06/2026"
+        "displayDate": "06/26/2026"
       }
     ],
     "Curaçao": [
@@ -1219,7 +1229,7 @@
         "result": "L",
         "pts": 0,
         "group": "E",
-        "displayDate": "15/06/2026"
+        "displayDate": "06/15/2026"
       },
       {
         "date": "2026-06-21",
@@ -1228,7 +1238,7 @@
         "result": "D",
         "pts": 1,
         "group": "E",
-        "displayDate": "21/06/2026"
+        "displayDate": "06/21/2026"
       },
       {
         "date": "2026-06-27",
@@ -1237,7 +1247,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "E",
-        "displayDate": "27/06/2026"
+        "displayDate": "06/27/2026"
       }
     ],
     "Côte d'Ivoire": [
@@ -1248,7 +1258,7 @@
         "result": "W",
         "pts": 3,
         "group": "E",
-        "displayDate": "15/06/2026"
+        "displayDate": "06/15/2026"
       },
       {
         "date": "2026-06-21",
@@ -1257,7 +1267,7 @@
         "result": "L",
         "pts": 0,
         "group": "E",
-        "displayDate": "21/06/2026"
+        "displayDate": "06/21/2026"
       },
       {
         "date": "2026-06-27",
@@ -1266,7 +1276,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "E",
-        "displayDate": "27/06/2026"
+        "displayDate": "06/27/2026"
       }
     ],
     "Ecuador": [
@@ -1277,7 +1287,7 @@
         "result": "L",
         "pts": 0,
         "group": "E",
-        "displayDate": "15/06/2026"
+        "displayDate": "06/15/2026"
       },
       {
         "date": "2026-06-21",
@@ -1286,7 +1296,7 @@
         "result": "D",
         "pts": 1,
         "group": "E",
-        "displayDate": "21/06/2026"
+        "displayDate": "06/21/2026"
       },
       {
         "date": "2026-06-27",
@@ -1295,7 +1305,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "E",
-        "displayDate": "27/06/2026"
+        "displayDate": "06/27/2026"
       }
     ],
     "Germany": [
@@ -1306,7 +1316,7 @@
         "result": "W",
         "pts": 3,
         "group": "E",
-        "displayDate": "15/06/2026"
+        "displayDate": "06/15/2026"
       },
       {
         "date": "2026-06-21",
@@ -1315,7 +1325,7 @@
         "result": "W",
         "pts": 3,
         "group": "E",
-        "displayDate": "21/06/2026"
+        "displayDate": "06/21/2026"
       },
       {
         "date": "2026-06-27",
@@ -1324,7 +1334,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "E",
-        "displayDate": "27/06/2026"
+        "displayDate": "06/27/2026"
       }
     ],
     "Japan": [
@@ -1335,7 +1345,7 @@
         "result": "D",
         "pts": 1,
         "group": "F",
-        "displayDate": "15/06/2026"
+        "displayDate": "06/15/2026"
       },
       {
         "date": "2026-06-21",
@@ -1344,7 +1354,7 @@
         "result": "W",
         "pts": 3,
         "group": "F",
-        "displayDate": "21/06/2026"
+        "displayDate": "06/21/2026"
       },
       {
         "date": "2026-06-27",
@@ -1353,7 +1363,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "F",
-        "displayDate": "27/06/2026"
+        "displayDate": "06/27/2026"
       }
     ],
     "Netherlands": [
@@ -1364,7 +1374,7 @@
         "result": "D",
         "pts": 1,
         "group": "F",
-        "displayDate": "15/06/2026"
+        "displayDate": "06/15/2026"
       },
       {
         "date": "2026-06-21",
@@ -1373,7 +1383,7 @@
         "result": "W",
         "pts": 3,
         "group": "F",
-        "displayDate": "21/06/2026"
+        "displayDate": "06/21/2026"
       },
       {
         "date": "2026-06-27",
@@ -1382,7 +1392,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "F",
-        "displayDate": "27/06/2026"
+        "displayDate": "06/27/2026"
       }
     ],
     "Sweden": [
@@ -1393,7 +1403,7 @@
         "result": "W",
         "pts": 3,
         "group": "F",
-        "displayDate": "15/06/2026"
+        "displayDate": "06/15/2026"
       },
       {
         "date": "2026-06-21",
@@ -1402,7 +1412,7 @@
         "result": "L",
         "pts": 0,
         "group": "F",
-        "displayDate": "21/06/2026"
+        "displayDate": "06/21/2026"
       },
       {
         "date": "2026-06-27",
@@ -1411,7 +1421,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "F",
-        "displayDate": "27/06/2026"
+        "displayDate": "06/27/2026"
       }
     ],
     "Tunisia": [
@@ -1422,7 +1432,7 @@
         "result": "L",
         "pts": 0,
         "group": "F",
-        "displayDate": "15/06/2026"
+        "displayDate": "06/15/2026"
       },
       {
         "date": "2026-06-21",
@@ -1431,7 +1441,7 @@
         "result": "L",
         "pts": 0,
         "group": "F",
-        "displayDate": "21/06/2026"
+        "displayDate": "06/21/2026"
       },
       {
         "date": "2026-06-27",
@@ -1440,7 +1450,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "F",
-        "displayDate": "27/06/2026"
+        "displayDate": "06/27/2026"
       }
     ],
     "Belgium": [
@@ -1451,7 +1461,7 @@
         "result": "D",
         "pts": 1,
         "group": "G",
-        "displayDate": "16/06/2026"
+        "displayDate": "06/16/2026"
       },
       {
         "date": "2026-06-22",
@@ -1460,7 +1470,7 @@
         "result": "D",
         "pts": 1,
         "group": "G",
-        "displayDate": "22/06/2026"
+        "displayDate": "06/22/2026"
       },
       {
         "date": "2026-06-28",
@@ -1469,7 +1479,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "G",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Egypt": [
@@ -1480,16 +1490,16 @@
         "result": "D",
         "pts": 1,
         "group": "G",
-        "displayDate": "16/06/2026"
+        "displayDate": "06/16/2026"
       },
       {
         "date": "2026-06-22",
         "vs": "New Zealand",
-        "score": null,
-        "result": null,
-        "status": "UPCOMING",
+        "score": "3-1",
+        "result": "W",
+        "pts": 3,
         "group": "G",
-        "displayDate": "22/06/2026"
+        "displayDate": "06/22/2026"
       },
       {
         "date": "2026-06-28",
@@ -1498,7 +1508,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "G",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Iran": [
@@ -1509,7 +1519,7 @@
         "result": "D",
         "pts": 1,
         "group": "G",
-        "displayDate": "16/06/2026"
+        "displayDate": "06/16/2026"
       },
       {
         "date": "2026-06-22",
@@ -1518,7 +1528,7 @@
         "result": "D",
         "pts": 1,
         "group": "G",
-        "displayDate": "22/06/2026"
+        "displayDate": "06/22/2026"
       },
       {
         "date": "2026-06-28",
@@ -1527,7 +1537,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "G",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "New Zealand": [
@@ -1538,16 +1548,16 @@
         "result": "D",
         "pts": 1,
         "group": "G",
-        "displayDate": "16/06/2026"
+        "displayDate": "06/16/2026"
       },
       {
         "date": "2026-06-22",
         "vs": "Egypt",
-        "score": null,
-        "result": null,
-        "status": "UPCOMING",
+        "score": "1-3",
+        "result": "L",
+        "pts": 0,
         "group": "G",
-        "displayDate": "22/06/2026"
+        "displayDate": "06/22/2026"
       },
       {
         "date": "2026-06-28",
@@ -1556,7 +1566,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "G",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Cabo Verde": [
@@ -1567,7 +1577,7 @@
         "result": "D",
         "pts": 1,
         "group": "H",
-        "displayDate": "16/06/2026"
+        "displayDate": "06/16/2026"
       },
       {
         "date": "2026-06-22",
@@ -1576,7 +1586,7 @@
         "result": "D",
         "pts": 1,
         "group": "H",
-        "displayDate": "22/06/2026"
+        "displayDate": "06/22/2026"
       },
       {
         "date": "2026-06-28",
@@ -1585,7 +1595,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "H",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Saudi Arabia": [
@@ -1596,7 +1606,7 @@
         "result": "D",
         "pts": 1,
         "group": "H",
-        "displayDate": "16/06/2026"
+        "displayDate": "06/16/2026"
       },
       {
         "date": "2026-06-22",
@@ -1605,7 +1615,7 @@
         "result": "L",
         "pts": 0,
         "group": "H",
-        "displayDate": "22/06/2026"
+        "displayDate": "06/22/2026"
       },
       {
         "date": "2026-06-28",
@@ -1614,7 +1624,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "H",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Spain": [
@@ -1625,7 +1635,7 @@
         "result": "D",
         "pts": 1,
         "group": "H",
-        "displayDate": "16/06/2026"
+        "displayDate": "06/16/2026"
       },
       {
         "date": "2026-06-22",
@@ -1634,7 +1644,7 @@
         "result": "W",
         "pts": 3,
         "group": "H",
-        "displayDate": "22/06/2026"
+        "displayDate": "06/22/2026"
       },
       {
         "date": "2026-06-28",
@@ -1643,7 +1653,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "H",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Uruguay": [
@@ -1654,7 +1664,7 @@
         "result": "D",
         "pts": 1,
         "group": "H",
-        "displayDate": "16/06/2026"
+        "displayDate": "06/16/2026"
       },
       {
         "date": "2026-06-22",
@@ -1663,7 +1673,7 @@
         "result": "D",
         "pts": 1,
         "group": "H",
-        "displayDate": "22/06/2026"
+        "displayDate": "06/22/2026"
       },
       {
         "date": "2026-06-28",
@@ -1672,7 +1682,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "H",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "France": [
@@ -1683,7 +1693,7 @@
         "result": "W",
         "pts": 3,
         "group": "I",
-        "displayDate": "17/06/2026"
+        "displayDate": "06/17/2026"
       },
       {
         "date": "2026-06-23",
@@ -1692,7 +1702,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "I",
-        "displayDate": "23/06/2026"
+        "displayDate": "06/23/2026"
       },
       {
         "date": "2026-06-28",
@@ -1701,7 +1711,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "I",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Iraq": [
@@ -1712,7 +1722,7 @@
         "result": "L",
         "pts": 0,
         "group": "I",
-        "displayDate": "17/06/2026"
+        "displayDate": "06/17/2026"
       },
       {
         "date": "2026-06-23",
@@ -1721,7 +1731,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "I",
-        "displayDate": "23/06/2026"
+        "displayDate": "06/23/2026"
       },
       {
         "date": "2026-06-28",
@@ -1730,7 +1740,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "I",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Norway": [
@@ -1741,7 +1751,7 @@
         "result": "W",
         "pts": 3,
         "group": "I",
-        "displayDate": "17/06/2026"
+        "displayDate": "06/17/2026"
       },
       {
         "date": "2026-06-23",
@@ -1750,7 +1760,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "I",
-        "displayDate": "23/06/2026"
+        "displayDate": "06/23/2026"
       },
       {
         "date": "2026-06-28",
@@ -1759,7 +1769,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "I",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Senegal": [
@@ -1770,7 +1780,7 @@
         "result": "L",
         "pts": 0,
         "group": "I",
-        "displayDate": "17/06/2026"
+        "displayDate": "06/17/2026"
       },
       {
         "date": "2026-06-23",
@@ -1779,7 +1789,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "I",
-        "displayDate": "23/06/2026"
+        "displayDate": "06/23/2026"
       },
       {
         "date": "2026-06-28",
@@ -1788,7 +1798,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "I",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Algeria": [
@@ -1799,7 +1809,7 @@
         "result": "L",
         "pts": 0,
         "group": "J",
-        "displayDate": "17/06/2026"
+        "displayDate": "06/17/2026"
       },
       {
         "date": "2026-06-23",
@@ -1808,7 +1818,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "J",
-        "displayDate": "23/06/2026"
+        "displayDate": "06/23/2026"
       },
       {
         "date": "2026-06-27",
@@ -1817,7 +1827,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "J",
-        "displayDate": "27/06/2026"
+        "displayDate": "06/27/2026"
       }
     ],
     "Argentina": [
@@ -1828,7 +1838,7 @@
         "result": "W",
         "pts": 3,
         "group": "J",
-        "displayDate": "17/06/2026"
+        "displayDate": "06/17/2026"
       },
       {
         "date": "2026-06-23",
@@ -1837,7 +1847,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "J",
-        "displayDate": "23/06/2026"
+        "displayDate": "06/23/2026"
       },
       {
         "date": "2026-06-27",
@@ -1846,7 +1856,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "J",
-        "displayDate": "27/06/2026"
+        "displayDate": "06/27/2026"
       }
     ],
     "Austria": [
@@ -1857,7 +1867,7 @@
         "result": "W",
         "pts": 3,
         "group": "J",
-        "displayDate": "17/06/2026"
+        "displayDate": "06/17/2026"
       },
       {
         "date": "2026-06-23",
@@ -1866,7 +1876,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "J",
-        "displayDate": "23/06/2026"
+        "displayDate": "06/23/2026"
       },
       {
         "date": "2026-06-27",
@@ -1875,7 +1885,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "J",
-        "displayDate": "27/06/2026"
+        "displayDate": "06/27/2026"
       }
     ],
     "Jordan": [
@@ -1886,7 +1896,7 @@
         "result": "L",
         "pts": 0,
         "group": "J",
-        "displayDate": "17/06/2026"
+        "displayDate": "06/17/2026"
       },
       {
         "date": "2026-06-23",
@@ -1895,7 +1905,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "J",
-        "displayDate": "23/06/2026"
+        "displayDate": "06/23/2026"
       },
       {
         "date": "2026-06-27",
@@ -1904,7 +1914,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "J",
-        "displayDate": "27/06/2026"
+        "displayDate": "06/27/2026"
       }
     ],
     "Colombia": [
@@ -1915,7 +1925,7 @@
         "result": "W",
         "pts": 3,
         "group": "K",
-        "displayDate": "18/06/2026"
+        "displayDate": "06/18/2026"
       },
       {
         "date": "2026-06-24",
@@ -1924,7 +1934,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "K",
-        "displayDate": "24/06/2026"
+        "displayDate": "06/24/2026"
       },
       {
         "date": "2026-06-28",
@@ -1933,7 +1943,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "K",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "DR Congo": [
@@ -1944,7 +1954,7 @@
         "result": "D",
         "pts": 1,
         "group": "K",
-        "displayDate": "18/06/2026"
+        "displayDate": "06/18/2026"
       },
       {
         "date": "2026-06-24",
@@ -1953,7 +1963,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "K",
-        "displayDate": "24/06/2026"
+        "displayDate": "06/24/2026"
       },
       {
         "date": "2026-06-28",
@@ -1962,7 +1972,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "K",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Portugal": [
@@ -1973,7 +1983,7 @@
         "result": "D",
         "pts": 1,
         "group": "K",
-        "displayDate": "18/06/2026"
+        "displayDate": "06/18/2026"
       },
       {
         "date": "2026-06-24",
@@ -1982,7 +1992,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "K",
-        "displayDate": "24/06/2026"
+        "displayDate": "06/24/2026"
       },
       {
         "date": "2026-06-28",
@@ -1991,7 +2001,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "K",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Uzbekistan": [
@@ -2002,7 +2012,7 @@
         "result": "L",
         "pts": 0,
         "group": "K",
-        "displayDate": "18/06/2026"
+        "displayDate": "06/18/2026"
       },
       {
         "date": "2026-06-24",
@@ -2011,7 +2021,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "K",
-        "displayDate": "24/06/2026"
+        "displayDate": "06/24/2026"
       },
       {
         "date": "2026-06-28",
@@ -2020,7 +2030,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "K",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Croatia": [
@@ -2031,7 +2041,7 @@
         "result": "L",
         "pts": 0,
         "group": "L",
-        "displayDate": "18/06/2026"
+        "displayDate": "06/18/2026"
       },
       {
         "date": "2026-06-24",
@@ -2040,7 +2050,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "L",
-        "displayDate": "24/06/2026"
+        "displayDate": "06/24/2026"
       },
       {
         "date": "2026-06-28",
@@ -2049,7 +2059,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "L",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "England": [
@@ -2060,7 +2070,7 @@
         "result": "W",
         "pts": 3,
         "group": "L",
-        "displayDate": "18/06/2026"
+        "displayDate": "06/18/2026"
       },
       {
         "date": "2026-06-24",
@@ -2069,7 +2079,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "L",
-        "displayDate": "24/06/2026"
+        "displayDate": "06/24/2026"
       },
       {
         "date": "2026-06-28",
@@ -2078,7 +2088,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "L",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Ghana": [
@@ -2089,7 +2099,7 @@
         "result": "W",
         "pts": 3,
         "group": "L",
-        "displayDate": "18/06/2026"
+        "displayDate": "06/18/2026"
       },
       {
         "date": "2026-06-24",
@@ -2098,7 +2108,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "L",
-        "displayDate": "24/06/2026"
+        "displayDate": "06/24/2026"
       },
       {
         "date": "2026-06-28",
@@ -2107,7 +2117,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "L",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ],
     "Panama": [
@@ -2118,7 +2128,7 @@
         "result": "L",
         "pts": 0,
         "group": "L",
-        "displayDate": "18/06/2026"
+        "displayDate": "06/18/2026"
       },
       {
         "date": "2026-06-24",
@@ -2127,7 +2137,7 @@
         "result": null,
         "status": "UPCOMING",
         "group": "L",
-        "displayDate": "24/06/2026"
+        "displayDate": "06/24/2026"
       },
       {
         "date": "2026-06-28",
@@ -2136,13 +2146,13 @@
         "result": null,
         "status": "UPCOMING",
         "group": "L",
-        "displayDate": "28/06/2026"
+        "displayDate": "06/28/2026"
       }
     ]
   },
   "tournamentInfo": {
-    "totalMatchesPlayed": 39,
-    "totalMatchesRemaining": 65,
+    "totalMatchesPlayed": 40,
+    "totalMatchesRemaining": 64,
     "currentPhase": "Group Stage"
   }
 }
