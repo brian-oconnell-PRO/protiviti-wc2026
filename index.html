@@ -43,11 +43,41 @@
       background-attachment: fixed;
     }
 
+    
+    /* World Cup football decorative layer */
+    body::before {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+
+      background-image: 
+        url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/512px-Soccerball.svg.png'),
+        url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/512px-Soccerball.svg.png'),
+        url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/512px-Soccerball.svg.png'),
+        url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/512px-Soccerball.svg.png');
+
+      background-repeat: no-repeat;
+
+      background-size: 90px, 70px, 80px, 60px;
+
+      background-position:
+        left -20px top 40px,
+        right -30px top 120px,
+        left -40px bottom 80px,
+        right -20px bottom 40px;
+
+      opacity: 0.08;
+    }
+
     .app {
       max-width: 1320px;
       margin: 0 auto;
       display: grid;
       gap: 18px;
+      position: relative;
+      z-index: 1;
     }
 
     .error {
