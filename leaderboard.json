@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-06-24T10:15:52+10:00",
+  "lastUpdated": "2026-06-24T14:38:00+10:00",
   "leaderboard": [
     {
       "playerName": "Harini Elamurugan",
@@ -90,6 +90,17 @@
       "rank": 8
     },
     {
+      "playerName": "Adithya Raj",
+      "team1": "Colombia",
+      "team1Pts": 6,
+      "team2": "Australia",
+      "team2Pts": 3,
+      "team3": "New Zealand",
+      "team3Pts": 1,
+      "totalPoints": 10,
+      "rank": 9
+    },
+    {
       "playerName": "Darryl Gao",
       "team1": "USA",
       "team1Pts": 6,
@@ -98,7 +109,7 @@
       "team3": "New Zealand",
       "team3Pts": 1,
       "totalPoints": 9,
-      "rank": 9
+      "rank": 10
     },
     {
       "playerName": "Phil Tugnait",
@@ -109,7 +120,7 @@
       "team3": "Bosnia and Herzegovina",
       "team3Pts": 1,
       "totalPoints": 9,
-      "rank": 10
+      "rank": 11
     },
     {
       "playerName": "David McIntosh",
@@ -120,7 +131,7 @@
       "team3": "South Africa",
       "team3Pts": 1,
       "totalPoints": 9,
-      "rank": 11
+      "rank": 12
     },
     {
       "playerName": "Dan Corrente",
@@ -131,7 +142,7 @@
       "team3": "Haiti",
       "team3Pts": 0,
       "totalPoints": 9,
-      "rank": 12
+      "rank": 13
     },
     {
       "playerName": "Lucinda Uhd",
@@ -142,7 +153,18 @@
       "team3": "Cabo Verde",
       "team3Pts": 2,
       "totalPoints": 9,
-      "rank": 13
+      "rank": 14
+    },
+    {
+      "playerName": "Cyrus Si Tu",
+      "team1": "Croatia",
+      "team1Pts": 3,
+      "team2": "Australia",
+      "team2Pts": 3,
+      "team3": "Sweden",
+      "team3Pts": 3,
+      "totalPoints": 9,
+      "rank": 15
     },
     {
       "playerName": "Aayushi Malhotra",
@@ -153,7 +175,7 @@
       "team3": "Saudi Arabia",
       "team3Pts": 1,
       "totalPoints": 8,
-      "rank": 14
+      "rank": 16
     },
     {
       "playerName": "Brian O'Connell",
@@ -164,18 +186,7 @@
       "team3": "Curaçao",
       "team3Pts": 1,
       "totalPoints": 8,
-      "rank": 15
-    },
-    {
-      "playerName": "Adithya Raj",
-      "team1": "Colombia",
-      "team1Pts": 3,
-      "team2": "Australia",
-      "team2Pts": 3,
-      "team3": "New Zealand",
-      "team3Pts": 1,
-      "totalPoints": 7,
-      "rank": 16
+      "rank": 17
     },
     {
       "playerName": "Mia Paredes",
@@ -186,7 +197,7 @@
       "team3": "Uzbekistan",
       "team3Pts": 0,
       "totalPoints": 7,
-      "rank": 17
+      "rank": 18
     },
     {
       "playerName": "Steph McCourt",
@@ -197,7 +208,7 @@
       "team3": "Uzbekistan",
       "team3Pts": 0,
       "totalPoints": 7,
-      "rank": 18
+      "rank": 19
     },
     {
       "playerName": "Zsofia Balogh",
@@ -208,7 +219,7 @@
       "team3": "Haiti",
       "team3Pts": 0,
       "totalPoints": 7,
-      "rank": 19
+      "rank": 20
     },
     {
       "playerName": "Ashina Padayachy",
@@ -219,7 +230,7 @@
       "team3": "DR Congo",
       "team3Pts": 1,
       "totalPoints": 7,
-      "rank": 20
+      "rank": 21
     },
     {
       "playerName": "Roshan Paheerathan",
@@ -230,7 +241,7 @@
       "team3": "Jordan",
       "team3Pts": 0,
       "totalPoints": 7,
-      "rank": 21
+      "rank": 22
     },
     {
       "playerName": "Rich Turley",
@@ -241,7 +252,7 @@
       "team3": "Saudi Arabia",
       "team3Pts": 1,
       "totalPoints": 7,
-      "rank": 22
+      "rank": 23
     },
     {
       "playerName": "Bjorn Myers",
@@ -252,17 +263,6 @@
       "team3": "Ghana",
       "team3Pts": 4,
       "totalPoints": 7,
-      "rank": 23
-    },
-    {
-      "playerName": "Cyrus Si Tu",
-      "team1": "Croatia",
-      "team1Pts": 0,
-      "team2": "Australia",
-      "team2Pts": 3,
-      "team3": "Sweden",
-      "team3Pts": 3,
-      "totalPoints": 6,
       "rank": 24
     },
     {
@@ -288,6 +288,28 @@
       "rank": 26
     },
     {
+      "playerName": "Theo Vomvellis",
+      "team1": "Croatia",
+      "team1Pts": 3,
+      "team2": "Scotland",
+      "team2Pts": 3,
+      "team3": "Tunisia",
+      "team3Pts": 0,
+      "totalPoints": 6,
+      "rank": 27
+    },
+    {
+      "playerName": "Emma Little",
+      "team1": "Colombia",
+      "team1Pts": 6,
+      "team2": "Türkiye",
+      "team2Pts": 0,
+      "team3": "Tunisia",
+      "team3Pts": 0,
+      "totalPoints": 6,
+      "rank": 28
+    },
+    {
       "playerName": "Kumal Perera",
       "team1": "England",
       "team1Pts": 4,
@@ -296,7 +318,7 @@
       "team3": "Qatar",
       "team3Pts": 1,
       "totalPoints": 5,
-      "rank": 27
+      "rank": 29
     },
     {
       "playerName": "Alejandro Pedroza",
@@ -307,7 +329,7 @@
       "team3": "Cabo Verde",
       "team3Pts": 2,
       "totalPoints": 4,
-      "rank": 28
+      "rank": 30
     },
     {
       "playerName": "Chantelle Salas",
@@ -318,7 +340,7 @@
       "team3": "Qatar",
       "team3Pts": 1,
       "totalPoints": 4,
-      "rank": 29
+      "rank": 31
     },
     {
       "playerName": "Ru Wellalage",
@@ -329,28 +351,6 @@
       "team3": "Jordan",
       "team3Pts": 0,
       "totalPoints": 4,
-      "rank": 30
-    },
-    {
-      "playerName": "Theo Vomvellis",
-      "team1": "Croatia",
-      "team1Pts": 0,
-      "team2": "Scotland",
-      "team2Pts": 3,
-      "team3": "Tunisia",
-      "team3Pts": 0,
-      "totalPoints": 3,
-      "rank": 31
-    },
-    {
-      "playerName": "Emma Little",
-      "team1": "Colombia",
-      "team1Pts": 3,
-      "team2": "Türkiye",
-      "team2Pts": 0,
-      "team3": "Tunisia",
-      "team3Pts": 0,
-      "totalPoints": 3,
       "rank": 32
     }
   ],
@@ -807,12 +807,32 @@
     },
     {
       "date": "2026-06-24",
+      "group": "K",
+      "homeTeam": "Colombia",
+      "awayTeam": "DR Congo",
+      "homeScore": 1,
+      "awayScore": 0,
+      "displayScore": "1 - 0",
+      "displayDate": "06/24/2026"
+    },
+    {
+      "date": "2026-06-24",
       "group": "L",
       "homeTeam": "England",
       "awayTeam": "Ghana",
       "homeScore": 0,
       "awayScore": 0,
       "displayScore": "0 - 0",
+      "displayDate": "06/24/2026"
+    },
+    {
+      "date": "2026-06-24",
+      "group": "L",
+      "homeTeam": "Panama",
+      "awayTeam": "Croatia",
+      "homeScore": 0,
+      "awayScore": 1,
+      "displayScore": "0 - 1",
       "displayDate": "06/24/2026"
     }
   ],
@@ -1990,9 +2010,9 @@
       {
         "date": "2026-06-24",
         "vs": "DR Congo",
-        "score": null,
-        "result": null,
-        "status": "UPCOMING",
+        "score": "1-0",
+        "result": "W",
+        "pts": 3,
         "group": "K",
         "displayDate": "06/24/2026"
       },
@@ -2019,9 +2039,9 @@
       {
         "date": "2026-06-24",
         "vs": "Colombia",
-        "score": null,
-        "result": null,
-        "status": "UPCOMING",
+        "score": "0-1",
+        "result": "L",
+        "pts": 0,
         "group": "K",
         "displayDate": "06/24/2026"
       },
@@ -2106,9 +2126,9 @@
       {
         "date": "2026-06-24",
         "vs": "Panama",
-        "score": null,
-        "result": null,
-        "status": "UPCOMING",
+        "score": "1-0",
+        "result": "W",
+        "pts": 3,
         "group": "L",
         "displayDate": "06/24/2026"
       },
@@ -2193,9 +2213,9 @@
       {
         "date": "2026-06-24",
         "vs": "Croatia",
-        "score": null,
-        "result": null,
-        "status": "UPCOMING",
+        "score": "0-1",
+        "result": "L",
+        "pts": 0,
         "group": "L",
         "displayDate": "06/24/2026"
       },
@@ -2211,8 +2231,8 @@
     ]
   },
   "tournamentInfo": {
-    "totalMatchesPlayed": 46,
-    "totalMatchesRemaining": 58,
+    "totalMatchesPlayed": 48,
+    "totalMatchesRemaining": 56,
     "currentPhase": "Group Stage"
   }
 }
