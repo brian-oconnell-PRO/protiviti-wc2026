@@ -48,6 +48,8 @@
       margin: 0 auto;
       display: grid;
       gap: 18px;
+      position: relative;
+      z-index: 1;
     }
 
     .error {
@@ -342,6 +344,34 @@
       .table-wrap { display: none; }
       .mobile-cards { display: grid; }
     }
+
+    
+    /* ✅ World Cup football background layer */
+    body::after {
+      content: "";
+      position: fixed;
+      inset: 0;
+      pointer-events: none;
+      z-index: 0;
+
+      background-image: 
+        url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/512px-Soccerball.svg.png'),
+        url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/512px-Soccerball.svg.png'),
+        url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/512px-Soccerball.svg.png'),
+        url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/512px-Soccerball.svg.png');
+
+      background-repeat: no-repeat;
+
+      background-size: 120px, 90px, 110px, 80px;
+
+      background-position:
+        left -40px top 60px,
+        right -40px top 120px,
+        left -60px bottom 120px,
+        right -40px bottom 60px;
+
+      opacity: 0.15;
+    }
   </style>
 </head>
 <body>
@@ -433,6 +463,18 @@
     }).format(d) + ' AEST';
   }
 
+  function formatAUSDate(dateStr) {
+    if (!dateStr) return '—';
+    var d = new Date(dateStr);
+    if (isNaN(d.getTime())) return esc(dateStr);
+
+    return new Intl.DateTimeFormat('en-AU', {
+      day: '2-digit',
+      month: '2-digit',
+      year: 'numeric'
+    }).format(d);
+  }
+
   function toTime(value, fallback) {
     if (!value) return fallback;
     var d = new Date(value);
@@ -477,7 +519,7 @@
         : '<span class="score">' + esc(g.score || '') + '</span><span class="badge ' + badgeClass(g.result) + '">' + esc(g.result || '') + '</span>';
       return '' +
         '<div class="match-item">' +
-          '<div class="match-top"><span>' + esc(g.displayDate || g.date || '') + '</span><span class="group-badge">' + esc(group) + '</span></div>' +
+          '<div class="match-top"><span>' + formatAUSDate(g.date) + '</span><span class="group-badge">' + esc(group) + '</span></div>' +
           '<div class="match-main"><span class="vs">vs ' + esc(g.vs || '—') + '</span><span class="score-wrap">' + right + '</span></div>' +
         '</div>';
     }
