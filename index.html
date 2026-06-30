@@ -1,716 +1,100 @@
+
+
+<!-- Copyright (C) Microsoft Corporation. All rights reserved. -->
 <!DOCTYPE html>
-<html lang="en-AU">
+<html dir="ltr" class="" lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Protiviti World Cup 2026 Sweepstakes</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter:wght@400;500;600;700;800;900&family=Oswald:wght@500;600;700&display=swap" rel="stylesheet">
-  <style>
-    :root {
-      --page-bg: #061528;
-      --page-bg-2: #082b44;
-      --card: #081426;
-      --card-2: #0c1d34;
-      --card-3: #102844;
-      --header: #073d63;
-      --header-2: #075b6b;
-      --text: #edf4ff;
-      --muted: #a8bbd3;
-      --dim: #7890aa;
-      --gold: #ffc300;
-      --red: #e63946;
-      --blue: #38bdf8;
-      --green: #4ade80;
-      --orange: #fb923c;
-      --border: #243a57;
-      --shadow: 0 22px 70px rgba(0,0,0,.45);
-      --radius: 20px;
-    }
+    <title>Sign in to your account</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=2.0, user-scalable=yes">
+    <meta http-equiv="Pragma" content="no-cache">
+    <meta http-equiv="Expires" content="-1">
+    <link rel="preconnect" href="https://aadcdn.msauth.net" crossorigin>
+<meta http-equiv="x-dns-prefetch-control" content="on">
+<link rel="dns-prefetch" href="//aadcdn.msauth.net">
+<link rel="dns-prefetch" href="//aadcdn.msftauth.net">
 
-    * { box-sizing: border-box; }
-    html, body { min-height: 100%; }
-    body {
-      margin: 0;
-      padding: clamp(14px, 3vw, 36px);
-      color: var(--text);
-      font-family: Inter, system-ui, -apple-system, Segoe UI, Roboto, Arial, sans-serif;
-      background:
-        radial-gradient(circle at top left, #104a73 0, transparent 32rem),
-        radial-gradient(circle at bottom right, #0d6f5d 0, transparent 35rem),
-        linear-gradient(145deg, var(--page-bg), var(--page-bg-2));
-      background-attachment: fixed;
-    }
+    <meta name="PageID" content="ConvergedSignIn" />
+    <meta name="SiteID" content="" />
+    <meta name="ReqLC" content="1033" />
+    <meta name="LocLC" content="en-US" />
 
-    .app {
-      max-width: 1320px;
-      margin: 0 auto;
-      display: grid;
-      gap: 18px;
-      position: relative;
-      z-index: 1;
-    }
 
-    .error {
-      display: none;
-      background: #320c14;
-      color: #ffdce1;
-      border: 2px solid #7f1d1d;
-      border-radius: 14px;
-      padding: 12px 16px;
-      font-weight: 700;
-    }
-    .error.show { display: block; }
+        <meta name="format-detection" content="telephone=no" />
 
-    .hero {
-      background: #09192e;
-      border: 2px solid #1a3554;
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-    .hero-bar { height: 7px; background: linear-gradient(90deg, var(--gold), var(--blue), var(--red), var(--green)); }
-    .hero-inner { padding: clamp(22px, 4vw, 42px); position: relative; }
-    .logo {
-      position: absolute;
-      top: 22px;
-      right: 22px;
-      width: 56px;
-      height: 56px;
-      border-radius: 50%;
-      background: #c91f31;
-      display: grid;
-      place-items: center;
-      font-family: Oswald, sans-serif;
-      font-size: 2rem;
-      font-weight: 800;
-      border: 2px solid #f5a7ae;
-      color: #fff;
-    }
-    h1 {
-      margin: 0 74px 8px 0;
-      font-family: 'Bebas Neue', Oswald, sans-serif;
-      font-size: clamp(2.2rem, 5vw, 4rem);
-      line-height: 1;
-      letter-spacing: 1.2px;
-      color: #fff;
-    }
-    .subtitle {
-      font-family: Oswald, sans-serif;
-      text-transform: uppercase;
-      letter-spacing: 3px;
-      color: var(--gold);
-      font-weight: 700;
-      margin-bottom: 18px;
-    }
-    .meta-row { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 16px; }
-    .pill {
-      display: inline-flex;
-      align-items: center;
-      padding: 8px 16px;
-      border-radius: 999px;
-      background: #c91f31;
-      color: #fff;
-      font-family: Oswald, sans-serif;
-      font-weight: 800;
-      text-transform: uppercase;
-      letter-spacing: .8px;
-      white-space: nowrap;
-    }
-    .matches-meta { color: #d7e5f7; font-weight: 700; }
-    .progress {
-      margin-top: 16px;
-      max-width: 620px;
-      height: 14px;
-      border-radius: 999px;
-      background: #1d3554;
-      overflow: hidden;
-      border: 1px solid #2e4a6f;
-    }
-    .progress > span {
-      display: block;
-      width: 0;
-      height: 100%;
-      background: linear-gradient(90deg, var(--green), var(--gold));
-      transition: width .7s ease;
-    }
-    .updated { margin-top: 12px; color: var(--muted); font-size: .84rem; }
-
-    .grid {
-      display: grid;
-      grid-template-columns: minmax(0, 1fr) 390px;
-      gap: 18px;
-      align-items: start;
-    }
-
-    .panel {
-      background: var(--card);
-      border: 2px solid var(--border);
-      border-radius: var(--radius);
-      box-shadow: var(--shadow);
-      overflow: hidden;
-    }
-
-    .panel-title {
-      padding: 16px 20px;
-      background: #0d2039;
-      border-bottom: 2px solid var(--border);
-      font-family: Oswald, sans-serif;
-      font-weight: 800;
-      letter-spacing: 1.5px;
-      text-transform: uppercase;
-      color: #fff;
-    }
-
-    /* This replaces floating hover overlays entirely. It is an ordinary right-side card, so it cannot inherit table transparency or sit behind page content. */
-    .match-centre {
-      position: sticky;
-      top: 14px;
-      background: #050b18;
-      border-color: #3a5374;
-    }
-    .match-centre-body { padding: 16px; background: #050b18; }
-    .mc-placeholder {
-      border: 2px dashed #2b4565;
-      border-radius: 16px;
-      padding: 24px 16px;
-      color: var(--muted);
-      line-height: 1.55;
-      background: #091528;
-    }
-    .mc-team-header {
-      background: #0a1b31;
-      border: 2px solid #284460;
-      border-radius: 16px;
-      padding: 14px;
-      margin-bottom: 14px;
-    }
-    .mc-team-name {
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      align-items: baseline;
-      font-family: Oswald, sans-serif;
-      color: var(--gold);
-      font-size: 1.45rem;
-      font-weight: 800;
-      line-height: 1.1;
-    }
-    .mc-meta { margin-top: 4px; color: var(--muted); font-size: .8rem; text-transform: uppercase; letter-spacing: .6px; font-weight: 800; }
-    .mc-section { margin-top: 14px; }
-    .mc-section-title {
-      display: flex;
-      justify-content: space-between;
-      gap: 10px;
-      color: #cbd9ea;
-      font-size: .78rem;
-      font-weight: 900;
-      letter-spacing: .9px;
-      text-transform: uppercase;
-      margin-bottom: 8px;
-    }
-    .mc-count { color: var(--dim); }
-    .match-list { display: grid; gap: 8px; }
-    .match-item {
-      display: grid;
-      gap: 7px;
-      padding: 10px;
-      background: #0e1d33;
-      border: 1px solid #263e5d;
-      border-radius: 12px;
-    }
-    .match-top {
-      display: flex;
-      justify-content: space-between;
-      gap: 8px;
-      align-items: center;
-      color: var(--muted);
-      font-size: .76rem;
-      font-weight: 800;
-    }
-    .group-badge { background: #133452; border: 1px solid #2b5b83; border-radius: 999px; padding: 2px 8px; color: #dcecff; }
-    .match-main { display: flex; justify-content: space-between; gap: 10px; align-items: center; }
-    .vs { font-weight: 800; line-height: 1.25; }
-    .score-wrap { display: inline-flex; align-items: center; gap: 7px; white-space: nowrap; }
-    .score { font-family: Oswald, sans-serif; font-size: 1rem; font-weight: 800; color: #fff; }
-    .badge { min-width: 34px; text-align: center; border-radius: 999px; padding: 3px 8px; font-size: .72rem; font-weight: 900; }
-    .win { color: #05150b; background: var(--green); }
-    .draw { color: #1e1600; background: var(--gold); }
-    .loss { color: #fff; background: var(--red); }
-    .upcoming { color: #03111a; background: var(--blue); }
-    .empty { color: var(--muted); font-style: italic; padding: 8px 0; }
-    .mc-summary {
-      margin-top: 14px;
-      padding-top: 12px;
-      border-top: 2px solid #233a58;
-      display: flex;
-      justify-content: space-between;
-      gap: 12px;
-      color: var(--muted);
-      font-weight: 800;
-      font-size: .84rem;
-    }
-    .mc-total { color: var(--gold); font-family: Oswald, sans-serif; font-size: 1.05rem; }
-
-    .table-wrap { overflow-x: auto; }
-    table { width: 100%; min-width: 770px; border-collapse: collapse; }
-    th {
-      text-align: left;
-      padding: 14px 14px;
-      background: linear-gradient(90deg, var(--header), var(--header-2));
-      color: #fff;
-      font-family: Oswald, sans-serif;
-      font-size: .82rem;
-      letter-spacing: 1px;
-      text-transform: uppercase;
-      position: sticky;
-      top: 0;
-      z-index: 1;
-    }
-    th.rank, td.rank { width: 70px; text-align: center; }
-    th.total, td.total { width: 116px; text-align: right; }
-    td {
-      padding: 13px 14px;
-      border-bottom: 1px solid #213653;
-      background: #0b1a2f;
-      vertical-align: middle;
-    }
-    tr:nth-child(even) td { background: #0d1f38; }
-    tr:hover td { background: #12304f; }
-    tr.top-1 td { background: #2a2410; }
-    tr.top-2 td { background: #252b35; }
-    tr.top-3 td { background: #2a1e15; }
-    .rank-num { font-family: Oswald, sans-serif; font-weight: 900; color: #fff; }
-    .player { font-weight: 900; color: #fff; }
-    .team-button {
-      width: 100%;
-      min-width: 126px;
-      display: grid;
-      gap: 2px;
-      text-align: left;
-      border: 2px solid #24415f;
-      border-radius: 12px;
-      padding: 9px 10px;
-      background: #071225;
-      color: var(--text);
-      font: inherit;
-      cursor: pointer;
-    }
-    .team-button:hover,
-    .team-button:focus-visible,
-    .team-button.active {
-      outline: none;
-      background: #12395c;
-      border-color: var(--gold);
-      box-shadow: 0 0 0 3px rgba(255,195,0,.18);
-    }
-    .team-name { font-weight: 900; line-height: 1.15; }
-    .team-pts { color: var(--blue); font-weight: 900; }
-    .total-points { display: block; font-family: Oswald, sans-serif; font-size: 1.55rem; font-weight: 900; color: var(--gold); line-height: .95; }
-    .total-label { color: var(--muted); font-weight: 900; font-size: .66rem; letter-spacing: 1px; text-transform: uppercase; }
-
-    .ticker-wrap { overflow: hidden; white-space: nowrap; padding: 14px 0; background: #081426; }
-    .ticker-track { display: inline-flex; gap: 12px; padding: 0 16px; animation: ticker 42s linear infinite; }
-    .ticker-track:hover { animation-play-state: paused; }
-    @keyframes ticker { from { transform: translateX(0); } to { transform: translateX(-50%); } }
-    .chip {
-      display: inline-flex;
-      align-items: center;
-      gap: 9px;
-      background: #0e2037;
-      border: 1px solid #28415f;
-      border-radius: 999px;
-      padding: 9px 14px;
-      font-weight: 800;
-    }
-    .chip .grp { background: #144b65; border-radius: 999px; padding: 2px 8px; font-size: .72rem; }
-    .chip .sc { color: var(--gold); font-family: Oswald, sans-serif; font-size: 1.02rem; }
-    .footer { text-align: center; color: var(--muted); font-size: .77rem; }
-
-    .mobile-cards { display: none; padding: 12px; gap: 12px; }
-    .player-card { background: #0b1a2f; border: 1px solid #263e5d; border-radius: 16px; padding: 14px; }
-    .player-card-head { display: flex; justify-content: space-between; gap: 12px; margin-bottom: 12px; }
-    .mobile-teams { display: grid; gap: 8px; }
-
-    @media (max-width: 1050px) {
-      .grid { grid-template-columns: 1fr; }
-      .match-centre { position: static; order: -1; }
-    }
-    @media (max-width: 760px) {
-      body { padding: 12px; }
-      .logo { width: 46px; height: 46px; font-size: 1.6rem; }
-      h1 { margin-right: 58px; }
-      .table-wrap { display: none; }
-      .mobile-cards { display: grid; }
-    }
+    <noscript>
+        <meta http-equiv="Refresh" content="0; URL=https://login.microsoftonline.com/jsdisabled" />
+    </noscript>
 
     
-    /* ✅ World Cup football background layer */
-    body::after {
-      content: "";
-      position: fixed;
-      inset: 0;
-      pointer-events: none;
-      z-index: 0;
+    
+<meta name="robots" content="none" />
 
-      background-image: 
-        url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/512px-Soccerball.svg.png'),
-        url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/512px-Soccerball.svg.png'),
-        url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/512px-Soccerball.svg.png'),
-        url('https://upload.wikimedia.org/wikipedia/commons/thumb/d/d3/Soccerball.svg/512px-Soccerball.svg.png');
+<script type="text/javascript" nonce='kjNys6kfJMAayXF3Po54oQ'>//<![CDATA[
+$Config={"fShowPersistentCookiesWarning":false,"urlMsaSignUp":"https://login.live.com/oauth20_authorize.srf?scope=openid+profile+email+offline_access\u0026response_type=code\u0026client_id=51483342-085c-4d86-bf88-cf50c7252078\u0026response_mode=form_post\u0026redirect_uri=https%3a%2f%2flogin.microsoftonline.com%2fcommon%2ffederation%2foauth2msa\u0026state=rQQIARAApVNNjBt3FffE6WbX3TYb91DEAVWrIKFuvf7Pl2e8NEjj-bInnrHnO57SbufLO7ZnPLP-HE8IhwrQCqpoewBVVYVQb-RCKBS1uRQVlJa00BwQQuGSUgFVkEqoIhQJkNAAB46VeIf3_z393_u9n57ee7wI78J7Z8F_DK3kvgL6fbji-jn6H5uUS1uvbF_-2XNXC8_ee_veo-aHb3zzJWhjPxws_F03jq5AXwxms2S6V61OYsefzAI77NvzaSVa7U4De-In8WA8yzOr-_14Ek2rnt-35-Fs154m6esQdBOCPoKgKycOGZSjYISmKa7OgjparzN4ncDqONWAYZLCqDpFUiwNEyTgYAKtERUSr-MIwIk6iVJYjWFpwMA43KDrKGgQHIqSbIPjKIrBMRbANIJhNRphKYwBGFFr4BRy68TpDjWfBUju4skg8z85sZFr3E_i6eyl4tsnOwxYCkNx1dW5hqZLuge4hqwLipS1MDHkRjoctu3Iaugg6akDfaVELcw2YszIDMRuWqHKCksDxKE46iEuG2QuchCKI2FoGL2V3VRgA5GazkpfKWM2Uzmr3eEE2c3jYSsURxauccFYNKRe70IyEEdhs6enHacp5hxzlTNElVcSIwq6Rt57aOFmlMoeLKQ2iFNtrDSdpqRKGtdStbxvC5YuWAslDAaubsQaKiyVppdafH0qMhQmq7l-MTV5IxVX-koeWaigCbQ7FIAI6qmgCXwPDub5q2jGUmXDtjYOTVXNc2exPKZQCeU6HU0GWhivLFOJddbgVZDKFg8jHc0zfd6TtNBb5Bxu1liJpjT4L244cNL2xxxrjKxEjgxMDI2awwiHShRipjlF1KHQVUZBbEWC6GUHuMSmiETrKzkyYNEk85noIhIOfb6Vehp3XhsdLE3d00Q9ZdRMoeWhIfU0Ach6atucZ9u6cqiaeKxlLcyO5FTPGoHNC4LPeB3NsEbSBW8k8ril85JlAwBLzaCtghTvRS3Ej2aZEc1SR--hXtZIzREeiIyVSUNpmc9MQtmlp3OINNJDEchXip_q1F4tnoVrOIrgBFLx8BpRwbx8ywmEqPRhpE84Ts32PfRGcS1O_PHAu3kSunNyExT31tdLW4XPFB4r3D8JvfJAubSFlZVH8d88KL36xNffaj_DFm48UIUxOwX0-QFbHXfmTF-P_SpZjwx6p-Vb9aTTIZF54Js0mA-pc-QefLwGHa-tHa8Jx2uPXFvbWC9uFbaLdBe-uwYdnSpc2_h_jv7FEnTzQejqJnRrEy5tuLEzscfewCufhWHHIwGJVkjCBxUMdvCK4xBkBTguhrqkTfqkfWsTK625oT2IpuXHL24PvP1ZPPLH23sXt9Nouu-6OVrY4dyfbu89tU134e2nL1269NxDn4r9pw8V7j_8-7__6ncfvfvaX5p3Tj-xw_DZYE7V-iQWpYThT5a04GR2r02hS0uuR1Y0kPidYDbtHJy7ulW4vVW4cuYPJ0pJCSsUCuC3GfjWM5s_v_yjF6rvGNnoydv3qh8-8uYb3_34y__89cfvfXD95a_cffZv13_5jaOLTw2uT07z5X9X_fjpJ9_rrr__C_lPL_z17p3PXz360ovt71cml29wF76z_sO3fvC1733yjz_ef_ez6J_f_MlqN3n-MegLUPnhUtEOD8qnWJppVlg1j_2xWz5FIXiNp8XyTahUtJNF-R2IoiiK1o3AHUlT2zTmHn9AUVSDk8E0E_NPKaiJrZnPiGpnirOLFWfV7Cw7qNPVIUvs4OM57lY9bZ51mvy4mS17XYfPenbLh2dJOm51FULxumIq02JV0H1fIfvMoeDQrW4SiIcqvBpOE94Ueq2pe34RnGdW1Y6DrdI4qxE7iK_iy2GuoXHgJcs2ldEr2UzphWUMLRArZhADtyEkImjF566dKZe2FkcfrC_trzZff-39b29-rvf87TOF-2eOi0flwr8A0\u0026estsfed=1\u0026uaid=c38e22a2b0826000f4c7f41757e3b98a\u0026signup=1\u0026lw=1\u0026fl=easi2\u0026cobrandid=11bd8083-87e0-41b5-bb78-0bc43c8a8e8a\u0026fci=00000003-0000-0ff1-ce00-000000000000\u0026wsucxt=1","urlMsaLogout":"https://login.live.com/logout.srf?iframed_by=https%3a%2f%2flogin.microsoftonline.com","urlOtherIdpForget":"https://login.live.com/forgetme.srf?iframed_by=https%3a%2f%2flogin.microsoftonline.com","showCantAccessAccountLink":true,"arrExternalTrustedRealmFederatedIdps":[{"IdpType":400,"IdpSignInUrl":"https://login.live.com/oauth20_authorize.srf?scope=openid+profile+email+offline_access\u0026response_type=code\u0026client_id=51483342-085c-4d86-bf88-cf50c7252078\u0026response_mode=form_post\u0026redirect_uri=https%3a%2f%2flogin.microsoftonline.com%2fcommon%2ffederation%2foauth2msa\u0026state=rQQIARAApVNNjBt3FffE6WbX3TYb91DEAVWrIKFuvf7Pl2e8NEjj-bInnrHnO57SbufLO7ZnPLP-HE8IhwrQCqpoewBVVYVQb-RCKBS1uRQVlJa00BwQQuGSUgFVkEqoIhQJkNAAB46VeIf3_z393_u9n57ee7wI78J7Z8F_DK3kvgL6fbji-jn6H5uUS1uvbF_-2XNXC8_ee_veo-aHb3zzJWhjPxws_F03jq5AXwxms2S6V61OYsefzAI77NvzaSVa7U4De-In8WA8yzOr-_14Ek2rnt-35-Fs154m6esQdBOCPoKgKycOGZSjYISmKa7OgjparzN4ncDqONWAYZLCqDpFUiwNEyTgYAKtERUSr-MIwIk6iVJYjWFpwMA43KDrKGgQHIqSbIPjKIrBMRbANIJhNRphKYwBGFFr4BRy68TpDjWfBUju4skg8z85sZFr3E_i6eyl4tsnOwxYCkNx1dW5hqZLuge4hqwLipS1MDHkRjoctu3Iaugg6akDfaVELcw2YszIDMRuWqHKCksDxKE46iEuG2QuchCKI2FoGL2V3VRgA5GazkpfKWM2Uzmr3eEE2c3jYSsURxauccFYNKRe70IyEEdhs6enHacp5hxzlTNElVcSIwq6Rt57aOFmlMoeLKQ2iFNtrDSdpqRKGtdStbxvC5YuWAslDAaubsQaKiyVppdafH0qMhQmq7l-MTV5IxVX-koeWaigCbQ7FIAI6qmgCXwPDub5q2jGUmXDtjYOTVXNc2exPKZQCeU6HU0GWhivLFOJddbgVZDKFg8jHc0zfd6TtNBb5Bxu1liJpjT4L244cNL2xxxrjKxEjgxMDI2awwiHShRipjlF1KHQVUZBbEWC6GUHuMSmiETrKzkyYNEk85noIhIOfb6Vehp3XhsdLE3d00Q9ZdRMoeWhIfU0Ach6atucZ9u6cqiaeKxlLcyO5FTPGoHNC4LPeB3NsEbSBW8k8ril85JlAwBLzaCtghTvRS3Ej2aZEc1SR--hXtZIzREeiIyVSUNpmc9MQtmlp3OINNJDEchXip_q1F4tnoVrOIrgBFLx8BpRwbx8ywmEqPRhpE84Ts32PfRGcS1O_PHAu3kSunNyExT31tdLW4XPFB4r3D8JvfJAubSFlZVH8d88KL36xNffaj_DFm48UIUxOwX0-QFbHXfmTF-P_SpZjwx6p-Vb9aTTIZF54Js0mA-pc-QefLwGHa-tHa8Jx2uPXFvbWC9uFbaLdBe-uwYdnSpc2_h_jv7FEnTzQejqJnRrEy5tuLEzscfewCufhWHHIwGJVkjCBxUMdvCK4xBkBTguhrqkTfqkfWsTK625oT2IpuXHL24PvP1ZPPLH23sXt9Nouu-6OVrY4dyfbu89tU134e2nL1269NxDn4r9pw8V7j_8-7__6ncfvfvaX5p3Tj-xw_DZYE7V-iQWpYThT5a04GR2r02hS0uuR1Y0kPidYDbtHJy7ulW4vVW4cuYPJ0pJCSsUCuC3GfjWM5s_v_yjF6rvGNnoydv3qh8-8uYb3_34y__89cfvfXD95a_cffZv13_5jaOLTw2uT07z5X9X_fjpJ9_rrr__C_lPL_z17p3PXz360ovt71cml29wF76z_sO3fvC1733yjz_ef_ez6J_f_MlqN3n-MegLUPnhUtEOD8qnWJppVlg1j_2xWz5FIXiNp8XyTahUtJNF-R2IoiiK1o3AHUlT2zTmHn9AUVSDk8E0E_NPKaiJrZnPiGpnirOLFWfV7Cw7qNPVIUvs4OM57lY9bZ51mvy4mS17XYfPenbLh2dJOm51FULxumIq02JV0H1fIfvMoeDQrW4SiIcqvBpOE94Ueq2pe34RnGdW1Y6DrdI4qxE7iK_iy2GuoXHgJcs2ldEr2UzphWUMLRArZhADtyEkImjF566dKZe2FkcfrC_trzZff-39b29-rvf87TOF-2eOi0flwr8A0\u0026estsfed=1\u0026uaid=c38e22a2b0826000f4c7f41757e3b98a\u0026cobrandid=11bd8083-87e0-41b5-bb78-0bc43c8a8e8a\u0026fci=00000003-0000-0ff1-ce00-000000000000\u0026wsucxt=1\u0026idp_hint=github.com","DisplayName":"GitHub","Promoted":false}],"fEnableShowResendCode":true,"iShowResendCodeDelay":90000,"sSMSCtryPhoneData":"AF~Afghanistan~93!!!AX~Åland Islands~358!!!AL~Albania~355!!!DZ~Algeria~213!!!AS~American Samoa~1!!!AD~Andorra~376!!!AO~Angola~244!!!AI~Anguilla~1!!!AG~Antigua and Barbuda~1!!!AR~Argentina~54!!!AM~Armenia~374!!!AW~Aruba~297!!!AC~Ascension Island~247!!!AU~Australia~61!!!AT~Austria~43!!!AZ~Azerbaijan~994!!!BS~Bahamas~1!!!BH~Bahrain~973!!!BD~Bangladesh~880!!!BB~Barbados~1!!!BY~Belarus~375!!!BE~Belgium~32!!!BZ~Belize~501!!!BJ~Benin~229!!!BM~Bermuda~1!!!BT~Bhutan~975!!!BO~Bolivia~591!!!BQ~Bonaire~599!!!BA~Bosnia and Herzegovina~387!!!BW~Botswana~267!!!BR~Brazil~55!!!IO~British Indian Ocean Territory~246!!!VG~British Virgin Islands~1!!!BN~Brunei~673!!!BG~Bulgaria~359!!!BF~Burkina Faso~226!!!BI~Burundi~257!!!CV~Cabo Verde~238!!!KH~Cambodia~855!!!CM~Cameroon~237!!!CA~Canada~1!!!KY~Cayman Islands~1!!!CF~Central African Republic~236!!!TD~Chad~235!!!CL~Chile~56!!!CN~China~86!!!CX~Christmas Island~61!!!CC~Cocos (Keeling) Islands~61!!!CO~Colombia~57!!!KM~Comoros~269!!!CG~Congo~242!!!CD~Congo (DRC)~243!!!CK~Cook Islands~682!!!CR~Costa Rica~506!!!CI~Côte d\u0027Ivoire~225!!!HR~Croatia~385!!!CU~Cuba~53!!!CW~Curaçao~599!!!CY~Cyprus~357!!!CZ~Czechia~420!!!DK~Denmark~45!!!DJ~Djibouti~253!!!DM~Dominica~1!!!DO~Dominican Republic~1!!!EC~Ecuador~593!!!EG~Egypt~20!!!SV~El Salvador~503!!!GQ~Equatorial Guinea~240!!!ER~Eritrea~291!!!EE~Estonia~372!!!ET~Ethiopia~251!!!FK~Falkland Islands~500!!!FO~Faroe Islands~298!!!FJ~Fiji~679!!!FI~Finland~358!!!FR~France~33!!!GF~French Guiana~594!!!PF~French Polynesia~689!!!GA~Gabon~241!!!GM~Gambia~220!!!GE~Georgia~995!!!DE~Germany~49!!!GH~Ghana~233!!!GI~Gibraltar~350!!!GR~Greece~30!!!GL~Greenland~299!!!GD~Grenada~1!!!GP~Guadeloupe~590!!!GU~Guam~1!!!GT~Guatemala~502!!!GG~Guernsey~44!!!GN~Guinea~224!!!GW~Guinea-Bissau~245!!!GY~Guyana~592!!!HT~Haiti~509!!!HN~Honduras~504!!!HK~Hong Kong SAR~852!!!HU~Hungary~36!!!IS~Iceland~354!!!IN~India~91!!!ID~Indonesia~62!!!IR~Iran~98!!!IQ~Iraq~964!!!IE~Ireland~353!!!IM~Isle of Man~44!!!IL~Israel~972!!!IT~Italy~39!!!JM~Jamaica~1!!!JP~Japan~81!!!JE~Jersey~44!!!JO~Jordan~962!!!KZ~Kazakhstan~7!!!KE~Kenya~254!!!KI~Kiribati~686!!!KR~Korea~82!!!KW~Kuwait~965!!!KG~Kyrgyzstan~996!!!LA~Laos~856!!!LV~Latvia~371!!!LB~Lebanon~961!!!LS~Lesotho~266!!!LR~Liberia~231!!!LY~Libya~218!!!LI~Liechtenstein~423!!!LT~Lithuania~370!!!LU~Luxembourg~352!!!MO~Macao SAR~853!!!MG~Madagascar~261!!!MW~Malawi~265!!!MY~Malaysia~60!!!MV~Maldives~960!!!ML~Mali~223!!!MT~Malta~356!!!MH~Marshall Islands~692!!!MQ~Martinique~596!!!MR~Mauritania~222!!!MU~Mauritius~230!!!YT~Mayotte~262!!!MX~Mexico~52!!!FM~Micronesia~691!!!MD~Moldova~373!!!MC~Monaco~377!!!MN~Mongolia~976!!!ME~Montenegro~382!!!MS~Montserrat~1!!!MA~Morocco~212!!!MZ~Mozambique~258!!!MM~Myanmar~95!!!NA~Namibia~264!!!NR~Nauru~674!!!NP~Nepal~977!!!NL~Netherlands~31!!!NC~New Caledonia~687!!!NZ~New Zealand~64!!!NI~Nicaragua~505!!!NE~Niger~227!!!NG~Nigeria~234!!!NU~Niue~683!!!NF~Norfolk Island~672!!!KP~North Korea~850!!!MK~North Macedonia~389!!!MP~Northern Mariana Islands~1!!!NO~Norway~47!!!OM~Oman~968!!!PK~Pakistan~92!!!PW~Palau~680!!!PS~Palestinian Authority~970!!!PA~Panama~507!!!PG~Papua New Guinea~675!!!PY~Paraguay~595!!!PE~Peru~51!!!PH~Philippines~63!!!PL~Poland~48!!!PT~Portugal~351!!!PR~Puerto Rico~1!!!QA~Qatar~974!!!RE~Réunion~262!!!RO~Romania~40!!!RU~Russia~7!!!RW~Rwanda~250!!!BL~Saint Barthélemy~590!!!KN~Saint Kitts and Nevis~1!!!LC~Saint Lucia~1!!!MF~Saint Martin~590!!!PM~Saint Pierre and Miquelon~508!!!VC~Saint Vincent and the Grenadines~1!!!WS~Samoa~685!!!SM~San Marino~378!!!ST~São Tomé and Príncipe~239!!!SA~Saudi Arabia~966!!!SN~Senegal~221!!!RS~Serbia~381!!!SC~Seychelles~248!!!SL~Sierra Leone~232!!!SG~Singapore~65!!!SX~Sint Maarten~1!!!SK~Slovakia~421!!!SI~Slovenia~386!!!SB~Solomon Islands~677!!!SO~Somalia~252!!!ZA~South Africa~27!!!SS~South Sudan~211!!!ES~Spain~34!!!LK~Sri Lanka~94!!!SH~St Helena, Ascension, and Tristan da Cunha~290!!!SD~Sudan~249!!!SR~Suriname~597!!!SJ~Svalbard~47!!!SZ~Swaziland~268!!!SE~Sweden~46!!!CH~Switzerland~41!!!SY~Syria~963!!!TW~Taiwan~886!!!TJ~Tajikistan~992!!!TZ~Tanzania~255!!!TH~Thailand~66!!!TL~Timor-Leste~670!!!TG~Togo~228!!!TK~Tokelau~690!!!TO~Tonga~676!!!TT~Trinidad and Tobago~1!!!TA~Tristan da Cunha~290!!!TN~Tunisia~216!!!TR~Turkey~90!!!TM~Turkmenistan~993!!!TC~Turks and Caicos Islands~1!!!TV~Tuvalu~688!!!VI~U.S. Virgin Islands~1!!!UG~Uganda~256!!!UA~Ukraine~380!!!AE~United Arab Emirates~971!!!GB~United Kingdom~44!!!US~United States~1!!!UY~Uruguay~598!!!UZ~Uzbekistan~998!!!VU~Vanuatu~678!!!VA~Vatican City~39!!!VE~Venezuela~58!!!VN~Vietnam~84!!!WF~Wallis and Futuna~681!!!YE~Yemen~967!!!ZM~Zambia~260!!!ZW~Zimbabwe~263","fUseInlinePhoneNumber":true,"fDetectBrowserCapabilities":true,"fUseMinHeight":true,"fShouldSupportTargetCredentialForRecovery":true,"fAvoidNewOtcGenerationWhenAlreadySent":true,"fEnableProofTypeValidation":true,"fUseCertificateInterstitialView":true,"fIsPasskeySupportEnabled":true,"arrPromotedFedCredTypes":[],"fShowUserAlreadyExistErrorHandling":true,"fBlockOnAppleEmailClaimError":true,"fIsVerifiableCredentialsSupportEnabled":true,"iVerifiableCredentialPresentationPollingIntervalSeconds":0.5,"iVerifiableCredentialPresentationPollingTimeoutSeconds":300,"fIsQrPinEnabled":true,"fPasskeyAssertionRedirect":true,"fShowProgressForPasskeyAutofill":true,"fFixUrlExternalIdpFederation":true,"fEnableBackButtonBugFix":true,"fEnableTotalLossRecovery":true,"fUpdatePromotedCredTypesOrder":true,"fUseNewPromotedCredsComponent":true,"urlSessionState":"https://login.microsoftonline.com/common/DeviceCodeStatus","urlResetPassword":"https://passwordreset.microsoftonline.com/?ru=https%3a%2f%2flogin.microsoftonline.com%2f16532572-d567-4d67-8727-f12f7bb6aed3%2freprocess%3fctx%3drQQIARAApVNNjBt3Fbfj1Nm422bjHlpxQNUqSKhbr__z5RkvDdJ4vuyJZ-z5jqe06Xx5x_aMZ9Zjr8cTwqECtIIq2h5AFUII9UYuhH6gNpeigtKSFpoDQihcUiqgSqU2VBGK1FaqpnDgWIl3eP_f0_u_3_vp6b1HStA2tHMK_MeQWu5rYDiEao6Xo_-xWbWy8fzmxd8-fbnw1J037jxovPfqDy4Vv-HP53GyU6_PItubzX0rGFqLpBauthPfmnlxNJrOt50orJ8bRrMwqbve0FoE820ridNXisXrxeL7xeKlI3s0wpIQTFEk22RAE2k2aayJo02MbEEQQaJkkyRIhoJwArAQjjTwGoE1MRhgeJNASLRBMxSgIQxqUU0EtHAWQQimxbIkSWMoAyAKRtEGBTMkSgMUb7QwEr5x5ESPXMx9OHfRbJR5Hx85nms8F0fJ_CelN472aLDkx8Kqr7EtVRM1F7AtSeNlMeugQsBONCjoWqHZ0kA8UEbaSg47qKVHqJ7psNU2A4XhlzqIAmEygB3Gzxx4NxAm_FjXByurLUM6LLbtlbaSp0ymsGa3x_KSk8fjTiBMTExl_amgi4PB2XgkTIL2QEt7dlvIORYKqwsKJ8d66Pf1vPfYxIwwlVyITy0QpepUbtttURFVtqOoed8OJJ419-XAHzmaHqkIv5TbbmpyzUSgSVRScv1CanB6Kqy0lTQxEV7lKWfMAwE0U17luQHkL_JXVvWlwgRddRoYipL_nUfSlEREhO31VAmoQbQyDTnSGJ1TQCqZHAT3VNfwOFdUA3c_53Cy1kowxNF_ccuG4q43ZRl9YsZSqKNCoDdsmt-TwwA1jARWxnxfnviRGfKCm-1iIpPCIqWtpFCHBIPIZ6IJcDD2uE7qquwZdbK7NDRXFbSUVjKZksa6OFB5IGmpZbGuZWnynmJgkZp1UCuUUi1r-RbH8x7t9lTdnIhn3YnAYabGiaYFACS2_a4CUmwQdmAvnGd6OE9tbYC4WSs1Jpgv0GYmjsVlPjMRYZauxsLiRAsEIF0qfanzeqF0CmpgCIzhcM3FGngNdfMtx2G8NoTgIW7bDctzkWulchR705F7_Wjx1tF1UNpZW6tsFB4qPFy4e7T4_D3VygZalR_E_nyv-MKj33u9-yRTuHZPHUKtFFBnRkx92lvQQy3y6kQz1Kmtjmc2416PgBe-Z1BgMSZPEzvQYbl4WC4flvnD8gNXysfXShuFzRLVh26XiwfHCleO_z9H_1yleP3e4o11qHLcieyZNXVHbvUUBNkuAQikRuAeqKGQjdVsGydqwHZQxCEswiOsG-topewE1ihMqo-c3xy55-bRxJtu7pzfTMPknOPkaN8KFl6yufP4JtWHNp-4cOHC0_d9Kfbf3Fe4e__fPvnjX99_6-WP2rdOPLpFc9loQTaGBBqmuO7NlhRvZ9agSyJLU2qGZjgSuS1_nvR2T1_eKNzcKFw6-fcjlbiCFgoF8JcM_PDJ9d9dfPHZ-pt6Nnns5p36ew-89urPPvzWZ3_68O13r_7027ef-vfVP3z_4Pzjo6uzE1z1i6qXnnjs7f7aO7-X_vnsv27f-trlg28-1_1FbXbxGnv2x2u_ev2X3_35x5_-4-5bX0E-eO3Xq-34mYeLXy9W76-UrGC3eoyh6HaNUfLYmzrVYySMNThKqF4vVkpWvF99s0iSJElpuu9MxMQy9IXL7ZIk2WIlkGRCnhT9htCZe7Sg9BKM2V-xZsPKst0mVR8z-BY2XWBO3VUXWa_NTdvZctC3uWxgdTxoHqfTTl_GZbcvpBIl1HnN82RiSO_xNtXpx76wp0CrcRJzBj_oJM6Zff8Mvar3bHSVRlkD34I9BVuOcw2tXTdedsmMWklGSu2b-tgEkWz4EXBafCyATnT6yslqZWP_4N21pfWd9isvv_Oj9a8Onrl5snD35GHpoFr4HA2\u0026mkt=en-US\u0026hosted=0\u0026device_platform=Windows+10","urlMsaResetPassword":"https://account.live.com/password/reset?wreply=https%3a%2f%2flogin.microsoftonline.com%2f16532572-d567-4d67-8727-f12f7bb6aed3%2freprocess%3fctx%3drQQIARAApVNNjBt3Fbfj1Nm422bjHlpxQNUqSKhbr__z5RkvDdJ4vuyJZ-z5jqe06Xx5x_aMZ9Zjr8cTwqECtIIq2h5AFUII9UYuhH6gNpeigtKSFpoDQihcUiqgSqU2VBGK1FaqpnDgWIl3eP_f0_u_3_vp6b1HStA2tHMK_MeQWu5rYDiEao6Xo_-xWbWy8fzmxd8-fbnw1J037jxovPfqDy4Vv-HP53GyU6_PItubzX0rGFqLpBauthPfmnlxNJrOt50orJ8bRrMwqbve0FoE820ridNXisXrxeL7xeKlI3s0wpIQTFEk22RAE2k2aayJo02MbEEQQaJkkyRIhoJwArAQjjTwGoE1MRhgeJNASLRBMxSgIQxqUU0EtHAWQQimxbIkSWMoAyAKRtEGBTMkSgMUb7QwEr5x5ESPXMx9OHfRbJR5Hx85nms8F0fJ_CelN472aLDkx8Kqr7EtVRM1F7AtSeNlMeugQsBONCjoWqHZ0kA8UEbaSg47qKVHqJ7psNU2A4XhlzqIAmEygB3Gzxx4NxAm_FjXByurLUM6LLbtlbaSp0ymsGa3x_KSk8fjTiBMTExl_amgi4PB2XgkTIL2QEt7dlvIORYKqwsKJ8d66Pf1vPfYxIwwlVyITy0QpepUbtttURFVtqOoed8OJJ419-XAHzmaHqkIv5TbbmpyzUSgSVRScv1CanB6Kqy0lTQxEV7lKWfMAwE0U17luQHkL_JXVvWlwgRddRoYipL_nUfSlEREhO31VAmoQbQyDTnSGJ1TQCqZHAT3VNfwOFdUA3c_53Cy1kowxNF_ccuG4q43ZRl9YsZSqKNCoDdsmt-TwwA1jARWxnxfnviRGfKCm-1iIpPCIqWtpFCHBIPIZ6IJcDD2uE7qquwZdbK7NDRXFbSUVjKZksa6OFB5IGmpZbGuZWnynmJgkZp1UCuUUi1r-RbH8x7t9lTdnIhn3YnAYabGiaYFACS2_a4CUmwQdmAvnGd6OE9tbYC4WSs1Jpgv0GYmjsVlPjMRYZauxsLiRAsEIF0qfanzeqF0CmpgCIzhcM3FGngNdfMtx2G8NoTgIW7bDctzkWulchR705F7_Wjx1tF1UNpZW6tsFB4qPFy4e7T4_D3VygZalR_E_nyv-MKj33u9-yRTuHZPHUKtFFBnRkx92lvQQy3y6kQz1Kmtjmc2416PgBe-Z1BgMSZPEzvQYbl4WC4flvnD8gNXysfXShuFzRLVh26XiwfHCleO_z9H_1yleP3e4o11qHLcieyZNXVHbvUUBNkuAQikRuAeqKGQjdVsGydqwHZQxCEswiOsG-topewE1ihMqo-c3xy55-bRxJtu7pzfTMPknOPkaN8KFl6yufP4JtWHNp-4cOHC0_d9Kfbf3Fe4e__fPvnjX99_6-WP2rdOPLpFc9loQTaGBBqmuO7NlhRvZ9agSyJLU2qGZjgSuS1_nvR2T1_eKNzcKFw6-fcjlbiCFgoF8JcM_PDJ9d9dfPHZ-pt6Nnns5p36ew-89urPPvzWZ3_68O13r_7027ef-vfVP3z_4Pzjo6uzE1z1i6qXnnjs7f7aO7-X_vnsv27f-trlg28-1_1FbXbxGnv2x2u_ev2X3_35x5_-4-5bX0E-eO3Xq-34mYeLXy9W76-UrGC3eoyh6HaNUfLYmzrVYySMNThKqF4vVkpWvF99s0iSJElpuu9MxMQy9IXL7ZIk2WIlkGRCnhT9htCZe7Sg9BKM2V-xZsPKst0mVR8z-BY2XWBO3VUXWa_NTdvZctC3uWxgdTxoHqfTTl_GZbcvpBIl1HnN82RiSO_xNtXpx76wp0CrcRJzBj_oJM6Zff8Mvar3bHSVRlkD34I9BVuOcw2tXTdedsmMWklGSu2b-tgEkWz4EXBafCyATnT6yslqZWP_4N21pfWd9isvv_Oj9a8Onrl5snD35GHpoFr4HA2\u0026mkt=en-US","fFixUrlResetPassword":true,"urlGetCredentialType":"https://login.microsoftonline.com/common/GetCredentialType?mkt=en-US","urlGetRecoveryCredentialType":"https://login.microsoftonline.com/common/getrecoverycredentialtype?mkt=en-US","urlGetOneTimeCode":"https://login.microsoftonline.com/common/GetOneTimeCode","urlLogout":"https://login.microsoftonline.com/16532572-d567-4d67-8727-f12f7bb6aed3/uxlogout","urlForget":"https://login.microsoftonline.com/forgetuser","urlDisambigRename":"https://go.microsoft.com/fwlink/p/?LinkID=733247","urlGoToAADError":"https://login.live.com/oauth20_authorize.srf?scope=openid+profile+email+offline_access\u0026response_type=code\u0026client_id=51483342-085c-4d86-bf88-cf50c7252078\u0026response_mode=form_post\u0026redirect_uri=https%3a%2f%2flogin.microsoftonline.com%2fcommon%2ffederation%2foauth2msa\u0026state=rQQIARAApVNNjBt3FffE6WbX3TYb91DEAVWrIKFuvf7Pl2e8NEjj-bInnrHnO57SbufLO7ZnPLP-HE8IhwrQCqpoewBVVYVQb-RCKBS1uRQVlJa00BwQQuGSUgFVkEqoIhQJkNAAB46VeIf3_z393_u9n57ee7wI78J7Z8F_DK3kvgL6fbji-jn6H5uUS1uvbF_-2XNXC8_ee_veo-aHb3zzJWhjPxws_F03jq5AXwxms2S6V61OYsefzAI77NvzaSVa7U4De-In8WA8yzOr-_14Ek2rnt-35-Fs154m6esQdBOCPoKgKycOGZSjYISmKa7OgjparzN4ncDqONWAYZLCqDpFUiwNEyTgYAKtERUSr-MIwIk6iVJYjWFpwMA43KDrKGgQHIqSbIPjKIrBMRbANIJhNRphKYwBGFFr4BRy68TpDjWfBUju4skg8z85sZFr3E_i6eyl4tsnOwxYCkNx1dW5hqZLuge4hqwLipS1MDHkRjoctu3Iaugg6akDfaVELcw2YszIDMRuWqHKCksDxKE46iEuG2QuchCKI2FoGL2V3VRgA5GazkpfKWM2Uzmr3eEE2c3jYSsURxauccFYNKRe70IyEEdhs6enHacp5hxzlTNElVcSIwq6Rt57aOFmlMoeLKQ2iFNtrDSdpqRKGtdStbxvC5YuWAslDAaubsQaKiyVppdafH0qMhQmq7l-MTV5IxVX-koeWaigCbQ7FIAI6qmgCXwPDub5q2jGUmXDtjYOTVXNc2exPKZQCeU6HU0GWhivLFOJddbgVZDKFg8jHc0zfd6TtNBb5Bxu1liJpjT4L244cNL2xxxrjKxEjgxMDI2awwiHShRipjlF1KHQVUZBbEWC6GUHuMSmiETrKzkyYNEk85noIhIOfb6Vehp3XhsdLE3d00Q9ZdRMoeWhIfU0Ach6atucZ9u6cqiaeKxlLcyO5FTPGoHNC4LPeB3NsEbSBW8k8ril85JlAwBLzaCtghTvRS3Ej2aZEc1SR--hXtZIzREeiIyVSUNpmc9MQtmlp3OINNJDEchXip_q1F4tnoVrOIrgBFLx8BpRwbx8ywmEqPRhpE84Ts32PfRGcS1O_PHAu3kSunNyExT31tdLW4XPFB4r3D8JvfJAubSFlZVH8d88KL36xNffaj_DFm48UIUxOwX0-QFbHXfmTF-P_SpZjwx6p-Vb9aTTIZF54Js0mA-pc-QefLwGHa-tHa8Jx2uPXFvbWC9uFbaLdBe-uwYdnSpc2_h_jv7FEnTzQejqJnRrEy5tuLEzscfewCufhWHHIwGJVkjCBxUMdvCK4xBkBTguhrqkTfqkfWsTK625oT2IpuXHL24PvP1ZPPLH23sXt9Nouu-6OVrY4dyfbu89tU134e2nL1269NxDn4r9pw8V7j_8-7__6ncfvfvaX5p3Tj-xw_DZYE7V-iQWpYThT5a04GR2r02hS0uuR1Y0kPidYDbtHJy7ulW4vVW4cuYPJ0pJCSsUCuC3GfjWM5s_v_yjF6rvGNnoydv3qh8-8uYb3_34y__89cfvfXD95a_cffZv13_5jaOLTw2uT07z5X9X_fjpJ9_rrr__C_lPL_z17p3PXz360ovt71cml29wF76z_sO3fvC1733yjz_ef_ez6J_f_MlqN3n-MegLUPnhUtEOD8qnWJppVlg1j_2xWz5FIXiNp8XyTahUtJNF-R2IoiiK1o3AHUlT2zTmHn9AUVSDk8E0E_NPKaiJrZnPiGpnirOLFWfV7Cw7qNPVIUvs4OM57lY9bZ51mvy4mS17XYfPenbLh2dJOm51FULxumIq02JV0H1fIfvMoeDQrW4SiIcqvBpOE94Ueq2pe34RnGdW1Y6DrdI4qxE7iK_iy2GuoXHgJcs2ldEr2UzphWUMLRArZhADtyEkImjF566dKZe2FkcfrC_trzZff-39b29-rvf87TOF-2eOi0flwr8A0\u0026estsfed=1\u0026uaid=c38e22a2b0826000f4c7f41757e3b98a\u0026cobrandid=11bd8083-87e0-41b5-bb78-0bc43c8a8e8a\u0026fci=00000003-0000-0ff1-ce00-000000000000\u0026wsucxt=1","urlDeviceFingerprinting":"","urlPIAEndAuth":"https://login.microsoftonline.com/common/PIA/EndAuth","urlStartTlr":"https://login.microsoftonline.com/16532572-d567-4d67-8727-f12f7bb6aed3/tlr/start","fKMSIEnabled":false,"iLoginMode":121,"fAllowPhoneSignIn":true,"fAllowPhoneInput":true,"fAllowSkypeNameLogin":true,"iMaxPollErrors":5,"iPollingTimeout":300,"srsSuccess":true,"fShowSwitchUser":true,"arrValErrs":["50058"],"sErrorCode":"50058","sWAMExtension":"ppnbnpeolgkicgegkbkbjmhlideopiji","sWAMChannel":"53ee284d-920a-4b59-9d30-a60315b26836","sErrTxt":"","sResetPasswordPrefillParam":"username","onPremPasswordValidationConfig":{"isUserRealmPrecheckEnabled":true},"fSwitchDisambig":true,"oCancelPostParams":{"error":"access_denied","error_subcode":"cancel","state":"OD0wJjMyPUFBTUNUd0FBQUJRNzI4MlFkU1lLamZBU0pYSiUyRmI4aVo4VzV2aHZlSEJwV0olMkY2cEhzc2glMkJjVVYyaHR1V2NHbyUyRnEzSFZLOFJQcyUyRjIlMkZ5TFhnMVNYYXpiMklHYUxObHMlMkJuSFVMSGRpVmhPViUyRjZ5WmxQd1Jxa0oxTnRHbHNSNTFISTglMkI1NXZvRlhicUVoT3JwRHdxZG9sMDA4QSUyRmMxWGVxMyUyQkZ3JTJCcjJ0M09xJTJGY1huJTJGRTVwSElLTnlWSSUyQktoQnA3N3FOOTQ0TloyZWRoUEVGS0xQZG12OTdWeGdNTldvJTJGczByMWNiJTJGczBBb1pLenFEVkZpQmV4MlV6bDJqRml4WWs2SjJPRkhoZmJMdzg5NEx2NCUyQmV1MW8lMkJUM2ljeGIxdTFKTkgwWUdTMUxDSzRCQjVNYTJ0QUxaaFdaaURqSW5oTzI4amQxUzBhaGJJeDdOTVZkNXdkMG5ZUGNZa001NHhLS0x5YmI2emtzVmtxbUY3dzBxWk5hMDZzNjNwJTJCN3EwdUF2NkUlM0Q","canary":"14ax0CKiE/nOuDfUoe/89mVC+IeZ9pOO82uheWC0ujA=8:1:CANARY:+DGziuA6f84mx7VerwCJbzaYLA3wZQ9mZmiNG+htsOg="},"iRemoteNgcPollingType":2,"fUseNewNoPasswordTypes":true,"urlAadSignup":"https://signup.microsoft.com/signup?sku=teams_commercial_trial\u0026origin=ests\u0026culture=en-US","urlTenantedEndpointFormat":"https://login.microsoftonline.com/{0}/oauth2/authorize?client_id=00000003-0000-0ff1-ce00-000000000000\u0026response_mode=form_post\u0026ear_jwe_crypto=eyJhbGciOiJFQ0RILUVTIiwiZW5jIjoiQTI1NkdDTSIsImFwdiI6IkFBQUFDVVZoY2tOc2FXVnVkR2dBQUFCRlEwc3pNQUFBQU5oNk1JdGVETVNPczVFdnlGWjZhenpnOUMvakU3KzVudTVjL2RUdXpPSEduSHp3WVBiR3pZYUllMXRweG5JUFI3UmRQTXhRQ00vSlVlZVI4ZkRxSmJDSVBwaE1xUzF5anNwR1dKWUlzY0t2aEtEeS9PYjR5eG96NjcrMmVTNXdqQUFBQUJnZHB3TEF6Q3lRV3hDdlpWalowb1JXaG8wY0JKcE0wSW89In0%3d\u0026ear_jwk=eyJhbGciOiJFQ0RILUVTIiwiY3J2IjoiUC0zODQiLCJ4IjoiQUFBQU1OaDZNSXRlRE1TT3M1RXZ5Rlo2YXp6ZzlDL2pFNys1bnU1Yy9kVHV6T0hHbkh6d1lQYkd6WWFJZTF0cHhuSVBSdz09IiwieSI6IkFBQUFNTFJkUE14UUNNL0pVZWVSOGZEcUpiQ0lQcGhNcVMxeWpzcEdXSllJc2NLdmhLRHkvT2I0eXhvejY3KzJlUzV3akE9PSIsImt0eSI6IkVDIn0%3d\u0026spa_client_id=08e18876-6177-487e-b8b5-cf950c1e598c\u0026client_info=1\u0026response_type=code+id_token+spa_rt\u0026resource=00000003-0000-0ff1-ce00-000000000000\u0026scope=openid\u0026nonce=D3FA12CCAF9E09399D597495AB118A4A9A8AEC1780F17367-85952057983A46DEC0D151BC930B7F338EBFFAAD54E01C2446C2EA4D0476B5A2\u0026redirect_uri=https%3a%2f%2froberthalfaus-my.sharepoint.com%2f_forms%2fdefault.aspx\u0026state=OD0wJjMyPUFBTUNUd0FBQUJRNzI4MlFkU1lLamZBU0pYSiUyRmI4aVo4VzV2aHZlSEJwV0olMkY2cEhzc2glMkJjVVYyaHR1V2NHbyUyRnEzSFZLOFJQcyUyRjIlMkZ5TFhnMVNYYXpiMklHYUxObHMlMkJuSFVMSGRpVmhPViUyRjZ5WmxQd1Jxa0oxTnRHbHNSNTFISTglMkI1NXZvRlhicUVoT3JwRHdxZG9sMDA4QSUyRmMxWGVxMyUyQkZ3JTJCcjJ0M09xJTJGY1huJTJGRTVwSElLTnlWSSUyQktoQnA3N3FOOTQ0TloyZWRoUEVGS0xQZG12OTdWeGdNTldvJTJGczByMWNiJTJGczBBb1pLenFEVkZpQmV4MlV6bDJqRml4WWs2SjJPRkhoZmJMdzg5NEx2NCUyQmV1MW8lMkJUM2ljeGIxdTFKTkgwWUdTMUxDSzRCQjVNYTJ0QUxaaFdaaURqSW5oTzI4amQxUzBhaGJJeDdOTVZkNXdkMG5ZUGNZa001NHhLS0x5YmI2emtzVmtxbUY3dzBxWk5hMDZzNjNwJTJCN3EwdUF2NkUlM0Q\u0026claims=%7b%22id_token%22%3a%7b%22xms_cc%22%3a%7b%22values%22%3a%5b%22CP1%22%5d%7d%7d%7d\u0026wsucxt=1\u0026cobrandid=11bd8083-87e0-41b5-bb78-0bc43c8a8e8a\u0026client-request-id=c38e22a2-b082-6000-f4c7-f41757e3b98a\u0026allowbacktocommon=True","sCloudInstanceName":"microsoftonline.com","fShowSignInOptionsAsButton":true,"fUseNewPhoneSignInError":true,"fIsUpdatedAutocompleteEnabled":true,"fActivateFocusOnApprovalNumberRemoteNGC":true,"fIsPasskey":true,"fEnableDFPIntegration":true,"fEnableCenterFocusedApprovalNumber":true,"fShowPassKeyErrorUCP":true,"fFixPhoneDisambigSignupRedirect":true,"fEnableQrCodeA11YFixes":true,"fEnablePasskeyAwpError":true,"fEnableAuthenticatorTimeoutFix":true,"fEnablePasskeyAutofillUI":true,"sCrossDomainCanary":"PAQABDgEAAAAdDD7nC9b5Q7JPd_okEQRFRXZvU3RzQXJ0aWZhY3RzCAAAAAAA3E2YFWdKa_Sm9uHccCrU5_Bw9OV3pNUVaUJNzTzebLRC4Pf3Qrqh7Lg7o1w4PznsDyiVvYluSbAKppWh0K455BUwlxCK42DdMKDk9Gr8KnqkP0jGhHFGSGlW6nP94AGLgRTjWl8cu07JLuQuFYnBNpj1d3sAdJiIUezNLR4Pv91qLEz9IdysMRzZvQYdKe0TYbCert05jlllTLWN9Lo9FCAA","arrExcludedDisplayNames":["unknown"],"fFixShowRevealPassword":true,"fRemoveTLRFragment":true,"fEnableCredentialPickerBranding":true,"fWaitForCustomStringsBeforeRender":true,"iMaxStackForKnockoutAsyncComponents":10000,"fShowButtons":true,"urlCdn":"https://aadcdn.msauth.net/shared/1.0/","urlDefaultFavicon":"https://aadcdn.msauth.net/shared/1.0/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico","urlFooterTOU":"https://www.microsoft.com/en-US/servicesagreement/","urlFooterPrivacy":"https://privacy.microsoft.com/en-US/privacystatement","urlPost":"https://login.microsoftonline.com/16532572-d567-4d67-8727-f12f7bb6aed3/login","urlPostAad":"https://login.microsoftonline.com/16532572-d567-4d67-8727-f12f7bb6aed3/login","urlPostMsa":"https://login.live.com/ppsecure/partnerpost.srf?scope=openid+profile+email+offline_access\u0026response_type=code\u0026client_id=51483342-085c-4d86-bf88-cf50c7252078\u0026response_mode=form_post\u0026redirect_uri=https%3a%2f%2flogin.microsoftonline.com%2fcommon%2ffederation%2foauth2msa\u0026state=rQQIARAApVNNjBt3FffE6WbX3TYb91DEAVWrIKFuvf7Pl2e8NEjj-bInnrHnO57SbufLO7ZnPLP-HE8IhwrQCqpoewBVVYVQb-RCKBS1uRQVlJa00BwQQuGSUgFVkEqoIhQJkNAAB46VeIf3_z393_u9n57ee7wI78J7Z8F_DK3kvgL6fbji-jn6H5uUS1uvbF_-2XNXC8_ee_veo-aHb3zzJWhjPxws_F03jq5AXwxms2S6V61OYsefzAI77NvzaSVa7U4De-In8WA8yzOr-_14Ek2rnt-35-Fs154m6esQdBOCPoKgKycOGZSjYISmKa7OgjparzN4ncDqONWAYZLCqDpFUiwNEyTgYAKtERUSr-MIwIk6iVJYjWFpwMA43KDrKGgQHIqSbIPjKIrBMRbANIJhNRphKYwBGFFr4BRy68TpDjWfBUju4skg8z85sZFr3E_i6eyl4tsnOwxYCkNx1dW5hqZLuge4hqwLipS1MDHkRjoctu3Iaugg6akDfaVELcw2YszIDMRuWqHKCksDxKE46iEuG2QuchCKI2FoGL2V3VRgA5GazkpfKWM2Uzmr3eEE2c3jYSsURxauccFYNKRe70IyEEdhs6enHacp5hxzlTNElVcSIwq6Rt57aOFmlMoeLKQ2iFNtrDSdpqRKGtdStbxvC5YuWAslDAaubsQaKiyVppdafH0qMhQmq7l-MTV5IxVX-koeWaigCbQ7FIAI6qmgCXwPDub5q2jGUmXDtjYOTVXNc2exPKZQCeU6HU0GWhivLFOJddbgVZDKFg8jHc0zfd6TtNBb5Bxu1liJpjT4L244cNL2xxxrjKxEjgxMDI2awwiHShRipjlF1KHQVUZBbEWC6GUHuMSmiETrKzkyYNEk85noIhIOfb6Vehp3XhsdLE3d00Q9ZdRMoeWhIfU0Ach6atucZ9u6cqiaeKxlLcyO5FTPGoHNC4LPeB3NsEbSBW8k8ril85JlAwBLzaCtghTvRS3Ej2aZEc1SR--hXtZIzREeiIyVSUNpmc9MQtmlp3OINNJDEchXip_q1F4tnoVrOIrgBFLx8BpRwbx8ywmEqPRhpE84Ts32PfRGcS1O_PHAu3kSunNyExT31tdLW4XPFB4r3D8JvfJAubSFlZVH8d88KL36xNffaj_DFm48UIUxOwX0-QFbHXfmTF-P_SpZjwx6p-Vb9aTTIZF54Js0mA-pc-QefLwGHa-tHa8Jx2uPXFvbWC9uFbaLdBe-uwYdnSpc2_h_jv7FEnTzQejqJnRrEy5tuLEzscfewCufhWHHIwGJVkjCBxUMdvCK4xBkBTguhrqkTfqkfWsTK625oT2IpuXHL24PvP1ZPPLH23sXt9Nouu-6OVrY4dyfbu89tU134e2nL1269NxDn4r9pw8V7j_8-7__6ncfvfvaX5p3Tj-xw_DZYE7V-iQWpYThT5a04GR2r02hS0uuR1Y0kPidYDbtHJy7ulW4vVW4cuYPJ0pJCSsUCuC3GfjWM5s_v_yjF6rvGNnoydv3qh8-8uYb3_34y__89cfvfXD95a_cffZv13_5jaOLTw2uT07z5X9X_fjpJ9_rrr__C_lPL_z17p3PXz360ovt71cml29wF76z_sO3fvC1733yjz_ef_ez6J_f_MlqN3n-MegLUPnhUtEOD8qnWJppVlg1j_2xWz5FIXiNp8XyTahUtJNF-R2IoiiK1o3AHUlT2zTmHn9AUVSDk8E0E_NPKaiJrZnPiGpnirOLFWfV7Cw7qNPVIUvs4OM57lY9bZ51mvy4mS17XYfPenbLh2dJOm51FULxumIq02JV0H1fIfvMoeDQrW4SiIcqvBpOE94Ueq2pe34RnGdW1Y6DrdI4qxE7iK_iy2GuoXHgJcs2ldEr2UzphWUMLRArZhADtyEkImjF566dKZe2FkcfrC_trzZff-39b29-rvf87TOF-2eOi0flwr8A0\u0026flow=fido\u0026estsfed=1\u0026uaid=c38e22a2b0826000f4c7f41757e3b98a\u0026cobrandid=11bd8083-87e0-41b5-bb78-0bc43c8a8e8a\u0026fci=00000003-0000-0ff1-ce00-000000000000\u0026wsucxt=1","urlRefresh":"https://login.microsoftonline.com/16532572-d567-4d67-8727-f12f7bb6aed3/reprocess?ctx=rQQIARAApVNNjBt3Fbfj1Nm422bjHlpxQNUqSKhbr__z5RkvDdJ4vuyJZ-z5jqe06Xx5x_aMZ9Zjr8cTwqECtIIq2h5AFUII9UYuhH6gNpeigtKSFpoDQihcUiqgSqU2VBGK1FaqpnDgWIl3eP_f0_u_3_vp6b1HStA2tHMK_MeQWu5rYDiEao6Xo_-xWbWy8fzmxd8-fbnw1J037jxovPfqDy4Vv-HP53GyU6_PItubzX0rGFqLpBauthPfmnlxNJrOt50orJ8bRrMwqbve0FoE820ridNXisXrxeL7xeKlI3s0wpIQTFEk22RAE2k2aayJo02MbEEQQaJkkyRIhoJwArAQjjTwGoE1MRhgeJNASLRBMxSgIQxqUU0EtHAWQQimxbIkSWMoAyAKRtEGBTMkSgMUb7QwEr5x5ESPXMx9OHfRbJR5Hx85nms8F0fJ_CelN472aLDkx8Kqr7EtVRM1F7AtSeNlMeugQsBONCjoWqHZ0kA8UEbaSg47qKVHqJ7psNU2A4XhlzqIAmEygB3Gzxx4NxAm_FjXByurLUM6LLbtlbaSp0ymsGa3x_KSk8fjTiBMTExl_amgi4PB2XgkTIL2QEt7dlvIORYKqwsKJ8d66Pf1vPfYxIwwlVyITy0QpepUbtttURFVtqOoed8OJJ419-XAHzmaHqkIv5TbbmpyzUSgSVRScv1CanB6Kqy0lTQxEV7lKWfMAwE0U17luQHkL_JXVvWlwgRddRoYipL_nUfSlEREhO31VAmoQbQyDTnSGJ1TQCqZHAT3VNfwOFdUA3c_53Cy1kowxNF_ccuG4q43ZRl9YsZSqKNCoDdsmt-TwwA1jARWxnxfnviRGfKCm-1iIpPCIqWtpFCHBIPIZ6IJcDD2uE7qquwZdbK7NDRXFbSUVjKZksa6OFB5IGmpZbGuZWnynmJgkZp1UCuUUi1r-RbH8x7t9lTdnIhn3YnAYabGiaYFACS2_a4CUmwQdmAvnGd6OE9tbYC4WSs1Jpgv0GYmjsVlPjMRYZauxsLiRAsEIF0qfanzeqF0CmpgCIzhcM3FGngNdfMtx2G8NoTgIW7bDctzkWulchR705F7_Wjx1tF1UNpZW6tsFB4qPFy4e7T4_D3VygZalR_E_nyv-MKj33u9-yRTuHZPHUKtFFBnRkx92lvQQy3y6kQz1Kmtjmc2416PgBe-Z1BgMSZPEzvQYbl4WC4flvnD8gNXysfXShuFzRLVh26XiwfHCleO_z9H_1yleP3e4o11qHLcieyZNXVHbvUUBNkuAQikRuAeqKGQjdVsGydqwHZQxCEswiOsG-topewE1ihMqo-c3xy55-bRxJtu7pzfTMPknOPkaN8KFl6yufP4JtWHNp-4cOHC0_d9Kfbf3Fe4e__fPvnjX99_6-WP2rdOPLpFc9loQTaGBBqmuO7NlhRvZ9agSyJLU2qGZjgSuS1_nvR2T1_eKNzcKFw6-fcjlbiCFgoF8JcM_PDJ9d9dfPHZ-pt6Nnns5p36ew-89urPPvzWZ3_68O13r_7027ef-vfVP3z_4Pzjo6uzE1z1i6qXnnjs7f7aO7-X_vnsv27f-trlg28-1_1FbXbxGnv2x2u_ev2X3_35x5_-4-5bX0E-eO3Xq-34mYeLXy9W76-UrGC3eoyh6HaNUfLYmzrVYySMNThKqF4vVkpWvF99s0iSJElpuu9MxMQy9IXL7ZIk2WIlkGRCnhT9htCZe7Sg9BKM2V-xZsPKst0mVR8z-BY2XWBO3VUXWa_NTdvZctC3uWxgdTxoHqfTTl_GZbcvpBIl1HnN82RiSO_xNtXpx76wp0CrcRJzBj_oJM6Zff8Mvar3bHSVRlkD34I9BVuOcw2tXTdedsmMWklGSu2b-tgEkWz4EXBafCyATnT6yslqZWP_4N21pfWd9isvv_Oj9a8Onrl5snD35GHpoFr4HA2","urlCancel":"https://roberthalfaus-my.sharepoint.com/_forms/default.aspx","urlResume":"https://login.microsoftonline.com/16532572-d567-4d67-8727-f12f7bb6aed3/resume?ctx=rQQIARAApVNNjBt3Fbfj1Nm422bjHlpxQNUqSKhbr__z5RkvDdJ4vuyJZ-z5jqe06Xx5x_aMZ9Zjr8cTwqECtIIq2h5AFUII9UYuhH6gNpeigtKSFpoDQihcUiqgSqU2VBGK1FaqpnDgWIl3eP_f0_u_3_vp6b1HStA2tHMK_MeQWu5rYDiEao6Xo_-xWbWy8fzmxd8-fbnw1J037jxovPfqDy4Vv-HP53GyU6_PItubzX0rGFqLpBauthPfmnlxNJrOt50orJ8bRrMwqbve0FoE820ridNXisXrxeL7xeKlI3s0wpIQTFEk22RAE2k2aayJo02MbEEQQaJkkyRIhoJwArAQjjTwGoE1MRhgeJNASLRBMxSgIQxqUU0EtHAWQQimxbIkSWMoAyAKRtEGBTMkSgMUb7QwEr5x5ESPXMx9OHfRbJR5Hx85nms8F0fJ_CelN472aLDkx8Kqr7EtVRM1F7AtSeNlMeugQsBONCjoWqHZ0kA8UEbaSg47qKVHqJ7psNU2A4XhlzqIAmEygB3Gzxx4NxAm_FjXByurLUM6LLbtlbaSp0ymsGa3x_KSk8fjTiBMTExl_amgi4PB2XgkTIL2QEt7dlvIORYKqwsKJ8d66Pf1vPfYxIwwlVyITy0QpepUbtttURFVtqOoed8OJJ419-XAHzmaHqkIv5TbbmpyzUSgSVRScv1CanB6Kqy0lTQxEV7lKWfMAwE0U17luQHkL_JXVvWlwgRddRoYipL_nUfSlEREhO31VAmoQbQyDTnSGJ1TQCqZHAT3VNfwOFdUA3c_53Cy1kowxNF_ccuG4q43ZRl9YsZSqKNCoDdsmt-TwwA1jARWxnxfnviRGfKCm-1iIpPCIqWtpFCHBIPIZ6IJcDD2uE7qquwZdbK7NDRXFbSUVjKZksa6OFB5IGmpZbGuZWnynmJgkZp1UCuUUi1r-RbH8x7t9lTdnIhn3YnAYabGiaYFACS2_a4CUmwQdmAvnGd6OE9tbYC4WSs1Jpgv0GYmjsVlPjMRYZauxsLiRAsEIF0qfanzeqF0CmpgCIzhcM3FGngNdfMtx2G8NoTgIW7bDctzkWulchR705F7_Wjx1tF1UNpZW6tsFB4qPFy4e7T4_D3VygZalR_E_nyv-MKj33u9-yRTuHZPHUKtFFBnRkx92lvQQy3y6kQz1Kmtjmc2416PgBe-Z1BgMSZPEzvQYbl4WC4flvnD8gNXysfXShuFzRLVh26XiwfHCleO_z9H_1yleP3e4o11qHLcieyZNXVHbvUUBNkuAQikRuAeqKGQjdVsGydqwHZQxCEswiOsG-topewE1ihMqo-c3xy55-bRxJtu7pzfTMPknOPkaN8KFl6yufP4JtWHNp-4cOHC0_d9Kfbf3Fe4e__fPvnjX99_6-WP2rdOPLpFc9loQTaGBBqmuO7NlhRvZ9agSyJLU2qGZjgSuS1_nvR2T1_eKNzcKFw6-fcjlbiCFgoF8JcM_PDJ9d9dfPHZ-pt6Nnns5p36ew-89urPPvzWZ3_68O13r_7027ef-vfVP3z_4Pzjo6uzE1z1i6qXnnjs7f7aO7-X_vnsv27f-trlg28-1_1FbXbxGnv2x2u_ev2X3_35x5_-4-5bX0E-eO3Xq-34mYeLXy9W76-UrGC3eoyh6HaNUfLYmzrVYySMNThKqF4vVkpWvF99s0iSJElpuu9MxMQy9IXL7ZIk2WIlkGRCnhT9htCZe7Sg9BKM2V-xZsPKst0mVR8z-BY2XWBO3VUXWa_NTdvZctC3uWxgdTxoHqfTTl_GZbcvpBIl1HnN82RiSO_xNtXpx76wp0CrcRJzBj_oJM6Zff8Mvar3bHSVRlkD34I9BVuOcw2tXTdedsmMWklGSu2b-tgEkWz4EXBafCyATnT6yslqZWP_4N21pfWd9isvv_Oj9a8Onrl5snD35GHpoFr4HA2","iPawnIcon":0,"iPollingInterval":1,"sPOST_Username":"","fEnableNumberMatching":true,"sFT":"BgABIQEAAAAdDD7nC9b5Q7JPd_okEQRFRXZvU3RzQXJ0aWZhY3RzAQAAAAAAB3ZHQXdf4JrLECHNcOmjteOynNzRivCJxtBY6ILt668fkBAke00wpWB0evdXXzU66waeCV-P3QDKS5q-J5e7ecZ3Q7l9OGVqW6wBq5UJoqLUyCUkKjiO2EGp3FMsFKQcT92SBDwnfaeb4PVyN3zW82msGNCO7q1jwwWWLWcITxCcLQAS9d7jifPZInIMyuVhRsNxfz4ATIgyF8_lbQxrH5dkAjn_XLotLOP8nW-ahal9FXNdadAYV1qdUl-Bct4r3fJgkdxVsTg64dDqwgQE2ibJq6eT5nnZUQF62vn3zrChl-IqHZlilN5bWjn2FcY3uF-1wJWM4FLoqkwnupMVTFnVu8g2JTLu7S38bISM6ssGMc8e9cvowYIWsVzH_4KuZTgwZw3v0Vr1VRA_euED4AurfzaaBQHwUfkNc7Rz9R7xRnQnAlrFgqIqNDSMJJxUAZKuk5Wx3Mrn6CIIrLlBiX56XbwZc30htkCDZ4f9O1BQeBstv9YNp53v5RBpuZyc9PcOl7OV9Dc8OzRJuza7GLs6_UoR861zYEf1kFyvQMAp4r1RmC9vsmEj8nHSD9rdR-BTxrUe-9hojn_9O7K6jXcqgEXghVrakWxESKEVVmTW3-YWCXd9UYm4RH7Bqd30NJhSPskd0xISfTSb9lckFQc8hyPZmX1np0obqYpWFLvxLyOENaSCsJBZIiKBwOxeH5n0d-RNnyCehwvpQxM43Yt4KTq3ePoB8QXx8JIxuu4BZJiHjCt0DU34JjHBc3rLLm1Fri29IXQnUm9NX0hrgRaORLpLDoHzOfcEta0vSayf-86A69uhJVAT8obzg_iNnxonzoDeJdCVACza41PkkNLUPxz-Uc9KFtH972aWvPDyBqIZ6dNNFknYFBa3TZRpMwGt0EACquZWtLsASCWK2eOIO2_jR-OEuFx03ZNqnbwre0k94BO8kzthRofoE7o5ArxLH_6dVkKdIJmpoLqBTv6qHJ-mldjxb3UnA5duZKIBT2uuYoyi1wLlig6KoInY5FaXDgglDFEYtPdO6aP9dIrq957g4FyyNoQmJsQrAOwm8cmdJin07ZEFfs5fXpF6Zgxq-ANrMxBAHDMoGC3a9CAA","sFTName":"flowToken","sFTCookieName":"ESTSWCTXFLOWTOKEN","sSessionIdentifierName":"code","sCtx":"rQQIARAApVNNjBt3Fbfj1Nm422bjHlpxQNUqSKhbr__z5RkvDdJ4vuyJZ-z5jqe06Xx5x_aMZ9Zjr8cTwqECtIIq2h5AFUII9UYuhH6gNpeigtKSFpoDQihcUiqgSqU2VBGK1FaqpnDgWIl3eP_f0_u_3_vp6b1HStA2tHMK_MeQWu5rYDiEao6Xo_-xWbWy8fzmxd8-fbnw1J037jxovPfqDy4Vv-HP53GyU6_PItubzX0rGFqLpBauthPfmnlxNJrOt50orJ8bRrMwqbve0FoE820ridNXisXrxeL7xeKlI3s0wpIQTFEk22RAE2k2aayJo02MbEEQQaJkkyRIhoJwArAQjjTwGoE1MRhgeJNASLRBMxSgIQxqUU0EtHAWQQimxbIkSWMoAyAKRtEGBTMkSgMUb7QwEr5x5ESPXMx9OHfRbJR5Hx85nms8F0fJ_CelN472aLDkx8Kqr7EtVRM1F7AtSeNlMeugQsBONCjoWqHZ0kA8UEbaSg47qKVHqJ7psNU2A4XhlzqIAmEygB3Gzxx4NxAm_FjXByurLUM6LLbtlbaSp0ymsGa3x_KSk8fjTiBMTExl_amgi4PB2XgkTIL2QEt7dlvIORYKqwsKJ8d66Pf1vPfYxIwwlVyITy0QpepUbtttURFVtqOoed8OJJ419-XAHzmaHqkIv5TbbmpyzUSgSVRScv1CanB6Kqy0lTQxEV7lKWfMAwE0U17luQHkL_JXVvWlwgRddRoYipL_nUfSlEREhO31VAmoQbQyDTnSGJ1TQCqZHAT3VNfwOFdUA3c_53Cy1kowxNF_ccuG4q43ZRl9YsZSqKNCoDdsmt-TwwA1jARWxnxfnviRGfKCm-1iIpPCIqWtpFCHBIPIZ6IJcDD2uE7qquwZdbK7NDRXFbSUVjKZksa6OFB5IGmpZbGuZWnynmJgkZp1UCuUUi1r-RbH8x7t9lTdnIhn3YnAYabGiaYFACS2_a4CUmwQdmAvnGd6OE9tbYC4WSs1Jpgv0GYmjsVlPjMRYZauxsLiRAsEIF0qfanzeqF0CmpgCIzhcM3FGngNdfMtx2G8NoTgIW7bDctzkWulchR705F7_Wjx1tF1UNpZW6tsFB4qPFy4e7T4_D3VygZalR_E_nyv-MKj33u9-yRTuHZPHUKtFFBnRkx92lvQQy3y6kQz1Kmtjmc2416PgBe-Z1BgMSZPEzvQYbl4WC4flvnD8gNXysfXShuFzRLVh26XiwfHCleO_z9H_1yleP3e4o11qHLcieyZNXVHbvUUBNkuAQikRuAeqKGQjdVsGydqwHZQxCEswiOsG-topewE1ihMqo-c3xy55-bRxJtu7pzfTMPknOPkaN8KFl6yufP4JtWHNp-4cOHC0_d9Kfbf3Fe4e__fPvnjX99_6-WP2rdOPLpFc9loQTaGBBqmuO7NlhRvZ9agSyJLU2qGZjgSuS1_nvR2T1_eKNzcKFw6-fcjlbiCFgoF8JcM_PDJ9d9dfPHZ-pt6Nnns5p36ew-89urPPvzWZ3_68O13r_7027ef-vfVP3z_4Pzjo6uzE1z1i6qXnnjs7f7aO7-X_vnsv27f-trlg28-1_1FbXbxGnv2x2u_ev2X3_35x5_-4-5bX0E-eO3Xq-34mYeLXy9W76-UrGC3eoyh6HaNUfLYmzrVYySMNThKqF4vVkpWvF99s0iSJElpuu9MxMQy9IXL7ZIk2WIlkGRCnhT9htCZe7Sg9BKM2V-xZsPKst0mVR8z-BY2XWBO3VUXWa_NTdvZctC3uWxgdTxoHqfTTl_GZbcvpBIl1HnN82RiSO_xNtXpx76wp0CrcRJzBj_oJM6Zff8Mvar3bHSVRlkD34I9BVuOcw2tXTdedsmMWklGSu2b-tgEkWz4EXBafCyATnT6yslqZWP_4N21pfWd9isvv_Oj9a8Onrl5snD35GHpoFr4HA2","iProductIcon":-1,"fEnableOneDSClientTelemetry":true,"staticTenantBranding":[{"Locale":0,"BannerLogo":"https://aadcdn.msauthimages.net/dbd5a2dd-ggyv6ymmh4bj-jk61zsxpzz9r7wusbz7auepa3sebee/logintenantbranding/0/bannerlogo?ts=638447150880861226","KeepMeSignedInDisabled":false,"UseTransparentLightBox":false}],"oAppCobranding":{},"iBackgroundImage":4,"arrSessions":[],"fApplicationInsightsEnabled":false,"iApplicationInsightsEnabledPercentage":0,"urlSetDebugMode":"https://login.microsoftonline.com/common/debugmode","fEnableCssAnimation":true,"fAllowGrayOutLightBox":true,"fUseMsaSessionState":true,"fIsRemoteNGCSupported":true,"desktopSsoConfig":{"isEdgeAnaheimAllowed":true,"iwaEndpointUrlFormat":"https://autologon.microsoftazuread-sso.com/{0}/winauth/sso?client-request-id=c38e22a2-b082-6000-f4c7-f41757e3b98a","iwaSsoProbeUrlFormat":"https://autologon.microsoftazuread-sso.com/{0}/winauth/ssoprobe?client-request-id=c38e22a2-b082-6000-f4c7-f41757e3b98a","iwaIFrameUrlFormat":"https://autologon.microsoftazuread-sso.com/{0}/winauth/iframe?client-request-id=c38e22a2-b082-6000-f4c7-f41757e3b98a\u0026isAdalRequest=False","iwaRequestTimeoutInMs":10000,"hintedDomainName":"16532572-d567-4d67-8727-f12f7bb6aed3","startDesktopSsoOnPageLoad":true,"progressAnimationTimeout":10000,"isEdgeAllowed":false,"minDssoEdgeVersion":"17","isSafariAllowed":true,"redirectUri":"https://roberthalfaus-my.sharepoint.com/_forms/default.aspx","redirectDssoErrorPostParams":{"error":"interaction_required","error_description":"Seamless single sign on failed for the user. This can happen if the user is unable to access on premises AD or intranet zone is not configured correctly Trace ID: 17521234-d635-4e0b-b22c-85c24c5e4500 Correlation ID: c38e22a2-b082-6000-f4c7-f41757e3b98a Timestamp: 2026-06-30 04:17:48Z","state":"OD0wJjMyPUFBTUNUd0FBQUJRNzI4MlFkU1lLamZBU0pYSiUyRmI4aVo4VzV2aHZlSEJwV0olMkY2cEhzc2glMkJjVVYyaHR1V2NHbyUyRnEzSFZLOFJQcyUyRjIlMkZ5TFhnMVNYYXpiMklHYUxObHMlMkJuSFVMSGRpVmhPViUyRjZ5WmxQd1Jxa0oxTnRHbHNSNTFISTglMkI1NXZvRlhicUVoT3JwRHdxZG9sMDA4QSUyRmMxWGVxMyUyQkZ3JTJCcjJ0M09xJTJGY1huJTJGRTVwSElLTnlWSSUyQktoQnA3N3FOOTQ0TloyZWRoUEVGS0xQZG12OTdWeGdNTldvJTJGczByMWNiJTJGczBBb1pLenFEVkZpQmV4MlV6bDJqRml4WWs2SjJPRkhoZmJMdzg5NEx2NCUyQmV1MW8lMkJUM2ljeGIxdTFKTkgwWUdTMUxDSzRCQjVNYTJ0QUxaaFdaaURqSW5oTzI4amQxUzBhaGJJeDdOTVZkNXdkMG5ZUGNZa001NHhLS0x5YmI2emtzVmtxbUY3dzBxWk5hMDZzNjNwJTJCN3EwdUF2NkUlM0Q","canary":"14ax0CKiE/nOuDfUoe/89mVC+IeZ9pOO82uheWC0ujA=8:1:CANARY:+DGziuA6f84mx7VerwCJbzaYLA3wZQ9mZmiNG+htsOg="},"isIEAllowedForSsoProbe":true,"edgeRedirectUri":"https://autologon.microsoftazuread-sso.com/16532572-d567-4d67-8727-f12f7bb6aed3/winauth/sso/edgeredirect?client-request-id=c38e22a2-b082-6000-f4c7-f41757e3b98a\u0026origin=login.microsoftonline.com\u0026is_redirected=1","isFlowTokenPassedInEdge":true},"urlLogin":"https://login.microsoftonline.com/16532572-d567-4d67-8727-f12f7bb6aed3/reprocess?ctx=rQQIARAApVNNjBt3Fbfj1Nm422bjHlpxQNUqSKhbr__z5RkvDdJ4vuyJZ-z5jqe06Xx5x_aMZ9Zjr8cTwqECtIIq2h5AFUII9UYuhH6gNpeigtKSFpoDQihcUiqgSqU2VBGK1FaqpnDgWIl3eP_f0_u_3_vp6b1HStA2tHMK_MeQWu5rYDiEao6Xo_-xWbWy8fzmxd8-fbnw1J037jxovPfqDy4Vv-HP53GyU6_PItubzX0rGFqLpBauthPfmnlxNJrOt50orJ8bRrMwqbve0FoE820ridNXisXrxeL7xeKlI3s0wpIQTFEk22RAE2k2aayJo02MbEEQQaJkkyRIhoJwArAQjjTwGoE1MRhgeJNASLRBMxSgIQxqUU0EtHAWQQimxbIkSWMoAyAKRtEGBTMkSgMUb7QwEr5x5ESPXMx9OHfRbJR5Hx85nms8F0fJ_CelN472aLDkx8Kqr7EtVRM1F7AtSeNlMeugQsBONCjoWqHZ0kA8UEbaSg47qKVHqJ7psNU2A4XhlzqIAmEygB3Gzxx4NxAm_FjXByurLUM6LLbtlbaSp0ymsGa3x_KSk8fjTiBMTExl_amgi4PB2XgkTIL2QEt7dlvIORYKqwsKJ8d66Pf1vPfYxIwwlVyITy0QpepUbtttURFVtqOoed8OJJ419-XAHzmaHqkIv5TbbmpyzUSgSVRScv1CanB6Kqy0lTQxEV7lKWfMAwE0U17luQHkL_JXVvWlwgRddRoYipL_nUfSlEREhO31VAmoQbQyDTnSGJ1TQCqZHAT3VNfwOFdUA3c_53Cy1kowxNF_ccuG4q43ZRl9YsZSqKNCoDdsmt-TwwA1jARWxnxfnviRGfKCm-1iIpPCIqWtpFCHBIPIZ6IJcDD2uE7qquwZdbK7NDRXFbSUVjKZksa6OFB5IGmpZbGuZWnynmJgkZp1UCuUUi1r-RbH8x7t9lTdnIhn3YnAYabGiaYFACS2_a4CUmwQdmAvnGd6OE9tbYC4WSs1Jpgv0GYmjsVlPjMRYZauxsLiRAsEIF0qfanzeqF0CmpgCIzhcM3FGngNdfMtx2G8NoTgIW7bDctzkWulchR705F7_Wjx1tF1UNpZW6tsFB4qPFy4e7T4_D3VygZalR_E_nyv-MKj33u9-yRTuHZPHUKtFFBnRkx92lvQQy3y6kQz1Kmtjmc2416PgBe-Z1BgMSZPEzvQYbl4WC4flvnD8gNXysfXShuFzRLVh26XiwfHCleO_z9H_1yleP3e4o11qHLcieyZNXVHbvUUBNkuAQikRuAeqKGQjdVsGydqwHZQxCEswiOsG-topewE1ihMqo-c3xy55-bRxJtu7pzfTMPknOPkaN8KFl6yufP4JtWHNp-4cOHC0_d9Kfbf3Fe4e__fPvnjX99_6-WP2rdOPLpFc9loQTaGBBqmuO7NlhRvZ9agSyJLU2qGZjgSuS1_nvR2T1_eKNzcKFw6-fcjlbiCFgoF8JcM_PDJ9d9dfPHZ-pt6Nnns5p36ew-89urPPvzWZ3_68O13r_7027ef-vfVP3z_4Pzjo6uzE1z1i6qXnnjs7f7aO7-X_vnsv27f-trlg28-1_1FbXbxGnv2x2u_ev2X3_35x5_-4-5bX0E-eO3Xq-34mYeLXy9W76-UrGC3eoyh6HaNUfLYmzrVYySMNThKqF4vVkpWvF99s0iSJElpuu9MxMQy9IXL7ZIk2WIlkGRCnhT9htCZe7Sg9BKM2V-xZsPKst0mVR8z-BY2XWBO3VUXWa_NTdvZctC3uWxgdTxoHqfTTl_GZbcvpBIl1HnN82RiSO_xNtXpx76wp0CrcRJzBj_oJM6Zff8Mvar3bHSVRlkD34I9BVuOcw2tXTdedsmMWklGSu2b-tgEkWz4EXBafCyATnT6yslqZWP_4N21pfWd9isvv_Oj9a8Onrl5snD35GHpoFr4HA2","urlDssoStatus":"https://login.microsoftonline.com/common/instrumentation/dssostatus","iSessionPullType":2,"fUseSameSite":true,"iAllowedIdentities":2,"uiflavor":1001,"urlFidoHelp":"https://go.microsoft.com/fwlink/?linkid=2013738","urlFidoLogin":"https://login.microsoft.com/16532572-d567-4d67-8727-f12f7bb6aed3/fido/get?uiflavor=Web","fIsFidoSupported":true,"fHidePrivateBrowsingDisclaimer":true,"fLoadStringCustomizationPromises":true,"fUseAlternateTextForSwitchToCredPickerLink":true,"fOfflineAccountVisible":false,"fEnableUserStateFix":true,"fAccessPassSupported":true,"fShowAccessPassPeek":true,"fUpdateSessionPollingLogic":true,"fEnableShowPickerCredObservable":true,"fFetchSessionsSkipDsso":true,"fIsCiamUserFlowUxNewLogicEnabled":true,"fUseNonMicrosoftDefaultBrandingForCiam":true,"sCompanyDisplayName":"Robert Half","fRemoveCustomCss":true,"fFixUICrashForApiRequestHandler":true,"fShowUpdatedKoreanPrivacyFooter":true,"fUsePostCssHotfix":true,"fFixUserFlowBranding":true,"fIsQrCodePinSupported":true,"fEnablePasskeyNullFix":true,"fAppendQueryParamsFromRawQueryStringToPostUrl":true,"fUseNativeBridgeEdgeApi":true,"fEnableWebNativeBridgeInterstitialUx":true,"fEnableThisAppOnlyUxSupport":true,"fEnableWindowParentingFix":true,"fEnableNativeBridgeErrors":true,"fEnableNativeBridgeErrorUpn":true,"fEnableDomApiSuccessUpnFix":true,"urlAcmaServerPath":"https://login.microsoftonline.com","sTenantId":"16532572-d567-4d67-8727-f12f7bb6aed3","sMkt":"en-US","fIsDesktop":true,"fUpdateConfigInit":true,"fLogDisallowedCssProperties":true,"fDisallowExternalFonts":true,"sFidoChallenge":"O.eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsIng1dCI6ImFGa21LVkZjLTRXVjZzWENCdk5aa1hJNTA1WSJ9.eyJhdWQiOiJ1cm46bWljcm9zb2Z0OmZpZG86Y2hhbGxlbmdlIiwiaXNzIjoiaHR0cHM6Ly9sb2dpbi5taWNyb3NvZnQuY29tIiwiaWF0IjoxNzgyNzkzMDY4LCJuYmYiOjE3ODI3OTMwNjgsImV4cCI6MTc4Mjc5MzM2OH0.exOBGqinFi7CPTp18akXhodqkBFWGdHEvId6_bMrStz6fTLDEQfQu_cLJm2VyAimhlHNGIP8WlrnMteN6glXLRO4jw7M34t3vnMGjRNSietMoXVbRC83z1LkZ-HS-oR2tAUULaHyjGw-NNpzCkKQgLe4Ryqa7-87waGBoKpcMO5o1pp1BVu3chhCaAd3i4nKJv3uRfkURYdKBTqDmYWBkze2Cii8gePR7Wc0uTkC2nDeShR_czOprX1GShKZn42yLVXkkX2N9UeMjRnRkDi7zNEzAmLO5LI8-nJcSpZU8NrdXnTuuzWB_0KCzZH5aHS0IqX81ykBthaGgrekem_Y-Q","fShowDebugDetailsAriaExpanded":true,"fPreventOtcFormDoubleSubmit":true,"fEnableWebNativeBridgeLoadFix":true,"fEnableWebNativeBridgeClientTelemetry":true,"fEnableWebAuthNTelemetry":true,"scid":1013,"hpgact":1800,"hpgid":1104,"pgid":"ConvergedSignIn","apiCanary":"PAQABDgEAAAAdDD7nC9b5Q7JPd_okEQRFRXZvU3RzQXJ0aWZhY3RzCAAAAAAAKKMhDlTOCxibqB_5RDvxzdFnf9XCRRVIxegErEHR-iWWTFFfpjzBGrWvUVkDrsOdphQgvLUW6W5UHY_KhGIOGFZgpT1vEAZSxgBXhKY5X1MRqWxguBsyB5j_gci5OKkkW6ej8gwff7C0JPreLVUY37qQyREhgb9i2v6jvBi3yGLWbc2F15-gR3rttRH2HN5khEmiMv4BJH_zMdItgja9byAA","canary":"14ax0CKiE/nOuDfUoe/89mVC+IeZ9pOO82uheWC0ujA=8:1:CANARY:+DGziuA6f84mx7VerwCJbzaYLA3wZQ9mZmiNG+htsOg=","sCanaryTokenName":"canary","fSkipRenderingNewCanaryToken":false,"fEnableNewCsrfProtection":true,"correlationId":"c38e22a2-b082-6000-f4c7-f41757e3b98a","sessionId":"17521234-d635-4e0b-b22c-85c24c5e4500","sRingId":"R3","locale":{"mkt":"en-US","lcid":1033},"slMaxRetry":2,"slReportFailure":true,"strings":{"desktopsso":{"authenticatingmessage":"Trying to sign you in"}},"enums":{"ClientMetricsModes":{"None":0,"SubmitOnPost":1,"SubmitOnRedirect":2,"InstrumentPlt":4}},"urls":{"instr":{"pageload":"https://login.microsoftonline.com/common/instrumentation/reportpageload","dssostatus":"https://login.microsoftonline.com/common/instrumentation/dssostatus"}},"browser":{"ltr":1,"Edge":1,"_Win":1,"_M149":1,"_D0":1,"Full":1,"Win81":1,"RE_WebKit":1,"b":{"name":"Edge","major":149,"minor":0},"os":{"name":"Windows","version":"10.0"},"V":"149.0"},"watson":{"url":"/common/handlers/watson","bundle":"https://aadcdn.msauth.net/ests/2.1/content/cdnbundles/watson.min_82o5oyf7tvyeotpacdeksw2.js","sbundle":"https://aadcdn.msauth.net/ests/2.1/content/cdnbundles/watsonsupportwithjquery.3.5.min_dc940oomzau4rsu8qesnvg2.js","fbundle":"https://aadcdn.msauth.net/ests/2.1/content/cdnbundles/frameworksupport.min_oadrnc13magb009k4d20lg2.js","resetErrorPeriod":5,"maxCorsErrors":-1,"maxInjectErrors":5,"maxErrors":10,"maxTotalErrors":3,"expSrcs":["https://login.microsoftonline.com","https://aadcdn.msauth.net/","https://aadcdn.msftauth.net/",".login.microsoftonline.com"],"envErrorRedirect":true,"envErrorUrl":"/common/handlers/enverror"},"loader":{"cdnRoots":["https://aadcdn.msauth.net/","https://aadcdn.msftauth.net/"],"logByThrowing":true,"tenantBrandingCdnRoots":["aadcdn.msauthimages.net","aadcdn.msftauthimages.net"]},"serverDetails":{"slc":"ProdSlices","dc":"WUS3","ri":"PH1XXXX","ver":{"v":[2,1,24758,5]},"rt":"2026-06-30T04:17:48","et":31},"clientEvents":{"enabled":true,"telemetryEnabled":true,"useOneDSEventApi":true,"flush":60000,"autoPost":true,"autoPostDelay":1000,"minEvents":1,"maxEvents":1,"pltDelay":500,"appInsightsConfig":{"instrumentationKey":"69adc3c768bd4dc08c19416121249fcc-66f1668a-797b-4249-95e3-6c6651768c28-7293","webAnalyticsConfiguration":{"autoCapture":{"jsError":true}}},"defaultEventName":"IDUX_ESTSClientTelemetryEvent_WebWatson","serviceID":3,"endpointUrl":""},"fApplyAsciiRegexOnInput":true,"country":"AU","fBreakBrandingSigninString":true,"bsso":{"initiatePullTimeoutMs":100,"initiatePullTimeoutAction":"continue","rid":"17521234-d635-4e0b-b22c-85c24c5e4500","states":{"START":"start","INPROGRESS":"in-progress","END":"end","END_SSO":"end-sso","END_USERS":"end-users"},"nonce":"AwABEgEAAAADAOz_BQD0_0V2b1N0c0FydGlmYWN0cwUAAAAAABeIc0w_5iNuiyk2wKpWnNF26zbQ1C1KuimXVzrQWZbp04LoNPukwMn2gke3McIQN8PlZ2orYMsQok6LYDz4CoYgAA","overallTimeoutMs":4000,"telemetry":{"type":"TBAuthTelemetry","nonce":"AwABDwEAAAADAOz_BQD0_0V2b1N0c0FydGlmYWN0cwUAAAAAABWmNlyqtcaJz8Mh0YEqW-rBzomOuSbemdq7_GDC0zhZiyo2qEL4ivZn0ZcWo3JaJNOU3qLWjFL0v2ITrdnYnK8hiJRw5bh5lK65EVIeRH07IAA","reportStates":["end","end-sso","end-users"]},"redirectEndStates":["end","end-users"],"cookieNames":{"aadSso":"AADSSO","winSso":"ESTSSSO","ssoTiles":"ESTSSSOTILES","ssoPulled":"SSOCOOKIEPULLED","userList":"ESTSUSERLIST"},"enabled":true,"type":"windows","reason":"Pull is needed"},"urlNoCookies":"https://login.microsoftonline.com/cookiesdisabled","fTrimChromeBssoUrl":true,"inlineMode":5,"fShowCopyDebugDetailsLink":true,"fTenantBrandingCdnAddEventHandlers":true};
+//]]></script> 
+<script type="text/javascript" nonce='kjNys6kfJMAayXF3Po54oQ'>//<![CDATA[
+!function(){var e=window,r=e.$Debug=e.$Debug||{},t=e.$Config||{};if(!r.appendLog){var n=[],o=0;r.appendLog=function(e){var r=t.maxDebugLog||25,i=(new Date).toUTCString()+":"+e;n.push(o+":"+i),n.length>r&&n.shift(),o++},r.getLogs=function(){return n}}}(),function(){function e(e,r){function t(i){var a=e[i];if(i<n-1){return void(o.r[a]?t(i+1):o.when(a,function(){t(i+1)}))}r(a)}var n=e.length;t(0)}function r(e,r,i){function a(){var e=!!u.method,o=e?u.method:i[0],a=u.extraArgs||[],s=n.$WebWatson;try{
+var d=t(i,!e);if(a&&a.length>0){for(var c=a.length,l=0;l<c;l++){d.push(a[l])}}o.apply(r,d)}catch(e){return void(s&&s.submitFromException&&s.submitFromException(e))}}var u=o.r&&o.r[e];return r=r||this,u&&(u.skipTimeout?a():n.setTimeout(a,0)),u}function t(e,r){return Array.prototype.slice.call(e,r?1:0)}var n=window;n.$Do||(n.$Do={"q":[],"r":[],"removeItems":[],"lock":0,"o":[]});var o=n.$Do;o.when=function(t,n){function i(e){r(e,a,u)||o.q.push({"id":e,"c":a,"a":u})}var a=0,u=[],s=1;"function"==typeof n||(a=n,
+s=2);for(var d=s;d<arguments.length;d++){u.push(arguments[d])}t instanceof Array?e(t,i):i(t)},o.register=function(e,t,n){if(!o.r[e]){o.o.push(e);var i={};if(t&&(i.method=t),n&&(i.skipTimeout=n),arguments&&arguments.length>3){i.extraArgs=[];for(var a=3;a<arguments.length;a++){i.extraArgs.push(arguments[a])}}o.r[e]=i,o.lock++;try{for(var u=0;u<o.q.length;u++){var s=o.q[u];s.id==e&&r(e,s.c,s.a)&&o.removeItems.push(s)}}catch(e){throw e}finally{if(0===--o.lock){for(var d=0;d<o.removeItems.length;d++){
+for(var c=o.removeItems[d],l=0;l<o.q.length;l++){if(o.q[l]===c){o.q.splice(l,1);break}}}o.removeItems=[]}}}},o.unregister=function(e){o.r[e]&&delete o.r[e]}}(),function(e,r){function t(){if(!a){if(!r.body){return void setTimeout(t)}a=!0,e.$Do.register("doc.ready",0,!0)}}function n(){if(!u){if(!r.body){return void setTimeout(n)}t(),u=!0,e.$Do.register("doc.load",0,!0),i()}}function o(e){(r.addEventListener||"load"===e.type||"complete"===r.readyState)&&t()}function i(){
+r.addEventListener?(r.removeEventListener("DOMContentLoaded",o,!1),e.removeEventListener("load",n,!1)):r.attachEvent&&(r.detachEvent("onreadystatechange",o),e.detachEvent("onload",n))}var a=!1,u=!1;if("complete"===r.readyState){return void setTimeout(n)}!function(){r.addEventListener?(r.addEventListener("DOMContentLoaded",o,!1),e.addEventListener("load",n,!1)):r.attachEvent&&(r.attachEvent("onreadystatechange",o),e.attachEvent("onload",n))}()}(window,document),function(){function e(){
+return(t().loader||{}).tenantBrandingCdnRoots||[]}function r(r){var t=e();if(t&&t.length>0&&r){for(var n=0;n<t.length;n++){if(t[n]&&-1!==r.indexOf(t[n])){return!0}}}return!1}function t(){return h.$Config||h.ServerData||{}}function n(e,r,t){var n=h.$Debug;n&&n.appendLog&&(r&&(e+=" '"+(r.src||r.href||"")+"'",e+=", id:"+(r.id||""),e+=", async:"+(r.async||""),e+=", defer:"+(r.defer||"")),t&&(e+=", loadDuration:"+t+"ms"),n.appendLog(e))}function o(){var e=h.$B;if(void 0===g){if(e){g=e.IE}else{
+var r=h.navigator.userAgent;g=-1!==r.indexOf("MSIE ")||-1!==r.indexOf("Trident/")}}return g}function i(){var e=h.$B;if(void 0===v){if(e){v=e.RE_Edge}else{var r=h.navigator.userAgent;v=-1!==r.indexOf("Edge")}}return v}function a(e){var r=e.indexOf("?"),t=r>-1?r:e.length,n=e.lastIndexOf(".",t);return e.substring(n,n+m.length).toLowerCase()===m}function u(){var e=t();return(e.loader||{}).slReportFailure||e.slReportFailure||!1}function s(){return(t().loader||{}).redirectToErrorPageOnLoadFailure||!1}
+function d(){return(t().loader||{}).logByThrowing||!1}function c(e){if(!o()&&!i()){return!1}var r=e.src||e.href||"";if(!r){return!0}if(a(r)){var t,n,u;try{t=e.sheet,n=t&&t.cssRules,u=!1}catch(e){u=!0}if(t&&!n&&u){return!0}if(t&&n&&0===n.length){return!0}}return!1}function l(e,r,n){var o=t(),i=o.loader||{},a=i.resourceLoadTimeout;return a>0?setTimeout(function(){r.isCircuitBreakerTriggered=!0,e&&(e.onload=null,e.onerror=null,e.onreadystatechange=null),n(),e&&(e.src&&e.removeAttribute("src"),
+e.href&&e.removeAttribute("href"),e.parentElement&&e.parentElement.removeChild(e))},a):null}function f(){function e(e){p.getElementsByTagName("head")[0].appendChild(e)}function r(e,r,t,n){var s=null;return s=a(e)?o(e):"script"===n.toLowerCase()?i(e):u(e,n),r&&(s.id=r),"function"==typeof s.setAttribute&&(s.setAttribute("crossorigin","anonymous"),t&&"string"==typeof t&&s.setAttribute("integrity",t)),s}function o(e){var r=p.createElement("link");return r.rel="stylesheet",r.type="text/css",r.href=e,r}
+function i(e){var r=p.createElement("script"),t=p.querySelector("script[nonce]");if(r.type="text/javascript",r.src=e,r.defer=!1,r.async=!1,t){var n=t.nonce||t.getAttribute("nonce");r.setAttribute("nonce",n)}return r}function u(e,r){var t=p.createElement(r);return t.src=e,t}function s(e,r){if(e&&e.length>0&&r){for(var t=0;t<e.length;t++){if(-1!==r.indexOf(e[t])){return!0}}}return!1}function d(e){if(t().fTenantBrandingCdnAddEventHandlers){var r=s(w,e)?w:E;if(!(r&&r.length>1)){return e}
+for(var n=0;n<r.length;n++){if(-1!==e.indexOf(r[n])){var o=r[n+1<r.length?n+1:0],i=e.substring(r[n].length);return"https://"!==r[n].substring(0,"https://".length)&&(o="https://"+o,i=i.substring("https://".length)),o+i}}return e}if(!(E&&E.length>1)){return e}for(var a=0;a<E.length;a++){if(0===e.indexOf(E[a])){return E[a+1<E.length?a+1:0]+e.substring(E[a].length)}}return e}function g(e,r,t,o,i){var a=0,u=$.failMessage||"Failed";if(i&&(a=Date.now()-i.startTime,
+i.id&&!i.isCircuitBreakerTriggered&&clearTimeout(i.id),i.isCircuitBreakerTriggered&&(u=$.timeoutMessage||"TimedOut")),n("[$Loader]: "+u,o,a),S[e].retry<y){return S[e].retry++,h(e,r,t),void f._ReportFailure(S[e].retry,S[e].srcPath,i)}t&&t()}function v(e,r,t,o,i){var a=0;if(c(o)){return g(e,r,t,o,i)}i&&i.id&&(clearTimeout(i.id),a=Date.now()-i.startTime),n("[$Loader]: "+($.successMessage||"Loaded"),o,a),h(e+1,r,t);var u=S[e].onSuccess;"function"==typeof u&&u(S[e].srcPath)}function h(t,o,i){if(t<S.length){
+var a=S[t];if(!a||!a.srcPath){return void h(t+1,o,i)}a.retry>0&&(a.srcPath=d(a.srcPath),a.origId||(a.origId=a.id),a.id=a.origId+"_Retry_"+a.retry);var u=r(a.srcPath,a.id,a.integrity,a.tagName),s={"id":null,"isCircuitBreakerTriggered":!1},c=function(){g(t,o,i,u,s)};u.onload=function(){v(t,o,i,u,s)},u.onerror=c,u.onreadystatechange=function(){"loaded"===u.readyState?setTimeout(function(){v(t,o,i,u,s)},500):"complete"===u.readyState&&v(t,o,i,u,s)},L&&a.retry<y&&(s.id=l(u,s,c),s.startTime=Date.now()),e(u),
+n("[$Loader]: Loading '"+(a.srcPath||"")+"', id:"+(a.id||""))}else{o&&o()}}var m=t(),y=m.slMaxRetry||2,b=m.loader||{},E=b.cdnRoots||[],L=b.enableCircuitBreaking||!1,w=b.tenantBrandingCdnRoots||[],$=this,S=[];$.retryOnError=!0,$.successMessage="Loaded",$.failMessage="Error",$.Add=function(e,r,t,n,o,i){e&&S.push({"srcPath":e,"id":r,"retry":n||0,"integrity":t,"tagName":o||"script","onSuccess":i})},$.AddForReload=function(e,r){var t=e.src||e.href||"";$.Add(t,"AddForReload",e.integrity,1,e.tagName,r)},
+$.AddIf=function(e,r,t){e&&$.Add(r,t)},$.Load=function(e,r){h(0,e,r)}}var g,v,h=window,p=h.document,m=".css";f.On=function(e,r,t){if(!e){throw"The target element must be provided and cannot be null."}r?f.OnError(e,t):f.OnSuccess(e,t)},f.OnSuccess=function(e,t){if(!e){throw"The target element must be provided and cannot be null."}if(c(e)){return f.OnError(e,t)}var o=e.src||e.href||"",i=u(),a=s();n("[$Loader]: Loaded",e);var d=new f;d.failMessage="Reload Failed",d.successMessage="Reload Success",
+d.Load(null,function(){var e=r(o);if(i&&!e){throw"Unexpected state. ResourceLoader.Load() failed despite initial load success. ['"+o+"']"}a&&!e&&(document.location.href="/error.aspx?err=504"),e&&n("[$Loader]: Silently handled tenant branding CDN failure ['"+o+"']")})},f.OnError=function(e,t,o){var i=e.src||e.href||"",a=u(),d=s();if(!e){throw"The target element must be provided and cannot be null."}n("[$Loader]: Failed",e);var c=new f;c.failMessage="Reload Failed",c.successMessage="Reload Success",
+c.AddForReload(e,t),c.Load(null,function(){var e=r(i);if(a&&!e){throw"Failed to load external resource ['"+i+"']"}d&&!e&&(document.location.href="/error.aspx?err=504"),e&&n("[$Loader]: Silently handled tenant branding CDN failure ['"+i+"']")}),f._ReportFailure(0,i,o)},f._ReportFailure=function(e,t,n){if(d()&&!o()&&!r(t)){var i="Failed to load";throw n&&n.isCircuitBreakerTriggered&&(i="Timed out while loading"),"[Retry "+e+"] "+i+" external resource ['"+t+"'], reloading from fallback CDN endpoint"}},
+h.$Loader=f}(),function(){function e(){if(!E){var e=new h.$Loader;e.AddIf(!h.jQuery,m.sbundle,"WebWatson_DemandSupport"),m.sbundle=null,delete m.sbundle,e.AddIf(!h.$Api,m.fbundle,"WebWatson_DemandFramework"),m.fbundle=null,delete m.fbundle,e.Add(m.bundle,"WebWatson_DemandLoaded"),e.Load(r,t),E=!0}}function r(){if(h.$WebWatson){if(h.$WebWatson.isProxy){return void t()}y.when("$WebWatson.full",function(){for(;b.length>0;){var e=b.shift();e&&h.$WebWatson[e.cmdName].apply(h.$WebWatson,e.args)}})}}function t(){
+if(!h.$WebWatson||h.$WebWatson.isProxy){if(!L&&JSON){try{var e=new XMLHttpRequest;e.open("POST",m.url),e.setRequestHeader("Accept","application/json"),e.setRequestHeader("Content-Type","application/json; charset=UTF-8"),e.setRequestHeader("canary",p.apiCanary),e.setRequestHeader("client-request-id",p.correlationId),e.setRequestHeader("hpgid",p.hpgid||0),e.setRequestHeader("hpgact",p.hpgact||0);for(var r=-1,t=0;t<b.length;t++){if("submit"===b[t].cmdName){r=t;break}}var o=b[r]?b[r].args||[]:[],i={"sr":m.sr,
+"ec":"Failed to load external resource [Core Watson files]","wec":55,"idx":1,"pn":p.pgid||"","sc":p.scid||0,"hpg":p.hpgid||0,"msg":"Failed to load external resource [Core Watson files]","url":o[1]||"","ln":0,"ad":0,"an":!1,"cs":"","sd":p.serverDetails,"ls":null,"diag":v(m)};e.send(JSON.stringify(i))}catch(e){}L=!0}m.loadErrorUrl&&window.location.assign(m.loadErrorUrl)}n()}function n(){b=[],h.$WebWatson=null}function o(r){return function(){var t=arguments;b.push({"cmdName":r,"args":t}),e()}}function i(){
+var e=["foundException","resetException","submit"],r=this;r.isProxy=!0;for(var t=e.length,n=0;n<t;n++){var i=e[n];i&&(r[i]=o(i))}}function a(e,r,t,n,o,i,a){var u=h.event;return i||(i=l(o||u,a?a+2:2)),h.$Debug&&h.$Debug.appendLog&&h.$Debug.appendLog("[WebWatson]:"+(e||"")+" in "+(r||"")+" @ "+(t||"??")),$.submit(e,r,t,n,o||u,i,a)}function u(e,r){return{"signature":e,"args":r,"toString":function(){return this.signature}}}function s(e){for(var r=[],t=e.split("\n"),n=0;n<t.length;n++){r.push(u(t[n],[]))}
+return r}function d(e){for(var r=[],t=e.split("\n"),n=0;n<t.length;n++){var o=u(t[n],[]);t[n+1]&&(o.signature+="@"+t[n+1],n++),r.push(o)}return r}function c(e){if(!e){return null}try{if(e.stack){return s(e.stack)}if(e.error){if(e.error.stack){return s(e.error.stack)}}else if(window.opera&&e.message){return d(e.message)}}catch(e){}return null}function l(e,r){var t=[];try{for(var n=arguments.callee;r>0;){n=n?n.caller:n,r--}for(var o=0;n&&o<w;){var i="InvalidMethod()";try{i=n.toString()}catch(e){}
+var a=[],s=n.args||n.arguments;if(s){for(var d=0;d<s.length;d++){a[d]=s[d]}}t.push(u(i,a)),n=n.caller,o++}}catch(e){t.push(u(e.toString(),[]))}var l=c(e);return l&&(t.push(u("--- Error Event Stack -----------------",[])),t=t.concat(l)),t}function f(e){if(e){try{var r=/function (.{1,})\(/,t=r.exec(e.constructor.toString());return t&&t.length>1?t[1]:""}catch(e){}}return""}function g(e){if(e){try{if("string"!=typeof e&&JSON&&JSON.stringify){var r=f(e),t=JSON.stringify(e)
+;return t&&"{}"!==t||(e.error&&(e=e.error,r=f(e)),(t=JSON.stringify(e))&&"{}"!==t||(t=e.toString())),r+":"+t}}catch(e){}}return""+(e||"")}function v(e){var r=[];try{if(jQuery?(r.push("jQuery v:"+jQuery().jquery),jQuery.easing?r.push("jQuery.easing:"+JSON.stringify(jQuery.easing)):r.push("jQuery.easing is not defined")):r.push("jQuery is not defined"),e&&e.expectedVersion&&r.push("Expected jQuery v:"+e.expectedVersion),y){var t,n="";for(t=0;t<y.o.length;t++){n+=y.o[t]+";"}for(r.push("$Do.o["+n+"]"),n="",
+t=0;t<y.q.length;t++){n+=y.q[t].id+";"}r.push("$Do.q["+n+"]")}if(h.$Debug&&h.$Debug.getLogs){var o=h.$Debug.getLogs();o&&o.length>0&&(r=r.concat(o))}if(b){for(var i=0;i<b.length;i++){var a=b[i];if(a&&"submit"===a.cmdName){try{if(JSON&&JSON.stringify){var u=JSON.stringify(a);u&&r.push(u)}}catch(e){r.push(g(e))}}}}}catch(e){r.push(g(e))}return r}var h=window,p=h.$Config||{},m=p.watson,y=h.$Do;if(!h.$WebWatson&&m){var b=[],E=!1,L=!1,w=10,$=h.$WebWatson=new i;$.CB={},$._orgErrorHandler=h.onerror,h.onerror=a,
+$.errorHooked=!0,y.when("jQuery.version",function(e){m.expectedVersion=e}),y.register("$WebWatson")}}(),function(){function e(e,r){for(var t=r.split("."),n=t.length,o=0;o<n&&null!==e&&void 0!==e;){e=e[t[o++]]}return e}function r(r){var t=null;return null===s&&(s=e(i,"Constants")),null!==s&&r&&(t=e(s,r)),null===t||void 0===t?"":t.toString()}function t(t){var n=null;return null===a&&(a=e(i,"$Config.strings")),null!==a&&t&&(n=e(a,t.toLowerCase())),null!==n&&void 0!==n||(n=r(t)),
+null===n||void 0===n?"":n.toString()}function n(e,r){var n=null;return e&&r&&r[e]&&(n=t("errors."+r[e])),n||(n=t("errors."+e)),n||(n=t("errors."+d)),n||(n=t(d)),n}function o(t){var n=null;return null===u&&(u=e(i,"$Config.urls")),null!==u&&t&&(n=e(u,t.toLowerCase())),null!==n&&void 0!==n||(n=r(t)),null===n||void 0===n?"":n.toString()}var i=window,a=null,u=null,s=null,d="GENERIC_ERROR";i.GetString=t,i.GetErrorString=n,i.GetUrl=o}(),function(){var e=window,r=e.$Config||{};e.$B=r.browser||{}}(),function(){
+function e(e,r,t){e&&e.addEventListener?e.addEventListener(r,t):e&&e.attachEvent&&e.attachEvent("on"+r,t)}function r(r,t){e(document.getElementById(r),"click",t)}function t(r,t){var n=document.getElementsByName(r);n&&n.length>0&&e(n[0],"click",t)}var n=window;n.AddListener=e,n.ClickEventListenerById=r,n.ClickEventListenerByName=t}();
+//]]></script> 
+<script type="text/javascript" nonce='kjNys6kfJMAayXF3Po54oQ'>//<![CDATA[
+!function(e,t){function r(t){return function(){t.parentNode&&(t.onload=null,t.onerror=null,t.parentNode.removeChild(t)),e.$Loader.OnError(t,void 0,{"isCircuitBreakerTriggered":!0}),t.src&&t.removeAttribute("src"),t.href&&t.removeAttribute("href")}}function n(e,t){e.addEventListener("load",function(){clearTimeout(t)},{"once":!0}),e.addEventListener("error",function(){clearTimeout(t)},{"once":!0})}!function(){var a="function"==typeof e.MutationObserver,o=t.getElementsByTagName("head")[0]
+;if(a&&o&&e.addEventListener){var i=e.ServerData||e.$Config||{},d=i.loader||{};if(d.enableCircuitBreaking&&d.resourceLoadTimeout>0&&i.slMaxRetry>0){var u=new MutationObserver(function(e){for(var t=0;t<e.length;t++){var a=e[t];if("childList"===a.type){for(var o=0;o<a.addedNodes.length;o++){var i=a.addedNodes[o];if(i instanceof Element){var u="cdn"===i.getAttribute("data-loader");if(u){var c=setTimeout(r(i),d.resourceLoadTimeout);n(i,c)}}}}}});e.addEventListener("load",function(){u.disconnect()}),
+u.observe(o,{"childList":!0,"subtree":!1})}}}(),function(){var r=t.getElementsByTagName("head")[0];r&&r.addEventListener&&(r.addEventListener("error",function(t){null!==t.target&&"cdn"===t.target.getAttribute("data-loader")&&e.$Loader.OnError(t.target)},!0),r.addEventListener("load",function(t){null!==t.target&&"cdn"===t.target.getAttribute("data-loader")&&e.$Loader.OnSuccess(t.target)},!0))}()}(window,document);
+//]]></script>
 
-      background-repeat: no-repeat;
+    
+        <link rel="prefetch" href="https://login.live.com/Me.htm?v=3" />
+                <link rel="shortcut icon" href="https://aadcdn.msauth.net/shared/1.0/content/images/favicon_a_eupayfgghqiai7k9sol6lg2.ico" />
 
-      background-size: 120px, 90px, 110px, 80px;
+    <script type="text/javascript" nonce='kjNys6kfJMAayXF3Po54oQ'>
+        ServerData = $Config;
+    </script>
 
-      background-position:
-        left -40px top 60px,
-        right -40px top 120px,
-        left -60px bottom 120px,
-        right -40px bottom 60px;
 
-      opacity: 0.15;
-    }
-  </style>
+    
+    <link data-loader="cdn" crossorigin="anonymous" href="https://aadcdn.msauth.net/ests/2.1/content/cdnbundles/converged.v2.login.min_pzfy2abhlubh6bv_dyvwha2.css" rel="stylesheet" />
+
+
+    <script data-loader="cdn" crossorigin="anonymous" src="https://aadcdn.msauth.net/shared/1.0/content/js/ConvergedLogin_PCore_0ehp2zsmfVThqx16raAliw2.js" integrity='sha384-TDCfUpIa0qWi4HJBhevnmmNcx+H3SXh+gv5Bkt74pwS4vIS90gaZGCpf6tM7W3Jq' nonce='kjNys6kfJMAayXF3Po54oQ'></script>
+
+    <script data-loader="cdn" crossorigin="anonymous" src="https://aadcdn.msauth.net/ests/2.1/content/cdnbundles/ux.converged.login.strings-en.min_98zkgt4abbsl83pvtmpegg2.js" nonce='kjNys6kfJMAayXF3Po54oQ'></script>
+
+
+
 </head>
-<body>
-  <main class="app">
-    <div class="error" id="errorBox"></div>
 
-    <header class="hero">
-      <div class="hero-bar"></div>
-      <div class="hero-inner">
-        <div class="logo">P</div>
-        <h1>🏆 Protiviti World Cup 2026 Sweepstakes</h1>
-        <div class="subtitle">⚽ Office Leaderboard ⚽</div>
-        <div class="meta-row">
-          <span class="pill" id="phasePill">Loading…</span>
-          <span class="matches-meta" id="matchesMeta"></span>
-        </div>
-        <div class="progress"><span id="progressFill"></span></div>
-        <div class="updated" id="updatedText">Last updated: —</div>
-      </div>
-    </header>
-
-    <div class="grid">
-      <section class="panel leaderboard-panel">
-        <div class="panel-title">⚽ Leaderboard</div>
-        <div class="table-wrap">
-          <table>
-            <thead>
-              <tr>
-                <th class="rank">Rank</th>
-                <th>Player</th>
-                <th>Team 1</th>
-                <th>Team 2</th>
-                <th>Team 3</th>
-                <th class="total">Total</th>
-              </tr>
-            </thead>
-            <tbody id="lbBody"></tbody>
-          </table>
-        </div>
-        <div class="mobile-cards" id="mobileCards"></div>
-      </section>
-
-      <aside class="panel match-centre" aria-live="polite">
-        <div class="panel-title">📋 Match Centre</div>
-        <div class="match-centre-body" id="matchCentre">
-          <div class="mc-placeholder">
-            Hover or click a team to show completed results and upcoming fixtures here. This panel is intentionally built as a normal solid card rather than a floating tooltip, so it cannot become transparent behind other page content.
-          </div>
-        </div>
-      </aside>
-    </div>
-
-    <section class="panel">
-      <div class="panel-title">🏟️ Recent Results</div>
-      <div class="ticker-wrap"><div class="ticker-track" id="tickerTrack"></div></div>
-    </section>
-
-    <div class="footer">Data refreshes automatically · Protiviti Sydney · FIFA World Cup 2026™</div>
-  </main>
-
-<script>
-(function () {
-  'use strict';
-
-  var DATA_URL = 'leaderboard.json';
-  var REFRESH_MS = 60000;
-  var TOTAL_MATCHES = 104;
-  var TEAM_RESULTS = {};
-  var lastGoodData = null;
-  var selectedTeam = null;
-
-  function esc(v) {
-    return String(v == null ? '' : v)
-      .replace(/&/g, '&amp;')
-      .replace(/</g, '&lt;')
-      .replace(/>/g, '&gt;')
-      .replace(/"/g, '&quot;')
-      .replace(/'/g, '&#39;');
-  }
-
-  function fmtSydney(iso) {
-    if (!iso) return '—';
-    var d = new Date(iso);
-    if (isNaN(d.getTime())) return esc(iso);
-    return new Intl.DateTimeFormat('en-AU', {
-      timeZone: 'Australia/Sydney',
-      weekday: 'short', day: 'numeric', month: 'short',
-      hour: 'numeric', minute: '2-digit', hour12: true
-    }).format(d) + ' AEST';
-  }
-
-  function formatAUSDate(dateStr) {
-    if (!dateStr) return '—';
-    var d = new Date(dateStr);
-    if (isNaN(d.getTime())) return esc(dateStr);
-
-    return new Intl.DateTimeFormat('en-AU', {
-      day: '2-digit',
-      month: '2-digit',
-      year: 'numeric'
-    }).format(d);
-  }
-
-  function toTime(value, fallback) {
-    if (!value) return fallback;
-    var d = new Date(value);
-    return isNaN(d.getTime()) ? fallback : d.getTime();
-  }
-
-  function medal(rank) {
-    if (rank === 1) return '🥇 1';
-    if (rank === 2) return '🥈 2';
-    if (rank === 3) return '🥉 3';
-    return String(rank);
-  }
-
-  function badgeClass(result) {
-    if (result === 'W') return 'win';
-    if (result === 'D') return 'draw';
-    if (result === 'L') return 'loss';
-    return 'upcoming';
-  }
-
-  function setActiveButton(team) {
-    document.querySelectorAll('.team-button').forEach(function (b) {
-      b.classList.toggle('active', b.getAttribute('data-team') === team);
-    });
-  }
-
-  function renderMatchCentre(team, pts) {
-    selectedTeam = team;
-    setActiveButton(team);
-
-    var centre = document.getElementById('matchCentre');
-    var matches = Array.isArray(TEAM_RESULTS[team]) ? TEAM_RESULTS[team].slice() : [];
-    var played = matches.filter(function (m) { return m && m.score; })
-      .sort(function (a, b) { return toTime(b.date, -Infinity) - toTime(a.date, -Infinity); });
-    var upcoming = matches.filter(function (m) { return m && (!m.score || m.status === 'UPCOMING'); })
-      .sort(function (a, b) { return toTime(a.date, Infinity) - toTime(b.date, Infinity); });
-
-    function item(g, isUpcoming) {
-      var group = g.group ? 'Group ' + g.group : 'Group —';
-      var right = isUpcoming
-        ? '<span class="badge upcoming">Upcoming</span>'
-        : '<span class="score">' + esc(g.score || '') + '</span><span class="badge ' + badgeClass(g.result) + '">' + esc(g.result || '') + '</span>';
-      return '' +
-        '<div class="match-item">' +
-          '<div class="match-top"><span>' + formatAUSDate(g.date) + '</span><span class="group-badge">' + esc(group) + '</span></div>' +
-          '<div class="match-main"><span class="vs">vs ' + esc(g.vs || '—') + '</span><span class="score-wrap">' + right + '</span></div>' +
-        '</div>';
-    }
-
-    var html = '' +
-      '<div class="mc-team-header">' +
-        '<div class="mc-team-name"><span>' + esc(team || '—') + '</span><span>' + esc(pts == null ? 0 : pts) + ' pts</span></div>' +
-        '<div class="mc-meta">Team match details</div>' +
-      '</div>' +
-      '<div class="mc-section">' +
-        '<div class="mc-section-title"><span>Results</span><span class="mc-count">' + played.length + '</span></div>' +
-        '<div class="match-list">' + (played.length ? played.map(function (g) { return item(g, false); }).join('') : '<div class="empty">No completed matches</div>') + '</div>' +
-      '</div>' +
-      '<div class="mc-section">' +
-        '<div class="mc-section-title"><span>Upcoming fixtures</span><span class="mc-count">' + upcoming.length + '</span></div>' +
-        '<div class="match-list">' + (upcoming.length ? upcoming.map(function (g) { return item(g, true); }).join('') : '<div class="empty">No remaining matches</div>') + '</div>' +
-      '</div>' +
-      '<div class="mc-summary"><span>' + played.length + ' played · ' + upcoming.length + ' to go</span><span class="mc-total">' + esc(pts == null ? 0 : pts) + ' pts</span></div>';
-
-    centre.innerHTML = html;
-  }
-
-  function teamButton(name, pts) {
-    var safeName = esc(name || '—');
-    var safePts = pts == null ? 0 : esc(pts);
-    return '<button type="button" class="team-button" data-team="' + safeName + '" data-pts="' + safePts + '">' +
-      '<span class="team-name">' + safeName + '</span>' +
-      '<span class="team-pts">' + safePts + ' pts</span>' +
-    '</button>';
-  }
-
-  function renderHeader(data) {
-    var info = data.tournamentInfo || {};
-    var played = Number(info.totalMatchesPlayed) || 0;
-    var pct = Math.max(0, Math.min(100, Math.round((played / TOTAL_MATCHES) * 100)));
-    document.getElementById('phasePill').textContent = info.currentPhase || 'Tournament';
-    document.getElementById('matchesMeta').textContent = played + ' of ' + TOTAL_MATCHES + ' matches played';
-    document.getElementById('progressFill').style.width = pct + '%';
-    document.getElementById('updatedText').textContent = 'Last updated: ' + fmtSydney(data.lastUpdated);
-  }
-
-  function computeRanks(rows) {
-    var ranks = [];
-    rows.forEach(function (row, i) {
-      if (i === 0) ranks[i] = 1;
-      else if ((Number(row.totalPoints) || 0) === (Number(rows[i - 1].totalPoints) || 0)) ranks[i] = ranks[i - 1];
-      else ranks[i] = i + 1;
-    });
-    return ranks;
-  }
-
-  function renderLeaderboard(data) {
-    var rows = Array.isArray(data.leaderboard) ? data.leaderboard.slice() : [];
-    rows.sort(function (a, b) {
-      var diff = (Number(b.totalPoints) || 0) - (Number(a.totalPoints) || 0);
-      if (diff !== 0) return diff;
-      return String(a.playerName || '').localeCompare(String(b.playerName || ''));
-    });
-
-    var ranks = computeRanks(rows);
-    var body = document.getElementById('lbBody');
-    var mobile = document.getElementById('mobileCards');
-
-    if (!rows.length) {
-      body.innerHTML = '<tr><td colspan="6" class="empty">No players yet.</td></tr>';
-      mobile.innerHTML = '<div class="empty">No players yet.</div>';
-      return;
-    }
-
-    body.innerHTML = rows.map(function (p, i) {
-      var rank = ranks[i];
-      var topClass = rank <= 3 ? 'top-' + rank : '';
-      return '' +
-        '<tr class="' + topClass + '">' +
-          '<td class="rank"><span class="rank-num">' + medal(rank) + '</span></td>' +
-          '<td><span class="player">' + esc(p.playerName) + '</span></td>' +
-          '<td>' + teamButton(p.team1, p.team1Pts) + '</td>' +
-          '<td>' + teamButton(p.team2, p.team2Pts) + '</td>' +
-          '<td>' + teamButton(p.team3, p.team3Pts) + '</td>' +
-          '<td class="total"><span class="total-points">' + (Number(p.totalPoints) || 0) + '</span><span class="total-label">pts</span></td>' +
-        '</tr>';
-    }).join('');
-
-    mobile.innerHTML = rows.map(function (p, i) {
-      var rank = ranks[i];
-      return '' +
-        '<article class="player-card">' +
-          '<div class="player-card-head">' +
-            '<div><div class="rank-num">' + medal(rank) + '</div><div class="player">' + esc(p.playerName) + '</div></div>' +
-            '<div class="total"><span class="total-points">' + (Number(p.totalPoints) || 0) + '</span><span class="total-label">pts</span></div>' +
-          '</div>' +
-          '<div class="mobile-teams">' + teamButton(p.team1, p.team1Pts) + teamButton(p.team2, p.team2Pts) + teamButton(p.team3, p.team3Pts) + '</div>' +
-        '</article>';
-    }).join('');
-
-    var firstTeamButton = document.querySelector('.team-button');
-    if (firstTeamButton && !selectedTeam) {
-      renderMatchCentre(firstTeamButton.getAttribute('data-team'), firstTeamButton.getAttribute('data-pts'));
-    } else if (selectedTeam) {
-      var active = document.querySelector('.team-button[data-team="' + CSS.escape(selectedTeam) + '"]');
-      if (active) renderMatchCentre(active.getAttribute('data-team'), active.getAttribute('data-pts'));
-    }
-  }
-
-  function renderTicker(data) {
-    var results = Array.isArray(data.recentResults) ? data.recentResults : [];
-    var track = document.getElementById('tickerTrack');
-    if (!results.length) {
-      track.style.animation = 'none';
-      track.innerHTML = '<span class="empty">No recent results.</span>';
-      return;
-    }
-
-    // ✅ STEP 1: filter to last 72 hours
-    var now = Date.now();
-    var cutoff = now - (72 * 60 * 60 * 1000);
-
-    var filtered = results.filter(function (r) {
-      if (!r.date) return false;
-      var d = new Date(r.date);
-      return !isNaN(d.getTime()) && d.getTime() >= cutoff;
-    });
+<body data-bind="defineGlobals: ServerData, bodyCssClass" class="cb" style="display: none">
+    <script type="text/javascript" nonce='kjNys6kfJMAayXF3Po54oQ'>//<![CDATA[
+!function(){var e=window,o=e.document,i=e.$Config||{};if(e.self===e.top){o&&o.body&&(o.body.style.display="block")}else if(!i.allowFrame){try{var s=e.self.location.href,t=s.indexOf("#"),l=-1!==t,n=s.indexOf("?"),f=l?t:s.length,a=-1===n||l&&n>t?"?":"&";s=s.substr(0,f)+a+"iframe-request-id="+i.sessionId+s.substr(f),e.top.location=s}catch(e){}}}();
+//]]></script>
     
-    
-    // ✅ STEP 2: fallback if too few results
-    if (!filtered.length) {
-    filtered = results; // fallback to full list
-    }
-
-    function chip(r) {
-      var score = r.displayScore || String(r.homeScore == null ? '?' : r.homeScore) + ' - ' + String(r.awayScore == null ? '?' : r.awayScore);
-      return '<span class="chip"><span class="grp">' + esc(r.group || '?') + '</span><span>' + esc(r.homeTeam || '—') + '</span><span class="sc">' + esc(score) + '</span><span>' + esc(r.awayTeam || '—') + '</span></span>';
-    }
-    var chips = results.map(chip).join('');
-    track.innerHTML = chips + chips;
-  }
-
-  function render(data) {
-    TEAM_RESULTS = data.teamResults || {};
-    renderHeader(data);
-    renderLeaderboard(data);
-    renderTicker(data);
-  }
-
-  function showError(message) {
-    var box = document.getElementById('errorBox');
-    box.textContent = message;
-    box.classList.add('show');
-  }
-  function clearError() { document.getElementById('errorBox').classList.remove('show'); }
-
-  function load() {
-    fetch(DATA_URL, { cache: 'no-store' })
-      .then(function (res) {
-        if (!res.ok) throw new Error('HTTP ' + res.status + ' ' + res.statusText);
-        return res.json();
-      })
-      .then(function (data) {
-        if (!data || typeof data !== 'object') throw new Error('Malformed JSON payload');
-        lastGoodData = data;
-        clearError();
-        render(data);
-      })
-      .catch(function (err) {
-        if (lastGoodData) {
-          showError("Couldn't refresh leaderboard.json (" + err.message + ") — showing the last loaded data.");
-          render(lastGoodData);
-        } else {
-          showError("Couldn't load leaderboard.json (" + err.message + "). Make sure leaderboard.json is in the same folder as index.html.");
-        }
-      });
-  }
-
-  document.addEventListener('mouseover', function (e) {
-    var btn = e.target.closest('.team-button');
-    if (btn) renderMatchCentre(btn.getAttribute('data-team'), btn.getAttribute('data-pts'));
-  });
-  document.addEventListener('focusin', function (e) {
-    var btn = e.target.closest('.team-button');
-    if (btn) renderMatchCentre(btn.getAttribute('data-team'), btn.getAttribute('data-pts'));
-  });
-  document.addEventListener('click', function (e) {
-    var btn = e.target.closest('.team-button');
-    if (btn) renderMatchCentre(btn.getAttribute('data-team'), btn.getAttribute('data-pts'));
-  });
-
-  document.addEventListener('DOMContentLoaded', function () {
-    load();
-    setInterval(load, REFRESH_MS);
-  });
-})();
-</script>
 </body>
 </html>
