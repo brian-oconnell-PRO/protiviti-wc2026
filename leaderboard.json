@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T16:00:22+10:00",
+  "lastUpdated": "2026-07-02T09:45:00+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -356,15 +356,6 @@
   ],
   "recentResults": [
     {
-      "date": "06/29/2026",
-      "group": "",
-      "stage": "R32",
-      "homeTeam": "South Africa",
-      "awayTeam": "Canada",
-      "homeScore": 0,
-      "awayScore": 1
-    },
-    {
       "date": "06/30/2026",
       "group": "",
       "stage": "R32",
@@ -417,11 +408,29 @@
       "awayTeam": "Ecuador",
       "homeScore": 2,
       "awayScore": 0
+    },
+    {
+      "date": "07/02/2026",
+      "group": "",
+      "stage": "R32",
+      "homeTeam": "Belgium",
+      "awayTeam": "Senegal",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "07/02/2026",
+      "group": "",
+      "stage": "R32",
+      "homeTeam": "England",
+      "awayTeam": "DR Congo",
+      "homeScore": 2,
+      "awayScore": 1
     }
   ],
   "tournamentInfo": {
-    "totalMatchesPlayed": 79,
-    "totalMatchesRemaining": 25,
+    "totalMatchesPlayed": 81,
+    "totalMatchesRemaining": 23,
     "currentPhase": "Round of 32"
   },
   "teamResults": {
@@ -647,12 +656,23 @@
         "date": "07/02/2026",
         "group": "",
         "vs": "Senegal",
+        "score": "3-2",
+        "result": "W",
+        "pts": 3,
+        "status": "FT",
+        "displayDate": "07/02/2026",
+        "stage": "R32"
+      },
+      {
+        "date": "07/07/2026",
+        "group": "",
+        "vs": "Winner Match 79",
         "score": null,
         "result": null,
         "pts": null,
         "status": "PreGame",
-        "displayDate": "07/02/2026",
-        "stage": "R32"
+        "displayDate": "07/07/2026",
+        "stage": "R16"
       }
     ],
     "Bosnia and Herzegovina": [
@@ -1107,10 +1127,10 @@
         "date": "07/02/2026",
         "group": "",
         "vs": "England",
-        "score": null,
-        "result": null,
-        "pts": null,
-        "status": "PreGame",
+        "score": "1-2",
+        "result": "L",
+        "pts": 0,
+        "status": "FT",
         "displayDate": "07/02/2026",
         "stage": "R32"
       }
@@ -1245,12 +1265,23 @@
         "date": "07/02/2026",
         "group": "",
         "vs": "DR Congo",
+        "score": "2-1",
+        "result": "W",
+        "pts": 3,
+        "status": "FT",
+        "displayDate": "07/02/2026",
+        "stage": "R32"
+      },
+      {
+        "date": "07/06/2026",
+        "group": "",
+        "vs": "Mexico",
         "score": null,
         "result": null,
         "pts": null,
         "status": "PreGame",
-        "displayDate": "07/02/2026",
-        "stage": "R32"
+        "displayDate": "07/06/2026",
+        "stage": "R16"
       }
     ],
     "France": [
@@ -2125,10 +2156,10 @@
         "date": "07/02/2026",
         "group": "",
         "vs": "Belgium",
-        "score": null,
-        "result": null,
-        "pts": null,
-        "status": "PreGame",
+        "score": "2-3",
+        "result": "L",
+        "pts": 0,
+        "status": "FT",
         "displayDate": "07/02/2026",
         "stage": "R32"
       }
@@ -2634,10 +2665,10 @@
         "stage": "R32",
         "homeTeam": "Belgium",
         "awayTeam": "Senegal",
-        "homeScore": null,
-        "awayScore": null,
-        "status": "PreGame",
-        "winner": null,
+        "homeScore": 3,
+        "awayScore": 2,
+        "status": "FT",
+        "winner": "Belgium",
         "nextMatchId": 94,
         "date": "07/02/2026"
       },
@@ -2682,10 +2713,10 @@
         "stage": "R32",
         "homeTeam": "England",
         "awayTeam": "DR Congo",
-        "homeScore": null,
-        "awayScore": null,
-        "status": "PreGame",
-        "winner": null,
+        "homeScore": 2,
+        "awayScore": 1,
+        "status": "FT",
+        "winner": "England",
         "nextMatchId": 92,
         "date": "07/02/2026"
       },
@@ -2777,7 +2808,7 @@
         "matchId": 92,
         "stage": "R16",
         "homeTeam": "Mexico",
-        "awayTeam": "Winner Match 84",
+        "awayTeam": "England",
         "homeScore": null,
         "awayScore": null,
         "status": "PreGame",
@@ -2801,7 +2832,7 @@
         "matchId": 94,
         "stage": "R16",
         "homeTeam": "Winner Match 79",
-        "awayTeam": "Winner Match 80",
+        "awayTeam": "Belgium",
         "homeScore": null,
         "awayScore": null,
         "status": "PreGame",
@@ -2955,7 +2986,7 @@
     "Belgium": {
       "qualified": true,
       "eliminated": false,
-      "stageReached": "R32"
+      "stageReached": "R16"
     },
     "Bosnia and Herzegovina": {
       "qualified": true,
@@ -3004,7 +3035,7 @@
     },
     "DR Congo": {
       "qualified": true,
-      "eliminated": false,
+      "eliminated": true,
       "stageReached": "R32"
     },
     "Ecuador": {
@@ -3020,7 +3051,7 @@
     "England": {
       "qualified": true,
       "eliminated": false,
-      "stageReached": "R32"
+      "stageReached": "R16"
     },
     "France": {
       "qualified": true,
@@ -3119,7 +3150,7 @@
     },
     "Senegal": {
       "qualified": true,
-      "eliminated": false,
+      "eliminated": true,
       "stageReached": "R32"
     },
     "South Africa": {
