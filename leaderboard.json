@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T15:50:22+10:00",
+  "lastUpdated": "2026-07-01T15:55:00+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -402,11 +402,19 @@
       "awayTeam": "Norway",
       "homeScore": 1,
       "awayScore": 2
+    },
+    {
+      "date": "07/01/2026",
+      "group": "",
+      "homeTeam": "Mexico",
+      "awayTeam": "Ecuador",
+      "homeScore": 2,
+      "awayScore": 0
     }
   ],
   "tournamentInfo": {
-    "totalMatchesPlayed": 78,
-    "totalMatchesRemaining": 26,
+    "totalMatchesPlayed": 79,
+    "totalMatchesRemaining": 25,
     "currentPhase": "Round of 32"
   },
   "teamResults": {
@@ -1138,10 +1146,10 @@
         "date": "07/01/2026",
         "group": "",
         "vs": "Mexico",
-        "score": null,
-        "result": null,
-        "pts": null,
-        "status": "PreGame",
+        "score": "0-2",
+        "result": "L",
+        "pts": 0,
+        "status": "FT",
         "displayDate": "07/01/2026",
         "stage": "R32"
       }
@@ -1612,10 +1620,10 @@
         "date": "07/01/2026",
         "group": "",
         "vs": "Ecuador",
-        "score": null,
-        "result": null,
-        "pts": null,
-        "status": "PreGame",
+        "score": "2-0",
+        "result": "W",
+        "pts": 3,
+        "status": "FT",
         "displayDate": "07/01/2026",
         "stage": "R32"
       }
@@ -2644,10 +2652,10 @@
         "stage": "R32",
         "homeTeam": "Mexico",
         "awayTeam": "Ecuador",
-        "homeScore": null,
-        "awayScore": null,
-        "status": "PreGame",
-        "winner": null,
+        "homeScore": 2,
+        "awayScore": 0,
+        "status": "FT",
+        "winner": "Mexico",
         "nextMatchId": 92,
         "date": "07/01/2026"
       },
@@ -2750,7 +2758,7 @@
       {
         "matchId": 92,
         "stage": "R16",
-        "homeTeam": "Winner Match 83",
+        "homeTeam": "Mexico",
         "awayTeam": "Winner Match 84",
         "homeScore": null,
         "awayScore": null,
