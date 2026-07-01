@@ -326,7 +326,7 @@
     setActiveButton(team);
     var centre = document.getElementById('matchCentre');
     var matches = Array.isArray(TEAM_RESULTS[team]) ? TEAM_RESULTS[team].slice() : [];
-    var recalculatedPts = calculateSweepstakePoints(team, pts, TEAM_RESULTS);
+    var recalculatedPts = Number(pts) || 0;
     var played = matches.filter(function (m) { return m && (m.score || m.status === 'FT'); })
       .sort(function (a, b) { return toTime(b.date, -Infinity) - toTime(a.date, -Infinity); });
     var upcoming = matches.filter(function (m) { return m && (!m.score || m.status !== 'FT'); })
