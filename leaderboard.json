@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-01T15:55:22+10:00",
+  "lastUpdated": "2026-07-01T16:00:22+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -72,9 +72,9 @@
       "playerName": "Brian O'Connell",
       "team1": "Netherlands",
       "team1Pts": 7,
-      "team2": "C\u00f4te d'Ivoire",
+      "team2": "Côte d'Ivoire",
       "team2Pts": 6,
-      "team3": "Cura\u00e7ao",
+      "team3": "Curaçao",
       "team3Pts": 1,
       "totalPoints": 14
     },
@@ -138,7 +138,7 @@
       "playerName": "Bjorn Myers",
       "team1": "Senegal",
       "team1Pts": 3,
-      "team2": "C\u00f4te d'Ivoire",
+      "team2": "Côte d'Ivoire",
       "team2Pts": 6,
       "team3": "Ghana",
       "team3Pts": 4,
@@ -182,7 +182,7 @@
       "playerName": "Alejandro Pedroza",
       "team1": "Belgium",
       "team1Pts": 5,
-      "team2": "T\u00fcrkiye",
+      "team2": "Türkiye",
       "team2Pts": 3,
       "team3": "Cabo Verde",
       "team3Pts": 3,
@@ -195,7 +195,7 @@
       "team1Pts": 6,
       "team2": "Algeria",
       "team2Pts": 4,
-      "team3": "Cura\u00e7ao",
+      "team3": "Curaçao",
       "team3Pts": 1,
       "totalPoints": 11
     },
@@ -270,7 +270,7 @@
       "playerName": "Emma Little",
       "team1": "Colombia",
       "team1Pts": 7,
-      "team2": "T\u00fcrkiye",
+      "team2": "Türkiye",
       "team2Pts": 3,
       "team3": "Tunisia",
       "team3Pts": 0,
@@ -358,6 +358,7 @@
     {
       "date": "06/29/2026",
       "group": "",
+      "stage": "R32",
       "homeTeam": "South Africa",
       "awayTeam": "Canada",
       "homeScore": 0,
@@ -366,6 +367,7 @@
     {
       "date": "06/30/2026",
       "group": "",
+      "stage": "R32",
       "homeTeam": "Germany",
       "awayTeam": "Paraguay",
       "homeScore": 1,
@@ -374,6 +376,7 @@
     {
       "date": "06/30/2026",
       "group": "",
+      "stage": "R32",
       "homeTeam": "Netherlands",
       "awayTeam": "Morocco",
       "homeScore": 1,
@@ -382,6 +385,7 @@
     {
       "date": "06/30/2026",
       "group": "",
+      "stage": "R32",
       "homeTeam": "Brazil",
       "awayTeam": "Japan",
       "homeScore": 2,
@@ -390,6 +394,7 @@
     {
       "date": "07/01/2026",
       "group": "",
+      "stage": "R32",
       "homeTeam": "France",
       "awayTeam": "Sweden",
       "homeScore": 3,
@@ -398,10 +403,20 @@
     {
       "date": "07/01/2026",
       "group": "",
-      "homeTeam": "C\u00f4te d'Ivoire",
+      "stage": "R32",
+      "homeTeam": "Côte d'Ivoire",
       "awayTeam": "Norway",
       "homeScore": 1,
       "awayScore": 2
+    },
+    {
+      "date": "07/01/2026",
+      "group": "",
+      "stage": "R32",
+      "homeTeam": "Mexico",
+      "awayTeam": "Ecuador",
+      "homeScore": 2,
+      "awayScore": 0
     }
   ],
   "tournamentInfo": {
@@ -506,7 +521,7 @@
       {
         "date": "06/14/2026",
         "group": "D",
-        "vs": "T\u00fcrkiye",
+        "vs": "Türkiye",
         "score": "2-0",
         "result": "W",
         "pts": 3,
@@ -938,7 +953,7 @@
         "stage": "R32"
       }
     ],
-    "Cura\u00e7ao": [
+    "Curaçao": [
       {
         "date": "06/15/2026",
         "group": "E",
@@ -964,7 +979,7 @@
       {
         "date": "06/26/2026",
         "group": "E",
-        "vs": "C\u00f4te d'Ivoire",
+        "vs": "Côte d'Ivoire",
         "score": "0-2",
         "result": "L",
         "pts": 0,
@@ -1008,7 +1023,7 @@
         "stage": "Group"
       }
     ],
-    "C\u00f4te d'Ivoire": [
+    "Côte d'Ivoire": [
       {
         "date": "06/15/2026",
         "group": "E",
@@ -1034,7 +1049,7 @@
       {
         "date": "06/26/2026",
         "group": "E",
-        "vs": "Cura\u00e7ao",
+        "vs": "Curaçao",
         "score": "2-0",
         "result": "W",
         "pts": 3,
@@ -1104,7 +1119,7 @@
       {
         "date": "06/15/2026",
         "group": "E",
-        "vs": "C\u00f4te d'Ivoire",
+        "vs": "Côte d'Ivoire",
         "score": "0-1",
         "result": "L",
         "pts": 0,
@@ -1115,7 +1130,7 @@
       {
         "date": "06/21/2026",
         "group": "E",
-        "vs": "Cura\u00e7ao",
+        "vs": "Curaçao",
         "score": "0-0",
         "result": "D",
         "pts": 1,
@@ -1299,7 +1314,7 @@
       {
         "date": "06/15/2026",
         "group": "E",
-        "vs": "Cura\u00e7ao",
+        "vs": "Curaçao",
         "score": "7-1",
         "result": "W",
         "pts": 3,
@@ -1310,7 +1325,7 @@
       {
         "date": "06/21/2026",
         "group": "E",
-        "vs": "C\u00f4te d'Ivoire",
+        "vs": "Côte d'Ivoire",
         "score": "2-1",
         "result": "W",
         "pts": 3,
@@ -1808,7 +1823,7 @@
       {
         "date": "07/01/2026",
         "group": "",
-        "vs": "C\u00f4te d'Ivoire",
+        "vs": "Côte d'Ivoire",
         "score": "2-1",
         "result": "W",
         "pts": 3,
@@ -1878,7 +1893,7 @@
       {
         "date": "06/20/2026",
         "group": "D",
-        "vs": "T\u00fcrkiye",
+        "vs": "Türkiye",
         "score": "1-0",
         "result": "W",
         "pts": 3,
@@ -2372,7 +2387,7 @@
         "stage": "Group"
       }
     ],
-    "T\u00fcrkiye": [
+    "Türkiye": [
       {
         "date": "06/14/2026",
         "group": "D",
@@ -2433,7 +2448,7 @@
       {
         "date": "06/26/2026",
         "group": "D",
-        "vs": "T\u00fcrkiye",
+        "vs": "Türkiye",
         "score": "2-3",
         "result": "L",
         "pts": 0,
@@ -2641,7 +2656,7 @@
       {
         "matchId": 82,
         "stage": "R32",
-        "homeTeam": "C\u00f4te d'Ivoire",
+        "homeTeam": "Côte d'Ivoire",
         "awayTeam": "Norway",
         "homeScore": 1,
         "awayScore": 2,
@@ -2972,7 +2987,7 @@
       "eliminated": false,
       "stageReached": "R32"
     },
-    "Cura\u00e7ao": {
+    "Curaçao": {
       "qualified": false,
       "eliminated": true,
       "stageReached": "Group"
@@ -2982,7 +2997,7 @@
       "eliminated": true,
       "stageReached": "Group"
     },
-    "C\u00f4te d'Ivoire": {
+    "Côte d'Ivoire": {
       "qualified": true,
       "eliminated": true,
       "stageReached": "R32"
@@ -3137,7 +3152,7 @@
       "eliminated": true,
       "stageReached": "Group"
     },
-    "T\u00fcrkiye": {
+    "Türkiye": {
       "qualified": false,
       "eliminated": true,
       "stageReached": "Group"
