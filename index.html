@@ -216,13 +216,7 @@
       <div class="panel-title">📅 Knockout Fixtures</div>
       <div class="stage-grid" id="stageGrid"></div>
     </section>
-
-    <section class="panel">
-      <div class="panel-title">🧩 Knockout Bracket</div>
-      <div class="bracket-wrap"><div class="bracket" id="bracket"></div></div>
-    </section> 
-
-    <div class="footer">Data refreshes automatically · Protiviti Sydney · FIFA World Cup 2026™</div>
+<div class="footer">Data refreshes automatically · Protiviti Sydney · FIFA World Cup 2026™</div>
   </main>
 <script>
 (function () {
@@ -275,6 +269,35 @@
   function stageOrder(stage) {
     return ({ 'R32':1, 'R16':2, 'QF':3, 'SF':4, 'Final':5, 'Third Place':6 })[stage] || 99;
   }
+
+  function penaltyWinFromEntry(match) {
+    if (!match || !match.penalties || typeof match.penalties !== 'string') return false;
+    var parts = match.penalties.split('-').map(function (x) { return parseInt(String(x).trim(), 10); });
+    return parts.length === 2 && !isNaN(parts[0]) && !isNaN(parts[1]) && parts[0] > parts[1];
+  }
+
+  function calculateSweepstakePoints(team, basePts, teamResults) {
+    var matches = (teamResults && teamResults[team]) || [];
+    var knockoutPts = 0;
+    matches.forEach(function (m) {
+      if (!m || !m.stage || m.stage === 'Group' || m.status !== 'FT') return;
+      if (m.result === 'W') {
+        knockoutPts += 3;
+        return;
+      }
+      if (m.result === 'D' && penaltyWinFromEntry(m)) {
+        knockoutPts += 3;
+      }
+    });
+    return (Number(basePts) || 0) + knockoutPts;
+  }
+
+  function knockoutBonusForEntry(match) {
+    if (!match || !match.stage || match.stage === 'Group' || match.status !== 'FT') return 0;
+    if (match.result === 'W') return 3;
+    if (match.result === 'D' && penaltyWinFromEntry(match)) return 3;
+    return 0;
+  }
   function teamStatusDot(team) {
     var s = TEAM_STATUS[team];
     if (!s) return '';
@@ -303,6 +326,7 @@
     setActiveButton(team);
     var centre = document.getElementById('matchCentre');
     var matches = Array.isArray(TEAM_RESULTS[team]) ? TEAM_RESULTS[team].slice() : [];
+    var recalculatedPts = calculateSweepstakePoints(team, pts, TEAM_RESULTS);
     var played = matches.filter(function (m) { return m && (m.score || m.status === 'FT'); })
       .sort(function (a, b) { return toTime(b.date, -Infinity) - toTime(a.date, -Infinity); });
     var upcoming = matches.filter(function (m) { return m && (!m.score || m.status !== 'FT'); })
@@ -314,16 +338,17 @@
         ? '<span class="badge upcoming">' + esc(g.status || 'Upcoming') + '</span>'
         : '<span class="score">' + esc(g.score || '') + '</span><span class="badge ' + badgeClass(g.result) + '">' + esc(g.result || '') + '</span>';
       var pens = g.penalties ? '<span class="badge draw">Pens ' + esc(g.penalties) + '</span>' : '';
+      var koBonus = (!isUpcoming && knockoutBonusForEntry(g) > 0) ? '<span class="badge win">+3 KO</span>' : '';
       return '' +
         '<div class="match-item">' +
           '<div class="match-top"><span>' + formatAUSDate(g.date) + '</span><span class="group-badge">' + esc(groupOrStage) + '</span></div>' +
-          '<div class="match-main"><span class="vs">vs ' + esc(g.vs || '—') + '</span><span class="score-wrap">' + right + pens + '</span></div>' +
+          '<div class="match-main"><span class="vs">vs ' + esc(g.vs || '—') + '</span><span class="score-wrap">' + right + pens + koBonus + '</span></div>' +
         '</div>';
     }
 
     var html = '' +
       '<div class="mc-team-header">' +
-        '<div class="mc-team-name"><span>' + esc(team || '—') + '</span><span>' + esc(pts == null ? 0 : pts) + ' pts</span></div>' +
+        '<div class="mc-team-name"><span>' + esc(team || '—') + '</span><span>' + esc(recalculatedPts == null ? 0 : recalculatedPts) + ' pts</span></div>' +
         '<div class="mc-meta">Team match details</div>' +
         '<div class="mc-status">' + teamStatusChips(team) + '</div>' +
       '</div>' +
@@ -335,7 +360,7 @@
         '<div class="mc-section-title"><span>Upcoming fixtures</span><span class="mc-count">' + upcoming.length + '</span></div>' +
         '<div class="match-list">' + (upcoming.length ? upcoming.map(function (g) { return item(g, true); }).join('') : '<div class="empty">No remaining matches</div>') + '</div>' +
       '</div>' +
-      '<div class="mc-summary"><span>' + played.length + ' played · ' + upcoming.length + ' to go</span><span class="mc-total">' + esc(pts == null ? 0 : pts) + ' pts</span></div>';
+      '<div class="mc-summary"><span>' + played.length + ' played · ' + upcoming.length + ' to go</span><span class="mc-total">' + esc(recalculatedPts == null ? 0 : recalculatedPts) + ' pts</span></div>';
     centre.innerHTML = html;
   }
   function teamButton(name, pts) {
@@ -366,6 +391,14 @@
   }
   function renderLeaderboard(data) {
     var rows = Array.isArray(data.leaderboard) ? data.leaderboard.slice() : [];
+    rows = rows.map(function (p) {
+      var row = Object.assign({}, p);
+      row.team1Pts = calculateSweepstakePoints(row.team1, row.team1Pts, TEAM_RESULTS);
+      row.team2Pts = calculateSweepstakePoints(row.team2, row.team2Pts, TEAM_RESULTS);
+      row.team3Pts = calculateSweepstakePoints(row.team3, row.team3Pts, TEAM_RESULTS);
+      row.totalPoints = (Number(row.team1Pts) || 0) + (Number(row.team2Pts) || 0) + (Number(row.team3Pts) || 0);
+      return row;
+    });
     rows.sort(function (a, b) {
       var diff = (Number(b.totalPoints) || 0) - (Number(a.totalPoints) || 0);
       if (diff !== 0) return diff;
@@ -461,7 +494,7 @@
     }).join('');
 
     var bracketStages = ['R32','R16','QF','SF','Final'];
-    document.getElementById('bracket').innerHTML = bracketStages.map(function (stage) {
+    var bracketEl = document.getElementById('bracket'); if (bracketEl) bracketEl.innerHTML = bracketStages.map(function (stage) {
       var items = (byStage[stage] || []).sort(function (a,b) { return (Number(a.matchId)||0) - (Number(b.matchId)||0); }).map(function (m) {
         var pens = (m.homePenaltyScore != null && m.awayPenaltyScore != null) ? '<div class="score-wrap"><span class="badge draw">Pens ' + esc(m.homePenaltyScore + '-' + m.awayPenaltyScore) + '</span></div>' : '';
         return '<article class="bracket-card">' +
