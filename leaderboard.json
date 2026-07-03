@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T11:59:00+10:00",
+  "lastUpdated": "2026-07-03T15:13:00+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -453,11 +453,20 @@
       "awayTeam": "Austria",
       "homeScore": 3,
       "awayScore": 0
+    },
+    {
+      "date": "07/03/2026",
+      "group": "",
+      "stage": "R32",
+      "homeTeam": "Switzerland",
+      "awayTeam": "Algeria",
+      "homeScore": 2,
+      "awayScore": 0
     }
   ],
   "tournamentInfo": {
-    "totalMatchesPlayed": 84,
-    "totalMatchesRemaining": 20,
+    "totalMatchesPlayed": 85,
+    "totalMatchesRemaining": 19,
     "currentPhase": "Round of 32"
   },
   "teamResults": {
@@ -499,10 +508,10 @@
         "date": "07/03/2026",
         "group": "",
         "vs": "Switzerland",
-        "score": null,
-        "result": null,
-        "pts": null,
-        "status": "PreGame",
+        "score": "0-2",
+        "result": "L",
+        "pts": 0,
+        "status": "FT",
         "displayDate": "07/03/2026",
         "stage": "R32"
       }
@@ -2424,12 +2433,23 @@
         "date": "07/03/2026",
         "group": "",
         "vs": "Algeria",
+        "score": "2-0",
+        "result": "W",
+        "pts": 3,
+        "status": "FT",
+        "displayDate": "07/03/2026",
+        "stage": "R32"
+      },
+      {
+        "date": "07/08/2026",
+        "group": "",
+        "vs": "Winner Match 88",
         "score": null,
         "result": null,
         "pts": null,
         "status": "PreGame",
-        "displayDate": "07/03/2026",
-        "stage": "R32"
+        "displayDate": "07/08/2026",
+        "stage": "R16"
       }
     ],
     "Tunisia": [
@@ -2809,10 +2829,10 @@
         "stage": "R32",
         "homeTeam": "Switzerland",
         "awayTeam": "Algeria",
-        "homeScore": null,
-        "awayScore": null,
-        "status": "PreGame",
-        "winner": null,
+        "homeScore": 2,
+        "awayScore": 0,
+        "status": "FT",
+        "winner": "Switzerland",
         "nextMatchId": 96,
         "date": "07/03/2026"
       },
@@ -2915,7 +2935,7 @@
       {
         "matchId": 96,
         "stage": "R16",
-        "homeTeam": "Winner Match 87",
+        "homeTeam": "Switzerland",
         "awayTeam": "Winner Match 88",
         "homeScore": null,
         "awayScore": null,
@@ -3025,7 +3045,7 @@
   "teamStatus": {
     "Algeria": {
       "qualified": true,
-      "eliminated": false,
+      "eliminated": true,
       "stageReached": "R32"
     },
     "Argentina": {
@@ -3236,7 +3256,7 @@
     "Switzerland": {
       "qualified": true,
       "eliminated": false,
-      "stageReached": "R32"
+      "stageReached": "R16"
     },
     "Tunisia": {
       "qualified": false,
