@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-03T11:57:00+10:00",
+  "lastUpdated": "2026-07-03T11:59:00+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -437,7 +437,7 @@
       "awayScore": 0
     },
     {
-      "date": "07/02/2026",
+      "date": "07/03/2026",
       "group": "",
       "stage": "R32",
       "homeTeam": "Portugal",
@@ -456,8 +456,8 @@
     }
   ],
   "tournamentInfo": {
-    "totalMatchesPlayed": 83,
-    "totalMatchesRemaining": 21,
+    "totalMatchesPlayed": 84,
+    "totalMatchesRemaining": 20,
     "currentPhase": "Round of 32"
   },
   "teamResults": {
@@ -496,14 +496,14 @@
         "stage": "Group"
       },
       {
-        "date": "07/05/2026",
+        "date": "07/03/2026",
         "group": "",
         "vs": "Switzerland",
         "score": null,
         "result": null,
         "pts": null,
         "status": "PreGame",
-        "displayDate": "07/05/2026",
+        "displayDate": "07/03/2026",
         "stage": "R32"
       }
     ],
@@ -989,14 +989,14 @@
         "stage": "Group"
       },
       {
-        "date": "07/02/2026",
+        "date": "07/03/2026",
         "group": "",
         "vs": "Portugal",
         "score": "1-2",
         "result": "L",
         "pts": 0,
         "status": "FT",
-        "displayDate": "07/02/2026",
+        "displayDate": "07/03/2026",
         "stage": "R32"
       }
     ],
@@ -2029,14 +2029,14 @@
         "stage": "Group"
       },
       {
-        "date": "07/02/2026",
+        "date": "07/03/2026",
         "group": "",
         "vs": "Croatia",
         "score": "2-1",
         "result": "W",
         "pts": 3,
         "status": "FT",
-        "displayDate": "07/02/2026",
+        "displayDate": "07/03/2026",
         "stage": "R32"
       },
       {
@@ -2421,14 +2421,14 @@
         "stage": "Group"
       },
       {
-        "date": "07/05/2026",
+        "date": "07/03/2026",
         "group": "",
         "vs": "Algeria",
         "score": null,
         "result": null,
         "pts": null,
         "status": "PreGame",
-        "displayDate": "07/05/2026",
+        "displayDate": "07/03/2026",
         "stage": "R32"
       }
     ],
@@ -2694,7 +2694,7 @@
         "status": "FT",
         "winner": "Portugal",
         "nextMatchId": 93,
-        "date": "07/02/2026"
+        "date": "07/03/2026"
       },
       {
         "matchId": 78,
@@ -2814,7 +2814,7 @@
         "status": "PreGame",
         "winner": null,
         "nextMatchId": 96,
-        "date": "07/05/2026"
+        "date": "07/03/2026"
       },
       {
         "matchId": 88,
