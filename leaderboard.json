@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-02T13:47:00+10:00",
+  "lastUpdated": "2026-07-03T11:57:00+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -435,11 +435,29 @@
       "awayTeam": "Bosnia and Herzegovina",
       "homeScore": 2,
       "awayScore": 0
+    },
+    {
+      "date": "07/02/2026",
+      "group": "",
+      "stage": "R32",
+      "homeTeam": "Portugal",
+      "awayTeam": "Croatia",
+      "homeScore": 2,
+      "awayScore": 1
+    },
+    {
+      "date": "07/03/2026",
+      "group": "",
+      "stage": "R32",
+      "homeTeam": "Spain",
+      "awayTeam": "Austria",
+      "homeScore": 3,
+      "awayScore": 0
     }
   ],
   "tournamentInfo": {
-    "totalMatchesPlayed": 82,
-    "totalMatchesRemaining": 22,
+    "totalMatchesPlayed": 83,
+    "totalMatchesRemaining": 21,
     "currentPhase": "Round of 32"
   },
   "teamResults": {
@@ -619,10 +637,10 @@
         "date": "07/03/2026",
         "group": "",
         "vs": "Spain",
-        "score": null,
-        "result": null,
-        "pts": null,
-        "status": "PreGame",
+        "score": "0-3",
+        "result": "L",
+        "pts": 0,
+        "status": "FT",
         "displayDate": "07/03/2026",
         "stage": "R32"
       }
@@ -974,10 +992,10 @@
         "date": "07/02/2026",
         "group": "",
         "vs": "Portugal",
-        "score": null,
-        "result": null,
-        "pts": null,
-        "status": "PreGame",
+        "score": "1-2",
+        "result": "L",
+        "pts": 0,
+        "status": "FT",
         "displayDate": "07/02/2026",
         "stage": "R32"
       }
@@ -2014,12 +2032,23 @@
         "date": "07/02/2026",
         "group": "",
         "vs": "Croatia",
+        "score": "2-1",
+        "result": "W",
+        "pts": 3,
+        "status": "FT",
+        "displayDate": "07/02/2026",
+        "stage": "R32"
+      },
+      {
+        "date": "07/07/2026",
+        "group": "",
+        "vs": "Spain",
         "score": null,
         "result": null,
         "pts": null,
         "status": "PreGame",
-        "displayDate": "07/02/2026",
-        "stage": "R32"
+        "displayDate": "07/07/2026",
+        "stage": "R16"
       }
     ],
     "Qatar": [
@@ -2292,12 +2321,23 @@
         "date": "07/03/2026",
         "group": "",
         "vs": "Austria",
+        "score": "3-0",
+        "result": "W",
+        "pts": 3,
+        "status": "FT",
+        "displayDate": "07/03/2026",
+        "stage": "R32"
+      },
+      {
+        "date": "07/07/2026",
+        "group": "",
+        "vs": "Portugal",
         "score": null,
         "result": null,
         "pts": null,
         "status": "PreGame",
-        "displayDate": "07/03/2026",
-        "stage": "R32"
+        "displayDate": "07/07/2026",
+        "stage": "R16"
       }
     ],
     "Sweden": [
@@ -2649,10 +2689,10 @@
         "stage": "R32",
         "homeTeam": "Portugal",
         "awayTeam": "Croatia",
-        "homeScore": null,
-        "awayScore": null,
-        "status": "PreGame",
-        "winner": null,
+        "homeScore": 2,
+        "awayScore": 1,
+        "status": "FT",
+        "winner": "Portugal",
         "nextMatchId": 93,
         "date": "07/02/2026"
       },
@@ -2661,10 +2701,10 @@
         "stage": "R32",
         "homeTeam": "Spain",
         "awayTeam": "Austria",
-        "homeScore": null,
-        "awayScore": null,
-        "status": "PreGame",
-        "winner": null,
+        "homeScore": 3,
+        "awayScore": 0,
+        "status": "FT",
+        "winner": "Spain",
         "nextMatchId": 93,
         "date": "07/03/2026"
       },
@@ -2839,8 +2879,8 @@
       {
         "matchId": 93,
         "stage": "R16",
-        "homeTeam": "Winner Match 77",
-        "awayTeam": "Winner Match 78",
+        "homeTeam": "Portugal",
+        "awayTeam": "Spain",
         "homeScore": null,
         "awayScore": null,
         "status": "PreGame",
@@ -3000,7 +3040,7 @@
     },
     "Austria": {
       "qualified": true,
-      "eliminated": false,
+      "eliminated": true,
       "stageReached": "R32"
     },
     "Belgium": {
@@ -3035,7 +3075,7 @@
     },
     "Croatia": {
       "qualified": true,
-      "eliminated": false,
+      "eliminated": true,
       "stageReached": "R32"
     },
     "Cura\u00e7ao": {
@@ -3151,7 +3191,7 @@
     "Portugal": {
       "qualified": true,
       "eliminated": false,
-      "stageReached": "R32"
+      "stageReached": "R16"
     },
     "Qatar": {
       "qualified": false,
@@ -3186,7 +3226,7 @@
     "Spain": {
       "qualified": true,
       "eliminated": false,
-      "stageReached": "R32"
+      "stageReached": "R16"
     },
     "Sweden": {
       "qualified": true,
