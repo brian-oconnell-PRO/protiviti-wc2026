@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-06T14:30:00+10:00",
+  "lastUpdated": "2026-07-07T09:31:00+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -356,33 +356,6 @@
   ],
   "recentResults": [
     {
-      "date": "07/04/2026",
-      "group": "",
-      "stage": "R32",
-      "homeTeam": "Argentina",
-      "awayTeam": "Cabo Verde",
-      "homeScore": 3,
-      "awayScore": 2
-    },
-    {
-      "date": "07/04/2026",
-      "group": "",
-      "stage": "R32",
-      "homeTeam": "Australia",
-      "awayTeam": "Egypt",
-      "homeScore": 1,
-      "awayScore": 1
-    },
-    {
-      "date": "07/04/2026",
-      "group": "",
-      "stage": "R32",
-      "homeTeam": "Colombia",
-      "awayTeam": "Ghana",
-      "homeScore": 1,
-      "awayScore": 0
-    },
-    {
       "date": "07/05/2026",
       "group": "",
       "stage": "R16",
@@ -417,11 +390,20 @@
       "awayTeam": "England",
       "homeScore": 2,
       "awayScore": 3
+    },
+    {
+      "date": "07/07/2026",
+      "group": "",
+      "stage": "R16",
+      "homeTeam": "Portugal",
+      "awayTeam": "Spain",
+      "homeScore": 0,
+      "awayScore": 1
     }
   ],
   "tournamentInfo": {
-    "totalMatchesPlayed": 92,
-    "totalMatchesRemaining": 12,
+    "totalMatchesPlayed": 93,
+    "totalMatchesRemaining": 11,
     "currentPhase": "Round of 16"
   },
   "teamResults": {
@@ -2086,10 +2068,10 @@
         "date": "07/07/2026",
         "group": "",
         "vs": "Spain",
-        "score": null,
-        "result": null,
-        "pts": null,
-        "status": "PreGame",
+        "score": "0-1",
+        "result": "L",
+        "pts": 0,
+        "status": "FT",
         "displayDate": "07/07/2026",
         "stage": "R16"
       }
@@ -2375,12 +2357,23 @@
         "date": "07/07/2026",
         "group": "",
         "vs": "Portugal",
+        "score": "1-0",
+        "result": "W",
+        "pts": 3,
+        "status": "FT",
+        "displayDate": "07/07/2026",
+        "stage": "R16"
+      },
+      {
+        "date": "07/11/2026",
+        "group": "",
+        "vs": "Winner Match 94",
         "score": null,
         "result": null,
         "pts": null,
         "status": "PreGame",
-        "displayDate": "07/07/2026",
-        "stage": "R16"
+        "displayDate": "07/11/2026",
+        "stage": "QF"
       }
     ],
     "Sweden": [
@@ -2937,10 +2930,10 @@
         "stage": "R16",
         "homeTeam": "Portugal",
         "awayTeam": "Spain",
-        "homeScore": null,
-        "awayScore": null,
-        "status": "PreGame",
-        "winner": null,
+        "homeScore": 0,
+        "awayScore": 1,
+        "status": "FT",
+        "winner": "Spain",
         "nextMatchId": 98,
         "date": "07/07/2026"
       },
@@ -2995,7 +2988,7 @@
       {
         "matchId": 98,
         "stage": "QF",
-        "homeTeam": "Winner Match 93",
+        "homeTeam": "Spain",
         "awayTeam": "Winner Match 94",
         "homeScore": null,
         "awayScore": null,
@@ -3246,7 +3239,7 @@
     },
     "Portugal": {
       "qualified": true,
-      "eliminated": false,
+      "eliminated": true,
       "stageReached": "R16"
     },
     "Qatar": {
@@ -3282,7 +3275,7 @@
     "Spain": {
       "qualified": true,
       "eliminated": false,
-      "stageReached": "R16"
+      "stageReached": "QF"
     },
     "Sweden": {
       "qualified": true,
