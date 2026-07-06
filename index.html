@@ -301,7 +301,6 @@
   function teamStatusDot(team) {
     var s = TEAM_STATUS[team];
     if (!s) return '';
-    if (s.qualified && !s.eliminated && s.stageReached === 'R16') return '<span class="status-dot live" title="Advanced to R16">↗</span>';
     if (s.qualified && !s.eliminated) return '<span class="status-dot ok" title="Qualified">✓</span>';
     if (s.eliminated) return '<span class="status-dot out" title="Eliminated">✕</span>';
     return '';
