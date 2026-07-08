@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-07T13:45:00+10:00",
+  "lastUpdated": "2026-07-08T10:45:00+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -356,24 +356,6 @@
   ],
   "recentResults": [
     {
-      "date": "07/05/2026",
-      "group": "",
-      "stage": "R16",
-      "homeTeam": "Paraguay",
-      "awayTeam": "France",
-      "homeScore": 0,
-      "awayScore": 1
-    },
-    {
-      "date": "07/05/2026",
-      "group": "",
-      "stage": "R16",
-      "homeTeam": "Canada",
-      "awayTeam": "Morocco",
-      "homeScore": 0,
-      "awayScore": 3
-    },
-    {
       "date": "07/06/2026",
       "group": "",
       "stage": "R16",
@@ -408,12 +390,30 @@
       "awayTeam": "Belgium",
       "homeScore": 1,
       "awayScore": 4
+    },
+    {
+      "date": "07/08/2026",
+      "group": "",
+      "stage": "R16",
+      "homeTeam": "Argentina",
+      "awayTeam": "Egypt",
+      "homeScore": 3,
+      "awayScore": 2
+    },
+    {
+      "date": "07/08/2026",
+      "group": "",
+      "stage": "R16",
+      "homeTeam": "Switzerland",
+      "awayTeam": "Colombia",
+      "homeScore": 0,
+      "awayScore": 0
     }
   ],
   "tournamentInfo": {
-    "totalMatchesPlayed": 94,
-    "totalMatchesRemaining": 10,
-    "currentPhase": "Round of 16"
+    "totalMatchesPlayed": 96,
+    "totalMatchesRemaining": 8,
+    "currentPhase": "Quarterfinals"
   },
   "teamResults": {
     "Algeria": [
@@ -511,12 +511,23 @@
         "date": "07/08/2026",
         "group": "",
         "vs": "Egypt",
+        "score": "3-2",
+        "result": "W",
+        "pts": 3,
+        "status": "FT",
+        "displayDate": "07/08/2026",
+        "stage": "R16"
+      },
+      {
+        "date": "07/12/2026",
+        "group": "",
+        "vs": "Switzerland",
         "score": null,
         "result": null,
         "pts": null,
         "status": "PreGame",
-        "displayDate": "07/08/2026",
-        "stage": "R16"
+        "displayDate": "07/12/2026",
+        "stage": "QF"
       }
     ],
     "Australia": [
@@ -935,12 +946,13 @@
         "date": "07/08/2026",
         "group": "",
         "vs": "Switzerland",
-        "score": null,
-        "result": null,
-        "pts": null,
-        "status": "PreGame",
+        "score": "0-0",
+        "result": "D",
+        "pts": 1,
+        "status": "FT",
         "displayDate": "07/08/2026",
-        "stage": "R16"
+        "stage": "R16",
+        "penalties": "3-4"
       }
     ],
     "Croatia": [
@@ -1247,10 +1259,10 @@
         "date": "07/08/2026",
         "group": "",
         "vs": "Argentina",
-        "score": null,
-        "result": null,
-        "pts": null,
-        "status": "PreGame",
+        "score": "2-3",
+        "result": "L",
+        "pts": 0,
+        "status": "FT",
         "displayDate": "07/08/2026",
         "stage": "R16"
       }
@@ -2491,12 +2503,24 @@
         "date": "07/08/2026",
         "group": "",
         "vs": "Colombia",
+        "score": "0-0",
+        "result": "D",
+        "pts": 1,
+        "status": "FT",
+        "displayDate": "07/08/2026",
+        "stage": "R16",
+        "penalties": "4-3"
+      },
+      {
+        "date": "07/12/2026",
+        "group": "",
+        "vs": "Argentina",
         "score": null,
         "result": null,
         "pts": null,
         "status": "PreGame",
-        "displayDate": "07/08/2026",
-        "stage": "R16"
+        "displayDate": "07/12/2026",
+        "stage": "QF"
       }
     ],
     "Tunisia": [
@@ -2974,10 +2998,10 @@
         "stage": "R16",
         "homeTeam": "Argentina",
         "awayTeam": "Egypt",
-        "homeScore": null,
-        "awayScore": null,
-        "status": "PreGame",
-        "winner": null,
+        "homeScore": 3,
+        "awayScore": 2,
+        "status": "FT",
+        "winner": "Argentina",
         "nextMatchId": 100,
         "date": "07/08/2026"
       },
@@ -2986,12 +3010,14 @@
         "stage": "R16",
         "homeTeam": "Switzerland",
         "awayTeam": "Colombia",
-        "homeScore": null,
-        "awayScore": null,
-        "status": "PreGame",
-        "winner": null,
+        "homeScore": 0,
+        "awayScore": 0,
+        "status": "FT",
+        "winner": "Switzerland",
         "nextMatchId": 100,
-        "date": "07/08/2026"
+        "date": "07/08/2026",
+        "homePenaltyScore": 4,
+        "awayPenaltyScore": 3
       },
       {
         "matchId": 97,
@@ -3032,8 +3058,8 @@
       {
         "matchId": 100,
         "stage": "QF",
-        "homeTeam": "Winner Match 95",
-        "awayTeam": "Winner Match 96",
+        "homeTeam": "Argentina",
+        "awayTeam": "Switzerland",
         "homeScore": null,
         "awayScore": null,
         "status": "PreGame",
@@ -3100,7 +3126,7 @@
     "Argentina": {
       "qualified": true,
       "eliminated": false,
-      "stageReached": "R16"
+      "stageReached": "QF"
     },
     "Australia": {
       "qualified": true,
@@ -3139,7 +3165,7 @@
     },
     "Colombia": {
       "qualified": true,
-      "eliminated": false,
+      "eliminated": true,
       "stageReached": "R16"
     },
     "Croatia": {
@@ -3174,7 +3200,7 @@
     },
     "Egypt": {
       "qualified": true,
-      "eliminated": false,
+      "eliminated": true,
       "stageReached": "R16"
     },
     "England": {
@@ -3305,7 +3331,7 @@
     "Switzerland": {
       "qualified": true,
       "eliminated": false,
-      "stageReached": "R16"
+      "stageReached": "QF"
     },
     "Tunisia": {
       "qualified": false,
