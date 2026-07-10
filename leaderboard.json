@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-08T10:45:00+10:00",
+  "lastUpdated": "2026-07-10T10:42:00+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -356,42 +356,6 @@
   ],
   "recentResults": [
     {
-      "date": "07/06/2026",
-      "group": "",
-      "stage": "R16",
-      "homeTeam": "Brazil",
-      "awayTeam": "Norway",
-      "homeScore": 1,
-      "awayScore": 2
-    },
-    {
-      "date": "07/06/2026",
-      "group": "",
-      "stage": "R16",
-      "homeTeam": "Mexico",
-      "awayTeam": "England",
-      "homeScore": 2,
-      "awayScore": 3
-    },
-    {
-      "date": "07/07/2026",
-      "group": "",
-      "stage": "R16",
-      "homeTeam": "Portugal",
-      "awayTeam": "Spain",
-      "homeScore": 0,
-      "awayScore": 1
-    },
-    {
-      "date": "07/07/2026",
-      "group": "",
-      "stage": "R16",
-      "homeTeam": "USA",
-      "awayTeam": "Belgium",
-      "homeScore": 1,
-      "awayScore": 4
-    },
-    {
       "date": "07/08/2026",
       "group": "",
       "stage": "R16",
@@ -408,11 +372,20 @@
       "awayTeam": "Colombia",
       "homeScore": 0,
       "awayScore": 0
+    },
+    {
+      "date": "07/10/2026",
+      "group": "",
+      "stage": "QF",
+      "homeTeam": "France",
+      "awayTeam": "Morocco",
+      "homeScore": 2,
+      "awayScore": 0
     }
   ],
   "tournamentInfo": {
-    "totalMatchesPlayed": 96,
-    "totalMatchesRemaining": 8,
+    "totalMatchesPlayed": 97,
+    "totalMatchesRemaining": 7,
     "currentPhase": "Quarterfinals"
   },
   "teamResults": {
@@ -1395,12 +1368,23 @@
         "date": "07/10/2026",
         "group": "",
         "vs": "Morocco",
+        "score": "2-0",
+        "result": "W",
+        "pts": 3,
+        "status": "FT",
+        "displayDate": "07/10/2026",
+        "stage": "QF"
+      },
+      {
+        "date": "07/15/2026",
+        "group": "",
+        "vs": "Winner Match 98",
         "score": null,
         "result": null,
         "pts": null,
         "status": "PreGame",
-        "displayDate": "07/10/2026",
-        "stage": "QF"
+        "displayDate": "07/15/2026",
+        "stage": "SF"
       }
     ],
     "Germany": [
@@ -1800,10 +1784,10 @@
         "date": "07/10/2026",
         "group": "",
         "vs": "France",
-        "score": null,
-        "result": null,
-        "pts": null,
-        "status": "PreGame",
+        "score": "0-2",
+        "result": "L",
+        "pts": 0,
+        "status": "FT",
         "displayDate": "07/10/2026",
         "stage": "QF"
       }
@@ -3024,10 +3008,10 @@
         "stage": "QF",
         "homeTeam": "France",
         "awayTeam": "Morocco",
-        "homeScore": null,
-        "awayScore": null,
-        "status": "PreGame",
-        "winner": null,
+        "homeScore": 2,
+        "awayScore": 0,
+        "status": "FT",
+        "winner": "France",
         "nextMatchId": 101,
         "date": "07/10/2026"
       },
@@ -3070,7 +3054,7 @@
       {
         "matchId": 101,
         "stage": "SF",
-        "homeTeam": "Winner Match 97",
+        "homeTeam": "France",
         "awayTeam": "Winner Match 98",
         "homeScore": null,
         "awayScore": null,
@@ -3211,7 +3195,7 @@
     "France": {
       "qualified": true,
       "eliminated": false,
-      "stageReached": "QF"
+      "stageReached": "SF"
     },
     "Germany": {
       "qualified": true,
@@ -3255,7 +3239,7 @@
     },
     "Morocco": {
       "qualified": true,
-      "eliminated": false,
+      "eliminated": true,
       "stageReached": "QF"
     },
     "Netherlands": {
