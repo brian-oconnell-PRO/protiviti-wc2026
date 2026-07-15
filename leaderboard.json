@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-13T10:10:00+10:00",
+  "lastUpdated": "2026-07-15T09:45:00+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -356,45 +356,18 @@
   ],
   "recentResults": [
     {
-      "date": "07/10/2026",
+      "date": "07/15/2026",
       "group": "",
-      "stage": "QF",
+      "stage": "SF",
       "homeTeam": "France",
-      "awayTeam": "Morocco",
-      "homeScore": 2,
-      "awayScore": 0
-    },
-    {
-      "date": "07/11/2026",
-      "group": "",
-      "stage": "QF",
-      "homeTeam": "Spain",
-      "awayTeam": "Belgium",
-      "homeScore": 2,
-      "awayScore": 1
-    },
-    {
-      "date": "07/12/2026",
-      "group": "",
-      "stage": "QF",
-      "homeTeam": "Norway",
-      "awayTeam": "England",
-      "homeScore": 1,
+      "awayTeam": "Spain",
+      "homeScore": 0,
       "awayScore": 2
-    },
-    {
-      "date": "07/12/2026",
-      "group": "",
-      "stage": "QF",
-      "homeTeam": "Argentina",
-      "awayTeam": "Switzerland",
-      "homeScore": 3,
-      "awayScore": 1
     }
   ],
   "tournamentInfo": {
-    "totalMatchesPlayed": 100,
-    "totalMatchesRemaining": 4,
+    "totalMatchesPlayed": 101,
+    "totalMatchesRemaining": 3,
     "currentPhase": "Semifinals"
   },
   "teamResults": {
@@ -1410,10 +1383,10 @@
         "date": "07/15/2026",
         "group": "",
         "vs": "Spain",
-        "score": null,
-        "result": null,
-        "pts": null,
-        "status": "PreGame",
+        "score": "0-2",
+        "result": "L",
+        "pts": 0,
+        "status": "FT",
         "displayDate": "07/15/2026",
         "stage": "SF"
       }
@@ -2426,12 +2399,23 @@
         "date": "07/15/2026",
         "group": "",
         "vs": "France",
+        "score": "2-0",
+        "result": "W",
+        "pts": 3,
+        "status": "FT",
+        "displayDate": "07/15/2026",
+        "stage": "SF"
+      },
+      {
+        "date": "07/20/2026",
+        "group": "",
+        "vs": "Winner Match 102",
         "score": null,
         "result": null,
         "pts": null,
         "status": "PreGame",
-        "displayDate": "07/15/2026",
-        "stage": "SF"
+        "displayDate": "07/20/2026",
+        "stage": "Final"
       }
     ],
     "Sweden": [
@@ -3098,10 +3082,10 @@
         "stage": "SF",
         "homeTeam": "France",
         "awayTeam": "Spain",
-        "homeScore": null,
-        "awayScore": null,
-        "status": "PreGame",
-        "winner": null,
+        "homeScore": 0,
+        "awayScore": 2,
+        "status": "FT",
+        "winner": "Spain",
         "nextMatchId": 103,
         "date": "07/15/2026"
       },
@@ -3120,7 +3104,7 @@
       {
         "matchId": 103,
         "stage": "Final",
-        "homeTeam": "Winner Match 101",
+        "homeTeam": "Spain",
         "awayTeam": "Winner Match 102",
         "homeScore": null,
         "awayScore": null,
@@ -3132,7 +3116,7 @@
       {
         "matchId": 104,
         "stage": "Third Place",
-        "homeTeam": "Loser Match 101",
+        "homeTeam": "France",
         "awayTeam": "Loser Match 102",
         "homeScore": null,
         "awayScore": null,
@@ -3236,7 +3220,7 @@
     },
     "France": {
       "qualified": true,
-      "eliminated": false,
+      "eliminated": true,
       "stageReached": "SF"
     },
     "Germany": {
@@ -3347,7 +3331,7 @@
     "Spain": {
       "qualified": true,
       "eliminated": false,
-      "stageReached": "SF"
+      "stageReached": "Final"
     },
     "Sweden": {
       "qualified": true,
