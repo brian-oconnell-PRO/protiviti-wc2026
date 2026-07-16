@@ -1,5 +1,5 @@
 {
-  "lastUpdated": "2026-07-15T09:45:00+10:00",
+  "lastUpdated": "2026-07-16T10:20:00+10:00",
   "leaderboard": [
     {
       "rank": 1,
@@ -363,12 +363,21 @@
       "awayTeam": "Spain",
       "homeScore": 0,
       "awayScore": 2
+    },
+    {
+      "date": "07/16/2026",
+      "group": "",
+      "stage": "SF",
+      "homeTeam": "England",
+      "awayTeam": "Argentina",
+      "homeScore": 1,
+      "awayScore": 2
     }
   ],
   "tournamentInfo": {
-    "totalMatchesPlayed": 101,
-    "totalMatchesRemaining": 3,
-    "currentPhase": "Semifinals"
+    "totalMatchesPlayed": 102,
+    "totalMatchesRemaining": 2,
+    "currentPhase": "Finals"
   },
   "teamResults": {
     "Algeria": [
@@ -488,12 +497,23 @@
         "date": "07/16/2026",
         "group": "",
         "vs": "England",
+        "score": "2-1",
+        "result": "W",
+        "pts": 3,
+        "status": "FT",
+        "displayDate": "07/16/2026",
+        "stage": "SF"
+      },
+      {
+        "date": "07/20/2026",
+        "group": "",
+        "vs": "Spain",
         "score": null,
         "result": null,
         "pts": null,
         "status": "PreGame",
-        "displayDate": "07/16/2026",
-        "stage": "SF"
+        "displayDate": "07/20/2026",
+        "stage": "Final"
       }
     ],
     "Australia": [
@@ -1304,10 +1324,10 @@
         "date": "07/16/2026",
         "group": "",
         "vs": "Argentina",
-        "score": null,
-        "result": null,
-        "pts": null,
-        "status": "PreGame",
+        "score": "1-2",
+        "result": "L",
+        "pts": 0,
+        "status": "FT",
         "displayDate": "07/16/2026",
         "stage": "SF"
       }
@@ -2409,7 +2429,7 @@
       {
         "date": "07/20/2026",
         "group": "",
-        "vs": "Winner Match 102",
+        "vs": "Argentina",
         "score": null,
         "result": null,
         "pts": null,
@@ -3094,10 +3114,10 @@
         "stage": "SF",
         "homeTeam": "England",
         "awayTeam": "Argentina",
-        "homeScore": null,
-        "awayScore": null,
-        "status": "PreGame",
-        "winner": null,
+        "homeScore": 1,
+        "awayScore": 2,
+        "status": "FT",
+        "winner": "Argentina",
         "nextMatchId": 103,
         "date": "07/16/2026"
       },
@@ -3105,7 +3125,7 @@
         "matchId": 103,
         "stage": "Final",
         "homeTeam": "Spain",
-        "awayTeam": "Winner Match 102",
+        "awayTeam": "Argentina",
         "homeScore": null,
         "awayScore": null,
         "status": "PreGame",
@@ -3117,7 +3137,7 @@
         "matchId": 104,
         "stage": "Third Place",
         "homeTeam": "France",
-        "awayTeam": "Loser Match 102",
+        "awayTeam": "England",
         "homeScore": null,
         "awayScore": null,
         "status": "PreGame",
@@ -3136,7 +3156,7 @@
     "Argentina": {
       "qualified": true,
       "eliminated": false,
-      "stageReached": "SF"
+      "stageReached": "Final"
     },
     "Australia": {
       "qualified": true,
@@ -3215,7 +3235,7 @@
     },
     "England": {
       "qualified": true,
-      "eliminated": false,
+      "eliminated": true,
       "stageReached": "SF"
     },
     "France": {
